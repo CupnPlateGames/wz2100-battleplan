@@ -227,7 +227,7 @@
     "A0TankTrap": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 40,
+        "buildPoints": 21,
         "buildPower": 7,
         "height": 1,
         "hitpoints": 200,
@@ -301,8 +301,8 @@
     "LookOutTower": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 180,
-        "buildPower": 60,
+        "buildPoints": 90,
+        "buildPower": 30,
         "height": 2,
         "hitpoints": 150,
         "id": "LookOutTower",
@@ -319,7 +319,7 @@
     "GuardTower1": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 220,
+        "buildPoints": 201,
         "buildPower": 67,
         "height": 2,
         "hitpoints": 180,
@@ -341,7 +341,7 @@
     "GuardTowerLightCannon": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 300,
+        "buildPoints": 270,
         "buildPower": 90,
         "height": 2,
         "hitpoints": 320,
@@ -363,10 +363,10 @@
    "GuardTower6": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 330,
+        "buildPoints": 285,
         "buildPower": 95,
         "height": 2,
-        "hitpoints": 210,
+        "hitpoints": 200,
         "id": "GuardTower6",
         "name": "Mini-Rocket Tower",
         "resistance": 150,
@@ -385,7 +385,7 @@
     "GuardTower5": {
         "armour": 10,
         "breadth": 1,
-        "buildPoints": 330,
+        "buildPoints": 285,
         "buildPower": 95,
         "height": 2,
         "hitpoints": 210,

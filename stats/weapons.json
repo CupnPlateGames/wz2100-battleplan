@@ -70,8 +70,8 @@
         "weight": 0
     },
     "MG1Mk1": {
-        "buildPoints": 40,
-        "buildPower": 7,
+        "buildPoints": 111,
+        "buildPower": 37,
         "damage": 14,
         "designable": 1,
         "effectSize": 100,
@@ -108,8 +108,8 @@
         "weight": 200
     },
     "MG1-VTOL": {
-        "buildPoints": 80,
-        "buildPower": 14,
+        "buildPoints": 132,
+        "buildPower": 44,
         "damage": 14,
         "designable": 1,
         "effectSize": 100,
@@ -148,8 +148,8 @@
         "weight": 200
     },
     "Flame1Mk1": {
-        "buildPoints": 60,
-        "buildPower": 10,
+        "buildPoints": 120,
+        "buildPower": 40,
         "damage": 20,
         "designable": 1,
         "effectSize": 1,
@@ -191,8 +191,8 @@
         "weight": 100
     },
     "Cannon1Mk1": {
-        "buildPoints": 60,
-        "buildPower": 10,
+        "buildPoints": 120,
+        "buildPower": 40,
         "damage": 30,
         "designable": 1,
         "effectSize": 30,
@@ -231,8 +231,8 @@
         "weight": 600
     },
     "Rocket-Pod": {
-        "buildPoints": 90,
-        "buildPower": 15,
+        "buildPoints": 135,
+        "buildPower": 45,
         "damage": 22,
         "designable": 1,
         "effectSize": 25,
@@ -274,7 +274,7 @@
     },
     "Rocket-VTOL-Pod": {
         "buildPoints": 180,
-        "buildPower": 30,
+        "buildPower": 60,
         "damage": 22,
         "designable": 1,
         "effectSize": 25,
@@ -318,8 +318,8 @@
         "weight": 400
     },
     "Rocket-LtA-T": {
-        "buildPoints": 90,
-        "buildPower": 15,
+        "buildPoints": 135,
+        "buildPower": 45,
         "damage": 130,
         "designable": 1,
         "effectSize": 50,
@@ -360,7 +360,7 @@
     },
     "Rocket-VTOL-LtA-T": {
         "buildPoints": 180,
-        "buildPower": 30,
+        "buildPower": 60,
         "damage": 130,
         "designable": 1,
         "effectSize": 50,
@@ -400,8 +400,8 @@
         "weight": 400
     },
     "Mortar1Mk1": {
-        "buildPoints": 90,
-        "buildPower": 15,
+        "buildPoints": 135,
+        "buildPower": 45,
         "damage": 30,
         "designable": 1,
         "effectSize": 75,
@@ -443,8 +443,8 @@
         "weight": 600
     },
     "Howitzer105Mk1": {
-        "buildPoints": 90,
-        "buildPower": 15,
+        "buildPoints": 135,
+        "buildPower": 45,
         "damage": 40,
         "designable": 1,
         "effectSize": 250,
@@ -489,8 +489,8 @@
 
 
     "QuadMg1AAGun": {
-        "buildPoints": 90,
-        "buildPower": 15,
+        "buildPoints": 195,
+        "buildPower": 65,
         "damage": 26,
         "designable": 1,
         "effectSize": 20,
@@ -575,8 +575,8 @@
         "weight": 800
     },
     "Rocket-VTOL-Sunburst": {
-        "buildPoints": 270,
-        "buildPower": 45,
+        "buildPoints": 240,
+        "buildPower": 80,
         "damage": 37,
         "designable": 1,
         "effectSize": 100,

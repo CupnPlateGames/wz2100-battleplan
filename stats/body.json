@@ -2,8 +2,8 @@
     "Body4ABT": {
         "armourHeat": 8,
         "armourKinetic": 8,
-        "buildPoints": 240,
-        "buildPower": 90,
+        "buildPoints": 150,
+        "buildPower": 60,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 65,
@@ -48,8 +48,8 @@
     "Body1REC": {
         "armourHeat": 10,
         "armourKinetic": 10,
-        "buildPoints": 300,
-        "buildPower": 100,
+        "buildPoints": 210,
+        "buildPower": 70,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 65,
@@ -94,8 +94,8 @@
     "Body2SUP": {
         "armourHeat": 12,
         "armourKinetic": 12,
-        "buildPoints": 360,
-        "buildPower": 135,
+        "buildPoints": 270,
+        "buildPower": 105,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 65,
