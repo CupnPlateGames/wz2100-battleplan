@@ -182,6 +182,54 @@
     },
 
 
+    "R-Sys-Autorepair-General": {
+        "iconID": "IMAGE_RES_COMPUTERTECH",
+        "id": "R-Sys-Autorepair-General",
+        "imdName": "ICCCCONS.PIE",
+        "keyTopic": 1,
+        "msgName": "RES_SY_AR",
+        "name": "Auto-Repair",
+        "replacedComponents": [
+            "ZNULLREPAIR:AutoRepair"
+        ],
+        "requiredResearch": [
+            "R-Sys-Autorepair-General"
+        ],
+        "researchPoints": 14400,
+        "researchPower": 450,
+        "resultComponents": [
+            "AutoRepair"
+        ],
+        "subgroupIconID": "IMAGE_RES_GRPREP"
+    },
+    "R-Struc-RepairFacility": {
+        "iconID": "IMAGE_RES_STRUCTURETECH",
+        "id": "R-Struc-RepairFacility",
+        "msgName": "RES_REPAI1",
+        "name": "Repair Facility",
+        "researchPoints": 600,
+        "researchPower": 300,
+        "resultStructures": [
+            "A0RepairCentre3"
+        ],
+        "statID": "A0RepairCentre3"
+    },
+    "R-Sys-MobileRepairTurret01": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-MobileRepairTurret01",
+        "msgName": "RES_REPTU1",
+        "name": "Mobile Repair Turret",
+        "requiredResearch": [
+            "R-Struc-RepairFacility"
+        ],
+        "researchPoints": 600,
+        "researchPower": 300,
+        "resultComponents": [
+            "LightRepair1"
+        ],
+        "statID": "LightRepair1"
+    },
+
 
     "R-Wpn-MG1Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",

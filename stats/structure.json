@@ -210,7 +210,7 @@
         "id": "A0VtolPad",
         "name": "VTOL Rearming Pad",
         "rearmPoints": 100,
-        "repairPoints": 10,
+        "repairPoints": 5,
         "resistance": 150,
         "sensorID": "DefaultSensor1Mk1",
         "strength": "MEDIUM",
@@ -223,6 +223,28 @@
         "width": 1
     },
 
+    "A0RepairCentre3": {
+        "armour": 10,
+        "baseModel": "BLBGEN.PIE",
+        "breadth": 1,
+        "buildPoints": 450,
+        "buildPower": 200,
+        "ecmID": "RepairCentre",
+        "height": 2,
+        "hitpoints": 350,
+        "id": "A0RepairCentre3",
+        "name": "Repair Facility",
+        "repairPoints": 20,
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLRPAIR3.PIE"
+        ],
+        "thermal": 10,
+        "type": "REPAIR FACILITY",
+        "width": 1
+    },
 
     "A0TankTrap": {
         "armour": 10,
@@ -827,29 +849,6 @@
             "LasSat"
         ],
         "width": 2
-    },
-    "A0RepairCentre3": {
-        "armour": 10,
-        "baseModel": "BLBGEN.PIE",
-        "breadth": 1,
-        "buildPoints": 500,
-        "buildPower": 100,
-        "ecmID": "RepairCentre",
-        "height": 2,
-        "hitpoints": 1000,
-        "id": "A0RepairCentre3",
-        "name": "Repair Facility",
-        "repairPoints": 40,
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "BLRPAIR3.PIE"
-        ],
-        "thermal": 10,
-        "type": "REPAIR FACILITY",
-        "userLimits": [ 0, 5, 5 ],
-        "width": 1
     },
     "A0Sat-linkCentre": {
         "armour": 12,
