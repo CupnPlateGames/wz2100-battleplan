@@ -276,26 +276,10 @@
             "Rocket-Pod",
             "Rocket-VTOL-Pod"
         ],
-        "statID": "Rocket-Pod"
-    },
-    "R-Defense-Tower06": {
-        "iconID": "IMAGE_RES_DEFENCE",
-        "id": "R-Defense-Tower06",
-        "msgName": "RES_EMP_PODTOW",
-        "name": "Mini-Rocket Tower",
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R-Wpn-Rocket05-MiniPod"
-        ],
-        "requiredStructures": [
-            "A0CommandCentre"
-        ],
-        "researchPoints": 100,
-        "researchPower": 25,
         "resultStructures": [
             "GuardTower6"
         ],
-        "statID": "GuardTower6"
+        "statID": "Rocket-Pod"
     },
     "R-Wpn-Rocket01-LtAT": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -328,6 +312,9 @@
         "resultComponents": [
             "Mortar1Mk1"
         ],
+        "resultStructures": [
+            "Emplacement-MortarPit01"
+        ],
         "statID": "Mortar1Mk1"
     },
     "R-Wpn-HowitzerMk1": {
@@ -340,6 +327,9 @@
         "researchPower": 100,
         "resultComponents": [
             "Howitzer105Mk1"
+        ],
+        "resultStructures": [
+            "Emplacement-Howitzer105"
         ],
         "statID": "Howitzer105Mk1"
     },
@@ -358,7 +348,9 @@
         "researchPoints": 450,
         "researchPower": 150,
         "resultComponents": [
-            "QuadMg1AAGun",
+            "QuadMg1AAGun"
+        ],
+        "resultStructures": [
             "AASite-QuadMg1"
         ],
         "statID": "QuadMg1AAGun"
@@ -376,6 +368,9 @@
             "Rocket-Sunburst",
             "Rocket-VTOL-Sunburst"
         ],
+        "resultStructures": [
+            "P0-AASite-Sunburst"
+        ],
         "statID": "Rocket-Sunburst",
         "techCode": 1
     },
@@ -392,6 +387,9 @@
         "researchPower": 150,
         "resultComponents": [
             "Missile-LtSAM"
+        ],
+        "resultStructures": [
+            "P0-AASite-SAM1"
         ],
         "statID": "Missile-LtSAM"
     },

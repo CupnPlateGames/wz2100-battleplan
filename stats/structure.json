@@ -365,17 +365,17 @@
         "breadth": 1,
         "buildPoints": 285,
         "buildPower": 95,
-        "height": 2,
-        "hitpoints": 200,
+        "height": 1,
+        "hitpoints": 100,
         "id": "GuardTower6",
         "name": "Mini-Rocket Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
         "strength": "MEDIUM",
         "structureModel": [
-            "BLGUARDR.pie"
+            "Blhowmnt.PIE"
         ],
-        "thermal": 15,
+        "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
             "Rocket-Pod"
@@ -404,7 +404,94 @@
         ],
         "width": 1
     },
-
+    "Emplacement-MortarPit01": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 285,
+        "buildPower": 95,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-MortarPit01",
+        "name": "Mortar Pit",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Mortar1Mk1"
+        ],
+        "width": 1
+    },
+    "Emplacement-Howitzer105": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 285,
+        "buildPower": 95,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-Howitzer105",
+        "name": "Howitzer Emplacement",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Howitzer105Mk1"
+        ],
+        "width": 1
+    },
+    "AASite-QuadMg1": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 345,
+        "buildPower": 115,
+        "height": 1,
+        "hitpoints": 180,
+        "id": "AASite-QuadMg1",
+        "name": "Hurricane AA Site",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blaamnt1.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "QuadMg1AAGun"
+        ],
+        "width": 1
+    },
+    "P0-AASite-Sunburst": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 245,
+        "buildPower": 115,
+        "height": 2,
+        "hitpoints": 180,
+        "id": "P0-AASite-Sunburst",
+        "name": "Sunburst AA Site",
+        "resistance": 150,
+        "sensorID": "NavGunSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blaamnt1.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Rocket-Sunburst"
+        ],
+        "width": 1
+    },
 
 
 
@@ -805,28 +892,6 @@
         ],
         "width": 1
     },
-    "AASite-QuadMg1": {
-        "armour": 12,
-        "breadth": 1,
-        "buildPoints": 250,
-        "buildPower": 125,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "AASite-QuadMg1",
-        "name": "Hurricane AA Site",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "Blaamnt1.PIE"
-        ],
-        "thermal": 12,
-        "type": "DEFENSE",
-        "weapons": [
-            "QuadMg1AAGun"
-        ],
-        "width": 1
-    },
     "AASite-QuadRotMg": {
         "armour": 12,
         "breadth": 1,
@@ -949,50 +1014,6 @@
         "type": "DEFENSE",
         "weapons": [
             "Howitzer-Incenediary"
-        ],
-        "width": 1
-    },
-    "Emplacement-Howitzer105": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 550,
-        "buildPower": 325,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "Emplacement-Howitzer105",
-        "name": "Howitzer Emplacement",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "HARD",
-        "structureModel": [
-            "Blhowmnt.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Howitzer105Mk1"
-        ],
-        "width": 1
-    },
-    "Emplacement-Howitzer150": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 600,
-        "buildPower": 425,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "Emplacement-Howitzer150",
-        "name": "Ground Shaker Emplacement",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "HARD",
-        "structureModel": [
-            "Blhowmnt.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Howitzer150Mk1"
         ],
         "width": 1
     },
@@ -1125,28 +1146,6 @@
         "type": "DEFENSE",
         "weapons": [
             "Mortar-Incenediary"
-        ],
-        "width": 1
-    },
-    "Emplacement-MortarPit01": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 400,
-        "buildPower": 125,
-        "height": 1,
-        "hitpoints": 300,
-        "id": "Emplacement-MortarPit01",
-        "name": "Mortar Pit",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "BLMRTPIT.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Mortar1Mk1"
         ],
         "width": 1
     },
@@ -1583,28 +1582,6 @@
         "type": "DEFENSE",
         "weapons": [
             "Missile-HvySAM"
-        ],
-        "width": 1
-    },
-    "P0-AASite-Sunburst": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 450,
-        "buildPower": 250,
-        "height": 2,
-        "hitpoints": 400,
-        "id": "P0-AASite-Sunburst",
-        "name": "Sunburst AA Site",
-        "resistance": 150,
-        "sensorID": "NavGunSensor",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "Blaamnt1.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Rocket-Sunburst"
         ],
         "width": 1
     },
