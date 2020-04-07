@@ -40,8 +40,8 @@
     },
     "V-Tol": {
         "acceleration": 100,
-        "buildPoints": 100,
-        "buildPower": 100,
+        "buildPoints": 0,
+        "buildPower": 0,
         "deceleration": 100,
         "designable": 1,
         "hitpointPctOfBody": 100,

@@ -208,7 +208,7 @@ function eventGameInit()
 	}
 	applyLimitSet();	// set limit options
 
-	const numCleanTech = 9;	// do x for clean
+	const numCleanTech = 8;	// do x for clean
 	const numBaseTech = numCleanTech + 4; // do x for base
 	var techlist = new Array(
 		"R-Vehicle-Prop-Wheels",
@@ -219,7 +219,6 @@ function eventGameInit()
 		"R-Vehicle-Body01",
 		"R-Vehicle-Body02",
 		"R-Sys-Spade1Mk1",
-		"R-Sys-Autorepair-General",
 
 		"R-Wpn-MG1Mk1",
 		"R-Wpn-Cannon1Mk1",
@@ -247,9 +246,9 @@ function eventGameInit()
 		enableResearch("R-Wpn-HowitzerMk1");
 		enableResearch("R-Struc-RepairFacility");
 
+		setPower(2500, playnum);
 		if (baseType == CAMP_CLEAN)
 		{
-			setPower(1300, playnum);
 			for (var count = 0; count < numCleanTech; count++)
 			{
 				completeResearch(techlist[count], playnum);
@@ -278,7 +277,6 @@ function eventGameInit()
 		}
 		else if (baseType == CAMP_BASE)
 		{
-			setPower(2500, playnum);
 			for (var count = 0; count < numBaseTech; count++)
 			{
 				completeResearch(techlist[count], playnum);
@@ -299,7 +297,6 @@ function eventGameInit()
 		}
 		else // CAMP_WALLS
 		{
-			setPower(2500, playnum);
 			for (var count = 0; count < techlist.length; count++)
 			{
 				completeResearch(techlist[count], playnum);

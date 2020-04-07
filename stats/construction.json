@@ -1,7 +1,7 @@
 {
     "Spade1Mk1": {
-        "buildPoints": 120,
-        "buildPower": 20,
+        "buildPoints": 75,
+        "buildPower": 75,
         "constructPoints": 5,
         "designable": 1,
         "droidType": "DROID_CONSTRUCT",

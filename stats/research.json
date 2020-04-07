@@ -155,7 +155,7 @@
         "msgName": "RES_TTRAP1",
         "name": "Tank Traps",
         "researchPoints": 150,
-        "researchPower": 50,
+        "researchPower": 150,
         "resultStructures": [
             "A0TankTrap",
             "LookOutTower"
@@ -172,7 +172,7 @@
             "R-Defense-TankTrap01"
         ],
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultStructures": [
             "A0HardcreteMk1CWall",
             "A0HardcreteMk1Wall",
@@ -208,7 +208,7 @@
         "msgName": "RES_REPAI1",
         "name": "Repair Facility",
         "researchPoints": 600,
-        "researchPower": 300,
+        "researchPower": 600,
         "resultStructures": [
             "A0RepairCentre3"
         ],
@@ -223,7 +223,7 @@
             "R-Struc-RepairFacility"
         ],
         "researchPoints": 600,
-        "researchPower": 300,
+        "researchPower": 600,
         "resultComponents": [
             "LightRepair1"
         ],
@@ -238,7 +238,7 @@
         "msgName": "RES_MG1MK1",
         "name": "Machinegun",
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "MG1-VTOL",
             "MG1Mk1"
@@ -258,8 +258,8 @@
         "requiredStructures": [
             "A0CommandCentre"
         ],
-        "researchPoints": 75,
-        "researchPower": 25,
+        "researchPoints": 70,
+        "researchPower": 70,
         "resultStructures": [
             "GuardTower1"
         ],
@@ -272,7 +272,7 @@
         "msgName": "RES_FLAME1",
         "name": "Flamer",
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "CyborgFlamer01",
             "Flame1Mk1"
@@ -286,7 +286,7 @@
         "msgName": "RES_CN1MK1",
         "name": "Light Cannon",
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "Cannon1Mk1"
         ],
@@ -305,8 +305,8 @@
         "requiredStructures": [
             "A0CommandCentre"
         ],
-        "researchPoints": 75,
-        "researchPower": 25,
+        "researchPoints": 70,
+        "researchPower": 70,
         "resultStructures": [
             "GuardTowerLightCannon"
         ],
@@ -319,7 +319,7 @@
         "msgName": "RES_W_RK_MP1",
         "name": "Mini-Rocket Pod",
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "Rocket-Pod",
             "Rocket-VTOL-Pod"
@@ -338,7 +338,7 @@
             "R-Wpn-Rocket01-LtAT"
         ],
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "CyborgRocket",
             "Rocket-LtA-T",
@@ -356,7 +356,7 @@
             "R-Wpn-Mortar01Lt"
         ],
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "Mortar1Mk1"
         ],
@@ -372,7 +372,7 @@
         "msgName": "RES_W_HMK1",
         "name": "Howitzer",
         "researchPoints": 300,
-        "researchPower": 100,
+        "researchPower": 300,
         "resultComponents": [
             "Howitzer105Mk1"
         ],
@@ -394,7 +394,7 @@
             "R-Wpn-MG1Mk1"
         ],
         "researchPoints": 450,
-        "researchPower": 150,
+        "researchPower": 450,
         "resultComponents": [
             "QuadMg1AAGun"
         ],
@@ -411,7 +411,7 @@
             "R-Wpn-Rocket05-MiniPod"
         ],
         "researchPoints": 450,
-        "researchPower": 150,
+        "researchPower": 450,
         "resultComponents": [
             "Rocket-Sunburst",
             "Rocket-VTOL-Sunburst"
@@ -432,7 +432,7 @@
             "R-Wpn-Rocket01-LtAT"
         ],
         "researchPoints": 450,
-        "researchPower": 150,
+        "researchPower": 450,
         "resultComponents": [
             "Missile-LtSAM"
         ],
@@ -444,6 +444,56 @@
 
 
 
+    "R-Wpn-MG3Mk1": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-MG3Mk1",
+        "keyTopic": 1,
+        "msgName": "RES_MG3MK1",
+        "name": "Heavy Machinegun",
+        "requiredResearch": [
+            "R-Wpn-MG1Mk1"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "MG3-VTOL",
+            "MG3Mk1"
+        ],
+        "statID": "MG3Mk1"
+    },
+    "R-Wpn-Cannon2Mk1": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Cannon2Mk1",
+        "msgName": "RES_CN2MK1",
+        "name": "Medium Cannon",
+        "requiredResearch": [
+            "R-Wpn-Cannon1Mk1"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Cannon2A-TMk1"
+        ],
+        "statID": "Cannon2A-TMk1"
+    },
+    "R-Wpn-Rocket02-MRL": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Rocket02-MRL",
+        "keyTopic": 1,
+        "msgName": "RES_W_RK_MRL1",
+        "name": "Mini-Rocket Array",
+        "requiredResearch": [
+            "R-Wpn-Rocket05-MiniPod"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Rocket-MRL"
+        ],
+        "statID": "Rocket-MRL"
+    },
+
+
     "R-Wpn-MG-ROF01": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-MG-ROF01",
@@ -453,7 +503,7 @@
             "R-Wpn-MG1Mk1"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -482,7 +532,7 @@
             "R-Wpn-MG-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 450,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -512,7 +562,7 @@
             "R-Wpn-MG-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",
@@ -544,7 +594,7 @@
             "R-Wpn-Flamer01Mk1"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -573,7 +623,7 @@
             "R-Wpn-Flamer-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 600,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -602,7 +652,7 @@
             "R-Wpn-Flamer-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",
@@ -635,7 +685,7 @@
             "R-Wpn-Cannon1Mk1"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -663,7 +713,7 @@
             "R-Wpn-Cannon-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 450,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -692,7 +742,7 @@
             "R-Wpn-Cannon-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",
@@ -725,7 +775,7 @@
             "R-Wpn-Rocket01-LtAT"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -753,7 +803,7 @@
             "R-Wpn-Missile-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 450,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -782,7 +832,7 @@
             "R-Wpn-Missile-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",
@@ -813,7 +863,7 @@
             "R-Wpn-Mortar01Lt"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -841,7 +891,7 @@
             "R-Wpn-Mortar-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 450,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -870,7 +920,7 @@
             "R-Wpn-Mortar-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",
@@ -901,7 +951,7 @@
             "R-Wpn-HowitzerMk1"
         ],
         "researchPoints": 900,
-        "researchPower": 300,
+        "researchPower": 900,
         "results": [
             {
                 "class": "Weapon",
@@ -929,7 +979,7 @@
             "R-Wpn-Howitzer-ROF01"
         ],
         "researchPoints": 1350,
-        "researchPower": 450,
+        "researchPower": 1350,
         "results": [
             {
                 "class": "Weapon",
@@ -958,7 +1008,7 @@
             "R-Wpn-Howitzer-ROF02"
         ],
         "researchPoints": 1800,
-        "researchPower": 600,
+        "researchPower": 1800,
         "results": [
             {
                 "class": "Weapon",

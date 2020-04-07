@@ -7,8 +7,8 @@
         "time": 30
     },
     "LightRepair1": {
-        "buildPoints": 150,
-        "buildPower": 50,
+        "buildPoints": 120,
+        "buildPower": 12,
         "designable": 1,
         "droidType": "DROID_REPAIR",
         "id": "LightRepair1",
