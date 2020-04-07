@@ -469,6 +469,7 @@
         ],
         "width": 1
     },
+
     "AASite-QuadMg1": {
         "armour": 10,
         "breadth": 1,
@@ -510,6 +511,75 @@
         "type": "DEFENSE",
         "weapons": [
             "Rocket-Sunburst"
+        ],
+        "width": 1
+    },
+    "P0-AASite-SAM1": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 425,
+        "buildPower": 425,
+        "height": 2,
+        "hitpoints": 180,
+        "id": "P0-AASite-SAM1",
+        "name": "Avenger SAM Site",
+        "resistance": 150,
+        "sensorID": "NavGunSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blaamnt1.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Missile-LtSAM"
+        ],
+        "width": 1
+    },
+
+
+
+    "Emplacement-MortarPit02": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 590,
+        "buildPower": 590,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-MortarPit02",
+        "name": "Bombard Pit",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Mortar2Mk1"
+        ],
+        "width": 1
+    },
+    "Emplacement-Howitzer150": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 590,
+        "buildPower": 590,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-Howitzer150",
+        "name": "Ground Shaker Emplacement",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Howitzer150Mk1"
         ],
         "width": 1
     },
@@ -1147,28 +1217,6 @@
         ],
         "width": 1
     },
-    "Emplacement-MortarPit02": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 450,
-        "buildPower": 150,
-        "height": 1,
-        "hitpoints": 300,
-        "id": "Emplacement-MortarPit02",
-        "name": "Bombard Pit",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "BLMRTPIT.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Mortar2Mk1"
-        ],
-        "width": 1
-    },
     "Emplacement-PlasmaCannon": {
         "armour": 10,
         "breadth": 1,
@@ -1536,28 +1584,6 @@
         "type": "DEFENSE",
         "weapons": [
             "AAGunLaser"
-        ],
-        "width": 1
-    },
-    "P0-AASite-SAM1": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 450,
-        "buildPower": 250,
-        "height": 2,
-        "hitpoints": 400,
-        "id": "P0-AASite-SAM1",
-        "name": "Avenger SAM Site",
-        "resistance": 150,
-        "sensorID": "NavGunSensor",
-        "strength": "HARD",
-        "structureModel": [
-            "Blaamnt1.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Missile-LtSAM"
         ],
         "width": 1
     },

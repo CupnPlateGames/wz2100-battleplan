@@ -444,6 +444,27 @@
 
 
 
+    "R-Struc-Factory-Module": {
+        "iconID": "IMAGE_RES_STRUCTURETECH",
+        "id": "R-Struc-Factory-Module",
+        "keyTopic": 1,
+        "msgName": "RES_ST_FM1",
+        "name": "Factory Module",
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultStructures": [
+            "A0FacMod1"
+        ],
+        "resultComponents": [
+            "Body8MBT",
+            "Body5REC",
+            "Body6SUPP"
+        ],
+        "statID": "A0FacMod1"
+    },
+
+
+
     "R-Wpn-MG3Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-MG3Mk1",
@@ -460,6 +481,22 @@
             "MG3Mk1"
         ],
         "statID": "MG3Mk1"
+    },
+    "R-Wpn-Flame2": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Flame2",
+        "keyTopic": 1,
+        "msgName": "RES_FLAME2",
+        "name": "Heavy Flamer - Inferno",
+        "requiredResearch": [
+            "R-Wpn-Flamer01Mk1"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Flame2"
+        ],
+        "statID": "Flame2"
     },
     "R-Wpn-Cannon2Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -488,10 +525,62 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "Rocket-MRL"
+            "Rocket-MRL",
+            "Emplacement-MRL-pit"
         ],
         "statID": "Rocket-MRL"
     },
+    "R-Wpn-Rocket07-Tank-Killer": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Rocket07-Tank-Killer",
+        "keyTopic": 1,
+        "msgName": "RES_W_RK_HvAT",
+        "name": "Tank Killer Rocket",
+        "requiredResearch": [
+            "R-Wpn-Rocket01-LtAT"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Rocket-HvyA-T",
+            "Rocket-VTOL-HvyA-T"
+        ],
+        "statID": "Rocket-HvyA-T"
+    },
+    "R-Wpn-Mortar02Hvy": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Mortar02Hvy",
+        "msgName": "RES_W_M2",
+        "name": "Heavy Mortar - Bombard",
+        "requiredResearch": [
+            "R-Wpn-Mortar01Lt"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Mortar2Mk1",
+            "Emplacement-MortarPit02"
+        ],
+        "statID": "Mortar2Mk1"
+    },
+    "R-Wpn-HvyHowitzer": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-HvyHowitzer",
+        "keyTopic": 1,
+        "msgName": "RES_W_HH1",
+        "name": "Heavy Howitzer - Ground Shaker",
+        "requiredResearch": [
+            "R-Wpn-HowitzerMk1"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Howitzer150Mk1",
+            "Emplacement-Howitzer150"
+        ],
+        "statID": "Howitzer150Mk1"
+    },
+
 
 
     "R-Wpn-MG-ROF01": {

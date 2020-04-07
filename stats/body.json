@@ -43,7 +43,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 625
     },
     "Body1REC": {
         "armourHeat": 10,
@@ -89,7 +89,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 625
     },
     "Body2SUP": {
         "armourHeat": 12,
@@ -135,7 +135,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 625
     },
     "Body3MBT": {
         "armourHeat": 15,
@@ -187,15 +187,15 @@
     "Body8MBT": {
         "armourHeat": 12,
         "armourKinetic": 12,
-        "buildPoints": 325,
-        "buildPower": 325,
+        "buildPoints": 250,
+        "buildPower": 250,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 125,
+        "hitpoints": 130,
         "id": "Body8MBT",
         "model": "drmbod08.pie",
         "name": "Scorpion",
-        "powerOutput": 15000,
+        "powerOutput": 11232,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -228,20 +228,20 @@
         },
         "size": "MEDIUM",
         "weaponSlots": 1,
-        "weight": 1500
+        "weight": 1560
     },
     "Body5REC": {
         "armourHeat": 6,
         "armourKinetic": 15,
-        "buildPoints": 425,
-        "buildPower": 425,
+        "buildPoints": 350,
+        "buildPower": 350,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 130,
         "id": "Body5REC",
         "model": "drmbod05.pie",
         "name": "Cobra",
-        "powerOutput": 15000,
+        "powerOutput": 11232,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -274,53 +274,7 @@
         },
         "size": "MEDIUM",
         "weaponSlots": 1,
-        "weight": 2000
-    },
-    "Body7ABT": {
-        "armourHeat": 20,
-        "armourKinetic": 24,
-        "buildPoints": 525,
-        "buildPower": 525,
-        "class": "Droids",
-        "designable": 1,
-        "hitpoints": 200,
-        "id": "Body7ABT",
-        "model": "drmbod07.pie",
-        "name": "Retribution",
-        "powerOutput": 15000,
-        "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prmlhtr2.pie",
-                "right": "prmrhtr2.pie"
-            },
-            "Helicopter": {
-                "left": "prmheli1.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli5to8.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
-            "V-Tol": {
-                "left": "prmlvtl1.pie",
-                "right": "prmrvtl1.pie",
-                "moving": "fxvtl5to8.pie"
-            },
-            "hover01": {
-                "left": "prmhov1.pie"
-            },
-            "tracked01": {
-                "left": "prmltrk2.pie",
-                "right": "prmrtrk2.pie"
-            },
-            "wheeled01": {
-                "left": "prmlwhl1.pie",
-                "right": "prmrwhl1.pie"
-            }
-        },
-        "size": "MEDIUM",
-        "weaponSlots": 1,
-        "weight": 1500
+        "weight": 1560
     },
     "Body6SUPP": {
         "armourHeat": 9,
@@ -367,6 +321,52 @@
         "size": "MEDIUM",
         "weaponSlots": 1,
         "weight": 2500
+    },
+    "Body7ABT": {
+        "armourHeat": 20,
+        "armourKinetic": 24,
+        "buildPoints": 450,
+        "buildPower": 450,
+        "class": "Droids",
+        "designable": 1,
+        "hitpoints": 130,
+        "id": "Body7ABT",
+        "model": "drmbod07.pie",
+        "name": "Retribution",
+        "powerOutput": 11232,
+        "propulsionExtraModels": {
+            "HalfTrack": {
+                "left": "prmlhtr2.pie",
+                "right": "prmrhtr2.pie"
+            },
+            "Helicopter": {
+                "left": "prmheli1.pie",
+                "still": "mediumheli_rotor_stationary.pie",
+                "moving": "fxheli5to8.pie"
+            },
+            "Naval": {
+                "left": "prhnaval1.pie"
+            },
+            "V-Tol": {
+                "left": "prmlvtl1.pie",
+                "right": "prmrvtl1.pie",
+                "moving": "fxvtl5to8.pie"
+            },
+            "hover01": {
+                "left": "prmhov1.pie"
+            },
+            "tracked01": {
+                "left": "prmltrk2.pie",
+                "right": "prmrtrk2.pie"
+            },
+            "wheeled01": {
+                "left": "prmlwhl1.pie",
+                "right": "prmrwhl1.pie"
+            }
+        },
+        "size": "MEDIUM",
+        "weaponSlots": 1,
+        "weight": 1560
     },
 
     "Body12SUP": {

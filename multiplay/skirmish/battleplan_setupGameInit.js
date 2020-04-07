@@ -3,6 +3,9 @@
 
 function removeModules(playnum)
 {
+	var techLevel = getMultiTechLevel();
+	if (techLevel >= 2)
+		return;
 	var structs = enumStruct(playnum);
 	for (var i = 0; i < structs.length; i++)
 	{
@@ -313,6 +316,7 @@ function eventGameInit()
 	}
 	else if (techLevel == 3)
 	{
+		grantTech(TECH_TWO);
 		grantTech(TECH_THREE);
 	}
 
