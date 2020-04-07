@@ -361,7 +361,46 @@
         "type": "DEFENSE",
         "width": 1
     },
-
+    "A0LasSatCommand": {
+        "armour": 10,
+        "breadth": 2,
+        "buildPoints": 1400,
+        "buildPower": 1400,
+        "height": 2,
+        "hitpoints": 600,
+        "id": "A0LasSatCommand",
+        "name": "Laser Satellite Command Post",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "milasbas.pie"
+        ],
+        "thermal": 10,
+        "type": "GENERIC",
+        "userLimits": [ 0, 1, 1 ],
+        "weapons": [
+            "LasSat"
+        ],
+        "width": 2
+    },
+    "A0Sat-linkCentre": {
+        "armour": 12,
+        "breadth": 2,
+        "buildPoints": 1200,
+        "buildPower": 1200,
+        "height": 3,
+        "hitpoints": 600,
+        "id": "A0Sat-linkCentre",
+        "name": "Satellite Uplink Center",
+        "sensorID": "UplinkSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "miupbase.PIE"
+        ],
+        "thermal": 12,
+        "type": "SAT UPLINK",
+	"userLimits": [ 0, 1, 1 ],
+        "width": 2
+    },
 
 
     "A0TankTrap": {
@@ -1279,46 +1318,6 @@
         "type": "CYBORG FACTORY",
         "userLimits": [ 0, 5, 5 ],
         "width": 1
-    },
-    "A0LasSatCommand": {
-        "armour": 16,
-        "breadth": 2,
-        "buildPoints": 2500,
-        "buildPower": 1000,
-        "height": 2,
-        "hitpoints": 1000,
-        "id": "A0LasSatCommand",
-        "name": "Laser Satellite Command Post",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "milasbas.pie"
-        ],
-        "thermal": 16,
-        "type": "GENERIC",
-        "userLimits": [ 0, 1, 1 ],
-        "weapons": [
-            "LasSat"
-        ],
-        "width": 2
-    },
-    "A0Sat-linkCentre": {
-        "armour": 12,
-        "breadth": 2,
-        "buildPoints": 1250,
-        "buildPower": 1000,
-        "height": 3,
-        "hitpoints": 1600,
-        "id": "A0Sat-linkCentre",
-        "name": "Satellite Uplink Center",
-        "sensorID": "UplinkSensor",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "miupbase.PIE"
-        ],
-        "thermal": 12,
-        "type": "SAT UPLINK",
-	"userLimits": [ 0, 1, 1 ],
-        "width": 2
     },
     "AASite-QuadBof": {
         "armour": 12,

@@ -262,6 +262,7 @@ function eventGameInit()
 		enableResearch("R-Wpn-HowitzerMk1");
 		enableResearch("R-Struc-RepairFacility");
 		enableResearch("R-Struc-Factory-Module");
+		enableResearch("R-Sys-Sensor-Turret01");
 
 		setPower(1500, playnum);
 		if (baseType == CAMP_CLEAN)

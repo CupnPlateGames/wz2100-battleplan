@@ -22,6 +22,8 @@ const TECH_TWO = [
 	"R-Struc-RepairFacility",
 	"R-Sys-MobileRepairTurret01",
 
+	"R-Sys-Sensor-Turret01",
+
 	"R-Struc-Factory-Module",
 
 	"R-Wpn-MG3Mk1",
@@ -54,7 +56,9 @@ const TECH_THREE = [
 	"R-Wpn-Rocket-ROF02",
 	"R-Wpn-Missile-ROF02",
 	"R-Wpn-Mortar-ROF02",
-	"R-Wpn-Howitzer-ROF02"
+	"R-Wpn-Howitzer-ROF02",
+
+	"R-Sys-CBSensor-Turret01"
 ];
 
 //Automatically research these items for the player.

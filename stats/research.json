@@ -65,6 +65,97 @@
     },
 
 
+
+    "R-Sys-Sensor-Turret01": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-Sensor-Turret01",
+        "msgName": "RES_SENSO1",
+        "name": "Sensor Turret",
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "SensorTurret1Mk1",
+            "Sys-VstrikeTurret01"
+        ],
+        "resultStructures": [
+            "Sys-SensoTower02",
+            "Sys-VTOL-RadarTower01"
+        ],
+        "statID": "SensorTurret1Mk1"
+    },
+    "R-Sys-CBSensor-Turret01": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-CBSensor-Turret01",
+        "msgName": "RES_SY_CBSTU1",
+        "name": "CB Turret",
+        "requiredResearch": [
+            "R-Sys-Sensor-Turret01"
+        ],
+        "researchPoints": 1350,
+        "researchPower": 1350,
+        "resultComponents": [
+            "Sys-CBTurret01",
+            "Sys-VTOLCBTurret01"
+        ],
+        "resultStructures": [
+            "Sys-CB-Tower01",
+            "Sys-VTOL-CB-Tower01"
+        ],
+        "statID": "Sys-CBTurret01"
+    },
+    "R-Sys-RadarDetector01": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-RadarDetector01",
+        "msgName": "RES_SY_RDST1",
+        "name": "Radar Detector",
+        "requiredResearch": [
+            "R-Sys-CBSensor-Turret01"
+        ],
+        "researchPoints": 1800,
+        "researchPower": 1800,
+        "resultComponents": [
+            "RadarDetector"
+        ],
+        "resultStructures": [
+            "Sys-RadarDetector01"
+        ],
+        "statID": "RadarDetector"
+    },
+    "R-Sys-Sensor-WS": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-Sensor-WS",
+        "keyTopic": 1,
+        "msgName": "RES_SY_S_WST",
+        "name": "Wide Spectrum Sensor",
+        "redComponents": [
+            "SensorTurret1Mk1",
+            "Sys-VstrikeTurret01",
+            "Sys-CBTurret01",
+            "Sys-VTOLCBTurret01"
+        ],
+        "redStructures": [
+            "Sys-SensoTower02",
+            "Sys-VTOL-RadarTower01",
+            "Sys-CB-Tower01",
+            "Sys-VTOL-CB-Tower01"
+        ],
+        "requiredResearch": [
+            "R-Sys-CBSensor-Turret01"
+        ],
+        "researchPoints": 1800,
+        "researchPower": 1800,
+        "resultComponents": [
+            "Sensor-WideSpec"
+        ],
+        "resultStructures": [
+            "Sys-SensoTowerWS",
+            "A0Sat-linkCentre",
+            "A0LasSatCommand"
+        ],
+        "statID": "Sensor-WideSpec"
+    },
+
+
     "R-Wpn-MG1Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-MG1Mk1",
