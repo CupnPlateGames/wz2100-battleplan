@@ -1,6 +1,17 @@
 // This is the replaced function from rules.js
 // that defines which components and technologies are available from start.
 
+function removeUnusedBuildings(playnum)
+{
+	var structs = enumStruct(playnum);
+	for (var i = 0; i < structs.length; i++)
+	{
+		var s = structs[i];
+		if (s.stattype == CYBORG_FACTORY || s.stattype == COMMAND_CONTROL)
+			removeObject(s, false);
+	}
+}
+
 function removeModules(playnum)
 {
 	var techLevel = getMultiTechLevel();
@@ -197,9 +208,22 @@ function eventGameInit()
 		enableStructure("A0CommandCentre", playnum);		// make structures available to build
 		enableStructure("A0LightFactory", playnum);
 		enableStructure("A0VTolFactory1", playnum);
+		enableStructure("A0VtolPad", playnum);
 		enableStructure("A0ResourceExtractor", playnum);
 		enableStructure("A0PowerGenerator", playnum);
 		enableStructure("A0ResearchFacility", playnum);
+
+		makeComponentAvailable("wheeled01", playnum);
+		makeComponentAvailable("hover01", playnum);
+		makeComponentAvailable("tracked01", playnum);
+		makeComponentAvailable("V-Tol", playnum);
+
+		makeComponentAvailable("Body4ABT", playnum);
+		makeComponentAvailable("Body1REC", playnum);
+		makeComponentAvailable("Body2SUP", playnum);
+		makeComponentAvailable("Spade1Mk1", playnum);
+		makeComponentAvailable("Scout", playnum);
+		makeComponentAvailable("Scout-VTOL", playnum);
 
 		setStructureLimits("A0LightFactory", 10, playnum);	// set structure limits
 		setStructureLimits("A0PowerGenerator", 8, playnum);
@@ -211,18 +235,8 @@ function eventGameInit()
 	}
 	applyLimitSet();	// set limit options
 
-	const numCleanTech = 8;	// do x for clean
-	const numBaseTech = numCleanTech + 8; // do x for base
+	const numBaseTech = 8; // do x for base
 	var techlist = new Array(
-		"R-Vehicle-Prop-Wheels",
-		"R-Vehicle-Prop-Tracks",
-		"R-Vehicle-Prop-Hover",
-		"R-Vehicle-Prop-VTOL",
-		"R-Vehicle-Body04",
-		"R-Vehicle-Body01",
-		"R-Vehicle-Body02",
-		"R-Sys-Spade1Mk1",
-
 		"R-Wpn-MG1Mk1",
 		"R-Wpn-Cannon1Mk1",
 		"R-Wpn-Rocket05-MiniPod",
@@ -242,9 +256,7 @@ function eventGameInit()
 
 	for (var playnum = 0; playnum < maxPlayers; playnum++)
 	{
-		makeComponentAvailable("Scout", playnum);
-		makeComponentAvailable("Scout-VTOL", playnum);
-		for (var technum = numCleanTech; technum < numBaseTech; technum++) {
+		for (var technum = 0; technum < numBaseTech; technum++) {
 			enableResearch(techlist[technum]);
 		}
 		enableResearch("R-Wpn-Flamer01Mk1");
@@ -257,10 +269,6 @@ function eventGameInit()
 		setPower(1500, playnum);
 		if (baseType == CAMP_CLEAN)
 		{
-			for (var count = 0; count < numCleanTech; count++)
-			{
-				completeResearch(techlist[count], playnum);
-			}
 			var structs = enumStruct(playnum);
 			var lab_count = 0;
 			for (var i = 0; i < structs.length; i++)
@@ -270,14 +278,7 @@ function eventGameInit()
 				    || (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE
 				        && s.stattype != RESOURCE_EXTRACTOR)))
 				{
-					if (s.stattype != RESEARCH_LAB)
-						removeObject(s, false);
-					else
-					{
-						lab_count++;
-						if (lab_count > 1)
-							removeObject(s, false);
-					}
+					removeObject(s, false);
 				}
 			}
 			removeModules(playnum);
@@ -309,8 +310,9 @@ function eventGameInit()
 			{
 				completeResearch(techlist[count], playnum);
 			}
-			removeModules(s, playnum);
+			removeModules(playnum);
 		}
+		removeUnusedBuildings(playnum);
 		addStartingScout(playnum);
 	}
 
