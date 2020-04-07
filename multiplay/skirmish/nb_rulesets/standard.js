@@ -85,13 +85,13 @@ const fastestResearch = [
 
 // body and propulsion arrays don't affect fixed template droids
 const bodyStats = [
-	{ res: "R-Vehicle-Body01", stat: "Body1REC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // viper
+	{ res: "", stat: "Body1REC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // viper
 	{ res: "R-Struc-Factory-Module", stat: "Body5REC", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // cobra
 //	{ res: "R-Vehicle-Body11", stat: "Body11ABT", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // python
-	{ res: "R-Vehicle-Body02", stat: "Body2SUP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
+	{ res: "", stat: "Body2SUP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
 	{ res: "R-Struc-Factory-Module", stat: "Body6SUPP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
 //	{ res: "R-Vehicle-Body09", stat: "Body9REC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
-	{ res: "R-Vehicle-Body04", stat: "Body4ABT", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
+	{ res: "", stat: "Body4ABT", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
 	{ res: "R-Struc-Factory-Module", stat: "Body8MBT", weight: WEIGHT.HEAVY, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.THERMAL }, // scorpion
 //	{ res: "R-Vehicle-Body12", stat: "Body12SUP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.THERMAL }, // mantis
 ];
@@ -125,11 +125,10 @@ const classResearch = {
 // Ground propulsions need to be ground only, hover propulsions shouldn't
 // be able to cross cliffs, but should be able to cross seas, etc.
 const propulsionStats = [
-	{ res: "R-Vehicle-Prop-Wheels", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND },
-	{ res: "R-Vehicle-Prop-Halftracks", stat: "HalfTrack", usage: PROPULSIONUSAGE.GROUND },
-	{ res: "R-Vehicle-Prop-Tracks", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND },
-	{ res: "R-Vehicle-Prop-Hover", stat: "hover01", usage: PROPULSIONUSAGE.HOVER },
-	{ res: "R-Vehicle-Prop-VTOL", stat: "V-Tol", usage: PROPULSIONUSAGE.VTOL },
+	{ res: "", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND },
+	{ res: "", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND },
+	{ res: "", stat: "hover01", usage: PROPULSIONUSAGE.HOVER },
+	{ res: "", stat: "V-Tol", usage: PROPULSIONUSAGE.VTOL },
 ];
 
 
@@ -168,8 +167,14 @@ const weaponStats = {
 		// with the same role available down the list
 		defenses: [
 			// turtle AI needs early versatile towers, hence duplicate stat
-			{ res: "R-Defense-Tower01", stat: "GuardTower1", defrole: DEFROLE.GATEWAY }, // hmg tower
-			{ res: "R-Defense-Tower01", stat: "GuardTower1", defrole: DEFROLE.STANDALONE }, // hmg tower
+			{ res: "R-Wpn-MG1Mk1", stat: "GuardTower1", defrole: DEFROLE.GATEWAY }, // mg tower
+			{ res: "R-Wpn-MG1Mk1", stat: "GuardTower1", defrole: DEFROLE.STANDALONE }, // mg tower
+			{ res: "R-Defense-Pillbox01", stat: "PillBox1", defrole: DEFROLE.GATEWAY }, // mg bunker
+			{ res: "R-Defense-Pillbox01", stat: "PillBox1", defrole: DEFROLE.STANDALONE }, // mg bunker
+			{ res: "R-Wpn-MG3Mk1", stat: "GuardTower3", defrole: DEFROLE.GATEWAY }, // hmg tower
+			{ res: "R-Wpn-MG3Mk1", stat: "GuardTower3", defrole: DEFROLE.STANDALONE }, // hmg tower
+			{ res: "R-Defense-MG3-Bunker", stat: "PillBox3", defrole: DEFROLE.GATEWAY }, // hmg bunker
+			{ res: "R-Defense-MG3-Bunker", stat: "PillBox3", defrole: DEFROLE.STANDALONE }, // hmg bunker
 		],
 		// Cyborg templates, better borgs below, as usual.
 		templates: [
@@ -208,6 +213,8 @@ const weaponStats = {
 		],
 		vtols: [],
 		defenses: [
+			{ res: "R-Defense-Pillbox05", stat: "PillBox5", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Defense-HvyFlamer", stat: "Tower-Projector", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -227,8 +234,10 @@ const weaponStats = {
 		vtols: [
 		],
 		defenses: [
-			{ res: "R-Defense-Tower-Cannon1Mk1", stat: "GuardTowerLightCannon", defrole: DEFROLE.STANDALONE }, // lc tower
-			{ res: "R-Defense-Tower-Cannon1Mk1", stat: "GuardTowerLightCannon", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R-Wpn-Cannon1Mk1", stat: "GuardTowerLightCannon", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R-Defense-Pillbox04", stat: "PillBox4", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R-Wpn-Cannon2Mk1", stat: "GuardTowerMediumCannon", defrole: DEFROLE.STANDALONE }, // mc tower
+			{ res: "R-Defense-MediumCannon-Bunker", stat: "MediumCannon-Bunker", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -278,8 +287,10 @@ const weaponStats = {
 		],
 		defenses: [
 			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "GuardTower6", defrole: DEFROLE.GATEWAY }, // pod tower
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "GuardTower6", defrole: DEFROLE.STANDALONE }, // pod tower
+			{ res: "R-Defense-Lancer-Bunker", stat: "PillBox6", defrole: DEFROLE.GATEWAY }, // lancer bunker
+			{ res: "R-Wpn-Rocket05-MiniPod", stat: "GuardTower6", defrole: DEFROLE.STANDALONE }, // pod
+			{ res: "R-Defense-TankKiller-Bunker", stat: "TankKiller-Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+			{ res: "R-Wpn-Rocket02-MRL", stat: "Emplacement-MRL-pit", defrole: DEFROLE.STANDALONE }, // mra
 		],
 		templates: [
 		],

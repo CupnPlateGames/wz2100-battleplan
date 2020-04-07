@@ -38,7 +38,6 @@ var subpersonalities = {
 		],
 		earlyResearch: [ // fixed research path for the early game
 			"R-Wpn-MG1Mk1",
-			"R-Defense-Tower01",
 			"R-Wpn-Rocket01-LtAT",
 			"R-Wpn-MG-ROF01",
 		],

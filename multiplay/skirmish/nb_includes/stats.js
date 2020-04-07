@@ -157,7 +157,12 @@ _global.chooseAvailableWeaponPathByRoleRatings = function(paths, rating, objectT
 //
 
 function statsToResList(path) {
-	return path.map(function (val) { return val.res; });
+	var ret = [];
+	for (var i = 0; i < path.length; i++) {
+		if (path[i].res != "")
+			ret.push(path[i].res);
+	}
+	return ret;
 }
 
 // todo make one StatsToResList and do filtering for path outside

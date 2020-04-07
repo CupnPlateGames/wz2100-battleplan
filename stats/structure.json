@@ -245,6 +245,125 @@
         "width": 1
     },
 
+
+
+    "Sys-SensoTower02": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 475,
+        "buildPower": 475,
+        "height": 3,
+        "hitpoints": 200,
+        "id": "Sys-SensoTower02",
+        "name": "Sensor Tower",
+        "resistance": 150,
+        "sensorID": "SensorTower2Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+    "Sys-VTOL-RadarTower01": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 475,
+        "buildPower": 475,
+        "height": 3,
+        "hitpoints": 200,
+        "id": "Sys-VTOL-RadarTower01",
+        "name": "VTOL Strike Tower",
+        "resistance": 150,
+        "sensorID": "Sys-VTOLRadarTower01",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+    "Sys-CB-Tower01": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 475,
+        "buildPower": 475,
+        "height": 3,
+        "hitpoints": 200,
+        "id": "Sys-CB-Tower01",
+        "name": "CB Tower",
+        "resistance": 150,
+        "sensorID": "Sys-CBTower01",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+    "Sys-VTOL-CB-Tower01": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 475,
+        "buildPower": 475,
+        "height": 3,
+        "hitpoints": 200,
+        "id": "Sys-VTOL-CB-Tower01",
+        "name": "VTOL CB Tower",
+        "resistance": 150,
+        "sensorID": "Sys-VTOLCBTower01",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+    "Sys-SensoTowerWS": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 760,
+        "buildPower": 760,
+        "height": 3,
+        "hitpoints": 200,
+        "id": "Sys-SensoTowerWS",
+        "name": "Wide Spectrum Sensor Tower",
+        "resistance": 150,
+        "sensorID": "Sensor-WideSpec",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+    "Sys-RadarDetector01": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 760,
+        "buildPower": 760,
+        "height": 2,
+        "hitpoints": 200,
+        "id": "Sys-RadarDetector01",
+        "name": "Radar Detector Tower",
+        "resistance": 150,
+        "sensorID": "RadarDetector",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "width": 1
+    },
+
+
+
     "A0TankTrap": {
         "armour": 10,
         "breadth": 1,
