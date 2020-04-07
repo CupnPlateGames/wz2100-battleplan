@@ -265,6 +265,22 @@
         ],
         "statID": "GuardTower1"
     },
+    "R-Defense-Pillbox01": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Pillbox01",
+        "msgName": "RES_DF_P1",
+        "name": "Machinegun Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-MG1Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "PillBox1"
+        ],
+        "statID": "PillBox1"
+    },
     "R-Wpn-Flamer01Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flamer01Mk1",
@@ -278,6 +294,22 @@
             "Flame1Mk1"
         ],
         "statID": "Flame1Mk1"
+    },
+    "R-Defense-Pillbox05": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Pillbox05",
+        "msgName": "RES_PB_FL",
+        "name": "Flamer Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Flamer01Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "PillBox5"
+        ],
+        "statID": "PillBox5"
     },
     "R-Wpn-Cannon1Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -311,6 +343,22 @@
             "GuardTowerLightCannon"
         ],
         "statID": "GuardTowerLightCannon"
+    },
+    "R-Defense-Pillbox04": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Pillbox04",
+        "msgName": "RES_PB_LC",
+        "name": "Light Cannon Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Cannon1Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "PillBox4"
+        ],
+        "statID": "PillBox4"
     },
     "R-Wpn-Rocket05-MiniPod": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -357,6 +405,22 @@
             "GuardTower5"
         ],
         "statID": "GuardTower5"
+    },
+    "R-Defense-Lancer-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Pillbox06",
+        "msgName": "RES_PB_ATR",
+        "name": "Lancer Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Rocket01-LtAT"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "PillBox6"
+        ],
+        "statID": "PillBox6"
     },
     "R-Wpn-Mortar01Lt": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -507,6 +571,22 @@
         ],
         "statID": "GuardTower3"
     },
+    "R-Defense-MG3-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-MG3-Bunker",
+        "msgName": "RES_DF_P1",
+        "name": "Heavy Machinegun Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-MG3Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "PillBox3"
+        ],
+        "statID": "PillBox3"
+    },
     "R-Wpn-Flame2": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flame2",
@@ -522,6 +602,22 @@
             "Flame2"
         ],
         "statID": "Flame2"
+    },
+    "R-Defense-HvyFlamer": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-HvyFlamer",
+        "msgName": "RES_EMP_HVFL",
+        "name": "Inferno Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Flame2"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "Tower-Projector"
+        ],
+        "statID": "Tower-Projector"
     },
     "R-Wpn-Cannon2Mk1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -553,6 +649,22 @@
             "MediumCannon-Tower"
         ],
         "statID": "MediumCannon-Tower"
+    },
+    "R-Defense-MediumCannon-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-MediumCannon-Bunker",
+        "msgName": "RES_WT3_MC",
+        "name": "Medium Cannon Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Cannon2Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "MediumCannon-Bunker"
+        ],
+        "statID": "MediumCannon-Bunker"
     },
     "R-Wpn-Rocket02-MRL": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -605,6 +717,22 @@
             "TankKiller-Tower"
         ],
         "statID": "TankKiller-Tower"
+    },
+    "R-Defense-TankKiller-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-TankKiller-Bunker",
+        "msgName": "RES_W_RK_HvAT",
+        "name": "Tank Killer Bunker",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Rocket07-Tank-Killer"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "TankKiller-Bunker"
+        ],
+        "statID": "TankKiller-Bunker"
     },
     "R-Wpn-Mortar02Hvy": {
         "iconID": "IMAGE_RES_WEAPONTECH",

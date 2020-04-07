@@ -11,8 +11,12 @@ const TECH_TWO = [
 	"R-Defense-TankTrap01",
 	"R-Defense-HardcreteWall",
 	"R-Defense-Tower01",
+	"R-Defense-Pillbox01",
+	"R-Defense-Pillbox05",
 	"R-Defense-Tower-Cannon1Mk1",
+	"R-Defense-Pillbox04",
 	"R-Defense-Pillbox06",
+	"R-Defense-Lancer-Bunker",
 
 	"R-Wpn-AAGun03",
 	"R-Wpn-Sunburst",
@@ -32,8 +36,12 @@ const TECH_TWO = [
 	"R-Wpn-HvyHowitzer",
 
 	"R-Defense-MG3-Tower",
+	"R-Defense-MG3-Bunker",
+	"R-Defense-HvyFlamer",
 	"R-Defense-MediumCannon-Tower",
+	"R-Defense-MediumCannon-Bunker",
 	"R-Defense-TankKiller-Tower",
+	"R-Defense-TankKiller-Bunker",
 
 	"R-Wpn-MG-ROF01",
 	"R-Wpn-Flamer-ROF01",
