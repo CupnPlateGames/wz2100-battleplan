@@ -212,6 +212,7 @@ function eventGameInit()
 		enableStructure("A0ResourceExtractor", playnum);
 		enableStructure("A0PowerGenerator", playnum);
 		enableStructure("A0ResearchFacility", playnum);
+		enableStructure("A0TankTrap", playnum);
 
 		makeComponentAvailable("wheeled01", playnum);
 		makeComponentAvailable("hover01", playnum);
@@ -235,16 +236,12 @@ function eventGameInit()
 	}
 	applyLimitSet();	// set limit options
 
-	const numBaseTech = 8; // do x for base
+	const numBaseTech = 4; // do x for base
 	var techlist = new Array(
 		"R-Wpn-MG1Mk1",
 		"R-Wpn-Cannon1Mk1",
 		"R-Wpn-Rocket05-MiniPod",
-		"R-Defense-TankTrap01",
 		"R-Defense-HardcreteWall",
-		"R-Defense-Tower01",
-		"R-Defense-Tower-Cannon1Mk1",
-		"R-Defense-Pillbox06",
 
 		"R-Wpn-Flamer01Mk1",
 		"R-Wpn-Rocket01-LtAT",
