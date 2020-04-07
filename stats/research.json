@@ -334,13 +334,9 @@
         "id": "R-Wpn-Rocket01-LtAT",
         "msgName": "RES_W_RK_LTAT1",
         "name": "Lancer AT Rocket",
-        "requiredResearch": [
-            "R-Wpn-Rocket01-LtAT"
-        ],
         "researchPoints": 300,
         "researchPower": 300,
         "resultComponents": [
-            "CyborgRocket",
             "Rocket-LtA-T",
             "Rocket-VTOL-LtA-T"
         ],
@@ -352,9 +348,6 @@
         "keyTopic": 1,
         "msgName": "RES_MORTA1",
         "name": "Mortar",
-        "requiredResearch": [
-            "R-Wpn-Mortar01Lt"
-        ],
         "researchPoints": 300,
         "researchPower": 300,
         "resultComponents": [

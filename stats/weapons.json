@@ -938,7 +938,7 @@
         "numExplosions": 2,
 	"numRounds": 3,
         "radius": 192,
-        "radiusDamage": 80,
+        "radiusDamage": 25,
         "radiusLife": 10,
         "recoilValue": 150,
         "shortHit": 30,

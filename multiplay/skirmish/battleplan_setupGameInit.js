@@ -244,10 +244,12 @@ function eventGameInit()
 		for (var technum = numCleanTech; technum < numBaseTech; technum++) {
 			enableResearch(techlist[technum]);
 		}
+		enableResearch("R-Wpn-Flamer01Mk1");
 		enableResearch("R-Wpn-Rocket01-LtAT");
 		enableResearch("R-Wpn-Mortar01Lt");
 		enableResearch("R-Wpn-HowitzerMk1");
 		enableResearch("R-Struc-RepairFacility");
+		enableResearch("R-Struc-Factory-Module");
 
 		setPower(1500, playnum);
 		if (baseType == CAMP_CLEAN)

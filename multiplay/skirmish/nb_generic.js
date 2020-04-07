@@ -40,7 +40,7 @@ var subpersonalities = {
 			"R-Wpn-MG1Mk1",
 			"R-Defense-Tower01",
 			"R-Wpn-Rocket01-LtAT",
-			"R-Wpn-MG-ROF1",
+			"R-Wpn-MG-ROF01",
 		],
 		minTanks: 2, // minimal attack force at game start
 		becomeHarder: 2, // how much to increase attack force every 5 minutes
