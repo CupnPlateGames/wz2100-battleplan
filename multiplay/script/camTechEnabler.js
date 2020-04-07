@@ -33,6 +33,7 @@ const TECH_TWO = [
 	"R-Wpn-MG-ROF01",
 	"R-Wpn-Flamer-ROF01",
 	"R-Wpn-Cannon-ROF01",
+	"R-Wpn-Rocket-ROF01",
 	"R-Wpn-Missile-ROF01",
 	"R-Wpn-Mortar-ROF01",
 	"R-Wpn-Howitzer-ROF01"
@@ -43,6 +44,7 @@ const TECH_THREE = [
 	"R-Wpn-MG-ROF02",
 	"R-Wpn-Flamer-ROF02",
 	"R-Wpn-Cannon-ROF02",
+	"R-Wpn-Rocket-ROF02",
 	"R-Wpn-Missile-ROF02",
 	"R-Wpn-Mortar-ROF02",
 	"R-Wpn-Howitzer-ROF02"
