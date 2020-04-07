@@ -212,7 +212,7 @@ function eventGameInit()
 	applyLimitSet();	// set limit options
 
 	const numCleanTech = 8;	// do x for clean
-	const numBaseTech = numCleanTech + 4; // do x for base
+	const numBaseTech = numCleanTech + 8; // do x for base
 	var techlist = new Array(
 		"R-Vehicle-Prop-Wheels",
 		"R-Vehicle-Prop-Tracks",
@@ -227,15 +227,18 @@ function eventGameInit()
 		"R-Wpn-Cannon1Mk1",
 		"R-Wpn-Rocket05-MiniPod",
 		"R-Defense-TankTrap01",
+		"R-Defense-HardcreteWall",
+		"R-Defense-Tower01",
+		"R-Defense-Tower-Cannon1Mk1",
+		"R-Defense-Pillbox06",
 
 		"R-Wpn-Flamer01Mk1",
 		"R-Wpn-Rocket01-LtAT",
 		"R-Wpn-Mortar01Lt",
 		"R-Wpn-HowitzerMk1",
-		"R-Defense-HardcreteWall",
-		"R-Defense-Tower01",
-		"R-Defense-Tower-Cannon1Mk1",
-		"R-Defense-Tower06");
+		"R-Wpn-AAGun03",
+		"R-Wpn-Sunburst",
+		"R-Wpn-Missile-LtSAM");
 
 	for (var playnum = 0; playnum < maxPlayers; playnum++)
 	{

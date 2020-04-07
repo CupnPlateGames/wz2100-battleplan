@@ -12,6 +12,7 @@ const TECH_TWO = [
 	"R-Defense-HardcreteWall",
 	"R-Defense-Tower01",
 	"R-Defense-Tower-Cannon1Mk1",
+	"R-Defense-Pillbox06",
 
 	"R-Wpn-AAGun03",
 	"R-Wpn-Sunburst",
@@ -29,6 +30,10 @@ const TECH_TWO = [
 	"R-Wpn-Rocket07-Tank-Killer",
 	"R-Wpn-Mortar02Hvy",
 	"R-Wpn-HvyHowitzer",
+
+	"R-Defense-MG3-Tower",
+	"R-Defense-MediumCannon-Tower",
+	"R-Defense-TankKiller-Tower",
 
 	"R-Wpn-MG-ROF01",
 	"R-Wpn-Flamer-ROF01",

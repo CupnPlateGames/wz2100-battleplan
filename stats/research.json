@@ -342,6 +342,22 @@
         ],
         "statID": "Rocket-LtA-T"
     },
+    "R-Defense-Pillbox06": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Pillbox06",
+        "msgName": "RES_PB_ATR",
+        "name": "Lancer Tower",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Rocket01-LtAT"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "GuardTower5"
+        ],
+        "statID": "GuardTower5"
+    },
     "R-Wpn-Mortar01Lt": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Mortar01Lt",
@@ -475,6 +491,22 @@
         ],
         "statID": "MG3Mk1"
     },
+    "R-Defense-MG3-Tower": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defence-MediumCannon-Tower",
+        "msgName": "RES_MG3MK1",
+        "name": "Heavy Machinegun Tower",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-MG3Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "GuardTower3"
+        ],
+        "statID": "GuardTower3"
+    },
     "R-Wpn-Flame2": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flame2",
@@ -506,6 +538,22 @@
         ],
         "statID": "Cannon2A-TMk1"
     },
+    "R-Defense-MediumCannon-Tower": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defence-MediumCannon-Tower",
+        "msgName": "RES_CN2MK1",
+        "name": "Medium Cannon Tower",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Cannon2Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "MediumCannon-Tower"
+        ],
+        "statID": "MediumCannon-Tower"
+    },
     "R-Wpn-Rocket02-MRL": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Rocket02-MRL",
@@ -518,7 +566,9 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "Rocket-MRL",
+            "Rocket-MRL"
+        ],
+        "resultStructures": [
             "Emplacement-MRL-pit"
         ],
         "statID": "Rocket-MRL"
@@ -540,9 +590,26 @@
         ],
         "statID": "Rocket-HvyA-T"
     },
+    "R-Defense-TankKiller-Tower": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defence-TankKiller-Tower",
+        "msgName": "RES_W_RK_HvAT",
+        "name": "Tank Killer Tower",
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Rocket07-Tank-Killer"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "TankKiller-Tower"
+        ],
+        "statID": "TankKiller-Tower"
+    },
     "R-Wpn-Mortar02Hvy": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Mortar02Hvy",
+        "keyTopic": 1,
         "msgName": "RES_W_M2",
         "name": "Heavy Mortar - Bombard",
         "requiredResearch": [
@@ -551,7 +618,9 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "Mortar2Mk1",
+            "Mortar2Mk1"
+        ],
+        "resultStructures": [
             "Emplacement-MortarPit02"
         ],
         "statID": "Mortar2Mk1"
@@ -559,7 +628,6 @@
     "R-Wpn-HvyHowitzer": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-HvyHowitzer",
-        "keyTopic": 1,
         "msgName": "RES_W_HH1",
         "name": "Heavy Howitzer - Ground Shaker",
         "requiredResearch": [
@@ -568,7 +636,9 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "Howitzer150Mk1",
+            "Howitzer150Mk1"
+        ],
+        "resultStructures": [
             "Emplacement-Howitzer150"
         ],
         "statID": "Howitzer150Mk1"
