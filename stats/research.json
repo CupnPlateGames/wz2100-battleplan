@@ -560,6 +560,9 @@
         "id": "R-Defence-MediumCannon-Tower",
         "msgName": "RES_MG3MK1",
         "name": "Heavy Machinegun Tower",
+        "redStructures": [
+            "GuardTower1"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-MG3Mk1"
@@ -576,6 +579,9 @@
         "id": "R-Defense-MG3-Bunker",
         "msgName": "RES_DF_P1",
         "name": "Heavy Machinegun Bunker",
+        "redStructures": [
+            "PillBox1"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-MG3Mk1"
@@ -608,6 +614,9 @@
         "id": "R-Defense-HvyFlamer",
         "msgName": "RES_EMP_HVFL",
         "name": "Inferno Bunker",
+        "redStructures": [
+            "PillBox5"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-Flame2"
@@ -639,6 +648,9 @@
         "id": "R-Defence-MediumCannon-Tower",
         "msgName": "RES_CN2MK1",
         "name": "Medium Cannon Tower",
+        "redStructures": [
+            "GuardTowerLightCannon"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-Cannon2Mk1"
@@ -655,6 +667,9 @@
         "id": "R-Defense-MediumCannon-Bunker",
         "msgName": "RES_WT3_MC",
         "name": "Medium Cannon Bunker",
+        "redStructures": [
+            "PillBox4"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-Cannon2Mk1"
@@ -672,6 +687,9 @@
         "keyTopic": 1,
         "msgName": "RES_W_RK_MRL1",
         "name": "Mini-Rocket Array",
+        "redStructures": [
+            "GuardTower6"
+        ],
         "requiredResearch": [
             "R-Wpn-Rocket05-MiniPod"
         ],
@@ -707,6 +725,9 @@
         "id": "R-Defence-TankKiller-Tower",
         "msgName": "RES_W_RK_HvAT",
         "name": "Tank Killer Tower",
+        "redStructures": [
+            "GuardTower5"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-Rocket07-Tank-Killer"
@@ -723,6 +744,9 @@
         "id": "R-Defense-TankKiller-Bunker",
         "msgName": "RES_W_RK_HvAT",
         "name": "Tank Killer Bunker",
+        "redStructures": [
+            "PillBox6"
+        ],
         "requiredResearch": [
             "R-Defense-HardcreteWall",
             "R-Wpn-Rocket07-Tank-Killer"
@@ -740,6 +764,9 @@
         "keyTopic": 1,
         "msgName": "RES_W_M2",
         "name": "Heavy Mortar - Bombard",
+        "redStructures": [
+            "Emplacement-MortarPit01"
+        ],
         "requiredResearch": [
             "R-Wpn-Mortar01Lt"
         ],
@@ -758,6 +785,9 @@
         "id": "R-Wpn-HvyHowitzer",
         "msgName": "RES_W_HH1",
         "name": "Heavy Howitzer - Ground Shaker",
+        "redStructures": [
+            "Emplacement-Howitzer105"
+        ],
         "requiredResearch": [
             "R-Wpn-HowitzerMk1"
         ],
