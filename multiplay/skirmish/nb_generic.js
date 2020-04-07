@@ -31,30 +31,28 @@ var subpersonalities = {
 	MR: {
 		chatalias: "mr",
 		weaponPaths: [ // weapons to use; put late-game paths below!
-			weaponStats.rockets_AT, 
-			weaponStats.machineguns, 
-			weaponStats.rockets_AS, 
+			weaponStats.machineguns,
+			weaponStats.machineguns_AA,
+			weaponStats.rockets_AT,
 			weaponStats.rockets_AA, 
-			weaponStats.rockets_Arty,
 		],
 		earlyResearch: [ // fixed research path for the early game
-			"R-Wpn-MG-Damage01",
+			"R-Wpn-MG1Mk1",
 			"R-Defense-Tower01",
-			"R-Vehicle-Prop-Halftracks",
-			"R-Struc-PowerModuleMk1",
-			"R-Wpn-MG-Damage03",
+			"R-Wpn-Rocket01-LtAT",
+			"R-Wpn-MG-ROF1",
 		],
-		minTanks: 1, // minimal attack force at game start
-		becomeHarder: 3, // how much to increase attack force every 5 minutes
+		minTanks: 2, // minimal attack force at game start
+		becomeHarder: 2, // how much to increase attack force every 5 minutes
 		maxTanks: 16, // maximum for the minTanks value (since it grows at becomeHarder rate)
 		minTrucks: 2, // minimal number of trucks around
-		minHoverTrucks: 3, // minimal number of hover trucks around
+		minHoverTrucks: 0, // minimal number of hover trucks around
 		maxSensors: 1, // number of mobile sensor cars to produce
 		minMiscTanks: 1, // number of tanks to start harassing enemy
-		maxMiscTanks: 2, // number of tanks used for defense and harass
-		vtolness: 65, // the chance % of not making droids when adaptation mechanism chooses vtols
-		defensiveness: 65, // same thing for defenses; set this to 100 to enable turtle AI specific code
-		maxPower: 700, // build expensive things if we have more than that
+		maxMiscTanks: 5, // number of tanks used for defense and harass
+		vtolness: 25, // the chance % of not making droids when adaptation mechanism chooses vtols
+		defensiveness: 30, // same thing for defenses; set this to 100 to enable turtle AI specific code
+		maxPower: 2500, // build expensive things if we have more than that
 		repairAt: 50, // how much % healthy should droid be to join the attack group instead of repairing
 	},
 	MC: {
@@ -63,41 +61,37 @@ var subpersonalities = {
 			weaponStats.cannons, 
 			weaponStats.machineguns, 
 			weaponStats.mortars,
-			weaponStats.cannons_AA,
+			weaponStats.machineguns_AA,
 		],
 		earlyResearch: [
-			"R-Wpn-MG-Damage01",
-			"R-Vehicle-Prop-Halftracks",
+			"R-Wpn-MG1Mk1",
 			"R-Wpn-Cannon1Mk1",
-			"R-Struc-PowerModuleMk1",
-			"R-Wpn-MG-Damage03",
+			"R-Wpn-Cannon-ROF01",
 		],
-		minTanks: 1, becomeHarder: 3, maxTanks: 16,
-		minTrucks: 3, minHoverTrucks: 4, maxSensors: 1,
+		minTanks: 2, becomeHarder: 2, maxTanks: 16,
+		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 65, defensiveness: 65,
-		maxPower: 700,
+		vtolness: 20, defensiveness: 30,
+		maxPower: 2500,
 		repairAt: 50,
 	},
 	FR: {
 		chatalias: "fr",
 		weaponPaths: [
-			weaponStats.rockets_AT, 
+			weaponStats.rockets_AT,
 			weaponStats.flamers,
-			weaponStats.fireMortars,
 			weaponStats.rockets_AA,
-			weaponStats.lasers,
 		],
 		earlyResearch: [
+			"R-Wpn-Flamer01Mk1",
+			"R-Wpn-Rocket01-LtAT",
 			"R-Wpn-Flamer-ROF01",
-			"R-Vehicle-Prop-Halftracks",
-			"R-Struc-PowerModuleMk1",
 		],
-		minTanks: 1, becomeHarder: 3, maxTanks: 16,
-		minTrucks: 3, minHoverTrucks: 4, maxSensors: 1,
+		minTanks: 2, becomeHarder: 2, maxTanks: 16,
+		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 65, defensiveness: 65,
-		maxPower: 700,
+		vtolness: 30, defensiveness: 20,
+		maxPower: 2500,
 		repairAt: 50,
 	},
 	FC: {
@@ -105,22 +99,18 @@ var subpersonalities = {
 		weaponPaths: [
 			weaponStats.cannons, 
 			weaponStats.flamers, 
-			weaponStats.fireMortars,
-			weaponStats.cannons_AA,
-			weaponStats.lasers,
 		],
 		earlyResearch: [
-			"R-Wpn-Flamer-ROF01",
-			"R-Vehicle-Prop-Halftracks",
+			"R-Wpn-Flamer01Mk1",
 			"R-Wpn-Cannon1Mk1",
-			"R-Struc-PowerModuleMk1",
+			"R-Wpn-Flamer-ROF01",
 		],
-		minTanks: 1, becomeHarder: 3, maxTanks: 16,
-		minTrucks: 3, minHoverTrucks: 4, maxSensors: 1,
+		minTanks: 3, becomeHarder: 3, maxTanks: 16,
+		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 65, defensiveness: 65,
-		maxPower: 700,
-		repairAt: 50,
+		vtolness: 0, defensiveness: 0,
+		maxPower: 2500,
+		repairAt: 0,
 	},
 };
 
@@ -133,22 +123,11 @@ function buildOrder() {
 	if (gameTime > 300000 || difficulty === INSANE
 	                      || isStructureAvailable("A0ComDroidControl") || baseType !== CAMP_CLEAN)
 		return buildOrder_StandardFallback();
-	if (personality.chatalias === "fc" || personality.chatalias == "fr") {
-		if (buildMinimum(structures.labs, 1)) return true;
-		if (buildMinimum(structures.factories, 1)) return true;
-		if (buildMinimum(structures.labs, 2)) return true;
-		if (buildMinimum(structures.factories, 2)) return true;
-		if (buildMinimumDerricks(2)) return true;
-		if (buildMinimum(structures.hqs, 1)) return true;
-		if (buildMinimum(structures.gens, 2)) return true;
-	} else {
-		if (buildMinimum(structures.factories, 2)) return true;
-		if (buildMinimumDerricks(1)) return true;
-		if (buildMinimum(structures.labs, 1)) return true;
-		if (buildMinimum(structures.hqs, 1)) return true;
-		if (buildMinimum(structures.factories, 3)) return true;
-		if (buildMinimum(structures.gens, 2)) return true;
-	}
+	if (buildMinimum(structures.hqs, 1)) return true;
+	if (buildMinimum(structures.factories, 1)) return true;
+	if (buildMinimum(structures.labs, 1)) return true;
+	if (buildMinimumDerricks(4)) return true;
+	if (buildMinimum(structures.gens, 1)) return true;
 	return captureSomeOil();
 }
 

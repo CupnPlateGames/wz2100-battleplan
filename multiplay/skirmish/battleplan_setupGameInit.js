@@ -249,7 +249,7 @@ function eventGameInit()
 		enableResearch("R-Wpn-HowitzerMk1");
 		enableResearch("R-Struc-RepairFacility");
 
-		setPower(2500, playnum);
+		setPower(1500, playnum);
 		if (baseType == CAMP_CLEAN)
 		{
 			for (var count = 0; count < numCleanTech; count++)
