@@ -206,6 +206,7 @@ function eventGameLoaded()
 	setupGame();
 }
 
+include("multiplay/skirmish/battleplan_overcharge.js");
 include("multiplay/skirmish/battleplan_setupGameInit.js");
 
 // /////////////////////////////////////////////////////////////////

@@ -46,7 +46,7 @@
     "A0PowMod1": {
         "armour": 10,
         "breadth": 2,
-        "buildPoints": 250,
+        "buildPoints": 0,
         "height": 2,
         "hitpoints": 0,
         "id": "A0PowMod1",

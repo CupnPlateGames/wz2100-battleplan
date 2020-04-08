@@ -14,9 +14,12 @@ function removeUnusedBuildings(playnum)
 
 function removeModules(playnum)
 {
+	var keepFactory = false;
+	var keepLab = false;
+	var keepPower = false;
 	var techLevel = getMultiTechLevel();
 	if (techLevel >= 2)
-		return;
+		keepFactory = true;
 	var structs = enumStruct(playnum);
 	for (var i = 0; i < structs.length; i++)
 	{
@@ -30,13 +33,20 @@ function removeModules(playnum)
 			switch (s.stattype)
 			{
 			case RESEARCH_LAB:
-				name = "A0ResearchFacility";
+				if (!keepLab)
+					name = "A0ResearchFacility";
 				break;
 			case FACTORY:
-				name = "A0LightFactory"
+				if (!keepFactory)
+					name = "A0LightFactory";
+				break;
+			case VTOL_FACTORY:
+				if (!keepFactory)
+					name = "A0VtolFactory1";
 				break;
 			case POWER_GEN:
-				name = "A0PowerGenerator";
+				if (!keepPower)
+					name = "A0PowerGenerator";
 				break;
 			}
 			if (name != "")
@@ -211,6 +221,7 @@ function eventGameInit()
 		enableStructure("A0VtolPad", playnum);
 		enableStructure("A0ResourceExtractor", playnum);
 		enableStructure("A0PowerGenerator", playnum);
+		enableStructure("A0PowMod1", playnum);
 		enableStructure("A0ResearchFacility", playnum);
 		enableStructure("A0TankTrap", playnum);
 
@@ -264,17 +275,20 @@ function eventGameInit()
 		enableResearch("R-Struc-Factory-Module");
 		enableResearch("R-Sys-Sensor-Turret01");
 
-		setPower(1500, playnum);
 		if (baseType == CAMP_CLEAN)
 		{
+			setPower(1500, playnum);
 			var structs = enumStruct(playnum);
 			var lab_count = 0;
 			for (var i = 0; i < structs.length; i++)
 			{
 				var s = structs[i];
-				if (s.stattype != HQ && (playerData[playnum].difficulty != INSANE
-				    || (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE
-				        && s.stattype != RESOURCE_EXTRACTOR)))
+				if (s.stattype != HQ
+					&& s.stattype != POWER_GEN
+					&& s.stattype != RESEARCH_LAB
+					&& (playerData[playnum].difficulty != INSANE
+						|| (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE
+					        && s.stattype != RESOURCE_EXTRACTOR)))
 				{
 					removeObject(s, false);
 				}
@@ -284,6 +298,7 @@ function eventGameInit()
 		}
 		else if (baseType == CAMP_BASE)
 		{
+			setPower(750, playnum);
 			for (var count = 0; count < numBaseTech; count++)
 			{
 				completeResearch(techlist[count], playnum);
@@ -304,6 +319,7 @@ function eventGameInit()
 		}
 		else // CAMP_WALLS
 		{
+			setPower(1200, playnum);
 			for (var count = 0; count < techlist.length; count++)
 			{
 				completeResearch(techlist[count], playnum);
