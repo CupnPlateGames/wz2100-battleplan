@@ -370,17 +370,17 @@
     },
 
     "Body12SUP": {
-        "armourHeat": 18,
-        "armourKinetic": 18,
-        "buildPoints": 350,
-        "buildPower": 52,
+        "armourHeat": 20,
+        "armourKinetic": 20,
+        "buildPoints": 375,
+        "buildPower": 375,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 180,
+        "hitpoints": 195,
         "id": "Body12SUP",
         "model": "drhbod12.pie",
         "name": "Mantis",
-        "powerOutput": 20000,
+        "powerOutput": 18000,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prhlhtr3.pie",
@@ -413,20 +413,20 @@
         },
         "size": "HEAVY",
         "weaponSlots": 1,
-        "weight": 2100
+        "weight": 2500
     },
     "Body11ABT": {
-        "armourHeat": 9,
-        "armourKinetic": 20,
-        "buildPoints": 350,
-        "buildPower": 60,
+        "armourHeat": 25,
+        "armourKinetic": 25,
+        "buildPoints": 525,
+        "buildPower": 525,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 200,
+        "hitpoints": 195,
         "id": "Body11ABT",
         "model": "drhbod11.pie",
         "name": "Python",
-        "powerOutput": 20000,
+        "powerOutput": 18000,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prhlhtr3.pie",
@@ -459,13 +459,13 @@
         },
         "size": "HEAVY",
         "weaponSlots": 1,
-        "weight": 2700
+        "weight": 2500
     },
     "Body9REC": {
-        "armourHeat": 15,
-        "armourKinetic": 22,
-        "buildPoints": 420,
-        "buildPower": 71,
+        "armourHeat": 30,
+        "armourKinetic": 30,
+        "buildPoints": 675,
+        "buildPower": 675,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 284,
@@ -505,7 +505,7 @@
         },
         "size": "HEAVY",
         "weaponSlots": 1,
-        "weight": 3300
+        "weight": 2500
     },
     "Body10MBT": {
         "armourHeat": 25,

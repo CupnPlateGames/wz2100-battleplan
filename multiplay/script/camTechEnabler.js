@@ -39,6 +39,8 @@ const TECH_TWO = [
 	"R-Defense-MediumCannon-Bunker",
 	"R-Defense-TankKiller-Bunker",
 
+	"R-Defense-Wallupgrade01",
+
 	"R-Wpn-MG-ROF01",
 	"R-Wpn-Flamer-ROF01",
 	"R-Wpn-Cannon-ROF01",
@@ -49,6 +51,8 @@ const TECH_TWO = [
 ];
 
 const TECH_THREE = [
+	"R-Vehicle-Metals01",
+	"R-Defense-WallUpgrade02",
 
 	"R-Wpn-MG-ROF02",
 	"R-Wpn-Flamer-ROF02",
