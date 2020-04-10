@@ -379,8 +379,7 @@
         "researchPoints": 450,
         "researchPower": 450,
         "resultComponents": [
-            "Rocket-Sunburst",
-            "Rocket-VTOL-Sunburst"
+            "Rocket-Sunburst"
         ],
         "resultStructures": [
             "P0-AASite-Sunburst"

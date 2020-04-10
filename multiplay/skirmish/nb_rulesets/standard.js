@@ -91,9 +91,12 @@ const bodyStats = [
 	{ res: "", stat: "Body2SUP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
 	{ res: "R-Struc-Factory-Module", stat: "Body6SUPP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
 	{ res: "R-Vehicle-Metals01", stat: "Body9REC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
-	{ res: "", stat: "Body4ABT", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
-	{ res: "R-Struc-Factory-Module", stat: "Body8MBT", weight: WEIGHT.HEAVY, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.THERMAL }, // scorpion
-	{ res: "R-Vehicle-Metals01", stat: "Body12SUP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.THERMAL }, // mantis
+	{ res: "", stat: "Body4ABT", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // bug
+	{ res: "R-Struc-Factory-Module", stat: "Body8MBT", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // scorpion
+	{ res: "R-Vehicle-Metals01", stat: "Body12SUP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // mantis
+	{ res: "R-Vehicle-Body03", stat: "Body3MBT", weight: WEIGHT.LIGHT, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retaliation
+	{ res: "R-Vehicle-Body07", stat: "Body7ABT", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retribution
+	{ res: "R-Vehicle-Body10", stat: "Body10MBT", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // vengeance
 ];
 
 const classResearch = {
@@ -156,11 +159,13 @@ const weaponStats = {
 		weapons: [
 			{ res: "R-Wpn-MG1Mk1", stat: "MG1Mk1", weight: WEIGHT.LIGHT }, // mg
 			{ res: "R-Wpn-MG3Mk1", stat: "MG3Mk1", weight: WEIGHT.MEDIUM }, // hmg
+			{ res: "R-Wpn-MG4", stat: "MG4ROTARYMk1", weight: WEIGHT.HEAVY },
 		],
 		// VTOL weapons of the path, in the same order.
 		vtols: [
 			{ res: "R-Wpn-MG1Mk1", stat: "MG1-VTOL", weight: WEIGHT.LIGHT }, // vtol mg
 			{ res: "R-Wpn-MG3Mk1", stat: "MG3-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R-Wpn-MG4", stat: "MG4ROTARY-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		// Defensive structures of the path, in the same order.
 		// NOTE: a defensive structure is recycled whenever there are at least two structures
@@ -194,6 +199,7 @@ const weaponStats = {
 		vtols: [
 			{ res: "R-Wpn-MG1Mk1", stat: "MG1-VTOL", weight: WEIGHT.LIGHT }, // vtol mg
 			{ res: "R-Wpn-MG3Mk1", stat: "MG3-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R-Wpn-MG4", stat: "MG4ROTARY-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
 			{ res: "R-Wpn-AAGun03", stat: "AASite-QuadMg1", defrole: DEFROLE.STANDALONE },
@@ -210,17 +216,18 @@ const weaponStats = {
 		weapons: [
 			{ res: "R-Wpn-Flamer01Mk1", stat: "Flame1Mk1", weight: WEIGHT.LIGHT }, // flamer
 			{ res: "R-Wpn-Flame2", stat: "Flame2", weight: WEIGHT.MEDIUM }, // inferno
+			{ res: "R-Wpn-Plasmite-Flamer", stat: "PlasmiteFlamer", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		vtols: [],
 		defenses: [
 			{ res: "R-Defense-Pillbox05", stat: "PillBox5", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Defense-HvyFlamer", stat: "Tower-Projector", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Defense-PlasmiteFlamer", stat: "Plasmite-flamer-bunker", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
 		extras: [
 			"R-Wpn-Flamer-ROF03",
-			"R-Wpn-Flamer-Damage09",
 		],
 	},
 	cannons: {
@@ -230,14 +237,17 @@ const weaponStats = {
 		weapons: [
 			{ res: "R-Wpn-Cannon1Mk1", stat: "Cannon1Mk1", weight: WEIGHT.LIGHT }, // lc
 			{ res: "R-Wpn-Cannon2Mk1", stat: "Cannon2A-TMk1", weight: WEIGHT.MEDIUM }, // mc
+			{ res: "R-Wpn-Cannon3Mk1", stat: "Cannon375mmMk1", weight: WEIGHT.HEAVY }, // hc
 		],
 		vtols: [
 		],
 		defenses: [
 			{ res: "R-Wpn-Cannon1Mk1", stat: "GuardTowerLightCannon", defrole: DEFROLE.STANDALONE }, // lc tower
 			{ res: "R-Defense-Pillbox04", stat: "PillBox4", defrole: DEFROLE.STANDALONE }, // lc tower
-			{ res: "R-Wpn-Cannon2Mk1", stat: "GuardTowerMediumCannon", defrole: DEFROLE.STANDALONE }, // mc tower
-			{ res: "R-Defense-MediumCannon-Bunker", stat: "MediumCannon-Bunker", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Wpn-Cannon2Mk1", stat: "MediumCannon-Tower", defrole: DEFROLE.STANDALONE }, // mc tower
+			{ res: "R-Defense-MediumCannon-Bunker", stat: "MediumCannon-Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R-Wpn-Cannon3Mk1", stat: "HeavyCannon-Tower", defrole: DEFROLE.STANDALONE }, // mc tower
+			{ res: "R-Defense-HeavyCannon-Bunker", stat: "HeavyCannon-Bunker", defrole: DEFROLE.GATEWAY },
 		],
 		templates: [
 		],
@@ -254,6 +264,8 @@ const weaponStats = {
 			{ res: "R-Wpn-HowitzerMk1", stat: "Howitzer105Mk1", weight: WEIGHT.LIGHT },
 			{ res: "R-Wpn-Mortar02Hvy", stat: "Mortar2Mk1", weight: WEIGHT.MEDIUM },
 			{ res: "R-Wpn-HvyHowitzer", stat: "Howitzer150Mk1", weight: WEIGHT.MEDIUM },
+			{ res: "R-Wpn-Mortar3", stat: "Mortar3ROTARYMk1", weight: WEIGHT.HEAVY },
+			{ res: "R-Wpn-Howitzer03-Rot", stat: "Howitzer03-Rot", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
 		],
@@ -262,6 +274,8 @@ const weaponStats = {
 			{ res: "R-Wpn-Mortar02Hvy", stat: "Emplacement-MortarPit02", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Wpn-HowitzerMk1", stat: "Emplacement-Howitzer105", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Wpn-HvyHowitzer", stat: "Emplacement-Howitzer150", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Wpn-Mortar3", stat: "Emplacement RotMor", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Wpn-Howitzer03-Rot", stat: "Emplacement-RotHow", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -279,11 +293,14 @@ const weaponStats = {
 			{ res: "R-Wpn-Rocket01-LtAT", stat: "Rocket-LtA-T", weight: WEIGHT.LIGHT }, // lancer
 			{ res: "R-Wpn-Rocket02-MRL", stat: "Rocket-MRL", weight: WEIGHT.MEDIUM }, // mra
 			{ res: "R-Wpn-Rocket07-Tank-Killer", stat: "Rocket-HvyA-T", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R-Wpn-Rocket06-IDF", stat: "Rocket-IDF", weight: WEIGHT.HEAVY }, // mra
+			{ res: "R-Wpn-Missile2A-T", stat: "Missile-A-T", weight: WEIGHT.HEAVY }, // tk
 		],
 		vtols: [
 			{ res: "R-Wpn-Rocket05-MiniPod", stat: "Rocket-VTOL-Pod", weight: WEIGHT.LIGHT }, // pod
 			{ res: "R-Wpn-Rocket01-LtAT", stat: "Rocket-VTOL-LtA-T", weight: WEIGHT.LIGHT }, // lancer
 			{ res: "R-Wpn-Rocket07-Tank-Killer", stat: "Rocket-VTOL-HvyA-T", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R-Wpn-Missile2A-T", stat: "Missile-VTOL-AT", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
 			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
@@ -291,11 +308,14 @@ const weaponStats = {
 			{ res: "R-Wpn-Rocket05-MiniPod", stat: "GuardTower6", defrole: DEFROLE.STANDALONE }, // pod
 			{ res: "R-Defense-TankKiller-Bunker", stat: "TankKiller-Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
 			{ res: "R-Wpn-Rocket02-MRL", stat: "Emplacement-MRL-pit", defrole: DEFROLE.STANDALONE }, // mra
+			{ res: "R-Defense-Scourge-Bunker", stat: "Scourge-Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+			{ res: "R-Wpn-Rocket06-IDF", stat: "Emplacement-Rocket06-IDF", defrole: DEFROLE.STANDALONE }, // mra
 		],
 		templates: [
 		],
 		extras: [
 			"R-Wpn-Missile-ROF03",
+			"R-Wpn-Rocket-ROF03",
 		],
 	},
 	rockets_AA: {
@@ -307,7 +327,7 @@ const weaponStats = {
 			{ res: "R-Wpn-Missile-LtSAM", stat: "Missile-LtSAM", weight: WEIGHT.LIGHT }, // avenger
 		],
 		vtols: [
-			{ res: "R-Wpn-Sunburst", stat: "Rocket-VTOL-Sunburst", weight: WEIGHT.LIGHT }, // sunburst a2a
+			{ res: "R-Wpn-Rocket05-MiniPod", stat: "Rocket-VTOL-Pod", weight: WEIGHT.LIGHT }, // pod
 		],
 		defenses: [
 			{ res: "R-Wpn-Sunburst", stat: "P0-AASite-Sunburst", defrole: DEFROLE.STANDALONE }, // sunburst
@@ -316,4 +336,16 @@ const weaponStats = {
 		templates: [],
 		extras: [],
 	},
+	useless: {
+		roles: [ 0.0, 0.0, 0.0, 0.0],
+		chatalias: "lol",
+		micro: MICRO.RANGED,
+		weapons: [
+			{ res: "", stat: "Scout", weight: WEIGHT.LIGHT },
+		],
+		vtols: [],
+		defenses: [],
+		templates: [],
+		extras: [],
+	}
 };
