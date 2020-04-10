@@ -95,7 +95,7 @@
         "name": "Machinegun",
         "numExplosions": 1,
 	"numRounds": 4,
-        "recoilValue": 10,
+        "recoilValue": 4,
 	"reloadTime": 15,
         "rotate": 180,
         "shortHit": 75,
@@ -104,7 +104,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgbar2.ogg",
+        "weaponWav": "mgbar3.ogg",
         "weight": 139
     },
     "MG1-VTOL": {
@@ -135,7 +135,7 @@
         "numAttackRuns": 6,
         "numExplosions": 1,
 	"numRounds": 8,
-        "recoilValue": 20,
+        "recoilValue": 4,
 	"reloadTime": 30,
         "rotate": 45,
         "shortHit": 75,
@@ -144,7 +144,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgbar2.ogg",
+        "weaponWav": "mgbar3.ogg",
         "weight": 139
     },
     "Flame1Mk1": {
@@ -647,7 +647,7 @@
         "name": "Heavy Machinegun",
         "numExplosions": 1,
 	"numRounds": 4,
-        "recoilValue": 20,
+        "recoilValue": 4,
 	"reloadTime": 15,
         "rotate": 180,
         "shortHit": 75,
@@ -656,7 +656,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgheavy.ogg",
+        "weaponWav": "mgbar2.ogg",
         "weight": 347
     },
     "MG3-VTOL": {
@@ -687,7 +687,7 @@
         "numAttackRuns": 6,
         "numExplosions": 1,
 	"numRounds": 8,
-        "recoilValue": 20,
+        "recoilValue": 4,
 	"reloadTime": 30,
         "rotate": 180,
         "shortHit": 75,
@@ -696,7 +696,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgheavy.ogg",
+        "weaponWav": "mgbar2.ogg",
         "weight": 347
     },
     "Flame2": {
@@ -1066,7 +1066,7 @@
         "name": "Assault Gun",
         "numExplosions": 1,
 	"numRounds": 4,
-        "recoilValue": 30,
+        "recoilValue": 4,
         "reloadTime": 15,
         "rotate": 180,
         "shortHit": 75,
@@ -1075,7 +1075,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "asltmg.ogg",
+        "weaponWav": "mgtower.ogg",
         "weight": 1250
     },
     "MG4ROTARY-VTOL": {
@@ -1106,7 +1106,7 @@
 	"numRounds": 8,
         "numAttackRuns": 6,
         "numExplosions": 1,
-        "recoilValue": 30,
+        "recoilValue": 4,
 	"reloadTime": 30,
         "rotate": 180,
         "shortHit": 75,
@@ -1115,7 +1115,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "asltmg.ogg",
+        "weaponWav": "mgtower.ogg",
         "weight": 921
     },
     "PlasmiteFlamer": {
