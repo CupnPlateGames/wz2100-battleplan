@@ -1233,6 +1233,7 @@
         "radius": 64,
         "radiusDamage": 50,
         "reloadTime": 10,
+        "rotate": 180,
         "shortHit": 90,
         "shortRange": 768,
         "waterGfx": "FXSSplsh.PIE",

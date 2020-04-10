@@ -139,12 +139,12 @@
     },
     "Body3MBT": {
         "armourHeat": 15,
-        "armourKinetic": 20,
-        "buildPoints": 400,
-        "buildPower": 68,
+        "armourKinetic": 15,
+        "buildPoints": 300,
+        "buildPower": 300,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 100,
+        "hitpoints": 130,
         "id": "Body3MBT",
         "model": "drlbod03.pie",
         "name": "Retaliation",
@@ -181,7 +181,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 450
+        "weight": 650
     },
 
     "Body8MBT": {
@@ -195,7 +195,7 @@
         "id": "Body8MBT",
         "model": "drmbod08.pie",
         "name": "Scorpion",
-        "powerOutput": 11232,
+        "powerOutput": 11200,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -231,7 +231,7 @@
         "weight": 1560
     },
     "Body5REC": {
-        "armourHeat": 6,
+        "armourHeat": 15,
         "armourKinetic": 15,
         "buildPoints": 350,
         "buildPower": 350,
@@ -241,7 +241,7 @@
         "id": "Body5REC",
         "model": "drmbod05.pie",
         "name": "Cobra",
-        "powerOutput": 11232,
+        "powerOutput": 11200,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -277,17 +277,17 @@
         "weight": 1560
     },
     "Body6SUPP": {
-        "armourHeat": 9,
-        "armourKinetic": 18,
-        "buildPoints": 300,
-        "buildPower": 57,
+        "armourHeat": 17,
+        "armourKinetic": 17,
+        "buildPoints": 450,
+        "buildPower": 450,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 193,
         "id": "Body6SUPP",
         "model": "drmbod06.pie",
         "name": "Panther",
-        "powerOutput": 13000,
+        "powerOutput": 11230,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -320,20 +320,20 @@
         },
         "size": "MEDIUM",
         "weaponSlots": 1,
-        "weight": 2500
+        "weight": 1560
     },
     "Body7ABT": {
-        "armourHeat": 20,
-        "armourKinetic": 24,
-        "buildPoints": 450,
-        "buildPower": 450,
+        "armourHeat": 25,
+        "armourKinetic": 25,
+        "buildPoints": 600,
+        "buildPower": 600,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 130,
+        "hitpoints": 260,
         "id": "Body7ABT",
         "model": "drmbod07.pie",
         "name": "Retribution",
-        "powerOutput": 11232,
+        "powerOutput": 11230,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prmlhtr2.pie",
@@ -372,11 +372,11 @@
     "Body12SUP": {
         "armourHeat": 20,
         "armourKinetic": 20,
-        "buildPoints": 375,
-        "buildPower": 375,
+        "buildPoints": 500,
+        "buildPower": 500,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 195,
+        "hitpoints": 260,
         "id": "Body12SUP",
         "model": "drhbod12.pie",
         "name": "Mantis",
@@ -418,11 +418,11 @@
     "Body11ABT": {
         "armourHeat": 25,
         "armourKinetic": 25,
-        "buildPoints": 525,
-        "buildPower": 525,
+        "buildPoints": 700,
+        "buildPower": 700,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 195,
+        "hitpoints": 260,
         "id": "Body11ABT",
         "model": "drhbod11.pie",
         "name": "Python",
@@ -464,11 +464,11 @@
     "Body9REC": {
         "armourHeat": 30,
         "armourKinetic": 30,
-        "buildPoints": 675,
-        "buildPower": 675,
+        "buildPoints": 900,
+        "buildPower": 900,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 284,
+        "hitpoints": 520,
         "id": "Body9REC",
         "model": "drhbod09.pie",
         "name": "Tiger",
@@ -508,17 +508,17 @@
         "weight": 2500
     },
     "Body10MBT": {
-        "armourHeat": 25,
-        "armourKinetic": 28,
-        "buildPoints": 800,
-        "buildPower": 130,
+        "armourHeat": 40,
+        "armourKinetic": 40,
+        "buildPoints": 1200,
+        "buildPower": 1200,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 300,
+        "hitpoints": 520,
         "id": "Body10MBT",
         "model": "drhbod10.pie",
         "name": "Vengeance",
-        "powerOutput": 23000,
+        "powerOutput": 18000,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prhlhtr3.pie",

@@ -428,6 +428,54 @@
         ],
         "statID": "A0FacMod1"
     },
+    "R-Vehicle-Body03": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body03",
+        "keyTopic": 1,
+        "msgName": "RES_V_B03",
+        "name": "Light Body - Retaliation",
+        "requiredResearch": [
+            "R-Struc-Factory-Module"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "Body3MBT"
+        ],
+        "statID": "Body3MBT"
+    },
+    "R-Vehicle-Body07": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body07",
+        "msgName": "RES_V_B07",
+        "name": "Medium Body - Retribution",
+        "requiredResearch": [
+            "R-Vehicle-Body03",
+            "R-Vehicle-Metals01"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Body7ABT"
+        ],
+        "statID": "Body7ABT"
+    },
+    "R-Vehicle-Body10": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body10",
+        "msgName": "RES_V_B10",
+        "name": "Heavy Body - Vengeance",
+        "requiredResearch": [
+            "R-Vehicle-Body07",
+            "R-Vehicle-Metals02"
+        ],
+        "researchPoints": 1350,
+        "researchPower": 1350,
+        "resultComponents": [
+            "Body10MBT"
+        ],
+        "statID": "Body10MBT"
+    },
 
 
 
