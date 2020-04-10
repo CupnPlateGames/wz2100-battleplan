@@ -39,7 +39,7 @@ const TECH_TWO = [
 	"R-Defense-MediumCannon-Bunker",
 	"R-Defense-TankKiller-Bunker",
 
-	"R-Defense-Wallupgrade01",
+	"R-Defense-WallUpgrade01",
 
 	"R-Wpn-MG-ROF01",
 	"R-Wpn-Flamer-ROF01",
@@ -53,6 +53,19 @@ const TECH_TWO = [
 const TECH_THREE = [
 	"R-Vehicle-Metals01",
 	"R-Defense-WallUpgrade02",
+
+	"R-Wpn-MG4",
+	"R-Wpn-Plasmite-Flamer",
+	"R-Wpn-Cannon3Mk1",
+	"R-Wpn-Rocket06-IDF",
+	"R-Wpn-Missile2A-T",
+	"R-Wpn-Mortar3",
+	"R-Wpn-Howitzer03-Rot",
+
+	"R-Defense-RotMG",
+	"R-Defense-PlasmiteFlamer",
+	"R-Defense-HeavyCannon-Bunker",
+	"R-Defense-Scourge-Bunker",
 
 	"R-Wpn-MG-ROF02",
 	"R-Wpn-Flamer-ROF02",

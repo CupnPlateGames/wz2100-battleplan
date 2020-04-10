@@ -1007,6 +1007,232 @@
 
 
 
+    "GuardTower-RotMg": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 545,
+        "buildPower": 545,
+        "height": 2,
+        "hitpoints": 240,
+        "id": "GuardTower-RotMg",
+        "name": "Assault Gun Tower",
+        "resistance": 150,
+        "sensorID": "TowerSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "blguardr.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "MG4ROTARYMk1"
+        ],
+        "width": 1
+    },
+    "Pillbox-RotMG": {
+        "armour": 15,
+        "breadth": 1,
+        "buildPoints": 745,
+        "buildPower": 745,
+        "height": 1,
+        "hitpoints": 390,
+        "id": "Pillbox-RotMG",
+        "name": "Rotary MG Bunker",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "BUNKER",
+        "structureModel": [
+            "Blcanpil.pie"
+        ],
+        "thermal": 15,
+        "type": "DEFENSE",
+        "weapons": [
+            "MG4ROTARYMk1"
+        ],
+        "width": 1
+    },
+    "Plasmite-flamer-bunker": {
+        "armour": 15,
+        "breadth": 1,
+        "buildPoints": 805,
+        "buildPower": 805,
+        "height": 1,
+        "hitpoints": 330,
+        "id": "Plasmite-flamer-bunker",
+        "name": "Plasmite Flamer Bunker",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "BUNKER",
+        "structureModel": [
+            "Blcanpil.pie"
+        ],
+        "thermal": 15,
+        "type": "DEFENSE",
+        "weapons": [
+            "PlasmiteFlamer"
+        ],
+        "width": 1
+    },
+    "HeavyCannon-Tower": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 655,
+        "buildPower": 655,
+        "height": 2,
+        "hitpoints": 650,
+        "id": "HeavyCannon-Tower",
+        "name": "Heavy Cannon Tower",
+        "resistance": 150,
+        "sensorID": "TowerSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Cannon375mmMk1"
+        ],
+        "width": 1
+    },
+    "HeavyCannon-Bunker": {
+        "armour": 15,
+        "breadth": 1,
+        "buildPoints": 805,
+        "buildPower": 805,
+        "height": 1,
+        "hitpoints": 660,
+        "id": "HeavyCannon-Bunker",
+        "name": "Heavy Cannon Bunker",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "BUNKER",
+        "structureModel": [
+            "Blcanpil.pie"
+        ],
+        "thermal": 15,
+        "type": "DEFENSE",
+        "weapons": [
+            "Cannon375mmMk1"
+        ],
+        "width": 1
+    },
+    "Emplacement-Rocket06-IDF": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 695,
+        "buildPower": 695,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-Rocket06-IDF",
+        "name": "Ripple Rocket Battery",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Rocket-IDF"
+        ],
+        "width": 1
+    },
+    "GuardTower-ATMiss": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 745,
+        "buildPower": 745,
+        "height": 2,
+        "hitpoints": 230,
+        "id": "GuardTower-ATMiss",
+        "name": "Scourge Missile Tower",
+        "resistance": 150,
+        "sensorID": "TowerSensor",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLGUARDR.pie"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Missile-A-T"
+        ],
+        "width": 1
+    },
+    "Scourge-Bunker": {
+        "armour": 15,
+        "breadth": 1,
+        "buildPoints": 895,
+        "buildPower": 895,
+        "height": 1,
+        "hitpoints": 330,
+        "id": "Scourge-Bunker",
+        "name": "Scourge Missile Bunker",
+        "resistance": 150,
+        "sensorID": "TowerSensor",
+        "strength": "BUNKER",
+        "structureModel": [
+            "Blcanpil.pie"
+        ],
+        "thermal": 15,
+        "type": "DEFENSE",
+        "weapons": [
+            "Missile-A-T"
+        ],
+        "width": 1
+    },
+    "Emplacement-RotMor": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 695,
+        "buildPower": 695,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-RotMor",
+        "name": "Pepperpot Pit",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blhowmnt.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Mortar3ROTARYMk1"
+        ],
+        "width": 1
+    },
+    "Emplacement-RotHow": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 695,
+        "buildPower": 695,
+        "height": 1,
+        "hitpoints": 100,
+        "id": "Emplacement-RotHow",
+        "name": "Hellstorm Emplacement",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "BLHOWMNT.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "Howitzer03-Rot"
+        ],
+        "width": 1
+    },
+
+
+
+
+
+
     "A0ADemolishStructure": {
         "armour": 6,
         "breadth": 1,
@@ -1686,94 +1912,6 @@
         ],
         "width": 1
     },
-    "Emplacement-Rocket06-IDF": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 500,
-        "buildPower": 325,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "Emplacement-Rocket06-IDF",
-        "name": "Ripple Rocket Battery",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "HARD",
-        "structureModel": [
-            "Blhowmnt.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Rocket-IDF"
-        ],
-        "width": 1
-    },
-    "Emplacement-RotHow": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 650,
-        "buildPower": 525,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "Emplacement-RotHow",
-        "name": "Hellstorm Emplacement",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "HARD",
-        "structureModel": [
-            "BLHOWMNT.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Howitzer03-Rot"
-        ],
-        "width": 1
-    },
-    "Emplacement-RotMor": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 500,
-        "buildPower": 325,
-        "height": 1,
-        "hitpoints": 300,
-        "id": "Emplacement-RotMor",
-        "name": "Pepperpot Pit",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "BLMRTPIT.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Mortar3ROTARYMk1"
-        ],
-        "width": 1
-    },
-    "GuardTower-ATMiss": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 450,
-        "buildPower": 325,
-        "height": 2,
-        "hitpoints": 600,
-        "id": "GuardTower-ATMiss",
-        "name": "Scourge Missile Tower",
-        "resistance": 150,
-        "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "BLGUARDR.pie"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Missile-A-T"
-        ],
-        "width": 1
-    },
     "GuardTower-BeamLas": {
         "armour": 10,
         "breadth": 1,
@@ -1815,28 +1953,6 @@
         "type": "DEFENSE",
         "weapons": [
             "RailGun1Mk1"
-        ],
-        "width": 1
-    },
-    "GuardTower-RotMg": {
-        "armour": 20,
-        "breadth": 1,
-        "buildPoints": 400,
-        "buildPower": 150,
-        "height": 2,
-        "hitpoints": 600,
-        "id": "GuardTower-RotMg",
-        "name": "Assault Gun Tower",
-        "resistance": 150,
-        "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "blguardr.pie"
-        ],
-        "thermal": 20,
-        "type": "DEFENSE",
-        "weapons": [
-            "MG4ROTARYMk1"
         ],
         "width": 1
     },
@@ -1987,50 +2103,6 @@
         "type": "DEFENSE",
         "weapons": [
             "MG2-Pillbox"
-        ],
-        "width": 1
-    },
-    "Pillbox-RotMG": {
-        "armour": 20,
-        "breadth": 1,
-        "buildPoints": 400,
-        "buildPower": 150,
-        "height": 1,
-        "hitpoints": 700,
-        "id": "Pillbox-RotMG",
-        "name": "Rotary MG Bunker",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "BUNKER",
-        "structureModel": [
-            "blpilbox.pie"
-        ],
-        "thermal": 20,
-        "type": "DEFENSE",
-        "weapons": [
-            "MG4ROTARY-Pillbox"
-        ],
-        "width": 1
-    },
-    "Plasmite-flamer-bunker": {
-        "armour": 20,
-        "breadth": 1,
-        "buildPoints": 400,
-        "buildPower": 125,
-        "height": 1,
-        "hitpoints": 700,
-        "id": "Plasmite-flamer-bunker",
-        "name": "Plasmite Flamer Bunker",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "BUNKER",
-        "structureModel": [
-            "Blcanpil.pie"
-        ],
-        "thermal": 20,
-        "type": "DEFENSE",
-        "weapons": [
-            "PlasmiteFlamer"
         ],
         "width": 1
     },

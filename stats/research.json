@@ -658,6 +658,233 @@
 
 
 
+    "R-Wpn-MG4": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-MG4",
+        "keyTopic": 1,
+        "msgName": "RES_W_MG4",
+        "name": "Assault Gun",
+        "redStructures": [
+            "GuardTower3"
+        ],
+        "requiredResearch": [
+            "R-Wpn-MG3Mk1"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "MG4ROTARY-VTOL",
+            "MG4ROTARYMk1"
+        ],
+	"resultStructures": [
+	    "GuardTower-RotMg"
+	],
+        "statID": "MG4ROTARYMk1"
+    },
+    "R-Defense-RotMG": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-RotMG",
+        "msgName": "RES_DEF_RotMG",
+        "name": "Assault Gun Bunker",
+        "redStructures": [
+            "PillBox3"
+        ],
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-MG4"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "Pillbox-RotMG"
+        ],
+        "statID": "Pillbox-RotMG"
+    },
+    "R-Wpn-Plasmite-Flamer": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Plasmite-Flamer",
+        "keyTopic": 1,
+        "msgName": "RES_PLFL",
+        "name": "Plasmite Flamer",
+        "requiredResearch": [
+            "R-Wpn-Flame2"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "PlasmiteFlamer"
+        ],
+        "statID": "PlasmiteFlamer"
+    },
+    "R-Defense-PlasmiteFlamer": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-PlasmiteFlamer",
+        "msgName": "RES_EMP_PFL",
+        "name": "Plasmite Flamer Bunker",
+        "redStructures": [
+            "Tower-Projector"
+        ],
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Plasmite-Flamer"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "Plasmite-flamer-bunker"
+        ],
+        "statID": "Plasmite-flamer-bunker"
+    },
+    "R-Wpn-Cannon3Mk1": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Cannon3Mk1",
+        "keyTopic": 1,
+        "msgName": "RES_CN3MK1",
+        "name": "Heavy Cannon",
+        "redStructures": [
+            "MediumCannon-Tower"
+        ],
+        "requiredResearch": [
+            "R-Wpn-Cannon2Mk1"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Cannon375mmMk1"
+        ],
+        "resultStructures": [
+            "HeavyCannon-Tower"
+        ],
+        "statID": "Cannon375mmMk1"
+    },
+    "R-Defense-HeavyCannon-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-HeavyCannon-Bunker",
+        "msgName": "RES_DEF_RotMG",
+        "name": "Heavy Cannon Bunker",
+        "redStructures": [
+            "MediumCannon-Bunker"
+        ],
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Cannon3Mk1"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "HeavyCannon-Bunker"
+        ],
+        "statID": "HeavyCannon-Bunker"
+    },
+    "R-Wpn-Rocket06-IDF": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Rocket06-IDF",
+        "keyTopic": 1,
+        "msgName": "RES_W_RK_IDF",
+        "name": "Ripple Rockets",
+        "redStructures": [
+            "Emplacement-MRL-pit"
+        ],
+        "requiredResearch": [
+            "R-Wpn-Rocket02-MRL"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Rocket-IDF"
+        ],
+        "resultStructures": [
+            "Emplacement-Rocket06-IDF"
+        ],
+        "statID": "Rocket-IDF"
+    },
+    "R-Wpn-Missile2A-T": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Missile2A-T",
+        "name": "Scourge Missile",
+        "redStructures": [
+            "TankKiller-Tower"
+        ],
+        "requiredResearch": [
+            "R-Wpn-Rocket07-Tank-Killer"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Missile-A-T",
+            "Missile-VTOL-AT"
+        ],
+        "resultStructures": [
+            "GuardTower-ATMiss"
+        ],
+        "statID": "Missile-A-T"
+    },
+    "R-Defense-Scourge-Bunker": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-Scourge-Bunker",
+        "msgName": "RES_WT9_ATM",
+        "name": "Scourge Missile Bunker",
+        "redStructures": [
+            "TankKiller-Bunker"
+        ],
+        "requiredResearch": [
+            "R-Defense-HardcreteWall",
+            "R-Wpn-Missile2A-T"
+        ],
+        "researchPoints": 70,
+        "researchPower": 70,
+        "resultStructures": [
+            "Scourge-Bunker"
+        ],
+        "statID": "Scourge-Bunker"
+    },
+    "R-Wpn-Mortar3": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Mortar3",
+        "keyTopic": 1,
+        "msgName": "RES_W_M3",
+        "name": "Rotary Mortar - Pepperpot",
+        "redStructures": [
+            "Emplacement-MortarPit02"
+        ],
+        "requiredResearch": [
+            "R-Wpn-Mortar02Hvy"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Mortar3ROTARYMk1"
+        ],
+        "resultStructures": [
+            "Emplacement-RotMor"
+        ],
+        "statID": "Mortar3ROTARYMk1"
+    },
+    "R-Wpn-Howitzer03-Rot": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Howitzer03-Rot",
+        "keyTopic": 1,
+        "msgName": "RES_W_RHOW",
+        "name": "Rotary Howitzer - Hellstorm",
+        "redStructures": [
+            "Emplacement-Howitzer150"
+        ],
+        "requiredResearch": [
+            "R-Wpn-HvyHowitzer"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "Howitzer03-Rot"
+        ],
+        "resultStructures": [
+            "Emplacement-RotHow"
+        ],
+        "statID": "Howitzer03-Rot"
+    },
+
+
+
     "R-Defense-WallUpgrade01": {
         "iconID": "IMAGE_RES_DEFENCE",
         "id": "R-Defense-WallUpgrade01",
