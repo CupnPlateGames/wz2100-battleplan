@@ -952,6 +952,13 @@
             {
                 "class": "Building",
                 "parameter": "HitPoints",
+                "filterValue": "Wall",
+                "value": 20
+            },
+            {
+                "class": "Building",
+                "parameter": "HitPoints",
+                "filterValue": "Defense",
                 "value": 10
             }
         ],
@@ -977,9 +984,14 @@
             },
             {
                 "class": "Building",
-                "filterParameter": "Type",
-                "filterValue": "Wall",
                 "parameter": "HitPoints",
+                "filterValue": "Wall",
+                "value": 20
+            },
+            {
+                "class": "Building",
+                "parameter": "HitPoints",
+                "filterValue": "Defense",
                 "value": 10
             }
         ],
@@ -1006,9 +1018,14 @@
             },
             {
                 "class": "Building",
-                "filterParameter": "Type",
-                "filterValue": "Wall",
                 "parameter": "HitPoints",
+                "filterValue": "Wall",
+                "value": 20
+            },
+            {
+                "class": "Building",
+                "parameter": "HitPoints",
+                "filterValue": "Defense",
                 "value": 10
             }
         ],

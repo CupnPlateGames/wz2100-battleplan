@@ -319,7 +319,7 @@ function eventGameInit()
 		}
 		else // CAMP_WALLS
 		{
-			setPower(1200, playnum);
+			setPower(1000, playnum);
 			for (var count = 0; count < techlist.length; count++)
 			{
 				completeResearch(techlist[count], playnum);
