@@ -271,7 +271,7 @@ function eventGameInit()
 		enableResearch("R0-E13-Rocket1");
 		enableResearch("R0-F13-Mortar1");
 		enableResearch("R0-G13-Howitzer1");
-		enableResearch("R-Struc-RepairFacility");
+		enableResearch("R0-L3-Repair1");
 		enableResearch("R-Struc-Factory-Module");
 		enableResearch("R-Sys-Sensor-Turret01");
 

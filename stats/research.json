@@ -16,6 +16,37 @@
     },
 
 
+
+    "R0-L3-Repair1": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-MobileRepairTurret01",
+        "msgName": "RES_REPTU1",
+        "name": "Mobile Repair Turret",
+        "researchPoints": 300,
+        "researchPower": 300,
+        "resultComponents": [
+            "T-L3-Repair1"
+        ],
+        "statID": "T-L3-Repair1"
+    },
+    "R0-L2-Repair2": {
+        "iconID": "IMAGE_RES_SYSTEMTECH",
+        "id": "R-Sys-MobileRepairTurretHvy",
+        "msgName": "RES_REPTUHVY",
+        "name": "Heavy Repair Turret",
+        "requiredResearch": [
+            "R0-L3-Repair1"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultComponents": [
+            "T-L2-Repair2"
+        ],
+        "resultStructures": [
+            "A0RepairCentre3"
+        ],
+        "statID": "T-L2-Repair2"
+    },
     "R-Sys-Autorepair-General": {
         "iconID": "IMAGE_RES_COMPUTERTECH",
         "id": "R-Sys-Autorepair-General",
@@ -27,41 +58,14 @@
             "ZNULLREPAIR:AutoRepair"
         ],
         "requiredResearch": [
-            "R-Sys-Autorepair-General"
+            "R0-L2-Repair2"
         ],
-        "researchPoints": 14400,
-        "researchPower": 450,
+        "researchPoints": 900,
+        "researchPower": 900,
         "resultComponents": [
             "AutoRepair"
         ],
         "subgroupIconID": "IMAGE_RES_GRPREP"
-    },
-    "R-Struc-RepairFacility": {
-        "iconID": "IMAGE_RES_STRUCTURETECH",
-        "id": "R-Struc-RepairFacility",
-        "msgName": "RES_REPAI1",
-        "name": "Repair Facility",
-        "researchPoints": 600,
-        "researchPower": 600,
-        "resultStructures": [
-            "A0RepairCentre3"
-        ],
-        "statID": "A0RepairCentre3"
-    },
-    "R-Sys-MobileRepairTurret01": {
-        "iconID": "IMAGE_RES_SYSTEMTECH",
-        "id": "R-Sys-MobileRepairTurret01",
-        "msgName": "RES_REPTU1",
-        "name": "Mobile Repair Turret",
-        "requiredResearch": [
-            "R-Struc-RepairFacility"
-        ],
-        "researchPoints": 600,
-        "researchPower": 600,
-        "resultComponents": [
-            "LightRepair1"
-        ],
-        "statID": "LightRepair1"
     },
 
 
