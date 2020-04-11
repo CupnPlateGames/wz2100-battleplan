@@ -202,7 +202,7 @@ const weaponStats = {
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
-			{ res: "R0-A22a-AAMG2", stat: "S-A22a-AAMG2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-A22-AAMG2", stat: "S-A22a-AAMG2Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
