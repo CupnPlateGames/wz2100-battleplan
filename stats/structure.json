@@ -495,7 +495,7 @@
         "type": "DEFENSE",
         "width": 1
     },
-    "GuardTower1": {
+    "S-A13a-MG1Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 285,
@@ -513,11 +513,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "MG1Mk1"
+            "W-A13-MG1"
         ],
         "width": 1
     },
-    "PillBox1": {
+    "S-A13b-MG1Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 435,
@@ -535,11 +535,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "MG1Mk1"
+            "W-A13-MG1"
         ],
         "width": 1
     },
-    "PillBox5": {
+    "S-B13b-Flamer1Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 475,
@@ -557,11 +557,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Flame1Mk1"
+            "W-B13-Flamer1"
         ],
         "width": 1
     },
-    "GuardTowerLightCannon": {
+    "S-C13a-Cannon1Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 375,
@@ -579,11 +579,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon1Mk1"
+            "W-C13-Cannon1"
         ],
         "width": 1
     },
-    "PillBox4": {
+    "S-C13b-Cannon1Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 475,
@@ -601,11 +601,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon1Mk1"
+            "W-C13-Cannon1"
         ],
         "width": 1
     },
-   "GuardTower6": {
+   "S-E13a-Rocket1Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 415,
@@ -623,11 +623,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-Pod"
+            "W-E13-Rocket1"
         ],
         "width": 1
     },
-    "GuardTower5": {
+    "S-D13a-Missile1Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 375,
@@ -645,11 +645,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-LtA-T"
+            "W-D13-Missile1"
         ],
         "width": 1
     },
-    "PillBox6": {
+    "S-D13b-Missile1Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 475,
@@ -667,11 +667,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-LtA-T"
+            "W-D13-Missile1"
         ],
         "width": 1
     },
-    "Emplacement-MortarPit01": {
+    "S-F13a-Mortar1Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 415,
@@ -689,11 +689,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Mortar1Mk1"
+            "W-F13-Mortar1"
         ],
         "width": 1
     },
-    "Emplacement-Howitzer105": {
+    "S-G13a-Howitzer1Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 415,
@@ -711,12 +711,12 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Howitzer105Mk1"
+            "W-G13-Howitzer1"
         ],
         "width": 1
     },
 
-    "AASite-QuadMg1": {
+    "S-A22a-AAMG2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 395,
@@ -734,11 +734,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "QuadMg1AAGun"
+            "W-A22-AAMG2"
         ],
         "width": 1
     },
-    "P0-AASite-Sunburst": {
+    "S-E22a-AARocket2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 555,
@@ -756,11 +756,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-Sunburst"
+            "W-E22-AARocket2"
         ],
         "width": 1
     },
-    "P0-AASite-SAM1": {
+    "S-D22a-AAMissile2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 475,
@@ -778,13 +778,13 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-LtSAM"
+            "W-D22-AAMissile2"
         ],
         "width": 1
     },
 
 
-    "GuardTower3": {
+    "S-A12a-MG2Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 470,
@@ -802,11 +802,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "MG3Mk1"
+            "W-A12-MG2"
         ],
         "width": 1
     },
-    "PillBox3": {
+    "S-A12b-MG2Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 570,
@@ -824,11 +824,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "MG3Mk1"
+            "W-A12-MG2"
         ],
         "width": 1
     },
-    "Tower-Projector": {
+    "S-B12b-Flamer2Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 650,
@@ -846,11 +846,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Flame2"
+            "W-B12-Flamer2"
         ],
         "width": 1
     },
-    "MediumCannon-Tower": {
+    "S-C12a-Cannon2Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 550,
@@ -868,11 +868,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon2A-TMk1"
+            "W-C12-Cannon2"
         ],
         "width": 1
     },
-    "MediumCannon-Bunker": {
+    "S-C12b-Cannon2Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 650,
@@ -890,11 +890,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon2A-TMk1"
+            "W-C12-Cannon2"
         ],
         "width": 1
     },
-    "Emplacement-MRL-pit": {
+    "S-E12a-Rocket2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 630,
@@ -912,11 +912,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-MRL"
+            "W-E12-Rocket2"
         ],
         "width": 1
     },
-    "TankKiller-Tower": {
+    "S-D12a-Missile2Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 550,
@@ -934,11 +934,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-HvyA-T"
+            "W-D12-Missile2"
         ],
         "width": 1
     },
-    "TankKiller-Bunker": {
+    "S-D12b-Missile2Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 640,
@@ -956,11 +956,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-HvyA-T"
+            "W-D12-Missile2"
         ],
         "width": 1
     },
-    "Emplacement-MortarPit02": {
+    "S-F12a-Mortar2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 630,
@@ -978,11 +978,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Mortar2Mk1"
+            "W-F12-Mortar2"
         ],
         "width": 1
     },
-    "Emplacement-Howitzer150": {
+    "S-G12a-Howitzer2Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 630,
@@ -1000,14 +1000,14 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Howitzer150Mk1"
+            "W-G12-Howitzer2"
         ],
         "width": 1
     },
 
 
 
-    "GuardTower-RotMg": {
+    "S-A11a-MG3Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 630,
@@ -1025,11 +1025,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "MG4ROTARYMk1"
+            "W-A11-MG3"
         ],
         "width": 1
     },
-    "Pillbox-RotMG": {
+    "S-A11a-MG3Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 780,
@@ -1047,11 +1047,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "MG4ROTARYMk1"
+            "W-A11-MG3"
         ],
         "width": 1
     },
-    "Plasmite-flamer-bunker": {
+    "S-B11b-Flamer3Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 900,
@@ -1069,11 +1069,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "PlasmiteFlamer"
+            "W-B11-Flamer3"
         ],
         "width": 1
     },
-    "HeavyCannon-Tower": {
+    "S-C11a-Cannon3Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 800,
@@ -1091,11 +1091,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon375mmMk1"
+            "W-C11-Cannon3"
         ],
         "width": 1
     },
-    "HeavyCannon-Bunker": {
+    "S-C11b-Cannon3Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 900,
@@ -1113,11 +1113,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon375mmMk1"
+            "W-C11-Cannon3"
         ],
         "width": 1
     },
-    "Emplacement-Rocket06-IDF": {
+    "S-E11a-Rocket3Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 920,
@@ -1135,11 +1135,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-IDF"
+            "W-E11-Rocket3"
         ],
         "width": 1
     },
-    "GuardTower-ATMiss": {
+    "S-D11a-Missile3Tower": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 800,
@@ -1157,11 +1157,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-A-T"
+            "W-D11-Missile3"
         ],
         "width": 1
     },
-    "Scourge-Bunker": {
+    "S-D11b-Missile3Bunker": {
         "armour": 15,
         "breadth": 1,
         "buildPoints": 1020,
@@ -1179,11 +1179,11 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-A-T"
+            "W-D11-Missile3"
         ],
         "width": 1
     },
-    "Emplacement-RotMor": {
+    "S-F11a-Mortar3Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 920,
@@ -1201,11 +1201,11 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Mortar3ROTARYMk1"
+            "W-F11-Mortar3"
         ],
         "width": 1
     },
-    "Emplacement-RotHow": {
+    "S-G11a-Howitzer3Empl": {
         "armour": 10,
         "breadth": 1,
         "buildPoints": 920,
@@ -1223,7 +1223,7 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Howitzer03-Rot"
+            "W-G11-Howitzer3"
         ],
         "width": 1
     },
@@ -1268,7 +1268,7 @@
         "thermal": 12,
         "type": "DEFENSE",
         "weapons": [
-            "MG3Mk1"
+            "W-A12-MG2"
         ],
         "width": 1
     },
@@ -1310,7 +1310,7 @@
         "thermal": 7,
         "type": "DEFENSE",
         "weapons": [
-            "Flame1Mk1"
+            "W-B13-Flamer1"
         ],
         "width": 1
     },
@@ -1394,7 +1394,7 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Mortar1Mk1"
+            "W-F13-Mortar1"
         ],
         "width": 1
     },
@@ -1732,7 +1732,7 @@
         "thermal": 10,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-HvyA-T"
+            "W-D12-Missile2"
         ],
         "width": 1
     },
@@ -1996,7 +1996,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Flame1Mk1"
+            "W-B13-Flamer1"
         ],
         "width": 1
     },
@@ -2296,7 +2296,7 @@
         "thermal": 20,
         "type": "DEFENSE",
         "weapons": [
-            "MG4ROTARYMk1"
+            "W-A11-MG3"
         ],
         "width": 1
     },
@@ -2358,7 +2358,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "MG4ROTARYMk1"
+            "W-A11-MG3"
         ],
         "width": 1
     },
@@ -2402,7 +2402,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-A-T"
+            "W-D11-Missile3"
         ],
         "width": 1
     },
@@ -2490,7 +2490,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-HvyA-T"
+            "W-D12-Missile2"
         ],
         "width": 1
     },
@@ -2512,7 +2512,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Flame2"
+            "W-B12-Flamer2"
         ],
         "width": 1
     },
@@ -2556,7 +2556,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "QuadRotAAGun"
+            "W-A22-AAMG2"
         ],
         "width": 1
     },
@@ -2644,7 +2644,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-LtSAM"
+            "W-D22-AAMissile2"
         ],
         "width": 1
     },
@@ -2688,7 +2688,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "MG3Mk1"
+            "W-A12-MG2"
         ],
         "width": 1
     },
@@ -2710,7 +2710,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon1Mk1"
+            "W-C13-Cannon1"
         ],
         "width": 1
     },
@@ -2732,7 +2732,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon2A-TMk1"
+            "W-C12-Cannon2"
         ],
         "width": 1
     },
@@ -2754,7 +2754,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Cannon375mmMk1"
+            "W-C11-Cannon3"
         ],
         "width": 1
     },
@@ -2776,7 +2776,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Flame1Mk1"
+            "W-B13-Flamer1"
         ],
         "width": 1
     },
@@ -2798,7 +2798,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Rocket-LtA-T"
+            "W-D13-Missile1"
         ],
         "width": 1
     },

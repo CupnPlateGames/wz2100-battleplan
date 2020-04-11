@@ -157,7 +157,7 @@ function addStartingScout(playnum)
 		else if (tries < 8)
 			offset_x = 2 - (tries % 2) * 3
 		if (addDroid(playnum, (ccPos.x + offset_x) - 1, (ccPos.y + offset_y) - 1,
-				"Scout", "Body4ABT", "hover01", 0, 0, "Scout") == null)
+				"Scout", "Body4ABT", "hover01", 0, 0, "W-Z11-Scout") == null)
 			tries++;
 		else
 			return;
@@ -234,8 +234,8 @@ function eventGameInit()
 		makeComponentAvailable("Body1REC", playnum);
 		makeComponentAvailable("Body2SUP", playnum);
 		makeComponentAvailable("Spade1Mk1", playnum);
-		makeComponentAvailable("Scout", playnum);
-		makeComponentAvailable("Scout-VTOL", playnum);
+		makeComponentAvailable("W-Z11-Scout", playnum);
+		makeComponentAvailable("W-Z11-VTOLScout", playnum);
 
 		setStructureLimits("A0LightFactory", 10, playnum);	// set structure limits
 		setStructureLimits("A0PowerGenerator", 8, playnum);
@@ -249,28 +249,28 @@ function eventGameInit()
 
 	const numBaseTech = 4; // do x for base
 	var techlist = new Array(
-		"R-Wpn-MG1Mk1",
-		"R-Wpn-Cannon1Mk1",
-		"R-Wpn-Rocket05-MiniPod",
+		"R0-A13-MG1",
+		"R0-C13-Cannon1",
+		"R0-E13-Rocket1",
 		"R-Defense-HardcreteWall",
 
-		"R-Wpn-Flamer01Mk1",
-		"R-Wpn-Rocket01-LtAT",
-		"R-Wpn-Mortar01Lt",
-		"R-Wpn-HowitzerMk1",
-		"R-Wpn-AAGun03",
-		"R-Wpn-Sunburst",
-		"R-Wpn-Missile-LtSAM");
+		"R0-B13-Flamer1",
+		"R0-D13-Missile1",
+		"R0-F13-Mortar1",
+		"R0-G13-Howitzer1",
+		"R0-A22-AAMG2",
+		"R0-E22-AARocket2",
+		"R0-D22-AAMissile2");
 
 	for (var playnum = 0; playnum < maxPlayers; playnum++)
 	{
 		for (var technum = 0; technum < numBaseTech; technum++) {
 			enableResearch(techlist[technum]);
 		}
-		enableResearch("R-Wpn-Flamer01Mk1");
-		enableResearch("R-Wpn-Rocket01-LtAT");
-		enableResearch("R-Wpn-Mortar01Lt");
-		enableResearch("R-Wpn-HowitzerMk1");
+		enableResearch("R0-B13-Flamer1");
+		enableResearch("R0-E13-Rocket1");
+		enableResearch("R0-F13-Mortar1");
+		enableResearch("R0-G13-Howitzer1");
 		enableResearch("R-Struc-RepairFacility");
 		enableResearch("R-Struc-Factory-Module");
 		enableResearch("R-Sys-Sensor-Turret01");

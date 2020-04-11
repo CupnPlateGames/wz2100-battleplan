@@ -37,9 +37,9 @@ var subpersonalities = {
 			weaponStats.rockets_AA, 
 		],
 		earlyResearch: [ // fixed research path for the early game
-			"R-Wpn-MG1Mk1",
-			"R-Wpn-Rocket01-LtAT",
-			"R-Wpn-MG-ROF01",
+			"R0-A13-MG1",
+			"R0-E13-Rocket1",
+			"R0-A9-MGUpgrade1",
 		],
 		minTanks: 2, // minimal attack force at game start
 		becomeHarder: 2, // how much to increase attack force every 5 minutes
@@ -63,9 +63,9 @@ var subpersonalities = {
 			weaponStats.machineguns_AA,
 		],
 		earlyResearch: [
-			"R-Wpn-MG1Mk1",
-			"R-Wpn-Cannon1Mk1",
-			"R-Wpn-Cannon-ROF01",
+			"R0-A13-MG1",
+			"R0-C13-Cannon1",
+			"R0-C9-CannonUpgrade1",
 		],
 		minTanks: 2, becomeHarder: 2, maxTanks: 16,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
@@ -82,9 +82,9 @@ var subpersonalities = {
 			weaponStats.rockets_AA,
 		],
 		earlyResearch: [
-			"R-Wpn-Flamer01Mk1",
-			"R-Wpn-Rocket01-LtAT",
-			"R-Wpn-Flamer-ROF01",
+			"R0-B13-Flamer1",
+			"R0-D13-Missile1",
+			"R0-B9-FlamerUpgrade1",
 		],
 		minTanks: 2, becomeHarder: 2, maxTanks: 16,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
@@ -100,9 +100,9 @@ var subpersonalities = {
 			weaponStats.flamers, 
 		],
 		earlyResearch: [
-			"R-Wpn-Flamer01Mk1",
-			"R-Wpn-Cannon1Mk1",
-			"R-Wpn-Flamer-ROF01",
+			"R0-B13-Flamer1",
+			"R0-C13-Cannon1",
+			"R0-B9-FlamerUpgrade1",
 		],
 		minTanks: 3, becomeHarder: 3, maxTanks: 16,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,

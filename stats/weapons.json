@@ -1,5 +1,5 @@
 {
-    "Scout": {
+    "W-Z11-Scout": {
         "buildPoints": 0,
 	"buildPower": 0,
 	"designable": 1,
@@ -31,7 +31,7 @@
         "weaponSubClass": "MACHINE GUN",
 	"weight": 0
     },
-    "Scout-VTOL": {
+    "W-Z11-VTOLScout": {
         "buildPoints": 0,
         "buildPower": 0,
         "designable": 1,
@@ -69,7 +69,7 @@
         "weaponWav": "mgbar2.ogg",
         "weight": 0
     },
-    "MG1Mk1": {
+    "W-A13-MG1": {
         "buildPoints": 135,
         "buildPower": 135,
         "damage": 16,
@@ -107,7 +107,7 @@
         "weaponWav": "mgbar3.ogg",
         "weight": 150
     },
-    "MG1-VTOL": {
+    "W-A13-VTOLMG1": {
         "buildPoints": 135,
         "buildPower": 135,
         "damage": 16,
@@ -147,7 +147,7 @@
         "weaponWav": "mgbar3.ogg",
         "weight": 150
     },
-    "Flame1Mk1": {
+    "W-B13-Flamer1": {
         "buildPoints": 175,
         "buildPower": 175,
         "damage": 20,
@@ -190,7 +190,7 @@
         "weaponWav": "flmthrow.ogg",
         "weight": 257
     },
-    "Cannon1Mk1": {
+    "W-C13-Cannon1": {
         "buildPoints": 175,
         "buildPower": 175,
         "damage": 30,
@@ -230,7 +230,7 @@
         "weaponWav": "smlcan.ogg",
         "weight": 400
     },
-    "Rocket-Pod": {
+    "W-E13-Rocket1": {
         "buildPoints": 215,
         "buildPower": 215,
         "damage": 18,
@@ -272,7 +272,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 257
     },
-    "Rocket-VTOL-Pod": {
+    "W-E13-VTOLRocket1": {
         "buildPoints": 215,
         "buildPower": 215,
         "damage": 18,
@@ -317,7 +317,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 257
     },
-    "Rocket-LtA-T": {
+    "W-D13-Missile1": {
         "buildPoints": 175,
         "buildPower": 175,
         "damage": 130,
@@ -358,7 +358,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 257
     },
-    "Rocket-VTOL-LtA-T": {
+    "W-D13-VTOLMissile1": {
         "buildPoints": 175,
         "buildPower": 175,
         "damage": 130,
@@ -399,7 +399,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 257
     },
-    "Mortar1Mk1": {
+    "W-F13-Mortar1": {
         "buildPoints": 215,
         "buildPower": 215,
         "damage": 30,
@@ -442,7 +442,7 @@
         "weaponWav": "mortar.ogg",
         "weight": 400
     },
-    "Howitzer105Mk1": {
+    "W-G13-Howitzer1": {
         "buildPoints": 215,
         "buildPower": 215,
         "damage": 40,
@@ -488,7 +488,7 @@
 
 
 
-    "QuadMg1AAGun": {
+    "W-A22-AAMG2": {
         "buildPoints": 195,
         "buildPower": 195,
         "damage": 16,
@@ -529,7 +529,7 @@
         "weaponWav": "mgbar2.ogg",
         "weight": 600
     },
-    "Rocket-Sunburst": {
+    "W-E22-AARocket2": {
         "buildPoints": 355,
         "buildPower": 355,
         "damage": 18,
@@ -574,7 +574,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 1029
     },
-    "Missile-LtSAM": {
+    "W-D22-AAMissile2": {
         "buildPoints": 275,
         "buildPower": 275,
         "damage": 130,
@@ -621,7 +621,7 @@
 
 
 
-    "MG3Mk1": {
+    "W-A12-MG2": {
         "buildPoints": 270,
         "buildPower": 270,
         "damage": 27,
@@ -633,7 +633,7 @@
         "flightSpeed": 1920,
         "hitGfx": "FXMETHIT.PIE",
         "hitpoints": 80,
-        "id": "MG3Mk1",
+        "id": "W-A12-MG2",
         "longRange": 640,
         "longHit": 50,
         "maxElevation": 90,
@@ -659,7 +659,7 @@
         "weaponWav": "mgbar2.ogg",
         "weight": 600
     },
-    "MG3-VTOL": {
+    "W-A12-VTOLMG2": {
         "buildPoints": 270,
         "buildPower": 270,
         "damage": 27,
@@ -699,7 +699,7 @@
         "weaponWav": "mgbar2.ogg",
         "weight": 600
     },
-    "Flame2": {
+    "W-B12-Flamer2": {
         "buildPoints": 350,
         "buildPower": 350,
         "damage": 35,
@@ -740,7 +740,7 @@
         "weaponWav": "flmthrow.ogg",
         "weight": 1029
     },
-    "Cannon2A-TMk1": {
+    "W-C12-Cannon2": {
         "buildPoints": 350,
         "buildPower": 350,
         "damage": 55,
@@ -780,7 +780,7 @@
         "weaponWav": "medcan.ogg",
         "weight": 1600
     },
-    "Rocket-MRL": {
+    "W-E12-Rocket2": {
         "buildPoints": 430,
         "buildPower": 430,
         "damage": 31,
@@ -824,7 +824,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 1029
     },
-    "Rocket-HvyA-T": {
+    "W-D12-Missile2": {
         "buildPoints": 350,
         "buildPower": 350,
         "damage": 255,
@@ -865,7 +865,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 1029
     },
-    "Rocket-VTOL-HvyA-T": {
+    "W-D12-VTOLMissile2": {
         "buildPoints": 350,
         "buildPower": 350,
         "damage": 255,
@@ -908,7 +908,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 1029
     },
-    "Mortar2Mk1": {
+    "W-F12-Mortar2": {
         "buildPoints": 430,
         "buildPower": 430,
         "damage": 55,
@@ -951,7 +951,7 @@
         "weaponWav": "mortar.ogg",
         "weight": 1600
     },
-    "Howitzer150Mk1": {
+    "W-G12-Howitzer2": {
         "buildPoints": 430,
         "buildPower": 430,
         "damage": 75,
@@ -1041,7 +1041,7 @@
 
 
 
-    "MG4ROTARYMk1": {
+    "W-A11-MG3": {
         "buildPoints": 480,
         "buildPower": 480,
         "damage": 43,
@@ -1079,7 +1079,7 @@
         "weaponWav": "mgtower.ogg",
         "weight": 2400
     },
-    "MG4ROTARY-VTOL": {
+    "W-A11-VTOLMG3": {
         "buildPoints": 480,
         "buildPower": 480,
         "damage": 43,
@@ -1119,7 +1119,7 @@
         "weaponWav": "mgtower.ogg",
         "weight": 4114
     },
-    "PlasmiteFlamer": {
+    "W-B11-Flamer3": {
         "buildPoints": 600,
         "buildPower": 600,
         "damage": 55,
@@ -1161,7 +1161,7 @@
         "weaponWav": "plasflm.ogg",
         "weight": 4114
     },
-    "Cannon375mmMk1": {
+    "W-C11-Cannon3": {
         "buildPoints": 600,
         "buildPower": 600,
         "damage": 85,
@@ -1202,7 +1202,7 @@
         "weaponWav": "lrgcan.ogg",
         "weight": 6400
     },
-    "Rocket-IDF": {
+    "W-E11-Rocket3": {
         "buildPoints": 720,
         "buildPower": 720,
         "damage": 49,
@@ -1245,7 +1245,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 4114
     },
-    "Missile-A-T": {
+    "W-D11-Missile3": {
         "buildPoints": 600,
         "buildPower": 600,
         "damage": 385,
@@ -1286,7 +1286,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 4114
     },
-    "Missile-VTOL-AT": {
+    "W-D11-VTOLMissile3": {
         "buildPoints": 600,
         "buildPower": 600,
         "damage": 385,
@@ -1330,7 +1330,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 4114
     },
-    "Mortar3ROTARYMk1": {
+    "W-F11-Mortar3": {
         "buildPoints": 720,
         "buildPower": 720,
         "damage": 85,
@@ -1373,7 +1373,7 @@
         "weaponWav": "mortar.ogg",
         "weight": 6400
     },
-    "Howitzer03-Rot": {
+    "W-G11-Howitzer3": {
         "buildPoints": 720,
         "buildPower": 720,
         "damage": 115,
@@ -3927,7 +3927,7 @@
         "weaponWav": "rocket.ogg",
         "weight": 1000
     },
-    "Missile-VTOL-AT": {
+    "W-D11-VTOLMissile3": {
         "buildPoints": 1200,
         "buildPower": 300,
         "damage": 480,

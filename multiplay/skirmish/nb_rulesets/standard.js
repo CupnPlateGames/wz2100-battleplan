@@ -157,36 +157,36 @@ const weaponStats = {
 		micro: MICRO.RANGED,
 		// Weapons of the path, better weapons below.
 		weapons: [
-			{ res: "R-Wpn-MG1Mk1", stat: "MG1Mk1", weight: WEIGHT.LIGHT }, // mg
-			{ res: "R-Wpn-MG3Mk1", stat: "MG3Mk1", weight: WEIGHT.MEDIUM }, // hmg
-			{ res: "R-Wpn-MG4", stat: "MG4ROTARYMk1", weight: WEIGHT.HEAVY },
+			{ res: "R0-A13-MG1", stat: "W-A13-MG1", weight: WEIGHT.LIGHT }, // mg
+			{ res: "R0-A12-MG2", stat: "W-A12-MG2", weight: WEIGHT.MEDIUM }, // hmg
+			{ res: "R0-A11-MG3", stat: "W-A11-MG3", weight: WEIGHT.HEAVY },
 		],
 		// VTOL weapons of the path, in the same order.
 		vtols: [
-			{ res: "R-Wpn-MG1Mk1", stat: "MG1-VTOL", weight: WEIGHT.LIGHT }, // vtol mg
-			{ res: "R-Wpn-MG3Mk1", stat: "MG3-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
-			{ res: "R-Wpn-MG4", stat: "MG4ROTARY-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT }, // vtol mg
+			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		// Defensive structures of the path, in the same order.
 		// NOTE: a defensive structure is recycled whenever there are at least two structures
 		// with the same role available down the list
 		defenses: [
 			// turtle AI needs early versatile towers, hence duplicate stat
-			{ res: "R-Wpn-MG1Mk1", stat: "GuardTower1", defrole: DEFROLE.GATEWAY }, // mg tower
-			{ res: "R-Wpn-MG1Mk1", stat: "GuardTower1", defrole: DEFROLE.STANDALONE }, // mg tower
-			{ res: "R-Defense-Pillbox01", stat: "PillBox1", defrole: DEFROLE.GATEWAY }, // mg bunker
-			{ res: "R-Defense-Pillbox01", stat: "PillBox1", defrole: DEFROLE.STANDALONE }, // mg bunker
-			{ res: "R-Wpn-MG3Mk1", stat: "GuardTower3", defrole: DEFROLE.GATEWAY }, // hmg tower
-			{ res: "R-Wpn-MG3Mk1", stat: "GuardTower3", defrole: DEFROLE.STANDALONE }, // hmg tower
-			{ res: "R-Defense-MG3-Bunker", stat: "PillBox3", defrole: DEFROLE.GATEWAY }, // hmg bunker
-			{ res: "R-Defense-MG3-Bunker", stat: "PillBox3", defrole: DEFROLE.STANDALONE }, // hmg bunker
+			{ res: "R0-A13-MG1", stat: "S-A13a-MG1Tower", defrole: DEFROLE.GATEWAY }, // mg tower
+			{ res: "R0-A13-MG1", stat: "S-A13a-MG1Tower", defrole: DEFROLE.STANDALONE }, // mg tower
+			{ res: "R0-A13b-MG1Bunker", stat: "S-A13b-MG1Bunker", defrole: DEFROLE.GATEWAY }, // mg bunker
+			{ res: "R0-A13b-MG1Bunker", stat: "S-A13b-MG1Bunker", defrole: DEFROLE.STANDALONE }, // mg bunker
+			{ res: "R0-A12-MG2", stat: "S-A12a-MG2Tower", defrole: DEFROLE.GATEWAY }, // hmg tower
+			{ res: "R0-A12-MG2", stat: "S-A12a-MG2Tower", defrole: DEFROLE.STANDALONE }, // hmg tower
+			{ res: "R0-A12b-MG2Bunker", stat: "S-A12b-MG2Bunker", defrole: DEFROLE.GATEWAY }, // hmg bunker
+			{ res: "R0-A12b-MG2Bunker", stat: "S-A12b-MG2Bunker", defrole: DEFROLE.STANDALONE }, // hmg bunker
 		],
 		// Cyborg templates, better borgs below, as usual.
 		templates: [
 		],
 		// Extra things to research on this path, even if they don't lead to any new stuff
 		extras: [
-			"R-Wpn-MG-ROF03",
+			"R0-A9-MGUpgrade3",
 		],
 	},
 	machineguns_AA: {
@@ -194,15 +194,15 @@ const weaponStats = {
 		chatalias: "mg",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R-Wpn-AAGun03", stat: "QuadMg1AAGun", weight: WEIGHT.MEDIUM }, // mg
+			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
 		],
 		vtols: [
-			{ res: "R-Wpn-MG1Mk1", stat: "MG1-VTOL", weight: WEIGHT.LIGHT }, // vtol mg
-			{ res: "R-Wpn-MG3Mk1", stat: "MG3-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
-			{ res: "R-Wpn-MG4", stat: "MG4ROTARY-VTOL", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT }, // vtol mg
+			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
-			{ res: "R-Wpn-AAGun03", stat: "AASite-QuadMg1", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-A22a-AAMG2", stat: "S-A22a-AAMG2Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -214,20 +214,20 @@ const weaponStats = {
 		chatalias: "fl",
 		micro: MICRO.MELEE,
 		weapons: [
-			{ res: "R-Wpn-Flamer01Mk1", stat: "Flame1Mk1", weight: WEIGHT.LIGHT }, // flamer
-			{ res: "R-Wpn-Flame2", stat: "Flame2", weight: WEIGHT.MEDIUM }, // inferno
-			{ res: "R-Wpn-Plasmite-Flamer", stat: "PlasmiteFlamer", weight: WEIGHT.HEAVY }, // plasmite
+			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT }, // flamer
+			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.MEDIUM }, // inferno
+			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		vtols: [],
 		defenses: [
-			{ res: "R-Defense-Pillbox05", stat: "PillBox5", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Defense-HvyFlamer", stat: "Tower-Projector", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Defense-PlasmiteFlamer", stat: "Plasmite-flamer-bunker", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-B13b-Flamer1Bunker", stat: "S-B13b-Flamer1Bunker", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-B12b-Flamer2Bunker", stat: "S-B12b-Flamer2Bunker", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-B11b-Flamer3Bunker", stat: "S-B11b-Flamer3Bunker", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
 		extras: [
-			"R-Wpn-Flamer-ROF03",
+			"R0-B9-FlamerUpgrade3",
 		],
 	},
 	cannons: {
@@ -235,24 +235,24 @@ const weaponStats = {
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R-Wpn-Cannon1Mk1", stat: "Cannon1Mk1", weight: WEIGHT.LIGHT }, // lc
-			{ res: "R-Wpn-Cannon2Mk1", stat: "Cannon2A-TMk1", weight: WEIGHT.MEDIUM }, // mc
-			{ res: "R-Wpn-Cannon3Mk1", stat: "Cannon375mmMk1", weight: WEIGHT.HEAVY }, // hc
+			{ res: "R0-C13-Cannon1", stat: "W-C13-Cannon1", weight: WEIGHT.LIGHT }, // lc
+			{ res: "R0-C12-Cannon2", stat: "W-C12-Cannon2", weight: WEIGHT.MEDIUM }, // mc
+			{ res: "R0-C11-Cannon3", stat: "W-C11-Cannon3", weight: WEIGHT.HEAVY }, // hc
 		],
 		vtols: [
 		],
 		defenses: [
-			{ res: "R-Wpn-Cannon1Mk1", stat: "GuardTowerLightCannon", defrole: DEFROLE.STANDALONE }, // lc tower
-			{ res: "R-Defense-Pillbox04", stat: "PillBox4", defrole: DEFROLE.STANDALONE }, // lc tower
-			{ res: "R-Wpn-Cannon2Mk1", stat: "MediumCannon-Tower", defrole: DEFROLE.STANDALONE }, // mc tower
-			{ res: "R-Defense-MediumCannon-Bunker", stat: "MediumCannon-Bunker", defrole: DEFROLE.GATEWAY },
-			{ res: "R-Wpn-Cannon3Mk1", stat: "HeavyCannon-Tower", defrole: DEFROLE.STANDALONE }, // mc tower
-			{ res: "R-Defense-HeavyCannon-Bunker", stat: "HeavyCannon-Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-C13-Cannon1", stat: "S-C13a-Cannon1Tower", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R0-C13b-Cannon1Bunker", stat: "S-C13b-Cannon1Bunker", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R0-C12-Cannon2", stat: "S-C12a-Cannon2Tower", defrole: DEFROLE.STANDALONE }, // mc tower
+			{ res: "R0-C12b-Cannon2Bunker", stat: "S-C12b-Cannon2Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-C11-Cannon3", stat: "S-C11a-Cannon3Tower", defrole: DEFROLE.STANDALONE }, // mc tower
+			{ res: "R0-B11b-Cannon3Bunker", stat: "S-C11b-Cannon3Bunker", defrole: DEFROLE.GATEWAY },
 		],
 		templates: [
 		],
 		extras: [
-			"R-Wpn-Cannon-ROF03",
+			"R0-C9-CannonUpgrade3",
 		],
 	},
 	mortars: {
@@ -260,28 +260,28 @@ const weaponStats = {
 		chatalias: "mo",
 		micro: MICRO.DUMB,
 		weapons: [
-			{ res: "R-Wpn-Mortar01Lt", stat: "Mortar1Mk1", weight: WEIGHT.LIGHT }, // duplicate stat!
-			{ res: "R-Wpn-HowitzerMk1", stat: "Howitzer105Mk1", weight: WEIGHT.LIGHT },
-			{ res: "R-Wpn-Mortar02Hvy", stat: "Mortar2Mk1", weight: WEIGHT.MEDIUM },
-			{ res: "R-Wpn-HvyHowitzer", stat: "Howitzer150Mk1", weight: WEIGHT.MEDIUM },
-			{ res: "R-Wpn-Mortar3", stat: "Mortar3ROTARYMk1", weight: WEIGHT.HEAVY },
-			{ res: "R-Wpn-Howitzer03-Rot", stat: "Howitzer03-Rot", weight: WEIGHT.HEAVY },
+			{ res: "R0-F13-Mortar1", stat: "W-F13-Mortar1", weight: WEIGHT.LIGHT }, // duplicate stat!
+			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT },
+			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-F11-Mortar3", stat: "W-F11-Mortar3", weight: WEIGHT.HEAVY },
+			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
 		],
 		defenses: [
-			{ res: "R-Wpn-Mortar01Lt", stat: "Emplacement-MortarPit01", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-Mortar02Hvy", stat: "Emplacement-MortarPit02", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-HowitzerMk1", stat: "Emplacement-Howitzer105", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-HvyHowitzer", stat: "Emplacement-Howitzer150", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-Mortar3", stat: "Emplacement-RotMor", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-Howitzer03-Rot", stat: "Emplacement-RotHow", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F13-Mortar1", stat: "S-F13-Mortar1Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F12-Mortar2", stat: "S-F12a-Mortar2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-G13-Howitzer1", stat: "S-G13-Howitzer1", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-G12-Howitzer2", stat: "S-G12a-Howitzer2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F11b-Mortar3", stat: "S-F11a-Mortar3Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F11b-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
 		extras: [
-			"R-Wpn-Mortar-ROF03",
-			"R-Wpn-Howitzer-ROF03",
+			"R0-F9-MortarUpgrade3",
+			"R0-F9-HowitzerUpgrade3",
 		],
 	},
 	rockets_AT: {
@@ -289,33 +289,33 @@ const weaponStats = {
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "Rocket-Pod", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R-Wpn-Rocket01-LtAT", stat: "Rocket-LtA-T", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R-Wpn-Rocket02-MRL", stat: "Rocket-MRL", weight: WEIGHT.MEDIUM }, // mra
-			{ res: "R-Wpn-Rocket07-Tank-Killer", stat: "Rocket-HvyA-T", weight: WEIGHT.MEDIUM }, // tk
-			{ res: "R-Wpn-Rocket06-IDF", stat: "Rocket-IDF", weight: WEIGHT.HEAVY }, // mra
-			{ res: "R-Wpn-Missile2A-T", stat: "Missile-A-T", weight: WEIGHT.HEAVY }, // tk
+			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT }, // lancer
+			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
+			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		vtols: [
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "Rocket-VTOL-Pod", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R-Wpn-Rocket01-LtAT", stat: "Rocket-VTOL-LtA-T", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R-Wpn-Rocket07-Tank-Killer", stat: "Rocket-VTOL-HvyA-T", weight: WEIGHT.MEDIUM }, // tk
-			{ res: "R-Wpn-Missile2A-T", stat: "Missile-VTOL-AT", weight: WEIGHT.HEAVY }, // tk
+			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT }, // lancer
+			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
 			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
-			{ res: "R-Defense-Lancer-Bunker", stat: "PillBox6", defrole: DEFROLE.GATEWAY }, // lancer bunker
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "GuardTower6", defrole: DEFROLE.STANDALONE }, // pod
-			{ res: "R-Defense-TankKiller-Bunker", stat: "TankKiller-Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
-			{ res: "R-Wpn-Rocket02-MRL", stat: "Emplacement-MRL-pit", defrole: DEFROLE.STANDALONE }, // mra
-			{ res: "R-Defense-Scourge-Bunker", stat: "Scourge-Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
-			{ res: "R-Wpn-Rocket06-IDF", stat: "Emplacement-Rocket06-IDF", defrole: DEFROLE.STANDALONE }, // mra
+			{ res: "R0-D13b-Missile1Bunker", stat: "S-D13b-Missile1Bunker", defrole: DEFROLE.GATEWAY }, // lancer bunker
+			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.STANDALONE }, // pod
+			{ res: "R0-D12b-Missile2Bunker", stat: "S-D12b-Missile2Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+			{ res: "R0-E12-Rocket2", stat: "S-E12a-Rocket2Empl", defrole: DEFROLE.STANDALONE }, // mra
+			{ res: "R0-D11b-Missile3Bunker", stat: "S-D11b-Missile3Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+			{ res: "R0-E11-Rocket3", stat: "S-E11a-Rocket3Empl", defrole: DEFROLE.STANDALONE }, // mra
 		],
 		templates: [
 		],
 		extras: [
-			"R-Wpn-Missile-ROF03",
-			"R-Wpn-Rocket-ROF03",
+			"R0-D9-MissileUpgrade3",
+			"R0-E9-RocketUpgrade3",
 		],
 	},
 	rockets_AA: {
@@ -323,15 +323,15 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R-Wpn-Sunburst", stat: "Rocket-Sunburst", weight: WEIGHT.LIGHT }, // sunburst
-			{ res: "R-Wpn-Missile-LtSAM", stat: "Missile-LtSAM", weight: WEIGHT.LIGHT }, // avenger
+			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.LIGHT }, // sunburst
+			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.LIGHT }, // avenger
 		],
 		vtols: [
-			{ res: "R-Wpn-Rocket05-MiniPod", stat: "Rocket-VTOL-Pod", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
 		],
 		defenses: [
-			{ res: "R-Wpn-Sunburst", stat: "P0-AASite-Sunburst", defrole: DEFROLE.STANDALONE }, // sunburst
-			{ res: "R-Wpn-Missile-LtSAM", stat: "P0-AASite-SAM1", defrole: DEFROLE.STANDALONE }, // avenger
+			{ res: "R0-E22-AARocket2", stat: "S-E22a-AARocket2Empl", defrole: DEFROLE.STANDALONE }, // sunburst
+			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE }, // avenger
 		],
 		templates: [],
 		extras: [],
@@ -341,7 +341,7 @@ const weaponStats = {
 		chatalias: "lol",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "Scout", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [],
 		defenses: [],
