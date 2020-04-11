@@ -743,7 +743,7 @@
         "breadth": 1,
         "buildPoints": 555,
         "buildPower": 555,
-        "height": 2,
+        "height": 1,
         "hitpoints": 180,
         "id": "P0-AASite-Sunburst",
         "name": "Sunburst AA Site",
@@ -765,7 +765,7 @@
         "breadth": 1,
         "buildPoints": 475,
         "buildPower": 475,
-        "height": 2,
+        "height": 1,
         "hitpoints": 165,
         "id": "P0-AASite-SAM1",
         "name": "Avenger SAM Site",
@@ -1001,6 +1001,54 @@
         "type": "DEFENSE",
         "weapons": [
             "W-G12-Howitzer2"
+        ],
+        "width": 1
+    },
+
+
+
+    "S-A21a-AAMG3Empl": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 530,
+        "buildPower": 530,
+        "height": 1,
+        "hitpoints": 180,
+        "id": "AASite-QuadRotMg",
+        "name": "Whirlwind AA Site",
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "Blaamnt1.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "W-A21-AAMG3"
+        ],
+        "width": 1
+    },
+
+    "S-D21a-AAMissile3Empl": {
+        "armour": 10,
+        "breadth": 1,
+        "buildPoints": 650,
+        "buildPower": 650,
+        "height": 1,
+        "hitpoints": 230,
+        "id": "P0-AASite-SAM2",
+        "name": "Vindicator SAM Site",
+        "resistance": 150,
+        "sensorID": "NavGunSensor",
+        "strength": "HARD",
+        "structureModel": [
+            "Blaamnt2.PIE"
+        ],
+        "thermal": 10,
+        "type": "DEFENSE",
+        "weapons": [
+            "W-D21-AAMissile3"
         ],
         "width": 1
     },
@@ -1567,28 +1615,6 @@
         ],
         "width": 1
     },
-    "AASite-QuadRotMg": {
-        "armour": 12,
-        "breadth": 1,
-        "buildPoints": 275,
-        "buildPower": 175,
-        "height": 1,
-        "hitpoints": 400,
-        "id": "AASite-QuadRotMg",
-        "name": "Whirlwind AA Site",
-        "resistance": 150,
-        "sensorID": "DefaultSensor1Mk1",
-        "strength": "MEDIUM",
-        "structureModel": [
-            "Blaamnt1.PIE"
-        ],
-        "thermal": 12,
-        "type": "DEFENSE",
-        "weapons": [
-            "QuadRotAAGun"
-        ],
-        "width": 1
-    },
     "CoolingTower": {
         "armour": 20,
         "breadth": 1,
@@ -2037,28 +2063,6 @@
         "type": "DEFENSE",
         "weapons": [
             "AAGunLaser"
-        ],
-        "width": 1
-    },
-    "P0-AASite-SAM2": {
-        "armour": 10,
-        "breadth": 1,
-        "buildPoints": 550,
-        "buildPower": 350,
-        "height": 2,
-        "hitpoints": 600,
-        "id": "P0-AASite-SAM2",
-        "name": "Vindicator SAM Site",
-        "resistance": 150,
-        "sensorID": "NavGunSensor",
-        "strength": "HARD",
-        "structureModel": [
-            "Blaamnt2.PIE"
-        ],
-        "thermal": 10,
-        "type": "DEFENSE",
-        "weapons": [
-            "Missile-HvySAM"
         ],
         "width": 1
     },
@@ -2622,7 +2626,7 @@
         "thermal": 15,
         "type": "DEFENSE",
         "weapons": [
-            "Missile-HvySAM"
+            "W-D21-AAMissile3"
         ],
         "width": 1
     },

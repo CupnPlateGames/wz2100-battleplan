@@ -208,7 +208,7 @@
         ],
         "statID": "W-B13-Flamer1"
     },
-    "R0-B13b-FlamerBunker": {
+    "R0-B13b-Flamer1Bunker": {
         "iconID": "IMAGE_RES_DEFENCE",
         "id": "R-Defense-Pillbox05",
         "msgName": "RES_PB_FL",
@@ -688,6 +688,54 @@
             "S-G12a-Howitzer2Empl"
         ],
         "statID": "W-G12-Howitzer2"
+    },
+
+
+
+    "R0-A21-AAMG3": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-AASite-QuadRotMg",
+        "msgName": "RES_EMP_AA3",
+        "name": "Whirlwind AA Site",
+        "redStructures": [
+            "S-A22a-AAMG2Empl"
+        ],
+        "requiredResearch": [
+            "R0-A12-MG2",
+            "R0-A22-AAMG2"
+        ],
+        "researchPoints": 750,
+        "researchPower": 750,
+        "resultComponents": [
+            "W-A21-AAMG3"
+        ],
+        "resultStructures": [
+            "S-A21a-AAMG3Empl"
+        ],
+        "statID": "W-A21-AAMG3"
+    },
+
+    "R0-D21-AAMissile3": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-SamSite2",
+        "msgName": "RES_EMP_SAM2",
+        "name": "Vindicator SAM Site",
+        "redStructures": [
+            "S-D22a-AAMissile2Empl"
+        ],
+        "requiredResearch": [
+            "R0-D12-Missile2",
+            "R0-D22-AAMissile2"
+        ],
+        "researchPoints": 750,
+        "researchPower": 750,
+        "resultComponents": [
+            "W-D21-AAMissile3"
+        ],
+        "resultStructures": [
+            "S-D21a-AAMissile3Empl"
+        ],
+        "statID": "W-D21-AAMissile3"
     },
 
 
@@ -1676,7 +1724,7 @@
         "techCode": 1
     },
 
-    "R0-F9-HowitzerUpgrade1": {
+    "R0-G9-HowitzerUpgrade1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Howitzer-ROF01",
         "msgName": "RES_W_HOWRF1",
@@ -1705,12 +1753,12 @@
         "statID": "W-G13-Howitzer1",
         "subgroupIconID": "IMAGE_RES_GRPROF"
     },
-    "R0-F9-HowitzerUpgrade2": {
+    "R0-G9-HowitzerUpgrade2": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Howitzer-ROF02",
         "name": "Howitzer Autoloader Mk2",
         "requiredResearch": [
-            "R0-F9-HowitzerUpgrade1"
+            "R0-G9-HowitzerUpgrade1"
         ],
         "researchPoints": 1350,
         "researchPower": 1350,
@@ -1734,12 +1782,12 @@
         "subgroupIconID": "IMAGE_RES_GRPROF",
         "techCode": 1
     },
-    "R0-F9-HowitzerUpgrade3": {
+    "R0-G9-HowitzerUpgrade3": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Howitzer-ROF03",
         "name": "Howitzer Autoloader Mk3",
         "requiredResearch": [
-            "R0-F9-HowitzerUpgrade2"
+            "R0-G9-HowitzerUpgrade2"
         ],
         "researchPoints": 1800,
         "researchPower": 1800,

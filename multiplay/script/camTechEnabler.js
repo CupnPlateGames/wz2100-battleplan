@@ -1,10 +1,10 @@
 
 const TECH_TWO = [
 	"R0-A13-MG1",
-	"R0-C13-Cannon1",
-	"R0-E13-Rocket1",
 	"R0-B13-Flamer1",
-	"R0-D13-Rocket1",
+	"R0-C13-Cannon1",
+	"R0-D13-Missile1",
+	"R0-E13-Rocket1",
 	"R0-F13-Mortar1",
 	"R0-G13-Howitzer1",
 
@@ -17,9 +17,6 @@ const TECH_TWO = [
 	"R0-A22-AAMG2",
 	"R0-E22-AARocket2",
 	"R0-D22-AAMissile2",
-
-	"R-Struc-RepairFacility",
-	"R-Sys-MobileRepairTurret01",
 
 	"R-Sys-Sensor-Turret01",
 	"R0-L3-Repair1",
@@ -44,15 +41,18 @@ const TECH_TWO = [
 	"R0-A9-MGUpgrade1",
 	"R0-B9-FlamerUpgrade1",
 	"R0-C9-CannonUpgrade1",
-	"R0-C9-RocketUpgrade1",
 	"R0-D9-MissileUpgrade1",
+	"R0-E9-RocketUpgrade1",
 	"R0-F9-MortarUpgrade1",
-	"R0-F9-HowitzerUpgrade1"
+	"R0-G9-HowitzerUpgrade1"
 ];
 
 const TECH_THREE = [
 	"R-Vehicle-Metals01",
 	"R-Defense-WallUpgrade02",
+
+	"R0-A21-AAMG3",
+	"R0-D21-AAMissile3",
 
 	"R0-A11-MG3",
 	"R0-B11-Flamer3",
@@ -70,10 +70,10 @@ const TECH_THREE = [
 	"R0-A9-MGUpgrade2",
 	"R0-B9-FlamerUpgrade2",
 	"R0-C9-CannonUpgrade2",
-	"R0-C9-RocketUpgrade2",
 	"R0-D9-MissileUpgrade2",
+	"R0-E9-RocketUpgrade2",
 	"R0-F9-MortarUpgrade2",
-	"R0-F9-HowitzerUpgrade2",
+	"R0-G9-HowitzerUpgrade2",
 
 	"R-Sys-CBSensor-Turret01",
 	"R0-L2-Repair2",
