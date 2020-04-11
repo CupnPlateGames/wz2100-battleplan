@@ -274,7 +274,7 @@ const weaponStats = {
 			{ res: "R-Wpn-Mortar02Hvy", stat: "Emplacement-MortarPit02", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Wpn-HowitzerMk1", stat: "Emplacement-Howitzer105", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Wpn-HvyHowitzer", stat: "Emplacement-Howitzer150", defrole: DEFROLE.STANDALONE },
-			{ res: "R-Wpn-Mortar3", stat: "Emplacement RotMor", defrole: DEFROLE.STANDALONE },
+			{ res: "R-Wpn-Mortar3", stat: "Emplacement-RotMor", defrole: DEFROLE.STANDALONE },
 			{ res: "R-Wpn-Howitzer03-Rot", stat: "Emplacement-RotHow", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
