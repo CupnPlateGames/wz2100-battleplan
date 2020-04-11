@@ -258,7 +258,7 @@
         "name": "Sensor Tower",
         "resistance": 150,
         "sensorID": "SensorTower2Mk1",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -277,7 +277,7 @@
         "name": "VTOL Strike Tower",
         "resistance": 150,
         "sensorID": "Sys-VTOLRadarTower01",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -296,7 +296,7 @@
         "name": "CB Tower",
         "resistance": 150,
         "sensorID": "Sys-CBTower01",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -315,7 +315,7 @@
         "name": "VTOL CB Tower",
         "resistance": 150,
         "sensorID": "Sys-VTOLCBTower01",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -334,7 +334,7 @@
         "name": "Wide Spectrum Sensor Tower",
         "resistance": 150,
         "sensorID": "Sensor-WideSpec",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -353,7 +353,7 @@
         "name": "Radar Detector Tower",
         "resistance": 150,
         "sensorID": "RadarDetector",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -572,7 +572,7 @@
         "name": "Light Cannon Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.PIE"
         ],
@@ -638,7 +638,7 @@
         "name": "Lancer Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -795,7 +795,7 @@
         "name": "Heavy Machinegun Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -861,7 +861,7 @@
         "name": "Medium Cannon Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -927,7 +927,7 @@
         "name": "Tank Killer Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -1018,7 +1018,7 @@
         "name": "Assault Gun Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "blguardr.pie"
         ],
@@ -1084,7 +1084,7 @@
         "name": "Heavy Cannon Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
@@ -1150,7 +1150,7 @@
         "name": "Scourge Missile Tower",
         "resistance": 150,
         "sensorID": "TowerSensor",
-        "strength": "MEDIUM",
+        "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
         ],
