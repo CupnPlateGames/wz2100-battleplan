@@ -299,7 +299,9 @@ const weaponStats = {
 		vtols: [
 			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
 			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT }, // lancer
+			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
 			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
 			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
@@ -328,6 +330,8 @@ const weaponStats = {
 		],
 		vtols: [
 			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
 		],
 		defenses: [
 			{ res: "R0-E22-AARocket2", stat: "S-E22a-AARocket2Empl", defrole: DEFROLE.STANDALONE }, // sunburst
@@ -343,7 +347,9 @@ const weaponStats = {
 		weapons: [
 			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
-		vtols: [],
+		vtols: [
+			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
+		],
 		defenses: [],
 		templates: [],
 		extras: [],

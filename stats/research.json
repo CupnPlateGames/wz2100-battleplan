@@ -597,7 +597,8 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "W-E12-Rocket2"
+            "W-E12-Rocket2",
+            "W-E12-VTOLRocket2"
         ],
         "resultStructures": [
             "S-E12a-Rocket2Empl"
@@ -873,7 +874,8 @@
         "researchPoints": 900,
         "researchPower": 900,
         "resultComponents": [
-            "W-E11-Rocket3"
+            "W-E11-Rocket3",
+            "W-E11-VTOLRocket3"
         ],
         "resultStructures": [
             "S-E11a-Rocket3Empl"
