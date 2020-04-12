@@ -203,6 +203,7 @@ const weaponStats = {
 		],
 		defenses: [
 			{ res: "R0-A22-AAMG2", stat: "S-A22a-AAMG2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-A21-AAMG3", stat: "S-A21a-AAMG3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -288,6 +289,8 @@ const weaponStats = {
 			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
+			{ res: "R0-F12-Mortar2", stat: "W-F12-VTOLMortar2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-F11-Mortar3", stat: "W-F11-VTOLMortar3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [
 			{ res: "R0-F13-Mortar1", stat: "S-F13-Mortar1Empl", defrole: DEFROLE.STANDALONE },

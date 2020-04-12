@@ -664,7 +664,8 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "W-F12-Mortar2"
+            "W-F12-Mortar2",
+            "W-F12-VTOLMortar2"
         ],
         "resultStructures": [
             "S-F12a-Mortar2Empl"
@@ -940,7 +941,8 @@
         "researchPoints": 900,
         "researchPower": 900,
         "resultComponents": [
-            "W-F11-Mortar3"
+            "W-F11-Mortar3",
+            "W-F11-VTOLMortar3"
         ],
         "resultStructures": [
             "S-F11a-Mortar3Empl"
