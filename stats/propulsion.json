@@ -39,18 +39,18 @@
         "weight": 200
     },
     "V-Tol": {
-        "acceleration": 100,
+        "acceleration": 400,
         "buildPoints": 0,
         "buildPower": 0,
-        "deceleration": 100,
+        "deceleration": 128,
         "designable": 1,
         "hitpointPctOfBody": 100,
         "id": "V-Tol",
         "model": "DPVTOL.PIE",
         "name": "VTOL",
         "speed": 1024,
-        "spinSpeed": 100,
-        "turnSpeed": 50,
+        "spinSpeed": 50,
+        "turnSpeed": 150,
         "type": "Lift",
         "weight": 50
     },

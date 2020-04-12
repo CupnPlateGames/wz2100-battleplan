@@ -97,7 +97,8 @@ var subpersonalities = {
 		chatalias: "fc",
 		weaponPaths: [
 			weaponStats.cannons, 
-			weaponStats.flamers, 
+			weaponStats.flamers,
+			weaponStats.flamers_AA,
 		],
 		earlyResearch: [
 			"R0-B13-Flamer1",

@@ -218,11 +218,31 @@ const weaponStats = {
 			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.MEDIUM }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
-		vtols: [],
+		vtols: [
+		],
 		defenses: [
 			{ res: "R0-B13b-Flamer1Bunker", stat: "S-B13b-Flamer1Bunker", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-B12b-Flamer2Bunker", stat: "S-B12b-Flamer2Bunker", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-B11b-Flamer3Bunker", stat: "S-B11b-Flamer3Bunker", defrole: DEFROLE.STANDALONE },
+		],
+		templates: [
+		],
+		extras: [
+			"R0-B9-FlamerUpgrade3",
+		],
+	},
+	flamers_AA: {
+		roles: [ 0.0, 0.0, 0.0, 1.0],
+		chatalias: "flaa",
+		micro: MICRO.MELEE,
+		weapons: [
+		],
+		vtols: [
+			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT }, // flamer
+			{ res: "R0-B12-Flamer2", stat: "W-B12-VTOLFlamer2", weight: WEIGHT.MEDIUM }, // inferno
+			{ res: "R0-B11-Flamer3", stat: "W-B11-VTOLFlamer3", weight: WEIGHT.HEAVY }, // plasmite
+		],
+		defenses: [
 		],
 		templates: [
 		],

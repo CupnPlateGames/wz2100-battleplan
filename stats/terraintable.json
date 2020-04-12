@@ -7,7 +7,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -20,7 +20,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -33,7 +33,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -46,7 +46,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -59,7 +59,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -72,7 +72,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -85,7 +85,7 @@
             "tracked": 110,
             "legged": 100,
             "hover": 200,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 100
         }
@@ -98,7 +98,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -111,7 +111,7 @@
             "tracked": 75,
             "legged": 100,
             "hover": 30,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 70
         }
@@ -124,7 +124,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -137,7 +137,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 200,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }
@@ -150,7 +150,7 @@
             "tracked": 100,
             "legged": 100,
             "hover": 175,
-            "lift": 250,
+            "lift": 100,
             "propellor": 100,
             "half-tracked": 90
         }

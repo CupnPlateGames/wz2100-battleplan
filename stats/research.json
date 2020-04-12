@@ -204,7 +204,8 @@
         "researchPoints": 300,
         "researchPower": 300,
         "resultComponents": [
-            "W-B13-Flamer1"
+            "W-B13-Flamer1",
+            "W-B13-VTOLFlamer1"
         ],
         "statID": "W-B13-Flamer1"
     },
@@ -519,7 +520,8 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "W-B12-Flamer2"
+            "W-B12-Flamer2",
+            "W-B12-VTOLFlamer2"
         ],
         "statID": "W-B12-Flamer2"
     },
@@ -795,7 +797,8 @@
         "researchPoints": 900,
         "researchPower": 900,
         "resultComponents": [
-            "W-B11-Flamer3"
+            "W-B11-Flamer3",
+            "W-B11-VTOLFlamer3"
         ],
         "statID": "W-B11-Flamer3"
     },
