@@ -139,5 +139,12 @@
         "name": "Truck",
         "propulsion": "wheeled01",
         "type": "CONSTRUCT"
+    },
+    "ConstructorHover": {
+        "body": "Body4ABT",
+        "construct": "Spade1Mk1",
+        "name": "Hover Truck",
+        "propulsion": "hover01",
+        "type": "CONSTRUCT"
     }
 }

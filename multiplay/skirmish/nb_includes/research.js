@@ -29,21 +29,6 @@ function doResearch(lab) {
 		if (pursueResearch(lab, forcedResearch))
 			return true;
 	}
-	// if we need to quickly get a certain propulsion to reach the enemy, prioritize that.
-	var fastest = needFastestResearch();
-	if (fastest === PROPULSIONUSAGE.VTOL)
-		if (pursueResearch(lab, [
-			propulsionStatsToResList(PROPULSIONUSAGE.VTOL),
-			fastestResearch,
-		].random()))
-			return true;
-	if (fastest === PROPULSIONUSAGE.HOVER)
-		if (pursueResearch(lab, [
-			propulsionStatsToResList(PROPULSIONUSAGE.HOVER),
-			propulsionStatsToResList(PROPULSIONUSAGE.VTOL),
-			fastestResearch,
-		].random()))
-			return true;
 	// otherwise, start with completing the fixed research path
 	if (defined(personality.earlyResearch))
 		if (pursueResearch(lab, personality.earlyResearch))

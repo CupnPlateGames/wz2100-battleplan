@@ -164,11 +164,6 @@ _global.checkTruckProduction = function() {
 					return true;
 		if (defined(f))
 			return false;
-		f = enumFinishedStructList(structures.templateFactories)[0];
-		if (defined(f))
-			if (structureIdle(f))
-				if (produceTemplateFromList(f, truckTemplates))
-					return true;
 	}
 	if (!iHaveArty())
 		return false;
@@ -180,6 +175,7 @@ _global.checkTruckProduction = function() {
 				if (produceTruck(f, sensorTurrets))
 					return true;
 	}
+console.info("No need for truck.");
 	return false;
 }
 
@@ -216,9 +212,6 @@ function checkVtolProduction() {
 
 _global.checkProduction = function() {
 	switch(chooseObjectType()) {
-		case 1:
-			if (checkTemplateProduction())
-				return;
 		case 3:
 			if (checkVtolProduction())
 				return;
@@ -229,7 +222,6 @@ _global.checkProduction = function() {
 	// if having too much energy, don't care about what we produce
 	if (myPower() > personality.maxPower) {
 		queue("checkConstruction");
-		checkTemplateProduction();
 		checkTankProduction();
 		checkVtolProduction();
 	}

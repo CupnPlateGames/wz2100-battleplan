@@ -23,7 +23,7 @@ const baseScale = 20;
 const lassatSplash = 4;
 
 // set this to 1 to choose templates randomly, instead of later=>better.
-const randomTemplates = 0;
+const randomTemplates = 1;
 
 // this function is used for avoiding AI cheats that appear due to
 // being able to build droids before designing them
@@ -102,20 +102,32 @@ const bodyStats = [
 const classResearch = {
 	kinetic: [
 		[ // OBJTYPE.TANK
+			"R-Vehicle-Metals01",
+			"R-Vehicle-Metals02",
+			"R-Vehicle-Metals03",
 		],
 		[ // OBJTYPE.BORG
 		],
 		[ // OBJTYPE.DEFS
+			"R-Defense-WallUpgrade01",
+			"R-Defense-WallUpgrade02",
+			"R-Defense-WallUpgrade03",
 		],
 		[ // OBJTYPE.VTOL
 		],
 	],
 	thermal: [ // Same as above
 		[
+			"R-Vehicle-Metals01",
+			"R-Vehicle-Metals02",
+			"R-Vehicle-Metals03",
 		],
 		[
 		],
 		[
+			"R-Defense-WallUpgrade01",
+			"R-Defense-WallUpgrade02",
+			"R-Defense-WallUpgrade03",
 		],
 		[
 		],
@@ -190,7 +202,7 @@ const weaponStats = {
 		],
 	},
 	machineguns_AA: {
-		roles: [ 0.2, 0.0, 0.0, 0.8 ],
+		roles: [ 0.0, 0.0, 0.0, 1.0 ],
 		chatalias: "mg",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -211,7 +223,7 @@ const weaponStats = {
 		],
 	},
 	flamers: {
-		roles: [ 1.0, 0.0, 0.0, 0.0 ],
+		roles: [ 0.9, 0.0, 0.1, 0.0 ],
 		chatalias: "fl",
 		micro: MICRO.MELEE,
 		weapons: [
@@ -252,7 +264,7 @@ const weaponStats = {
 		],
 	},
 	cannons: {
-		roles: [ 0.5, 0.0, 0.5, 0.0 ],
+		roles: [ 0.4, 0.0, 0.6, 0.0 ],
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -282,11 +294,8 @@ const weaponStats = {
 		micro: MICRO.DUMB,
 		weapons: [
 			{ res: "R0-F13-Mortar1", stat: "W-F13-Mortar1", weight: WEIGHT.LIGHT }, // duplicate stat!
-			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT },
 			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.MEDIUM },
-			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.MEDIUM },
 			{ res: "R0-F11-Mortar3", stat: "W-F11-Mortar3", weight: WEIGHT.HEAVY },
-			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
 			{ res: "R0-F12-Mortar2", stat: "W-F12-VTOLMortar2", weight: WEIGHT.MEDIUM },
@@ -295,51 +304,62 @@ const weaponStats = {
 		defenses: [
 			{ res: "R0-F13-Mortar1", stat: "S-F13-Mortar1Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-F12-Mortar2", stat: "S-F12a-Mortar2Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-G13-Howitzer1", stat: "S-G13-Howitzer1", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-G12-Howitzer2", stat: "S-G12a-Howitzer2Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-F11b-Mortar3", stat: "S-F11a-Mortar3Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-F11b-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
 		extras: [
 			"R0-F9-MortarUpgrade3",
-			"R0-F9-HowitzerUpgrade3",
 		],
 	},
-	rockets_AT: {
-		roles: [ 1.0, 0.0, 0.0, 0.0 ],
-		chatalias: "rx",
-		micro: MICRO.RANGED,
+	howitzers: {
+		roles: [ 0.5, 0.0, 0.5, 0.0 ],
+		chatalias: "hw",
+		micro: MICRO.DUMB,
 		weapons: [
-			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM }, // mra
-			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM }, // tk
-			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
-			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
+			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT },
+			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
-			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
-			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM }, // tk
-			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
-			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
-			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
-			{ res: "R0-D13b-Missile1Bunker", stat: "S-D13b-Missile1Bunker", defrole: DEFROLE.GATEWAY }, // lancer bunker
-			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.STANDALONE }, // pod
-			{ res: "R0-D12b-Missile2Bunker", stat: "S-D12b-Missile2Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
-			{ res: "R0-E12-Rocket2", stat: "S-E12a-Rocket2Empl", defrole: DEFROLE.STANDALONE }, // mra
-			{ res: "R0-D11b-Missile3Bunker", stat: "S-D11b-Missile3Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
-			{ res: "R0-E11-Rocket3", stat: "S-E11a-Rocket3Empl", defrole: DEFROLE.STANDALONE }, // mra
+			{ res: "R0-G13-Howitzer1", stat: "S-G13a-Howitzer1Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-G12-Howitzer2", stat: "S-G12a-Howitzer2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F11b-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
 		extras: [
-			"R0-D9-MissileUpgrade3",
+			"R0-F9-HowitzerUpgrade3",
+		],
+	},
+	rockets: {
+		roles: [ 0.8, 0.0, 0.2, 0.0 ],
+		chatalias: "rx",
+		micro: MICRO.RANGED,
+		weapons: [
+			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
+		],
+		vtols: [
+			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
+			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
+		],
+		defenses: [
+			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
+			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.GATEWAY }, // pod
+			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.STANDALONE }, // pod
+			{ res: "R0-E12-Rocket2", stat: "S-E12a-Rocket2Empl", defrole: DEFROLE.GATEWAY }, // mra
+			{ res: "R0-E12-Rocket2", stat: "S-E12a-Rocket2Empl", defrole: DEFROLE.STANDALONE }, // mra
+			{ res: "R0-E11-Rocket3", stat: "S-E11a-Rocket3Empl", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-E11-Rocket3", stat: "S-E11a-Rocket3Empl", defrole: DEFROLE.STANDALONE },
+		],
+		templates: [
+		],
+		extras: [
 			"R0-E9-RocketUpgrade3",
 		],
 	},
@@ -348,8 +368,7 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.LIGHT }, // sunburst
-			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.LIGHT }, // avenger
+			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.MEDIUM },
 		],
 		vtols: [
 			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
@@ -358,7 +377,54 @@ const weaponStats = {
 		],
 		defenses: [
 			{ res: "R0-E22-AARocket2", stat: "S-E22a-AARocket2Empl", defrole: DEFROLE.STANDALONE }, // sunburst
-			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE }, // avenger
+		],
+		templates: [],
+		extras: [],
+	},
+	missiles: {
+		roles: [ 0.8, 0.0, 0.2, 0.0 ],
+		chatalias: "ms",
+		micro: MICRO.RANGED,
+		weapons: [
+			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT }, // lancer
+			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
+		],
+		vtols: [
+			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT }, // lancer
+			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
+		],
+		defenses: [
+			{ res: "R0-D13-Missile1", stat: "S-D13a-Missile1Tower", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-D12-Missile2", stat: "S-D12a-Missile2Tower", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-D11-Missile3", stat: "S-D11a-Missile3Tower", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-D13b-Missile1Bunker", stat: "S-D13b-Missile1Bunker", defrole: DEFROLE.GATEWAY }, // lancer bunker
+			{ res: "R0-D12b-Missile2Bunker", stat: "S-D12b-Missile2Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+			{ res: "R0-D11b-Missile3Bunker", stat: "S-D11b-Missile3Bunker", defrole: DEFROLE.GATEWAY }, // tk tower
+		],
+		templates: [
+		],
+		extras: [
+			"R0-D9-MissileUpgrade3",
+		],
+	},
+	missiles_AA: {
+		roles: [ 0.0, 0.0, 0.0, 1.0 ],
+		chatalias: "msaa",
+		micro: MICRO.RANGED,
+		weapons: [
+			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-D21-AAMissile3", stat: "W-D21-AAMissile3", weight: WEIGHT.HEAVY },
+		],
+		vtols: [
+			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT },
+			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY },
+		],
+		defenses: [
+			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-D21-AAMissile3", stat: "S-D22a-AAMissile3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [],
 		extras: [],

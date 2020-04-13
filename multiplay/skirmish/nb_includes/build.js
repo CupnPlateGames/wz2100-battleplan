@@ -262,13 +262,9 @@ function buildExpand() {
 	if (myPower() > personality.maxPower) {
 		switch (chooseObjectType()) {
 			case 0:
-				if (needFastestResearch() === PROPULSIONUSAGE.GROUND)
-					if (buildMinimum(structures.factories, Infinity, IMPORTANCE.PEACETIME))
-						return true;
-				// fall-through
 			case 1:
 				if (needFastestResearch() === PROPULSIONUSAGE.GROUND)
-					if (buildMinimum(structures.templateFactories, Infinity, IMPORTANCE.PEACETIME))
+					if (buildMinimum(structures.factories, Infinity, IMPORTANCE.PEACETIME))
 						return true;
 				// fall-through
 			case 3:

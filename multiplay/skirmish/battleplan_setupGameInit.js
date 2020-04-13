@@ -132,38 +132,6 @@ function limitStartingFacilities(playnum)
 
 }
 
-function addStartingScout(playnum)
-{
-	// Put it near the CC
-	var structs = enumStruct(playnum, HQ);
-	if (structs.length == 0)
-		return;
-	var ccPos = {x: structs[0].x, y: structs[0].y};
-	var tries = 0;
-	var offset_y = 0;
-	var offset_x = 0;
-	while (tries < 12)
-	{
-		if (tries < 4)
-			offset_y = 2
-		else if (tries < 6)
-			offset_y = 1
-		else if (tries < 8)
-			offset_y = 0
-		else
-			offset_y = -1
-		if (tries < 4 || tries >= 8)
-			offset_x = 2 - (tries % 4)
-		else if (tries < 8)
-			offset_x = 2 - (tries % 2) * 3
-		if (addDroid(playnum, (ccPos.x + offset_x) - 1, (ccPos.y + offset_y) - 1,
-				"Scout", "Body4ABT", "hover01", 0, 0, "W-Z11-Scout") == null)
-			tries++;
-		else
-			return;
-	}
-}
-
 function eventGameInit()
 {
 	setupGame();
@@ -265,19 +233,19 @@ function eventGameInit()
 	for (var playnum = 0; playnum < maxPlayers; playnum++)
 	{
 		for (var technum = 0; technum < numBaseTech; technum++) {
-			enableResearch(techlist[technum]);
+			enableResearch(techlist[technum], playnum);
 		}
-		enableResearch("R0-B13-Flamer1");
-		enableResearch("R0-E13-Rocket1");
-		enableResearch("R0-F13-Mortar1");
-		enableResearch("R0-G13-Howitzer1");
-		enableResearch("R0-L3-Repair1");
-		enableResearch("R-Struc-Factory-Module");
-		enableResearch("R-Sys-Sensor-Turret01");
+		enableResearch("R0-B13-Flamer1", playnum);
+		enableResearch("R0-E13-Rocket1", playnum);
+		enableResearch("R0-F13-Mortar1", playnum);
+		enableResearch("R0-G13-Howitzer1", playnum);
+		enableResearch("R0-L3-Repair1", playnum);
+		enableResearch("R-Struc-Factory-Module", playnum);
+		enableResearch("R-Sys-Sensor-Turret01", playnum);
 
 		if (baseType == CAMP_CLEAN)
 		{
-			setPower(1500, playnum);
+			setPower(2000, playnum);
 			var structs = enumStruct(playnum);
 			var lab_count = 0;
 			for (var i = 0; i < structs.length; i++)
@@ -298,7 +266,7 @@ function eventGameInit()
 		}
 		else if (baseType == CAMP_BASE)
 		{
-			setPower(750, playnum);
+			setPower(1250, playnum);
 			for (var count = 0; count < numBaseTech; count++)
 			{
 				completeResearch(techlist[count], playnum);
@@ -327,7 +295,6 @@ function eventGameInit()
 			removeModules(playnum);
 		}
 		removeUnusedBuildings(playnum);
-		addStartingScout(playnum);
 	}
 
 	var techLevel = getMultiTechLevel();
