@@ -360,6 +360,11 @@ function recycleDefenses() {
 _global.checkConstruction = function() {
 	if (enumTrucks().filter(truckFree).length === 0)
 		return;
+	if (isEnergyCritical()) {
+		var built = buildEnergy();
+		while (!built)
+			built = buildEnergy();
+	}
 	if (functionSeries("construction", [
 		finishStructures,
 		buildOrder,
@@ -372,6 +377,13 @@ _global.checkConstruction = function() {
 		buildDefenses,
 	]))
 		queue("checkConstruction");
+}
+
+
+_global.isEnergyCritical = function() {
+	var oils = countFinishedStructList(structures.derricks);
+	var gens = countStructList(structures.gens);
+	return (oils < 4 || gens < 1);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

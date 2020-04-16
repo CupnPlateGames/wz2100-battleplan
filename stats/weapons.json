@@ -1458,7 +1458,7 @@
         "shortRange": 768,
         "waterGfx": "FXSSplsh.PIE",
         "weaponClass": "KINETIC",
-        "weaponEffect": "ARTILLERY ROUND",
+        "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
         "weight": 4114

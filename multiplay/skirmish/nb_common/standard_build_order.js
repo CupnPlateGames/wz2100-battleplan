@@ -9,5 +9,5 @@ function buildOrder_StandardFallback() {
 	if (buildMinimum(structures.factories, 1)) return true;
 	// make sure trucks go capture some oil at this moment
 	if (buildMinimumDerricks(4)) return true;
-	return false;
+	return captureSomeOil();
 }

@@ -65,7 +65,8 @@ function doResearch(lab) {
 }
 
 _global.checkResearch = function() {
-	enumIdleStructList(structures.labs).forEach(doResearch);
+	if (!isEnergyCritical())
+		enumIdleStructList(structures.labs).forEach(doResearch);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

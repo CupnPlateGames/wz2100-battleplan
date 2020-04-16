@@ -236,6 +236,7 @@ function eventGameInit()
 			enableResearch(techlist[technum], playnum);
 		}
 		enableResearch("R0-B13-Flamer1", playnum);
+		enableResearch("R0-D13-Missile1", playnum);
 		enableResearch("R0-E13-Rocket1", playnum);
 		enableResearch("R0-F13-Mortar1", playnum);
 		enableResearch("R0-G13-Howitzer1", playnum);

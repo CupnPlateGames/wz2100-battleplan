@@ -33,7 +33,7 @@ var subpersonalities = {
 		weaponPaths: [ // weapons to use; put late-game paths below!
 			weaponStats.machineguns,
 			weaponStats.machineguns_AA,
-			weaponStats.rockets_AT,
+			weaponStats.rockets,
 			weaponStats.rockets_AA, 
 		],
 		earlyResearch: [ // fixed research path for the early game
@@ -51,7 +51,7 @@ var subpersonalities = {
 		vtolness: 25, // the chance % of not making droids when adaptation mechanism chooses vtols
 		defensiveness: 30, // same thing for defenses; set this to 100 to enable turtle AI specific code
 		maxPower: 800, // build expensive things if we have more than that
-		repairAt: 50, // how much % healthy should droid be to join the attack group instead of repairing
+		repairAt: 0, // how much % healthy should droid be to join the attack group instead of repairing
 	},
 	MC: {
 		chatalias: "mc",
@@ -69,7 +69,25 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 20, defensiveness: 40,
 		maxPower: 800,
-		repairAt: 50,
+		repairAt: 0,
+	},
+	CR: {
+		chatalias: "mc",
+		weaponPaths: [
+			weaponStats.cannons, 
+			weaponStats.rockets, 
+			weaponStats.rockets_AA,
+		],
+		earlyResearch: [
+			"R0-C13-Cannon1",
+			"R0-E13-Rocket1",
+		],
+		minTanks: 4, becomeHarder: 2, maxTanks: 16,
+		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
+		minMiscTanks: 1, maxMiscTanks: 2,
+		vtolness: 20, defensiveness: 60,
+		maxPower: 800,
+		repairAt: 0,
 	},
 	FR: {
 		chatalias: "fr",
@@ -86,24 +104,6 @@ var subpersonalities = {
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 30, defensiveness: 10,
-		maxPower: 800,
-		repairAt: 50,
-	},
-	FC: {
-		chatalias: "fc",
-		weaponPaths: [
-			weaponStats.cannons, 
-			weaponStats.flamers,
-			weaponStats.flamers_AA,
-		],
-		earlyResearch: [
-			"R0-C13-Cannon1",
-			"R0-B13-Flamer1",
-		],
-		minTanks: 3, becomeHarder: 3, maxTanks: 16,
-		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 0, defensiveness: 30,
 		maxPower: 800,
 		repairAt: 0,
 	},
@@ -123,7 +123,7 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 0, defensiveness: 40,
 		maxPower: 800,
-		repairAt: 40,
+		repairAt: 0,
 	},
 	MGHw: {
 		chatalias: "mhw",
@@ -133,7 +133,7 @@ var subpersonalities = {
 			weaponStats.machineguns_AA,
 		],
 		earlyResearch: [
-			"R0-A13-Machinegun1",
+			"R0-A13-MG1",
 			"R0-G13-Howitzer1",
 		],
 		minTanks: 3, becomeHarder: 3, maxTanks: 16,
@@ -141,7 +141,7 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 0, defensiveness: 40,
 		maxPower: 800,
-		repairAt: 40,
+		repairAt: 0,
 	},
 	melee: {
 		chatalias: "melee",
@@ -159,7 +159,7 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 0, defensiveness: 25,
 		maxPower: 800,
-		repairAt: 50,
+		repairAt: 0,
 	},
 	arti: {
 		chatalias: "art",
@@ -168,7 +168,6 @@ var subpersonalities = {
 			weaponStats.rockets,
 			weaponStats.rockets_AA,
 			weaponStats.mortars,
-			weaponStats.mortars_AA,
 			weaponStats.howitzers,
 		],
 		earlyResearch: [
@@ -180,7 +179,7 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 0, defensiveness: 60,
 		maxPower: 800,
-		repairAt: 60,
+		repairAt: 0,
 	},
 	random: {
 		chatalias: "rnd",
@@ -205,7 +204,7 @@ var subpersonalities = {
 		minMiscTanks: 1, maxMiscTanks: 2,
 		vtolness: 0, defensiveness: 50,
 		maxPower: 800,
-		repairAt: 50,
+		repairAt: 0,
 	},
 };
 

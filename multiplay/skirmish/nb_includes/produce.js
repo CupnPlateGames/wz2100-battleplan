@@ -175,7 +175,6 @@ _global.checkTruckProduction = function() {
 				if (produceTruck(f, sensorTurrets))
 					return true;
 	}
-console.info("No need for truck.");
 	return false;
 }
 
@@ -211,6 +210,8 @@ function checkVtolProduction() {
 }
 
 _global.checkProduction = function() {
+	if (isEnergyCritical())
+		return;
 	switch(chooseObjectType()) {
 		case 3:
 			if (checkVtolProduction())

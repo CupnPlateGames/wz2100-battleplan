@@ -12,10 +12,10 @@
         "SOFT": 90
     },
     "ANTI TANK": {
-        "BUNKER": 60,
-        "HARD": 60,
-        "MEDIUM": 80,
-        "SOFT": 100
+        "BUNKER": 40,
+        "HARD": 40,
+        "MEDIUM": 50,
+        "SOFT": 70
     },
     "ARTILLERY ROUND": {
         "BUNKER": 50,

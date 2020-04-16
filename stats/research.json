@@ -75,8 +75,8 @@
         "id": "R-Sys-Sensor-Turret01",
         "msgName": "RES_SENSO1",
         "name": "Sensor Turret",
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 300,
+        "researchPower": 300,
         "resultComponents": [
             "SensorTurret1Mk1",
             "Sys-VstrikeTurret01"
@@ -95,8 +95,8 @@
         "requiredResearch": [
             "R-Sys-Sensor-Turret01"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "Sys-CBTurret01",
             "Sys-VTOLCBTurret01"
@@ -115,8 +115,8 @@
         "requiredResearch": [
             "R-Sys-CBSensor-Turret01"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 900,
+        "researchPower": 900,
         "resultComponents": [
             "RadarDetector"
         ],
@@ -146,8 +146,8 @@
         "requiredResearch": [
             "R-Sys-CBSensor-Turret01"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 900,
+        "researchPower": 900,
         "resultComponents": [
             "Sensor-WideSpec"
         ],

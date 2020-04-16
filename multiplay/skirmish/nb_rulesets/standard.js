@@ -53,7 +53,7 @@ const powerUps = [ "OilDrum", "Crate" ];
 // NOTE: you cannot use specific stats as bases, but only stattypes
 // probably better make use of .name rather than of .stattype here?
 const modules = [
-	{ base: POWER_GEN, module: "A0PowMod1", count: 1, cost: MODULECOST.CHEAP },
+	//{ base: POWER_GEN, module: "A0PowMod1", count: 1, cost: MODULECOST.CHEAP }, // disabled not to explode
 	{ base: FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
 	{ base: VTOL_FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
 	{ base: RESEARCH_LAB, module: "A0ResearchModule1", count: 1, cost: MODULECOST.EXPENSIVE },
@@ -209,8 +209,8 @@ const weaponStats = {
 			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
 		],
 		vtols: [
-			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT }, // vtol mg
-			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT }, // vtol mg
+			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
@@ -228,7 +228,7 @@ const weaponStats = {
 		micro: MICRO.MELEE,
 		weapons: [
 			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT }, // flamer
-			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.MEDIUM }, // inferno
+			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.HEAVY }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		vtols: [
@@ -294,7 +294,7 @@ const weaponStats = {
 		micro: MICRO.DUMB,
 		weapons: [
 			{ res: "R0-F13-Mortar1", stat: "W-F13-Mortar1", weight: WEIGHT.LIGHT }, // duplicate stat!
-			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.HEAVY },
 			{ res: "R0-F11-Mortar3", stat: "W-F11-Mortar3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
@@ -304,7 +304,7 @@ const weaponStats = {
 		defenses: [
 			{ res: "R0-F13-Mortar1", stat: "S-F13-Mortar1Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-F12-Mortar2", stat: "S-F12a-Mortar2Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-F11b-Mortar3", stat: "S-F11a-Mortar3Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F11-Mortar3", stat: "S-F11a-Mortar3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -318,7 +318,7 @@ const weaponStats = {
 		micro: MICRO.DUMB,
 		weapons: [
 			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT },
-			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.HEAVY },
 			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
@@ -326,7 +326,7 @@ const weaponStats = {
 		defenses: [
 			{ res: "R0-G13-Howitzer1", stat: "S-G13a-Howitzer1Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-G12-Howitzer2", stat: "S-G12a-Howitzer2Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-F11b-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F11-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
