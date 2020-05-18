@@ -302,7 +302,7 @@ const weaponStats = {
 			{ res: "R0-F11-Mortar3", stat: "W-F11-VTOLMortar3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [
-			{ res: "R0-F13-Mortar1", stat: "S-F13-Mortar1Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-F13-Mortar1", stat: "S-F13a-Mortar1Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-F12-Mortar2", stat: "S-F12a-Mortar2Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-F11-Mortar3", stat: "S-F11a-Mortar3Empl", defrole: DEFROLE.STANDALONE },
 		],
