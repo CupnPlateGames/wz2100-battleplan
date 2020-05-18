@@ -1157,6 +1157,7 @@
         "muzzleGfx": "FXHHowt.PIE",
         "name": "Ground Shaker",
         "numExplosions": 2,
+        "numRounds": 1,
         "radius": 64,
         "radiusDamage": 37,
         "radiusLife": 10,
