@@ -102,9 +102,11 @@ function produceTank(factory) {
 			return false;
 	}
 	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon());
+	var selectedProp = [];
+	selectedProp.push(propulsions[Math.floor(Math.random() * propulsions.length)]);
 	if (!defined(bwPair))
 		return false;
-	return ourBuildDroid(factory, "Tank", bwPair.b, propulsions, bwPair.w, bwPair.w, bwPair.w);
+	return ourBuildDroid(factory, "Tank", bwPair.b, selectedProp, bwPair.w, bwPair.w, bwPair.w);
 }
 
 function produceVtol(factory) {

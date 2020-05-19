@@ -194,7 +194,6 @@ var subpersonalities = {
 			weaponStats.rockets,
 			weaponStats.rockets_AA,
 			weaponStats.mortars,
-			weaponStats.mortars_AA,
 			weaponStats.howitzers,
 		],
 		earlyResearch: [
