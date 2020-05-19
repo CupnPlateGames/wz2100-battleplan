@@ -285,6 +285,9 @@
             "W-D13-Missile1",
             "W-D13-VTOLMissile1"
         ],
+        "resultStructures": [
+            "S-D13a-Missile1Tower"
+        ],
         "statID": "W-D13-Missile1"
     },
     "R0-D13b-Missile1Bunker": {
