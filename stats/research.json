@@ -988,20 +988,8 @@
         "results": [
             {
                 "class": "Building",
-                "parameter": "Armour",
+                "parameter": "HitPoints",
                 "value": 50
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Wall",
-                "value": 20
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Defense",
-                "value": 10
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG"
@@ -1019,22 +1007,8 @@
         "results": [
             {
                 "class": "Building",
-                "filterParameter": "Type",
-                "filterValue": "Wall",
-                "parameter": "Armour",
+                "parameter": "HitPoints",
                 "value": 50
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Wall",
-                "value": 20
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Defense",
-                "value": 10
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",
@@ -1053,22 +1027,8 @@
         "results": [
             {
                 "class": "Building",
-                "filterParameter": "Type",
-                "filterValue": "Wall",
-                "parameter": "Armour",
+                "parameter": "HitPoints",
                 "value": 50
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Wall",
-                "value": 20
-            },
-            {
-                "class": "Building",
-                "parameter": "HitPoints",
-                "filterValue": "Defense",
-                "value": 10
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",

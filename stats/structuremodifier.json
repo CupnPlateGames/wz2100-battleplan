@@ -1,27 +1,27 @@
 {
     "ALL ROUNDER": {
-        "BUNKER": 100,
-        "HARD": 110,
-        "MEDIUM": 120,
-        "SOFT": 130
-    },
-    "ANTI PERSONNEL": {
         "BUNKER": 50,
         "HARD": 50,
-        "MEDIUM": 70,
-        "SOFT": 90
+        "MEDIUM": 50,
+        "SOFT": 50
+    },
+    "ANTI PERSONNEL": {
+        "BUNKER": 25,
+        "HARD": 25,
+        "MEDIUM": 25,
+        "SOFT": 50
     },
     "ANTI TANK": {
-        "BUNKER": 40,
-        "HARD": 40,
+        "BUNKER": 30,
+        "HARD": 30,
         "MEDIUM": 50,
-        "SOFT": 70
+        "SOFT": 50
     },
     "ARTILLERY ROUND": {
-        "BUNKER": 50,
-        "HARD": 100,
-        "MEDIUM": 100,
-        "SOFT": 125
+        "BUNKER": 30,
+        "HARD": 50,
+        "MEDIUM": 50,
+        "SOFT": 50
     },
     "BUNKER BUSTER": {
         "BUNKER": 100,
@@ -30,9 +30,9 @@
         "SOFT": 100
     },
     "FLAMER": {
-        "BUNKER": 100,
+        "BUNKER": 50,
         "HARD": 10,
-        "MEDIUM": 25,
-        "SOFT": 100
+        "MEDIUM": 10,
+        "SOFT": 50
     }
 }
