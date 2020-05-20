@@ -326,7 +326,7 @@ const weaponStats = {
 		defenses: [
 			{ res: "R0-G13-Howitzer1", stat: "S-G13a-Howitzer1Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-G12-Howitzer2", stat: "S-G12a-Howitzer2Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-F11-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-G11-Howitzer3", stat: "S-G11a-Howitzer3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
