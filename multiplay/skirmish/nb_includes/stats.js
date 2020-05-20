@@ -135,6 +135,8 @@ _global.getProductionPaths = function() {
 
 _global.chooseAvailableWeaponPathByRoleRatings = function(paths, rating, objectType, defrole) {
 	var minDist = Infinity, minPath;
+	var chanceTotal = 0.0
+	var pathChances = [];
 	paths.forEach(function(path) {
 		if (!weaponPathIsAvailable(path, objectType, defrole))
 			return;
@@ -144,12 +146,21 @@ _global.chooseAvailableWeaponPathByRoleRatings = function(paths, rating, objectT
 			if (newDist > dist)
 				dist = newDist;
 		}
+		pathChances.push(1.0 / dist);
+		chanceTotal += (1.0 / dist);
 		if (dist < minDist) {
 			minDist = dist;
 			minPath = path;
 		}
 	});
-	return minPath;
+	var rnd = Math.random() * chanceTotal;
+	for (var i = 0; i < paths.length; i++) {
+		if (rnd < pathChances[i]) {
+			return paths[i];
+		}
+		rnd -= pathChances[i];
+	}
+	return paths[0];
 }
 
 //
