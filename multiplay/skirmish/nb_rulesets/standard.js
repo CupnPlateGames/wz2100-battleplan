@@ -192,6 +192,10 @@ const weaponStats = {
 			{ res: "R0-A12-MG2", stat: "S-A12a-MG2Tower", defrole: DEFROLE.STANDALONE }, // hmg tower
 			{ res: "R0-A12b-MG2Bunker", stat: "S-A12b-MG2Bunker", defrole: DEFROLE.GATEWAY }, // hmg bunker
 			{ res: "R0-A12b-MG2Bunker", stat: "S-A12b-MG2Bunker", defrole: DEFROLE.STANDALONE }, // hmg bunker
+			{ res: "R0-A11-MG3", stat: "S-A11a-MG3Tower", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-A11-MG3", stat: "S-A11a-MG3Tower", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-A11b-MG3Bunker", stat: "S-A11b-MG3Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-A11b-MG3Bunker", stat: "S-A11b-MG3Bunker", defrole: DEFROLE.STANDALONE },
 		],
 		// Cyborg templates, better borgs below, as usual.
 		templates: [
@@ -280,7 +284,7 @@ const weaponStats = {
 			{ res: "R0-C12-Cannon2", stat: "S-C12a-Cannon2Tower", defrole: DEFROLE.STANDALONE }, // mc tower
 			{ res: "R0-C12b-Cannon2Bunker", stat: "S-C12b-Cannon2Bunker", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-C11-Cannon3", stat: "S-C11a-Cannon3Tower", defrole: DEFROLE.STANDALONE }, // mc tower
-			{ res: "R0-B11b-Cannon3Bunker", stat: "S-C11b-Cannon3Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-C11b-Cannon3Bunker", stat: "S-C11b-Cannon3Bunker", defrole: DEFROLE.GATEWAY },
 		],
 		templates: [
 		],
@@ -424,7 +428,7 @@ const weaponStats = {
 		],
 		defenses: [
 			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-D21-AAMissile3", stat: "S-D22a-AAMissile3Empl", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-D21-AAMissile3", stat: "S-D21a-AAMissile3Empl", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [],
 		extras: [],
