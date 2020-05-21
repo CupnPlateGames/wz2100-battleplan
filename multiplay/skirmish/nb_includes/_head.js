@@ -75,6 +75,7 @@ const RESASPECTS = {
 const PROPULSIONUSAGE = {
     GROUND : 1,
     HOVER: 2,
+    GROUND_HOVER: 3,
     VTOL: 4
 }
 

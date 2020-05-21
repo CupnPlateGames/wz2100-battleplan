@@ -36,42 +36,47 @@ function chooseWeapon(forVtol) {
 	}
 }
 
-function chooseBodyWeaponPair(bodies, weapons) {
+function chooseBodyWeaponPair(bodies, weapons, numModules) {
 	if (!defined(bodies))
 		return undefined;
 	if (!defined(weapons))
 		return undefined;
+	var candidates = [];
 	for (var i = 0; i < weapons.length; ++i) {
 		var w = weapons[i].stat, ww = weapons[i].weight;
 		if (!componentAvailable(w))
 			continue;
 		for (var j = 0; j < bodies.length; ++j) {
 			var b = bodies[j].stat, bw = bodies[j].weight;
+			if ((bw == WEIGHT.MEDIUM && numModules < 1) || (bw == WEIGHT.HEAVY && numModules < 2))
+				continue;
 			if (!componentAvailable(b))
 				continue;
 			switch(ww) {
 				case WEIGHT.ULTRALIGHT:
 					if (bw <= WEIGHT.LIGHT)
-						return {b: b, w: w};
+						candidates.push({b: b, w: w});
 					break;
 				case WEIGHT.LIGHT:
 					if (bw <= WEIGHT.MEDIUM)
-						return {b: b, w: w};
+						candidates.push({b: b, w: w});
 					break;
 				case WEIGHT.MEDIUM:
-						return {b: b, w: w};
+						candidates.push({b: b, w: w});
 					break;
 				case WEIGHT.HEAVY:
 					if (bw >= WEIGHT.MEDIUM)
-						return {b: b, w: w};
+						candidates.push({b: b, w: w});
 					break;
 				case WEIGHT.ULTRAHEAVY:
 					if (bw >= WEIGHT.HEAVY)
-						return {b: b, w: w};
+						candidates.push({b: b, w: w});
 					break;
 			}
 		}
 	}
+	if (candidates.length > 0)
+		return candidates[Math.floor(Math.random() * candidates.length)];
 }
 
 function produceTank(factory) {
@@ -93,7 +98,7 @@ function produceTank(factory) {
 	var rnd = random(ret.land + ret.sea);
 	if (!defined(rnd)) // we need only vtols?
 		return false;
-	propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.GROUND);
+	propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.GROUND_HOVER);
 	if (iHaveHover()) {
 		if (rnd >= ret.land)
 			propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.HOVER);
@@ -101,7 +106,7 @@ function produceTank(factory) {
 		if (ret.land === 0)
 			return false;
 	}
-	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon());
+	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon(), factory.modules);
 	var selectedProp = [];
 	selectedProp.push(propulsions[Math.floor(Math.random() * propulsions.length)]);
 	if (!defined(bwPair))
@@ -113,7 +118,7 @@ function produceVtol(factory) {
 	// TODO: consider thermal bodies
 	var bodies = filterBodyStatsByUsage(BODYUSAGE.AIR, BODYCLASS.KINETIC)
 	var propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.VTOL);
-	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon(true));
+	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon(true), factory.modules);
 	if (!defined(bwPair))
 		return false;
 	return ourBuildDroid(factory, "VTOL", bwPair.b, propulsions, bwPair.w, bwPair.w, bwPair.w);
