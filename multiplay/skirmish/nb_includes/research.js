@@ -22,7 +22,7 @@ _global.needFastestResearch = function() {
 	return PROPULSIONUSAGE.GROUND;
 }
 
-function doResearch(lab) {
+function doEarlyResearch(lab) {
 	if (defined(forcedResearch)) {
 		if (forcedResearch === null)
 			return false;
@@ -33,6 +33,15 @@ function doResearch(lab) {
 	if (defined(personality.earlyResearch))
 		if (pursueResearch(lab, personality.earlyResearch))
 			return true;
+}
+
+function doResearch(lab) {
+	if (defined(forcedResearch)) {
+		if (forcedResearch === null)
+			return false;
+		if (pursueResearch(lab, forcedResearch))
+			return true;
+	}
 	// then, see if we want to research some weapons
 	var objType = chooseObjectType();
 	if (withChance(70)) { // TODO: make a more thoughtful decision here
@@ -65,8 +74,14 @@ function doResearch(lab) {
 }
 
 _global.checkResearch = function() {
-	if (!isEnergyCritical())
-		enumIdleStructList(structures.labs).forEach(doResearch);
+	if ((!isEnergyCritical()) || gameTime < 10000) {
+		enumIdleStructList(structures.labs).forEach(doEarlyResearch);
+		// Prefer building tanks before researching
+		var factoCount = countStructList(structures.factories);
+		var idleFactoCount = enumIdleStructList(structures.factories).length;
+		if (factoCount >= 1 && idleFactoCount < factoCount && myPower() > 300)
+			enumIdleStructList(structures.labs).forEach(doResearch);
+	}
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

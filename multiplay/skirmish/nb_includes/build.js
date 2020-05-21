@@ -383,7 +383,12 @@ _global.checkConstruction = function() {
 _global.isEnergyCritical = function() {
 	var oils = countFinishedStructList(structures.derricks);
 	var gens = countStructList(structures.gens);
-	return (oils < 4 || gens < 1);
+	var minPower = 0;
+	if (gens == 0 || oils == 0)
+		minPower += 1000;
+	if (oils < 2)
+		minPower += 500;
+	return (myPower() < minPower);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

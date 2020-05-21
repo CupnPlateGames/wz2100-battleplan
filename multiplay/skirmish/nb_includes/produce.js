@@ -144,6 +144,10 @@ function produceTemplate(factory) {
 
 _global.checkTruckProduction = function() {
 	var trucks = enumTrucks();
+	var unitCount = enumDroid(me).length;
+	// At least 1 truck and never more than other units
+	if (trucks.length > 0 && trucks.length > unitCount / 2)
+		return false;
 	var hoverTrucksCount = trucks.filter(function(droid) { return isHoverPropulsion(droid.propulsion); }).length;
 	if (iHaveHover() && hoverTrucksCount < personality.minHoverTrucks) {
 		var groundTrucks = trucks.filter(function(droid) { return !isHoverPropulsion(droid.propulsion); });
@@ -158,6 +162,9 @@ _global.checkTruckProduction = function() {
 	if (trucks.length < personality.minTrucks || myPower() > personality.maxPower
 		|| (iHaveHover() && hoverTrucksCount < personality.minHoverTrucks)
 	) {
+		// Never more than 1/3rd of units when above minTrucks
+		if (trucks.length >= personality.minTrucks && trucks.length > unitCount / 3)
+			return false;
 		var f;
 		f = enumFinishedStructList(structures.factories)[0];
 		if (defined(f))

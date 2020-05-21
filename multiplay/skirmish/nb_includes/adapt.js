@@ -430,9 +430,11 @@ _global.chooseObjectType = function() {
 	function uncached() {
 		var our = groupOurs(), their = groupTheirs();
 		// behaviour specific for a turtle AI
+		var canVtol = (enumStructList(structures.vtolFactories).length > 0);
+		var canTank = (enumStructList(structures.factories).length > 0);
 		if (personality.defensiveness === 100)
 		{
-			if (iHaveVtol() && withChance(personality.vtolness) && adaptVote(
+			if (canVtol && withChance(personality.vtolness) && adaptVote(
 				[ our.obj[OBJTYPE.DEFS], our.obj[OBJTYPE.VTOL] ],
 				[ their.role[ROLE.AA], their.role[ROLE.AT] + their.role[ROLE.AP] + 2 * their.role[ROLE.AS] ]
 			) === 1)
@@ -448,15 +450,17 @@ _global.chooseObjectType = function() {
 				[ their.role[ROLE.AS], their.role[ROLE.AT] + their.role[ROLE.AP] + their.role[ROLE.AA] ]
 			) === 1)
 			return OBJTYPE.DEFS;
-		if (iHaveVtol() && withChance(personality.vtolness) && adaptVote(
+		if (canVtol && withChance(personality.vtolness) && adaptVote(
 				[ our.obj[OBJTYPE.TANK] + our.obj[OBJTYPE.BORG] + our.obj[OBJTYPE.DEFS], our.obj[OBJTYPE.VTOL] ],
 				[ their.role[ROLE.AA], their.role[ROLE.AT] + their.role[ROLE.AP] + their.role[ROLE.AS] ]
 			) === 1)
 			return OBJTYPE.VTOL;
-		return adaptVote(
-			[ our.obj[OBJTYPE.TANK], our.obj[OBJTYPE.BORG] ],
-			[ their.role[ROLE.AP], their.role[ROLE.AT] ]
-		) ? OBJTYPE.BORG : OBJTYPE.TANK;
+		if (!canVtol && !canTank)
+			return OBJTYPE.DEFS;
+		if (canTank)
+			return OBJTYPE.TANK;
+		if (canVtol)
+			return OBJTYPE.VTOL;
 	}
 	return cached(uncached, 5000);
 }
