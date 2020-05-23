@@ -1810,6 +1810,25 @@
     },
 
 
+    "Tower-Repair1": {
+        "buildPoints": 0,
+        "buildPower": 0,
+        "designable": 0,
+        "hitPoints": 0,
+        "id": "TowerLightRepair1",
+        "location": "TURRET",
+        "model": "GNMREPAR.PIE",
+        "mountModel": "TRMECM1.PIE",
+        "movement": "HOMING-DIRECT",
+        "name": "Tower Repair Turret",
+        "weaponClass": "KINETIC",
+        "weaponEffect": "ANTI TANK",
+        "weaponSubClass": "MISSILE",
+        "weight": 0
+    },
+
+
+
 
     "AAGunLaser": {
         "buildPoints": 1600,

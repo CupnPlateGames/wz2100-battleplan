@@ -27,6 +27,9 @@
         "resultComponents": [
             "T-L3-Repair1"
         ],
+        "resultStructures": [
+            "A0RepairCentre1"
+        ],
         "statID": "T-L3-Repair1"
     },
     "R0-L2-Repair2": {

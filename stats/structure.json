@@ -222,6 +222,29 @@
         "width": 1
     },
 
+    "A0RepairCentre1": {
+        "armour": 0,
+        "breadth": 1,
+        "buildPoints": 235,
+        "buildPower": 235,
+        "height": 1,
+        "hitpoints": 140,
+        "id": "A0RepairCentre1",
+        "name": "Repair Emplacement",
+        "repairPoints": 7,
+        "resistance": 150,
+        "sensorID": "DefaultSensor1Mk1",
+        "strength": "MEDIUM",
+        "structureModel": [
+            "blhowmnt.pie"
+        ],
+        "thermal": 0,
+        "type": "REPAIR FACILITY",
+        "weapons": [
+            "Tower-Repair1"
+        ],
+        "width": 1
+    },
     "A0RepairCentre3": {
         "armour": 0,
         "baseModel": "BLBGEN.PIE",
