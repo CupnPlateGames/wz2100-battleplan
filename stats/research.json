@@ -850,7 +850,7 @@
         ],
         "statID": "W-C11-Cannon3"
     },
-    "R0-B11b-Cannon3Bunker": {
+    "R0-C11b-Cannon3Bunker": {
         "iconID": "IMAGE_RES_DEFENCE",
         "id": "R-Defense-HeavyCannon-Bunker",
         "msgName": "RES_DEF_RotMG",

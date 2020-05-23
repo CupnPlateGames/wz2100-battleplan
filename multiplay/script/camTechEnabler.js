@@ -64,7 +64,7 @@ const TECH_THREE = [
 
 	"R0-A11b-MG3Bunker",
 	"R0-B11b-Flamer3Bunker",
-	"R0-B11b-Cannon3Bunker",
+	"R0-C11b-Cannon3Bunker",
 	"R0-D11b-Missile3Bunker",
 
 	"R0-A9-MGUpgrade2",
