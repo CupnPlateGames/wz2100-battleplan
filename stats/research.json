@@ -415,9 +415,9 @@
             "A0FacMod1"
         ],
         "resultComponents": [
-            "Body8MBT",
-            "Body5REC",
-            "Body6SUPP"
+            "B-D2-MNP",
+            "B-C2-MP",
+            "B-B2-MC"
         ],
         "statID": "A0FacMod1"
     },
@@ -433,9 +433,9 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "Body3MBT"
+            "B-A3-SN"
         ],
-        "statID": "Body3MBT"
+        "statID": "B-A3-SN"
     },
     "R-Vehicle-Body07": {
         "iconID": "IMAGE_RES_DROIDTECH",
@@ -449,9 +449,9 @@
         "researchPoints": 900,
         "researchPower": 900,
         "resultComponents": [
-            "Body7ABT"
+            "B-A2-MN"
         ],
-        "statID": "Body7ABT"
+        "statID": "B-A2-MN"
     },
     "R-Vehicle-Body10": {
         "iconID": "IMAGE_RES_DROIDTECH",
@@ -465,9 +465,9 @@
         "researchPoints": 1350,
         "researchPower": 1350,
         "resultComponents": [
-            "Body10MBT"
+            "B-A1-LN"
         ],
-        "statID": "Body10MBT"
+        "statID": "B-A1-LN"
     },
 
 
@@ -1077,9 +1077,9 @@
             }
         ],
         "resultComponents": [
-            "Body12SUP",
-            "Body11ABT",
-            "Body9REC"
+            "B-D1-LNP",
+            "B-C1-LP",
+            "B-B1-LC"
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG"
     },

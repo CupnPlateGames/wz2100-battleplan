@@ -10,7 +10,7 @@
         ]
     },
     "ATESTVTOL": {
-        "body": "Body7ABT",
+        "body": "B-A2-MN",
         "id": "ATESTVTOL",
         "name": "*TEST VTOL*",
         "propulsion": "V-Tol",
@@ -125,7 +125,7 @@
     },
     "ConstructionDroid": {
         "available": true,
-        "body": "Body1REC",
+        "body": "B-C3-SP",
         "construct": "Spade1Mk1",
         "id": "ConstructionDroid",
         "name": "Truck",
@@ -133,7 +133,7 @@
         "type": "CONSTRUCT"
     },
     "ConstructorDroid": {
-        "body": "Body1REC",
+        "body": "B-C3-SP",
         "construct": "Spade1Mk1",
         "id": "ConstructorDroid",
         "name": "Truck",
@@ -141,7 +141,7 @@
         "type": "CONSTRUCT"
     },
     "ConstructorHover": {
-        "body": "Body4ABT",
+        "body": "B-D3-SNP",
         "construct": "Spade1Mk1",
         "name": "Hover Truck",
         "propulsion": "hover01",

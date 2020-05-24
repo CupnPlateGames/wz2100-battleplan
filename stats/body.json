@@ -1,5 +1,5 @@
 {
-    "Body4ABT": {
+    "B-D3-SNP": {
         "armourHeat": 8,
         "armourKinetic": 8,
         "buildPoints": 125,
@@ -45,7 +45,7 @@
         "weaponSlots": 1,
         "weight": 300
     },
-    "Body1REC": {
+    "B-C3-SP": {
         "armourHeat": 10,
         "armourKinetic": 10,
         "buildPoints": 175,
@@ -91,7 +91,7 @@
         "weaponSlots": 1,
         "weight": 300
     },
-    "Body2SUP": {
+    "B-B3-SC": {
         "armourHeat": 12,
         "armourKinetic": 12,
         "buildPoints": 225,
@@ -137,7 +137,7 @@
         "weaponSlots": 1,
         "weight": 300
     },
-    "Body3MBT": {
+    "B-A3-SN": {
         "armourHeat": 15,
         "armourKinetic": 15,
         "buildPoints": 300,
@@ -184,7 +184,7 @@
         "weight": 300
     },
 
-    "Body8MBT": {
+    "B-D2-MNP": {
         "armourHeat": 12,
         "armourKinetic": 12,
         "buildPoints": 250,
@@ -230,7 +230,7 @@
         "weaponSlots": 1,
         "weight": 1200
     },
-    "Body5REC": {
+    "B-C2-MP": {
         "armourHeat": 15,
         "armourKinetic": 15,
         "buildPoints": 350,
@@ -276,7 +276,7 @@
         "weaponSlots": 1,
         "weight": 1200
     },
-    "Body6SUPP": {
+    "B-B2-MC": {
         "armourHeat": 17,
         "armourKinetic": 17,
         "buildPoints": 450,
@@ -322,7 +322,7 @@
         "weaponSlots": 1,
         "weight": 1200
     },
-    "Body7ABT": {
+    "B-A2-MN": {
         "armourHeat": 25,
         "armourKinetic": 25,
         "buildPoints": 600,
@@ -369,7 +369,7 @@
         "weight": 1200
     },
 
-    "Body12SUP": {
+    "B-D1-LNP": {
         "armourHeat": 20,
         "armourKinetic": 20,
         "buildPoints": 500,
@@ -415,7 +415,7 @@
         "weaponSlots": 1,
         "weight": 4800
     },
-    "Body11ABT": {
+    "B-C1-LP": {
         "armourHeat": 25,
         "armourKinetic": 25,
         "buildPoints": 700,
@@ -461,14 +461,14 @@
         "weaponSlots": 1,
         "weight": 4800
     },
-    "Body9REC": {
+    "B-B1-LC": {
         "armourHeat": 30,
         "armourKinetic": 30,
         "buildPoints": 900,
         "buildPower": 900,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 520,
+        "hitpoints": 260,
         "id": "Body9REC",
         "model": "drhbod09.pie",
         "name": "Tiger",
@@ -507,7 +507,7 @@
         "weaponSlots": 1,
         "weight": 4800
     },
-    "Body10MBT": {
+    "B-A1-LN": {
         "armourHeat": 40,
         "armourKinetic": 40,
         "buildPoints": 1200,
