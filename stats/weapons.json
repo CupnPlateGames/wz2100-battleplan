@@ -1725,7 +1725,7 @@
 
     "W-A21-AAMG3": {
         "buildPoints": 330,
-        "buildPower": 1330,
+        "buildPower": 330,
         "damage": 27,
         "designable": 1,
         "effectSize": 20,

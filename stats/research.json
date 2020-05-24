@@ -788,9 +788,9 @@
         "researchPoints": 70,
         "researchPower": 70,
         "resultStructures": [
-            "S-A11a-MG3Bunker"
+            "S-A11b-MG3Bunker"
         ],
-        "statID": "S-A11a-MG3Bunker"
+        "statID": "S-A11b-MG3Bunker"
     },
     "R0-B11-Flamer3": {
         "iconID": "IMAGE_RES_WEAPONTECH",
