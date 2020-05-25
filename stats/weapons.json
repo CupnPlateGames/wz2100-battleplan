@@ -527,7 +527,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "HOWITZERS",
-        "weaponWav": "lrgcan.ogg",
+        "weaponWav": "smlcan.ogg",
         "weight": 400
     },
 
@@ -1169,7 +1169,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "HOWITZERS",
-        "weaponWav": "lrgcan.ogg",
+        "weaponWav": "medcan.ogg",
         "weight": 1600
     },
 
