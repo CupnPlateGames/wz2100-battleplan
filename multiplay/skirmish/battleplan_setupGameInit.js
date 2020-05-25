@@ -192,6 +192,7 @@ function eventGameInit()
 		enableStructure("A0PowMod1", playnum);
 		enableStructure("A0ResearchFacility", playnum);
 		enableStructure("A0TankTrap", playnum);
+		enableStructure("LookOutTower", playnum);
 
 		makeComponentAvailable("wheeled01", playnum);
 		makeComponentAvailable("hover01", playnum);

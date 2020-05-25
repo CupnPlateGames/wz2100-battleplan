@@ -432,7 +432,7 @@
         "buildPoints": 50,
         "buildPower": 50,
         "height": 1,
-        "hitpoints": 50,
+        "hitpoints": 100,
         "id": "A0TankTrap",
         "name": "Tank Traps",
         "strength": "SOFT",
