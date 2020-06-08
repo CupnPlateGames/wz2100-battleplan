@@ -401,7 +401,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 257
+        "weight": 150
     },
     "W-D13-VTOLMissile1": {
         "buildPoints": 215,
@@ -442,7 +442,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 257
+        "weight": 150
     },
     "W-F13-Mortar1": {
         "buildPoints": 215,
@@ -661,7 +661,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 1029
+        "weight": 600
     },
 
 
@@ -999,7 +999,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 1029
+        "weight": 600
     },
     "W-D12-VTOLMissile2": {
         "buildPoints": 430,
@@ -1042,7 +1042,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 1029
+        "weight": 600
     },
     "W-F12-Mortar2": {
         "buildPoints": 430,
@@ -1546,7 +1546,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 4114
+        "weight": 2400
     },
     "W-D11-VTOLMissile3": {
         "buildPoints": 720,
@@ -1590,7 +1590,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 4114
+        "weight": 2400
     },
     "W-F11-Mortar3": {
         "buildPoints": 720,
@@ -1806,7 +1806,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 4114
+        "weight": 2400
     },
 
 
@@ -4166,50 +4166,6 @@
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
         "weight": 1000
-    },
-    "W-D11-VTOLMissile3": {
-        "buildPoints": 1200,
-        "buildPower": 300,
-        "damage": 480,
-        "designable": 1,
-        "effectSize": 50,
-        "explosionWav": "smlexpl.ogg",
-        "facePlayer": 1,
-        "flags": "ShootAir",
-        "flightGfx": "FXMPLME.PIE",
-        "flightSpeed": 1350,
-        "hitGfx": "FXMExp.PIE",
-        "hitpoints": 20,
-        "id": "Missile-VTOL-AT",
-        "lightWorld": 1,
-        "longRange": 2048,
-        "longHit": 80,
-        "maxElevation": 20,
-        "minElevation": -30,
-        "minimumDamage": 33,
-        "missGfx": "FXMExp.PIE",
-        "model": "Gnmmslat.PIE",
-        "mountModel": "Trmmslat.PIE",
-        "movement": "HOMING-DIRECT",
-        "muzzleGfx": "FXMRocAt.PIE",
-        "name": "VTOL Scourge Missile",
-        "numAttackRuns": 1,
-        "numExplosions": 2,
-        "numRounds": 2,
-        "radius": 160,
-        "radiusDamage": 20,
-        "radiusLife": 10,
-        "recoilValue": 20,
-        "reloadTime": 75,
-        "rotate": 180,
-        "shortHit": 70,
-        "shortRange": 640,
-        "waterGfx": "FXSSplsh.PIE",
-        "weaponClass": "KINETIC",
-        "weaponEffect": "ANTI TANK",
-        "weaponSubClass": "MISSILE",
-        "weaponWav": "rocket.ogg",
-        "weight": 750
     },
     "MissileSuper": {
         "buildPoints": 1200,
