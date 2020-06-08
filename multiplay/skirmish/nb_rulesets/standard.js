@@ -433,12 +433,21 @@ const weaponStats = {
 		templates: [],
 		extras: [],
 	},
-	useless: {
+	useless: { // Non designable and scouting turrets that should not be used.
 		roles: [ 0.0, 0.0, 0.0, 0.0],
 		chatalias: "lol",
 		micro: MICRO.RANGED,
 		weapons: [
 			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-A13-TowerMG1", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-A12-TowerMG2", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-A11-TowerMG3", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-C13-TowerCannon1", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-C12-TowerCannon2", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-C11-TowerCannon3", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-E13-TowerMissile1", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-E12-TowerMissile2", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-E11-TowerMissile3", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },

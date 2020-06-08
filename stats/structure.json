@@ -536,7 +536,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-A13-MG1"
+            "W-A13-TowerMG1"
         ],
         "width": 1
     },
@@ -602,7 +602,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-C13-Cannon1"
+            "W-C13-TowerCannon1"
         ],
         "width": 1
     },
@@ -668,7 +668,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-D13-Missile1"
+            "W-D13-TowerMissile1"
         ],
         "width": 1
     },
@@ -825,7 +825,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-A12-MG2"
+            "W-A12-TowerMG2"
         ],
         "width": 1
     },
@@ -891,7 +891,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-C12-Cannon2"
+            "W-C12-TowerCannon2"
         ],
         "width": 1
     },
@@ -957,7 +957,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-D12-Missile2"
+            "W-D12-TowerMissile2"
         ],
         "width": 1
     },
@@ -1096,7 +1096,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-A11-MG3"
+            "W-A11-TowerMG3"
         ],
         "width": 1
     },
@@ -1162,7 +1162,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-C11-Cannon3"
+            "W-C11-TowerCannon3"
         ],
         "width": 1
     },
@@ -1228,7 +1228,7 @@
         "thermal": 0,
         "type": "DEFENSE",
         "weapons": [
-            "W-D11-Missile3"
+            "W-D11-TowerMissile3"
         ],
         "width": 1
     },
