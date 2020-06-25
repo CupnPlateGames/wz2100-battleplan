@@ -1059,19 +1059,6 @@
                 "class": "Body",
                 "filterParameter": "BodyClass",
                 "filterValue": "Droids",
-                "parameter": "Armour",
-                "value": 10
-            },
-            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
-                "parameter": "Thermal",
-                "value": 10
-            },            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
                 "parameter": "HitPointPct",
                 "value": 10
             }
@@ -1098,20 +1085,6 @@
                 "class": "Body",
                 "filterParameter": "BodyClass",
                 "filterValue": "Droids",
-                "parameter": "Armour",
-                "value": 10
-            },
-            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
-                "parameter": "Thermal",
-                "value": 10
-            },    
-            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
                 "parameter": "HitPointPct",
                 "value": 10
             }
@@ -1131,20 +1104,6 @@
         "researchPoints": 1800,
         "researchPower": 1800,
         "results": [
-            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
-                "parameter": "Armour",
-                "value": 10
-            },
-            {
-                "class": "Body",
-                "filterParameter": "BodyClass",
-                "filterValue": "Droids",
-                "parameter": "Thermal",
-                "value": 10
-            },
             {
                 "class": "Body",
                 "filterParameter": "BodyClass",
@@ -1174,15 +1133,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-A13-MG1",
@@ -1203,15 +1155,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-A13-MG1",
@@ -1233,15 +1178,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-A13-MG1",
@@ -1265,15 +1203,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1294,15 +1225,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1323,15 +1247,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1356,15 +1273,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1384,15 +1294,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1413,15 +1316,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1446,15 +1342,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1474,15 +1363,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1503,15 +1385,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1536,15 +1411,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1564,15 +1432,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1593,15 +1454,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1624,15 +1478,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1652,15 +1499,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1681,15 +1521,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1712,15 +1545,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-G13-Howitzer1",
@@ -1740,15 +1566,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-G13-Howitzer1",
@@ -1769,15 +1588,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
-                "parameter": "Damage",
-                "value": 10
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -10
+                "value": -15
             }
         ],
         "statID": "W-G13-Howitzer1",
