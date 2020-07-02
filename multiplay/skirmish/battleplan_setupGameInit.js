@@ -157,23 +157,21 @@ function eventGameInit()
 	makeComponentAvailable("BaBaMG", scavengerPlayer);
 	for (var playnum = 0; playnum < maxPlayers; playnum++)
 	{
+		var powerModifier = 100;
 		if (powerType == 0)
-		{
-			setPowerModifier(85, playnum);
-		}
+			powerModifier = 66;
 		else if (powerType == 2)
-		{
-			setPowerModifier(125, playnum);
-		}
+			powerModifier = 133
+		setPowerModifier(powerModifier, playnum);
 
 		// insane difficulty is meant to be insane...
 		if (playerData[playnum].difficulty == INSANE)
 		{
-			setPowerModifier(200 + 15 * powerType, playnum);
+			setPowerModifier(powerModifier + 50, playnum);
 		}
 		else if (playerData[playnum].difficulty == EASY)
 		{
-			setPowerModifier(70 + 5 * powerType, playnum);
+			setPowerModifier(powerModifier - 33, playnum);
 		}
 
 		setDroidLimit(playnum, 150, DROID_ANY);
