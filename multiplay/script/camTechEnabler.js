@@ -21,7 +21,7 @@ const TECH_TWO = [
 	"R-Sys-Sensor-Turret01",
 	"R0-L3-Repair1",
 
-	"R-Struc-Factory-Module",
+	"R-Vehicle-Body05",
 
 	"R0-A12-MG2",
 	"R0-B12-Flamer2",
@@ -50,6 +50,7 @@ const TECH_TWO = [
 const TECH_THREE = [
 	"R-Vehicle-Metals01",
 	"R-Defense-WallUpgrade02",
+	"R-Vehicle-Body11",
 
 	"R0-A21-AAMG3",
 	"R0-D21-AAMissile3",

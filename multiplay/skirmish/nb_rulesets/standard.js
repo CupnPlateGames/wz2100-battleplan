@@ -54,9 +54,9 @@ const powerUps = [ "OilDrum", "Crate" ];
 // probably better make use of .name rather than of .stattype here?
 const modules = [
 	//{ base: POWER_GEN, module: "A0PowMod1", count: 1, cost: MODULECOST.CHEAP }, // disabled not to explode
-	{ base: FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
-	{ base: VTOL_FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
-	{ base: RESEARCH_LAB, module: "A0ResearchModule1", count: 1, cost: MODULECOST.EXPENSIVE },
+	//{ base: FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
+	//{ base: VTOL_FACTORY, module: "A0FacMod1", count: 2, cost: MODULECOST.EXPENSIVE },
+	//{ base: RESEARCH_LAB, module: "A0ResearchModule1", count: 1, cost: MODULECOST.EXPENSIVE },
 ];
 
 const targets = []
@@ -86,14 +86,14 @@ const fastestResearch = [
 // body and propulsion arrays don't affect fixed template droids
 const bodyStats = [
 	{ res: "", stat: "B-C3-SP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // viper
-	{ res: "R-Struc-Factory-Module", stat: "B-C2-MP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // cobra
-	{ res: "R-Vehicle-Metals01", stat: "B-C1-LP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // python
+	{ res: "R-Vehicle-Body05", stat: "B-C2-MP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // cobra
+	{ res: "R-Vehicle-Body11", stat: "B-C1-LP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // python
 	{ res: "", stat: "B-B3-SC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
-	{ res: "R-Struc-Factory-Module", stat: "B-B2-MC", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
-	{ res: "R-Vehicle-Metals01", stat: "B-B1-LC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
+	{ res: "R-Vehicle-Body05", stat: "B-B2-MC", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
+	{ res: "R-Vehicle-Body11", stat: "B-B1-LC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
 	{ res: "", stat: "B-D3-SNP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // bug
-	{ res: "R-Struc-Factory-Module", stat: "B-D2-MNP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // scorpion
-	{ res: "R-Vehicle-Metals01", stat: "B-D1-LNP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // mantis
+	{ res: "R-Vehicle-Body05", stat: "B-D2-MNP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // scorpion
+	{ res: "R-Vehicle-Body11", stat: "B-D1-LNP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // mantis
 	{ res: "R-Vehicle-Body03", stat: "B-A3-SN", weight: WEIGHT.LIGHT, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retaliation
 	{ res: "R-Vehicle-Body07", stat: "B-A2-MN", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retribution
 	{ res: "R-Vehicle-Body10", stat: "B-A1-LN", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // vengeance

@@ -402,34 +402,44 @@
     },
 
 
-
-    "R-Struc-Factory-Module": {
-        "iconID": "IMAGE_RES_STRUCTURETECH",
-        "id": "R-Struc-Factory-Module",
-        "keyTopic": 1,
-        "msgName": "RES_ST_FM1",
-        "name": "Factory Module",
+    "R-Vehicle-Body05": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body05",
+        "msgName": "RES_V_B05",
+        "name": "Medium Body - Cobra",
         "researchPoints": 600,
         "researchPower": 600,
-        "resultStructures": [
-            "A0FacMod1"
-        ],
         "resultComponents": [
             "B-D2-MNP",
             "B-C2-MP",
             "B-B2-MC"
         ],
-        "statID": "A0FacMod1"
+        "statID": "B-C2-MP"
     },
+    "R-Vehicle-Body11": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body11",
+        "msgName": "RES_V_B11",
+        "name": "Heavy Body - Python",
+        "requiredResearch": [
+            "R-Vehicle-Body05"
+        ],
+        "researchPoints": 900,
+        "researchPower": 900,
+        "resultComponents": [
+            "B-D1-LNP",
+            "B-C1-LP",
+            "B-B1-LC"
+        ],
+        "statID": "B-C1-LP"
+    },
+
     "R-Vehicle-Body03": {
         "iconID": "IMAGE_RES_DROIDTECH",
         "id": "R-Vehicle-Body03",
         "keyTopic": 1,
         "msgName": "RES_V_B03",
         "name": "Light Body - Retaliation",
-        "requiredResearch": [
-            "R-Struc-Factory-Module"
-        ],
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
@@ -444,7 +454,7 @@
         "name": "Medium Body - Retribution",
         "requiredResearch": [
             "R-Vehicle-Body03",
-            "R-Vehicle-Metals01"
+            "R-Vehicle-Body05"
         ],
         "researchPoints": 900,
         "researchPower": 900,
@@ -460,7 +470,7 @@
         "name": "Heavy Body - Vengeance",
         "requiredResearch": [
             "R-Vehicle-Body07",
-            "R-Vehicle-Metals02"
+            "R-Vehicle-Body11"
         ],
         "researchPoints": 1350,
         "researchPower": 1350,
@@ -1050,7 +1060,7 @@
         "msgName": "RES_V_MET1",
         "name": "Composite Alloys",
         "requiredResearch": [
-            "R-Struc-Factory-Module"
+            "R-Vehicle-Body05"
         ],
         "researchPoints": 900,
         "researchPower": 900,
@@ -1062,11 +1072,6 @@
                 "parameter": "HitPointPct",
                 "value": 10
             }
-        ],
-        "resultComponents": [
-            "B-D1-LNP",
-            "B-C1-LP",
-            "B-B1-LC"
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG"
     },

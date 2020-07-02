@@ -17,9 +17,6 @@ function removeModules(playnum)
 	var keepFactory = false;
 	var keepLab = false;
 	var keepPower = false;
-	var techLevel = getMultiTechLevel();
-	if (techLevel >= 2)
-		keepFactory = true;
 	var structs = enumStruct(playnum);
 	for (var i = 0; i < structs.length; i++)
 	{
@@ -242,7 +239,7 @@ function eventGameInit()
 		enableResearch("R0-F13-Mortar1", playnum);
 		enableResearch("R0-G13-Howitzer1", playnum);
 		enableResearch("R0-L3-Repair1", playnum);
-		enableResearch("R-Struc-Factory-Module", playnum);
+		enableResearch("R-Vehicle-Body05", playnum);
 		enableResearch("R-Sys-Sensor-Turret01", playnum);
 
 		if (baseType == CAMP_CLEAN)

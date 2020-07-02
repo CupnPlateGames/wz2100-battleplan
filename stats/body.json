@@ -226,7 +226,7 @@
                 "right": "prmrwhl1.pie"
             }
         },
-        "size": "MEDIUM",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 600
     },
@@ -272,7 +272,7 @@
                 "right": "prmrwhl1.pie"
             }
         },
-        "size": "MEDIUM",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 600
     },
@@ -318,7 +318,7 @@
                 "right": "prmrwhl1.pie"
             }
         },
-        "size": "MEDIUM",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 600
     },
@@ -364,7 +364,7 @@
                 "right": "prmrwhl1.pie"
             }
         },
-        "size": "MEDIUM",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 600
     },
@@ -411,7 +411,7 @@
                 "right": "prhrwhl1.pie"
             }
         },
-        "size": "HEAVY",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 1200
     },
@@ -457,7 +457,7 @@
                 "right": "prhrwhl1.pie"
             }
         },
-        "size": "HEAVY",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 1200
     },
@@ -503,7 +503,7 @@
                 "right": "prhrwhl1.pie"
             }
         },
-        "size": "HEAVY",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 1200
     },
@@ -549,7 +549,7 @@
                 "right": "prhrwhl1.pie"
             }
         },
-        "size": "HEAVY",
+        "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 1200
     },
