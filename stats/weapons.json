@@ -655,8 +655,8 @@
 
 
     "W-A22-AAMG2": {
-        "buildPoints": 60,
-        "buildPower": 60,
+        "buildPoints": 75,
+        "buildPower": 75,
         "damage": 21,
         "designable": 1,
         "effectSize": 20,
@@ -696,8 +696,8 @@
         "weight": 300
     },
     "W-E22-AARocket2": {
-        "buildPoints": 280,
-        "buildPower": 280,
+        "buildPoints": 175,
+        "buildPower": 175,
         "damage": 30,
         "designable": 1,
         "effectSize": 100,
@@ -741,8 +741,8 @@
         "weight": 422
     },
     "W-D22-AAMissile2": {
-        "buildPoints": 280,
-        "buildPower": 280,
+        "buildPoints": 175,
+        "buildPower": 175,
         "damage": 50,
         "designable": 1,
         "effectSize": 100,
@@ -2085,8 +2085,8 @@
 
 
     "W-A21-AAMG3": {
-        "buildPoints": 180,
-        "buildPower": 180,
+        "buildPoints": 150,
+        "buildPower": 150,
         "damage": 34,
         "designable": 1,
         "effectSize": 20,
@@ -2127,8 +2127,8 @@
     },
 
     "W-D21-AAMissile3": {
-        "buildPoints": 420,
-        "buildPower": 420,
+        "buildPoints": 350,
+        "buildPower": 350,
         "damage": 91,
         "designable": 1,
         "effectSize": 100,
