@@ -445,9 +445,9 @@ const weaponStats = {
 			{ res: "", stat: "W-C13-TowerCannon1", weight: WEIGHT.LIGHT },
 			{ res: "", stat: "W-C12-TowerCannon2", weight: WEIGHT.LIGHT },
 			{ res: "", stat: "W-C11-TowerCannon3", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-E13-TowerMissile1", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-E12-TowerMissile2", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-E11-TowerMissile3", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-D13-TowerMissile1", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-D12-TowerMissile2", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-D11-TowerMissile3", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
