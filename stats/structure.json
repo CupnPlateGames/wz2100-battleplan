@@ -877,7 +877,7 @@
         "armour": 0,
         "breadth": 1,
         "buildPoints": 400,
-        "buildPower": 1040,
+        "buildPower": 400,
         "height": 2,
         "hitpoints": 760,
         "id": "MediumCannon-Tower",
