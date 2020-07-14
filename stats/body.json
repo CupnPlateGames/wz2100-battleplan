@@ -46,7 +46,7 @@
         "weight": 300
     },
     "B-C3-SP": {
-        "armourHeat": 4,
+        "armourHeat": 0,
         "armourKinetic": 4,
         "buildPoints": 120,
         "buildPower": 120,
@@ -92,7 +92,7 @@
         "weight": 300
     },
     "B-B3-SC": {
-        "armourHeat": 8,
+        "armourHeat": 0,
         "armourKinetic": 8,
         "buildPoints": 160,
         "buildPower": 160,
@@ -138,7 +138,7 @@
         "weight": 300
     },
     "B-A3-SN": {
-        "armourHeat": 12,
+        "armourHeat": 0,
         "armourKinetic": 12,
         "buildPoints": 240,
         "buildPower": 240,
@@ -185,7 +185,7 @@
     },
 
     "B-D2-MNP": {
-        "armourHeat": 2,
+        "armourHeat": 0,
         "armourKinetic": 2,
         "buildPoints": 160,
         "buildPower": 160,
@@ -231,7 +231,7 @@
         "weight": 600
     },
     "B-C2-MP": {
-        "armourHeat": 6,
+        "armourHeat": 0,
         "armourKinetic": 6,
         "buildPoints": 240,
         "buildPower": 240,
@@ -277,7 +277,7 @@
         "weight": 600
     },
     "B-B2-MC": {
-        "armourHeat": 10,
+        "armourHeat": 0,
         "armourKinetic": 10,
         "buildPoints": 320,
         "buildPower": 320,
@@ -323,7 +323,7 @@
         "weight": 600
     },
     "B-A2-MN": {
-        "armourHeat": 14,
+        "armourHeat": 0,
         "armourKinetic": 14,
         "buildPoints": 480,
         "buildPower": 480,
@@ -370,7 +370,7 @@
     },
 
     "B-D1-LNP": {
-        "armourHeat": 4,
+        "armourHeat": 0,
         "armourKinetic": 4,
         "buildPoints": 240,
         "buildPower": 240,
@@ -416,7 +416,7 @@
         "weight": 1200
     },
     "B-C1-LP": {
-        "armourHeat": 8,
+        "armourHeat": 0,
         "armourKinetic": 8,
         "buildPoints": 360,
         "buildPower": 360,
@@ -462,7 +462,7 @@
         "weight": 1200
     },
     "B-B1-LC": {
-        "armourHeat": 12,
+        "armourHeat": 0,
         "armourKinetic": 12,
         "buildPoints": 480,
         "buildPower": 480,
@@ -508,7 +508,7 @@
         "weight": 1200
     },
     "B-A1-LN": {
-        "armourHeat": 16,
+        "armourHeat": 0,
         "armourKinetic": 16,
         "buildPoints": 720,
         "buildPower": 720,

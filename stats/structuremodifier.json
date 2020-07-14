@@ -24,10 +24,10 @@
         "SOFT": 90
     },
     "BUNKER BUSTER": {
-        "BUNKER": 100,
-        "HARD": 100,
-        "MEDIUM": 100,
-        "SOFT": 100
+        "BUNKER": 50,
+        "HARD": 50,
+        "MEDIUM": 50,
+        "SOFT": 50
     },
     "FLAMER": {
         "BUNKER": 75,
