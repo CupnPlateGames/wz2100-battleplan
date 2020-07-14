@@ -64,7 +64,7 @@ function limitStartingFacilities(playnum)
 	switch (baseType)
 	{
 	case CAMP_CLEAN:
-		max_labs = 1;
+		max_labs = 0;
 		max_facto = 0;
 		max_vtol = 0;
 		break;
