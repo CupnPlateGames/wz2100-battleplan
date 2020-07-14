@@ -285,6 +285,9 @@
         ],
         "thermal": 0,
         "type": "DEFENSE",
+        "weapons": [
+            "W-Z11-TowerScout"
+        ],
         "width": 1
     },
     "Sys-SensoTower02": {
