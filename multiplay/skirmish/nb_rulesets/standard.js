@@ -169,12 +169,14 @@ const weaponStats = {
 		micro: MICRO.RANGED,
 		// Weapons of the path, better weapons below.
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-MG1", weight: WEIGHT.LIGHT }, // mg
 			{ res: "R0-A12-MG2", stat: "W-A12-MG2", weight: WEIGHT.MEDIUM }, // hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-MG3", weight: WEIGHT.HEAVY },
 		],
 		// VTOL weapons of the path, in the same order.
 		vtols: [
+			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT }, // vtol mg
 			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
@@ -210,9 +212,11 @@ const weaponStats = {
 		chatalias: "mg",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
 		],
 		vtols: [
+			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT }, // vtol mg
 			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
@@ -231,6 +235,7 @@ const weaponStats = {
 		chatalias: "fl",
 		micro: MICRO.MELEE,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT }, // flamer
 			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.HEAVY }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
@@ -253,6 +258,7 @@ const weaponStats = {
 		chatalias: "flaa",
 		micro: MICRO.MELEE,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT }, // flamer
@@ -272,6 +278,7 @@ const weaponStats = {
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-C13-Cannon1", stat: "W-C13-Cannon1", weight: WEIGHT.LIGHT }, // lc
 			{ res: "R0-C12-Cannon2", stat: "W-C12-Cannon2", weight: WEIGHT.MEDIUM }, // mc
 			{ res: "R0-C11-Cannon3", stat: "W-C11-Cannon3", weight: WEIGHT.HEAVY }, // hc
@@ -343,6 +350,7 @@ const weaponStats = {
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT }, // pod
 			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM }, // mra
 			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
@@ -372,6 +380,7 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.MEDIUM },
 		],
 		vtols: [
@@ -390,6 +399,7 @@ const weaponStats = {
 		chatalias: "ms",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT }, // lancer
 			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM }, // tk
 			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
@@ -418,6 +428,7 @@ const weaponStats = {
 		chatalias: "msaa",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.MEDIUM },
 			{ res: "R0-D21-AAMissile3", stat: "W-D21-AAMissile3", weight: WEIGHT.HEAVY },
 		],
@@ -438,7 +449,7 @@ const weaponStats = {
 		chatalias: "lol",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
 			{ res: "", stat: "W-A13-TowerMG1", weight: WEIGHT.LIGHT },
 			{ res: "", stat: "W-A12-TowerMG2", weight: WEIGHT.LIGHT },
 			{ res: "", stat: "W-A11-TowerMG3", weight: WEIGHT.LIGHT },
@@ -450,7 +461,6 @@ const weaponStats = {
 			{ res: "", stat: "W-D11-TowerMissile3", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
-			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [],
 		templates: [],

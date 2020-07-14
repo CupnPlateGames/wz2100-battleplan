@@ -384,10 +384,10 @@ _global.isEnergyCritical = function() {
 	var oils = countFinishedStructList(structures.derricks);
 	var gens = countStructList(structures.gens);
 	var minPower = 0;
-	if (gens == 0 || oils == 0)
-		minPower += 1000;
-	if (oils < 2)
-		minPower += 500;
+	if (gens == 0)
+		minPower += 300;
+	if (oils == 0)
+		minPower += 250;
 	return (myPower() < minPower);
 }
 
