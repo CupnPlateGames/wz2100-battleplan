@@ -527,7 +527,7 @@
         "buildPoints": 200,
         "buildPower": 200,
         "height": 2,
-        "hitpoints": 330,
+        "hitpoints": 360,
         "id": "GuardTower1",
         "name": "Machinegun Guard Tower",
         "resistance": 150,
