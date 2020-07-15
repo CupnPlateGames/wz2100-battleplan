@@ -1,7 +1,7 @@
 {
     "W-Z11-Scout": {
-        "buildPoints": 0,
-	"buildPower": 0,
+        "buildPoints": 20,
+	"buildPower": 20,
         "damage": 8,
 	"designable": 1,
         "effectSize": 1,
@@ -80,8 +80,8 @@
 	"weight": 0
     },
     "W-Z11-VTOLScout": {
-        "buildPoints": 15,
-        "buildPower": 15,
+        "buildPoints": 25,
+        "buildPower": 25,
         "damage": 16,
         "designable": 1,
         "effectSize": 1,
