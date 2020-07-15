@@ -272,10 +272,10 @@
     "LookOutTower": {
         "armour": 0,
         "breadth": 1,
-        "buildPoints": 150,
-        "buildPower": 150,
+        "buildPoints": 100,
+        "buildPower": 100,
         "height": 2,
-        "hitpoints": 250,
+        "hitpoints": 200,
         "id": "LookOutTower",
         "name": "Look-Out Tower",
         "sensorID": "TowerSensor",
