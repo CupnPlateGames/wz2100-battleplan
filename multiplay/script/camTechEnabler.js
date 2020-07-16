@@ -80,6 +80,27 @@ const TECH_THREE = [
 	"R0-L2-Repair2",
 ];
 
+const TECH_FOUR = [
+	"R-Vehicle-Metals02",
+	"R-Vehicle-Metals03",
+	"R-Defense-WallUpgrade03",
+	"R-Vehicle-Body03",
+	"R-Vehicle-Body07",
+	"R-Vehicle-Body10",
+
+	"R0-A9-MGUpgrade3",
+	"R0-B9-FlamerUpgrade3",
+	"R0-C9-CannonUpgrade3",
+	"R0-D9-MissileUpgrade3",
+	"R0-E9-RocketUpgrade3",
+	"R0-F9-MortarUpgrade3",
+	"R0-G9-HowitzerUpgrade3",
+
+	"R-Sys-Autorepair-General",
+	"R-Sys-Sensor-WS",
+	"R-Sys-RadarDetector01"
+];
+
 //Automatically research these items for the player.
 function grantTech(tech)
 {

@@ -304,6 +304,12 @@ function eventGameInit()
 		grantTech(TECH_TWO);
 		grantTech(TECH_THREE);
 	}
+	else if (techLevel == 4)
+	{
+		grantTech(TECH_TWO);
+		grantTech(TECH_THREE);
+		grantTech(TECH_FOUR);
+	}
 
 	hackNetOn();
 	setTimer("checkEndConditions", 3000);
