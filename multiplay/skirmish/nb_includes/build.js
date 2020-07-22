@@ -259,7 +259,9 @@ _global.buildMinimumDerricks = function(count) {
 }
 
 function buildExpand() {
-	if (myPower() > personality.maxPower) {
+	var factoCount = countStructList(structures.factories) + countStructList(structures.vtolFactories) + countStructList(structures.labs);;
+	var pu = getPUEnergy();
+	if (pu >= factoCount + 1) {
 		switch (chooseObjectType()) {
 			case 0:
 			case 1:
@@ -276,7 +278,7 @@ function buildExpand() {
 }
 
 function buildEnergy() {
-	var oils = countFinishedStructList(structures.derricks);
+	var oils = countStructList(structures.derricks);
 	var gens = countStructList(structures.gens);
 	if (oils > 4 * gens)
 		if (buildBasicStructure(structures.gens, IMPORTANCE.PEACETIME) !== BUILDRET.UNAVAILABLE)
@@ -360,7 +362,7 @@ function recycleDefenses() {
 _global.checkConstruction = function() {
 	if (enumTrucks().filter(truckFree).length === 0)
 		return;
-	if (isEnergyCritical()) {
+	if (myPower() > 0 && isEnergyCritical()) {
 		var built = buildEnergy();
 		while (!built)
 			built = buildEnergy();
@@ -388,7 +390,19 @@ _global.isEnergyCritical = function() {
 		minPower += 300;
 	if (oils == 0)
 		minPower += 250;
+	var power = myPower();
 	return (myPower() < minPower);
+}
+
+_global.getPUEnergy = function() {
+	var puDerrick = 2;
+	if (powerType == 0)
+		puDerrick = 3;
+	else if (powerType == 2)
+		puDerrick = 1.5;
+	var oils = countFinishedStructList(structures.derricks);
+	var gens = countStructList(structures.gens);
+	return Math.min(oils / puDerrick, puDerrick * gens);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

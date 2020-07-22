@@ -159,6 +159,22 @@ const fallbackWeapon = 'machineguns';
 // Unlike bodies and propulsions, weapon lines don't have any specific meaning.
 // You can make as many weapon lines as you want for your ruleset.
 const weaponStats = {
+	scoutonly: {
+		roles: [ 1.0, 1.0, 1.0, 1.0 ],
+		chatalias: "allin",
+		micro: MICRO.MELEE,
+		weapons: [
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+		],
+		vtols: [
+			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
+		],
+		defenses: [
+			{ res: "", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
+		],
+		templates: [],
+		extras: [],
+	},
 	machineguns: {
 		// How good weapons of this path are against tanks, borgs, defenses, vtols?
 		// The sum of the four should be equal to 1.

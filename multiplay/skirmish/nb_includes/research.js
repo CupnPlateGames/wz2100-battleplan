@@ -77,12 +77,12 @@ _global.checkResearch = function() {
 	if ((!isEnergyCritical()) || gameTime < 10000) {
 		enumIdleStructList(structures.labs).forEach(doEarlyResearch);
 		// Prefer building tanks before researching
-		var factoCount = countStructList(structures.factories);
-		var idleFactoCount = enumIdleStructList(structures.factories).length;
-		if (factoCount >= 1 && idleFactoCount < factoCount && myPower() > 300)
+		var pu = getPUEnergy();
+		var factoCount = countStructList(structures.factories) + countStructList(structures.vtolFactories);
+		if (factoCount >= 1 && (pu > factoCount || (pu > 1 && myPower() > 900)))
 			enumIdleStructList(structures.labs).forEach(doResearch);
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////1//////////////////////////////////////////////////////////////////
 })(this);
