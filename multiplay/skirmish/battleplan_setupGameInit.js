@@ -39,7 +39,7 @@ function removeModules(playnum)
 				break;
 			case VTOL_FACTORY:
 				if (!keepFactory)
-					name = "A0VtolFactory1";
+					name = "A0VTolFactory1";
 				break;
 			case POWER_GEN:
 				if (!keepPower)
@@ -88,14 +88,6 @@ function limitStartingFacilities(playnum)
 		if (count_labs > max_labs)
 			removeObject(s);
 	}
-	var structs = enumStruct(playnum, CYBORG_FACTORY);
-	for (var i = 0; i < structs.length; i++)
-	{
-		var s = structs[i];
-		count_cyb++;
-		if (count_cyb > max_cyb)
-			removeObject(s);
-	}
 	var structs = enumStruct(playnum, VTOL_FACTORY);
 	for (var i = 0; i < structs.length; i++)
 	{
@@ -110,21 +102,7 @@ function limitStartingFacilities(playnum)
 		var s = structs[i];
 		count_facto++;
 		if (count_facto > max_facto)
-		{
-			var x = s.x * 128;
-			var y = s.y * 128;
 			removeObject(s);
-			if (count_cyb < max_cyb)
-			{
-				addStructure("A0CyborgFactory", playnum, x, y);
-				count_vtol++;
-			}
-			else if (count_vtol < max_vtol)
-			{
-				addStructure("A0VTolFactory1", playnum, x, y);
-				count_vtol++;
-			}
-		}
 	}
 
 }
@@ -244,7 +222,6 @@ function eventGameInit()
 		{
 			setPower(2000, playnum);
 			var structs = enumStruct(playnum);
-			var lab_count = 0;
 			for (var i = 0; i < structs.length; i++)
 			{
 				var s = structs[i];
@@ -258,8 +235,6 @@ function eventGameInit()
 					removeObject(s, false);
 				}
 			}
-			removeModules(playnum);
-			limitStartingFacilities(playnum);
 		}
 		else if (baseType == CAMP_BASE)
 		{
@@ -274,13 +249,11 @@ function eventGameInit()
 			{
 				var s = structs[i];
 				if ((playerData[playnum].difficulty != INSANE && (s.stattype == WALL || s.stattype == DEFENSE))
-				    || s.stattype == GATE || s.stattype == CYBORG_FACTORY || s.stattype == COMMAND_CONTROL)
+				    || s.stattype == GATE)
 				{
 					removeObject(s, false);
 				}
 			}
-			removeModules(playnum);
-			limitStartingFacilities(playnum);
 		}
 		else // CAMP_WALLS
 		{
@@ -289,9 +262,11 @@ function eventGameInit()
 			{
 				completeResearch(techlist[count], playnum);
 			}
-			removeModules(playnum);
 		}
+		removeModules(playnum);
+		limitStartingFacilities(playnum);
 		removeUnusedBuildings(playnum);
+		setMainReticule(); // Force update after removing structures
 	}
 
 	var techLevel = getMultiTechLevel();
