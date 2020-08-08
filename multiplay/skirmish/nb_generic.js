@@ -26,7 +26,22 @@ include(NB_INCLUDES + "_head.js");
 include(NB_RULESETS + "standard.js");
 include(NB_COMMON + "standard_build_order.js");
 
-// variables defining the personality
+/* variables defining the personality
+ * weaponPaths: weapons to use
+ * earlyResearch: fixed research path for the early game
+ * minTanks: minimal attack force at game start
+ * becomeHarder: how much to increase attack force every 5 minutes
+ * maxTanks: maximum for the minTanks value (since it grows at becomeHarder rate)
+ * minTrucks: minimal number of trucks around
+ * minHoverTrucks: minimal number of hover trucks around
+ * maxSensors: number of mobile sensor cars to produce
+ * minMiscTanks: number of tanks to start harassing enemy
+ * maxMiscTanks: number of tanks used for defense and harass
+ * vtolness: the chance % of not making droids when adaptation mechanism chooses vtols
+ * defensiveness: same thing for defenses; set this to 100 to enable turtle AI specific code
+ * maxPower: build expensive things if we have more than that
+ * repairAt: how much % healthy should droid be to join the attack group instead of repairing
+ */
 var subpersonalities = {
 	allin: {
 		chatalias: "allin",
@@ -40,60 +55,21 @@ var subpersonalities = {
 		maxPower: 400,
 		repairAt: 0,
 	},
-	MG: {
-		chatalias: "mg",
-		weaponPaths: [
-			weaponStats.machineguns,
-			weaponStats.machineguns_AA,
-		],
-		earlyResearch: [
-			"R0-A13-MG1",
-		],
-		minTanks: 4, becomeHarder: 2, maxTanks: 16,
-		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 2, maxMiscTanks: 6,
-		vtolness: 20, defensiveness: 40,
-		maxPower: 600,
-		repairAt: 0,
-	},
 	MR: {
 		chatalias: "mr",
-		weaponPaths: [ // weapons to use; put late-game paths below!
+		weaponPaths: [
 			weaponStats.machineguns,
 			weaponStats.machineguns_AA,
 			weaponStats.rockets,
 			weaponStats.rockets_AA, 
 		],
-		earlyResearch: [ // fixed research path for the early game
+		earlyResearch: [
 			"R0-A13-MG1",
 		],
-		minTanks: 2, // minimal attack force at game start
-		becomeHarder: 2, // how much to increase attack force every 5 minutes
-		maxTanks: 16, // maximum for the minTanks value (since it grows at becomeHarder rate)
-		minTrucks: 2, // minimal number of trucks around
-		minHoverTrucks: 1, // minimal number of hover trucks around
-		maxSensors: 1, // number of mobile sensor cars to produce
-		minMiscTanks: 1, // number of tanks to start harassing enemy
-		maxMiscTanks: 5, // number of tanks used for defense and harass
-		vtolness: 25, // the chance % of not making droids when adaptation mechanism chooses vtols
-		defensiveness: 30, // same thing for defenses; set this to 100 to enable turtle AI specific code
-		maxPower: 800, // build expensive things if we have more than that
-		repairAt: 0, // how much % healthy should droid be to join the attack group instead of repairing
-	},
-	MC: {
-		chatalias: "mc",
-		weaponPaths: [
-			weaponStats.cannons, 
-			weaponStats.machineguns, 
-			weaponStats.machineguns_AA,
-		],
-		earlyResearch: [
-			"R0-C13-Cannon1",
-		],
-		minTanks: 4, becomeHarder: 2, maxTanks: 16,
-		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 20, defensiveness: 40,
+		minTanks: 2, becomeHarder: 3, maxTanks: 20,
+		minTrucks: 2, minHoverTrucks: 1, maxSensors: 1,
+		minMiscTanks: 2, maxMiscTanks: 8,
+		vtolness: 25, defensiveness: 30,
 		maxPower: 800,
 		repairAt: 0,
 	},
@@ -107,27 +83,27 @@ var subpersonalities = {
 		earlyResearch: [
 			"R0-C13-Cannon1",
 		],
-		minTanks: 4, becomeHarder: 2, maxTanks: 16,
+		minTanks: 4, becomeHarder: 4, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
+		minMiscTanks: 3, maxMiscTanks: 10,
 		vtolness: 20, defensiveness: 60,
 		maxPower: 800,
 		repairAt: 0,
 	},
-	FR: {
-		chatalias: "fr",
+	CMs: {
+		chatalias: "cms",
 		weaponPaths: [
-			weaponStats.flamers,
-			weaponStats.rockets,
-			weaponStats.rockets_AA,
+			weaponStats.cannons,
+			weaponStats.missiles,
+			weaponStats.missiles_AA,
 		],
 		earlyResearch: [
-			"R0-B13-Flamer1",
+			"R0-C13-Cannon1",
 		],
-		minTanks: 2, becomeHarder: 2, maxTanks: 16,
+		minTanks: 4, becomeHarder: 4, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
-		vtolness: 30, defensiveness: 10,
+		minMiscTanks: 3, maxMiscTanks: 10,
+		vtolness: 20, defensiveness: 60,
 		maxPower: 800,
 		repairAt: 0,
 	},
@@ -141,9 +117,9 @@ var subpersonalities = {
 		earlyResearch: [
 			"R0-B13-Flamer1",
 		],
-		minTanks: 3, becomeHarder: 3, maxTanks: 16,
+		minTanks: 4, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
+		minMiscTanks: 3, maxMiscTanks: 6,
 		vtolness: 0, defensiveness: 40,
 		maxPower: 800,
 		repairAt: 0,
@@ -158,9 +134,26 @@ var subpersonalities = {
 		earlyResearch: [
 			"R0-A13-MG1",
 		],
-		minTanks: 3, becomeHarder: 3, maxTanks: 16,
+		minTanks: 4, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
-		minMiscTanks: 1, maxMiscTanks: 2,
+		minMiscTanks: 4, maxMiscTanks: 8,
+		vtolness: 10, defensiveness: 40,
+		maxPower: 800,
+		repairAt: 0,
+	},
+	MsMt: {
+		chatalias: "msmt",
+		weaponPaths: [
+			weaponStats.missiles,
+			weaponStats.mortars,
+			weaponStats.missiles_AA,
+		],
+		earlyResearch: [
+			"R0-D13-Missile1",
+		],
+		minTanks: 3, becomeHarder: 3, maxTanks: 12,
+		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
+		minMiscTanks: 2, maxMiscTanks: 6,
 		vtolness: 0, defensiveness: 40,
 		maxPower: 800,
 		repairAt: 0,
