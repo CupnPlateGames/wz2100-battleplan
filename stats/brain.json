@@ -8,14 +8,14 @@
         "maxDroidsMult": 2,
         "name": "Command Turret",
         "ranks": [ "Rookie", "Green", "Trained", "Regular", "Professional", "Veteran", "Elite", "Special", "Hero" ],
-        "thresholds": [ 0, 4, 8, 16, 24, 36, 48, 64, 80 ],
+        "thresholds": [ 0, 4000, 8000, 16000, 24000, 36000, 48000, 64000, 80000 ],
         "turret": "CommandTurret1"
     },
     "ZNULLBRAIN": {
         "id": "ZNULLBRAIN",
         "name": "Z NULL BRAIN",
         "ranks": [ "Rookie", "Green", "Trained", "Regular", "Professional", "Veteran", "Elite", "Special", "Hero" ],
-        "thresholds": [ 0, 1, 2, 4, 6, 9, 12, 16, 20 ],
+        "thresholds": [ 0, 1000, 2000, 4000, 6000, 9000, 12000, 16000, 20000 ],
         "turret": "ZNULLWEAPON"
     }
 }
