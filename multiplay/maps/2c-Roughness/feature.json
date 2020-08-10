@@ -12,19 +12,6 @@
             0
         ]
     },
-    "feature_0004": {
-        "name": "OilResource",
-        "position": [
-            1472,
-            1344,
-            103
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
     "feature_0005": {
         "name": "OilResource",
         "position": [
@@ -1273,51 +1260,12 @@
             0
         ]
     },
-    "feature_0638": {
-        "name": "OilResource",
-        "position": [
-            11456,
-            5312,
-            252
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
-    "feature_0745": {
-        "name": "OilResource",
-        "position": [
-            10176,
-            3264,
-            102
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
     "feature_0746": {
         "name": "OilResource",
         "position": [
             6848,
             2368,
             260
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
-    "feature_0747": {
-        "name": "OilResource",
-        "position": [
-            8640,
-            4928,
-            340
         ],
         "rotation": [
             0,
@@ -1351,38 +1299,12 @@
             0
         ]
     },
-    "feature_0750": {
-        "name": "OilResource",
-        "position": [
-            11328,
-            1600,
-            101
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
     "feature_0751": {
         "name": "OilResource",
         "position": [
             10304,
             4800,
             101
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
-    "feature_0752": {
-        "name": "OilResource",
-        "position": [
-            7104,
-            3904,
-            174
         ],
         "rotation": [
             0,
@@ -3808,19 +3730,6 @@
             0
         ]
     },
-    "feature_1009": {
-        "name": "OilResource",
-        "position": [
-            10688,
-            10816,
-            103
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
     "feature_1010": {
         "name": "OilResource",
         "position": [
@@ -5147,51 +5056,12 @@
             0
         ]
     },
-    "feature_1132": {
-        "name": "OilResource",
-        "position": [
-            704,
-            6848,
-            252
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ]
-    },
-    "feature_1133": {
-        "name": "OilResource",
-        "position": [
-            1984,
-            8896,
-            102
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
     "feature_1134": {
         "name": "OilResource",
         "position": [
             5312,
             9792,
             260
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
-    "feature_1135": {
-        "name": "OilResource",
-        "position": [
-            3520,
-            7232,
-            340
         ],
         "rotation": [
             32768,
@@ -5225,38 +5095,12 @@
             0
         ]
     },
-    "feature_1138": {
-        "name": "OilResource",
-        "position": [
-            832,
-            10560,
-            101
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
     "feature_1139": {
         "name": "OilResource",
         "position": [
             1856,
             7360,
             101
-        ],
-        "rotation": [
-            32768,
-            0,
-            0
-        ]
-    },
-    "feature_1140": {
-        "name": "OilResource",
-        "position": [
-            5056,
-            8256,
-            174
         ],
         "rotation": [
             32768,
@@ -7727,6 +7571,19 @@
             4800,
             4032,
             248
+        ],
+        "rotation": [
+            0,
+            0,
+            0
+        ]
+    },
+    "feature_centeroil": {
+        "name": "OilResource",
+        "position": [
+            6080,
+            6080,
+            266
         ],
         "rotation": [
             0,
