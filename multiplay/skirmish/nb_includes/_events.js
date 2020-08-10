@@ -45,14 +45,21 @@ function eventStartLevel() {
 			groupDroid(droid);
 		}
 	});
+	queue("assignEnergy");
 }
 
 function eventDroidBuilt(droid, structure) {
 	groupDroid(droid);
+	if (droid.droidType == DROID_CONSTRUCT) {
+		var list = enumStruct(me).filterProperty("status", BEING_BUILT);
+		if (list.length > 0) 
+			orderDroidObj(droid, DORDER_HELPBUILD, list[0])
+	}
+	queue("assignEnergy", 200);
 }
 
 function eventStructureBuilt(structure) {
-	queue("checkConstruction");
+	queue("assignEnergy", 200);
 }
 
 function eventAttacked(victim, attacker) {
@@ -64,7 +71,6 @@ function eventAttacked(victim, attacker) {
 		return; // don't respond to accidental friendly fire
 	if (victim.type === DROID) {
 		if (!isVTOL(victim) && defined(victim.group)) {
-			fallBack(victim, attacker);
 			setTarget(attacker, victim.group);
 			touchGroup(victim.group);
 		}

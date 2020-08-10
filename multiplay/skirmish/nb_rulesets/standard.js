@@ -42,7 +42,7 @@ const structures = {
 	hqs: [ "A0CommandCentre", ],
 	vtolPads: [ "A0VtolPad", ],
 	derricks: [ "A0ResourceExtractor", ],
-	extras: [ "A0RepairCentre3", "A0Sat-linkCentre", "A0LasSatCommand", ],
+	extras: [ "A0RepairCentre1", "A0RepairCentre3", "A0Sat-linkCentre", "A0LasSatCommand", ],
 	sensors: [ "Sys-SensoTower02", "Sys-CB-Tower01", "Sys-RadarDetector01", "Sys-SensoTowerWS", ],
 };
 
@@ -76,7 +76,9 @@ const sensorTurrets = [
 ];
 
 const fundamentalResearch = [
-
+	"R0-L3-Repair1",
+	"R0-L2-Repair2",
+	"R0-Sys-Autorepair-General",
 ];
 
 const fastestResearch = [
@@ -159,9 +161,9 @@ const fallbackWeapon = 'machineguns';
 // Unlike bodies and propulsions, weapon lines don't have any specific meaning.
 // You can make as many weapon lines as you want for your ruleset.
 const weaponStats = {
-	scoutonly: {
-		roles: [ 1.0, 1.0, 1.0, 1.0 ],
-		chatalias: "allin",
+	scout: {
+		roles: [ 0.2, 0.0, 0.2, 0.2 ],
+		chatalias: "scout",
 		micro: MICRO.MELEE,
 		weapons: [
 			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
@@ -178,23 +180,22 @@ const weaponStats = {
 	machineguns: {
 		// How good weapons of this path are against tanks, borgs, defenses, vtols?
 		// The sum of the four should be equal to 1.
-		roles: [ 0.8, 0.0, 0.1, 0.1 ],
+		roles: [ 0.8, 0.0, 0.3, 0.3 ],
 		// This explains how are human players supposed to call this weapon path in the chat.
 		chatalias: "mg",
 		// This controls micromanagement of units based on the weapons of this path.
 		micro: MICRO.RANGED,
 		// Weapons of the path, better weapons below.
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-A13-MG1", stat: "W-A13-MG1", weight: WEIGHT.LIGHT }, // mg
-			{ res: "R0-A12-MG2", stat: "W-A12-MG2", weight: WEIGHT.MEDIUM }, // hmg
+			{ res: "R0-A13-MG1", stat: "W-A13-MG1", weight: WEIGHT.LIGHT, chance: 70 }, // mg
+			{ res: "R0-A12-MG2", stat: "W-A12-MG2", weight: WEIGHT.MEDIUM, chance: 50 }, // hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-MG3", weight: WEIGHT.HEAVY },
 		],
 		// VTOL weapons of the path, in the same order.
 		vtols: [
 			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
-			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT }, // vtol mg
-			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM }, // vtol hmg
+			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT, chance: 30 }, // vtol mg
+			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM, chance: 50 }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		// Defensive structures of the path, in the same order.
@@ -228,13 +229,12 @@ const weaponStats = {
 		chatalias: "mg",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
 		],
 		vtols: [
-			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
-			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT }, // vtol mg
-			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT }, // vtol hmg
+			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT, chance: 0 },
+			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT, chance: 30 }, // vtol mg
+			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT, chance: 50 }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
@@ -251,9 +251,8 @@ const weaponStats = {
 		chatalias: "fl",
 		micro: MICRO.MELEE,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT }, // flamer
-			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.HEAVY }, // inferno
+			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT, chance: 50 }, // flamer
+			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.HEAVY, chance: 60 }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		vtols: [
@@ -277,8 +276,8 @@ const weaponStats = {
 			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
-			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT }, // flamer
-			{ res: "R0-B12-Flamer2", stat: "W-B12-VTOLFlamer2", weight: WEIGHT.MEDIUM }, // inferno
+			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT, chance: 30 }, // flamer
+			{ res: "R0-B12-Flamer2", stat: "W-B12-VTOLFlamer2", weight: WEIGHT.MEDIUM, chance: 50 }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-VTOLFlamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		defenses: [
@@ -294,9 +293,8 @@ const weaponStats = {
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-C13-Cannon1", stat: "W-C13-Cannon1", weight: WEIGHT.LIGHT }, // lc
-			{ res: "R0-C12-Cannon2", stat: "W-C12-Cannon2", weight: WEIGHT.MEDIUM }, // mc
+			{ res: "R0-C13-Cannon1", stat: "W-C13-Cannon1", weight: WEIGHT.LIGHT, chance: 70 }, // lc
+			{ res: "R0-C12-Cannon2", stat: "W-C12-Cannon2", weight: WEIGHT.MEDIUM, chance: 50 }, // mc
 			{ res: "R0-C11-Cannon3", stat: "W-C11-Cannon3", weight: WEIGHT.HEAVY }, // hc
 		],
 		vtols: [
@@ -320,12 +318,12 @@ const weaponStats = {
 		chatalias: "mo",
 		micro: MICRO.DUMB,
 		weapons: [
-			{ res: "R0-F13-Mortar1", stat: "W-F13-Mortar1", weight: WEIGHT.LIGHT }, // duplicate stat!
-			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.HEAVY },
+			{ res: "R0-F13-Mortar1", stat: "W-F13-Mortar1", weight: WEIGHT.LIGHT, chance: 50 },
+			{ res: "R0-F12-Mortar2", stat: "W-F12-Mortar2", weight: WEIGHT.HEAVY, chance: 50 },
 			{ res: "R0-F11-Mortar3", stat: "W-F11-Mortar3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
-			{ res: "R0-F12-Mortar2", stat: "W-F12-VTOLMortar2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-F12-Mortar2", stat: "W-F12-VTOLMortar2", weight: WEIGHT.MEDIUM, chance: 50 },
 			{ res: "R0-F11-Mortar3", stat: "W-F11-VTOLMortar3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [
@@ -344,8 +342,8 @@ const weaponStats = {
 		chatalias: "hw",
 		micro: MICRO.DUMB,
 		weapons: [
-			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT },
-			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.HEAVY },
+			{ res: "R0-G13-Howitzer1", stat: "W-G13-Howitzer1", weight: WEIGHT.LIGHT, chance: 50 },
+			{ res: "R0-G12-Howitzer2", stat: "W-G12-Howitzer2", weight: WEIGHT.HEAVY, chance: 50 },
 			{ res: "R0-G11-Howitzer3", stat: "W-G11-Howitzer3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
@@ -362,13 +360,12 @@ const weaponStats = {
 		],
 	},
 	rockets: {
-		roles: [ 0.8, 0.0, 0.2, 0.0 ],
+		roles: [ 0.8, 0.0, 0.3, 0.0 ],
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT, chance: 50 }, // pod
+			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM, chance: 50 }, // mra
 			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
 		],
 		vtols: [
@@ -396,12 +393,12 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT, chance: 0 },
 			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.MEDIUM },
 		],
 		vtols: [
-			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
-			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
+			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT, chance: 40 }, // pod
+			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM, chance: 50 }, // mra
 			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
 		],
 		defenses: [
@@ -411,18 +408,17 @@ const weaponStats = {
 		extras: [],
 	},
 	missiles: {
-		roles: [ 0.8, 0.0, 0.2, 0.0 ],
+		roles: [ 0.8, 0.0, 0.4, 0.0 ],
 		chatalias: "ms",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT, chance: 40 }, // lancer
+			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM, chance: 50 }, // tk
 			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		vtols: [
-			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT }, // lancer
-			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM }, // tk
+			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT, chance: 50 }, // lancer
+			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM, chance: 50 }, // tk
 			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
@@ -444,13 +440,12 @@ const weaponStats = {
 		chatalias: "msaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.MEDIUM, chance: 50 },
 			{ res: "R0-D21-AAMissile3", stat: "W-D21-AAMissile3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
-			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT },
-			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT, chance: 50 },
+			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM, chance: 50 },
 			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [

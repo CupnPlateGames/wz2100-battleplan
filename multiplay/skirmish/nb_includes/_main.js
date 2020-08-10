@@ -15,6 +15,7 @@ include(NB_INCLUDES + "misc.js");
 include(NB_INCLUDES + "stats.js");
 
 include(NB_INCLUDES + "adapt.js");
+include(NB_INCLUDES + "energy.js");
 include(NB_INCLUDES + "build.js");
 include(NB_INCLUDES + "research.js");
 include(NB_INCLUDES + "produce.js");

@@ -39,6 +39,7 @@ include(NB_COMMON + "standard_build_order.js");
  * maxMiscTanks: number of tanks used for defense and harass
  * vtolness: the chance % of not making droids when adaptation mechanism chooses vtols
  * defensiveness: same thing for defenses; set this to 100 to enable turtle AI specific code
+ * researchness: the chance % of assigning a PU to the lab instead of factories
  * maxPower: build expensive things if we have more than that
  * repairAt: how much % healthy should droid be to join the attack group instead of repairing
  */
@@ -46,18 +47,19 @@ var subpersonalities = {
 	allin: {
 		chatalias: "allin",
 		weaponPaths: [
-			weaponStats.scoutonly,
+			weaponStats.scout,
 		],
 		minTanks: 4, becomeHarder: 4, maxTanks: 8,
 		minTrucks: 0, minHoverTrucks: 0, maxSensors: 0,
 		minMiscTanks: 4, maxMiscTanks: 8,
-		vtolness: 0, defensiveness: 0,
+		vtolness: 0, defensiveness: 0, researchness: 0,
 		maxPower: 400,
 		repairAt: 0,
 	},
 	MR: {
 		chatalias: "mr",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.machineguns,
 			weaponStats.machineguns_AA,
 			weaponStats.rockets,
@@ -69,13 +71,14 @@ var subpersonalities = {
 		minTanks: 2, becomeHarder: 3, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 1, maxSensors: 1,
 		minMiscTanks: 2, maxMiscTanks: 8,
-		vtolness: 25, defensiveness: 30,
+		vtolness: 25, defensiveness: 30, researchness: 10,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 30,
 	},
 	CR: {
 		chatalias: "mc",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.cannons, 
 			weaponStats.rockets, 
 			weaponStats.rockets_AA,
@@ -86,13 +89,14 @@ var subpersonalities = {
 		minTanks: 4, becomeHarder: 4, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 10,
-		vtolness: 20, defensiveness: 60,
+		vtolness: 20, defensiveness: 60, researchness: 15,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 40,
 	},
 	CMs: {
 		chatalias: "cms",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.cannons,
 			weaponStats.missiles,
 			weaponStats.missiles_AA,
@@ -103,13 +107,14 @@ var subpersonalities = {
 		minTanks: 4, becomeHarder: 4, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 10,
-		vtolness: 20, defensiveness: 60,
+		vtolness: 20, defensiveness: 60, researchness: 20,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 25,
 	},
 	FHw: {
 		chatalias: "fhw",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.flamers,
 			weaponStats.howitzers,
 			weaponStats.flamers_AA,
@@ -120,13 +125,14 @@ var subpersonalities = {
 		minTanks: 4, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 6,
-		vtolness: 0, defensiveness: 40,
+		vtolness: 0, defensiveness: 40, researchness: 20,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 20,
 	},
 	MGHw: {
 		chatalias: "mhw",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.machineguns,
 			weaponStats.howitzers,
 			weaponStats.machineguns_AA,
@@ -137,13 +143,14 @@ var subpersonalities = {
 		minTanks: 4, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 4, maxMiscTanks: 8,
-		vtolness: 10, defensiveness: 40,
+		vtolness: 10, defensiveness: 40, researchness: 20,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 40,
 	},
 	MsMt: {
 		chatalias: "msmt",
 		weaponPaths: [
+			weaponStats.scout,
 			weaponStats.missiles,
 			weaponStats.mortars,
 			weaponStats.missiles_AA,
@@ -154,9 +161,9 @@ var subpersonalities = {
 		minTanks: 3, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 2, maxMiscTanks: 6,
-		vtolness: 0, defensiveness: 40,
+		vtolness: 0, defensiveness: 40, researchness: 15,
 		maxPower: 800,
-		repairAt: 0,
+		repairAt: 20,
 	},
 };
 

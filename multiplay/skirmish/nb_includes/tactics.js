@@ -297,7 +297,7 @@ _global.vtolArmed = function(obj, percent) {
 }
 
 _global.attackGroupSize = function() {
-	var ret = personality.minTanks + (gameTime / 300000) * personality.becomeHarder;
+	var ret = personality.minTanks + (gameTime / 150000) * personality.becomeHarder;
 	if (ret > personality.maxTanks)
 		ret = personality.maxTanks;
 	return ret;
@@ -389,18 +389,6 @@ _global.rebalanceGroups = function() {
 _global.touchGroup = function(gr) {
 	getGroupInfo(gr); // make sure everything is defined
 	groupInfo[gr].lastAttacked = gameTime;
-}
-
-_global.fallBack = function(droid, threat) {
-	if (droid.order === DORDER_MOVE)
-		return;
-	if (guessDroidMicro(droid) === MICRO.MELEE)
-		return;
-	var x = droid.x - (baseScale / 7) * (threat.x - droid.x) / distance(threat, droid);
-	var y = droid.y - (baseScale / 7) * (threat.y - droid.y) / distance(threat, droid);
-	if (x < 1 || y < 1 || x > mapWidth - 2 || y > mapHeight - 2)
-		return;
-	orderDroidLoc(droid, DORDER_MOVE, x, y);
 }
 
 _global.dangerLevel = function(loc) {

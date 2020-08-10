@@ -258,8 +258,8 @@ _global.buildMinimumDerricks = function(count) {
 	return false;
 }
 
-function buildExpand() {
-	var factoCount = countStructList(structures.factories) + countStructList(structures.vtolFactories) + countStructList(structures.labs);;
+_global.buildExpand = function() {
+	var factoCount = countStructList(structures.factories) + countStructList(structures.vtolFactories);
 	var pu = getPUEnergy();
 	if (pu >= factoCount + 1) {
 		switch (chooseObjectType()) {
@@ -277,10 +277,10 @@ function buildExpand() {
 	return false;
 }
 
-function buildEnergy() {
+_global.buildEnergy = function() {
 	var oils = countStructList(structures.derricks);
 	var gens = countStructList(structures.gens);
-	if (oils > 4 * gens)
+	if (oils >= 4 * gens)
 		if (buildBasicStructure(structures.gens, IMPORTANCE.PEACETIME) !== BUILDRET.UNAVAILABLE)
 			return true;
 	if (withChance(50))
@@ -378,31 +378,18 @@ _global.checkConstruction = function() {
 		recycleDefenses,
 		buildDefenses,
 	]))
-		queue("checkConstruction");
+	queue("checkConstruction");
 }
 
-
-_global.isEnergyCritical = function() {
-	var oils = countFinishedStructList(structures.derricks);
-	var gens = countStructList(structures.gens);
-	var minPower = 0;
-	if (gens == 0)
-		minPower += 300;
-	if (oils == 0)
-		minPower += 250;
-	var power = myPower();
-	return (myPower() < minPower);
-}
-
-_global.getPUEnergy = function() {
-	var puDerrick = 2;
-	if (powerType == 0)
-		puDerrick = 3;
-	else if (powerType == 2)
-		puDerrick = 1.5;
-	var oils = countFinishedStructList(structures.derricks);
-	var gens = countStructList(structures.gens);
-	return Math.min(oils / puDerrick, puDerrick * gens);
+_global.checkConstructionExcess = function() {
+	if (enumTrucks().filter(truckFree).length === 0)
+		return;
+	if (functionSeries("construction", [
+		buildExtras,
+		recycleDefenses,
+		buildDefenses,
+	]))
+	queue("checkConstruction");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

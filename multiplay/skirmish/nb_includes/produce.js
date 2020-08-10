@@ -42,37 +42,46 @@ function chooseBodyWeaponPair(bodies, weapons, numModules) {
 	if (!defined(weapons))
 		return undefined;
 	var candidates = [];
+	var pickThisWeapon = false;
 	for (var i = 0; i < weapons.length; ++i) {
+		if (pickThisWeapon && candidates.length > 0)
+			break;
 		var w = weapons[i].stat, ww = weapons[i].weight;
 		if (!componentAvailable(w))
 			continue;
+		if (!defined(weapons[i].chance))
+			pickThisWeapon = true;
+		else
+			pickThisWeapon = (withChance(weapons[i].chance));
+		var newCandidates = [];
 		for (var j = 0; j < bodies.length; ++j) {
 			var b = bodies[j].stat, bw = bodies[j].weight;
-			if ((bw == WEIGHT.MEDIUM && numModules < 1) || (bw == WEIGHT.HEAVY && numModules < 2))
-				continue;
 			if (!componentAvailable(b))
 				continue;
 			switch(ww) {
 				case WEIGHT.ULTRALIGHT:
 					if (bw <= WEIGHT.LIGHT)
-						candidates.push({b: b, w: w});
+						newCandidates.push({b: b, w: w});
 					break;
 				case WEIGHT.LIGHT:
 					if (bw <= WEIGHT.MEDIUM)
-						candidates.push({b: b, w: w});
+						newCandidates.push({b: b, w: w});
 					break;
 				case WEIGHT.MEDIUM:
-						candidates.push({b: b, w: w});
+						newCandidates.push({b: b, w: w});
 					break;
 				case WEIGHT.HEAVY:
 					if (bw >= WEIGHT.MEDIUM)
-						candidates.push({b: b, w: w});
+						newCandidates.push({b: b, w: w});
 					break;
 				case WEIGHT.ULTRAHEAVY:
 					if (bw >= WEIGHT.HEAVY)
-						candidates.push({b: b, w: w});
+						newCandidates.push({b: b, w: w});
 					break;
 			}
+		}
+		if (newCandidates.length > 0) {
+			candidates = newCandidates;
 		}
 	}
 	if (candidates.length > 0)
@@ -153,22 +162,13 @@ _global.checkTruckProduction = function() {
 	// At least 1 truck and never more than other units
 	if (trucks.length > 0 && trucks.length > unitCount / 2)
 		return false;
-	var hoverTrucksCount = trucks.filter(function(droid) { return isHoverPropulsion(droid.propulsion); }).length;
-	if (iHaveHover() && hoverTrucksCount < personality.minHoverTrucks) {
-		var groundTrucks = trucks.filter(function(droid) { return !isHoverPropulsion(droid.propulsion); });
-		if (groundTrucks.length > personality.minTrucks) {
-			groundTrucks.length -= personality.minTrucks;
-			groundTrucks.forEach(function(droid) { orderDroid(droid, DORDER_RECYCLE); });
-			return false;
-		}
-	}
 	if (trucks.length >= getDroidLimit(me, DROID_CONSTRUCT))
 		return false;
-	if (trucks.length < personality.minTrucks || myPower() > personality.maxPower
-		|| (iHaveHover() && hoverTrucksCount < personality.minHoverTrucks)
+	var truckMaxRatio = personality.defensiveness / 150;
+	if (trucks.length == 0 || trucks.length < unitCount * truckMaxRatio || myPower() > personality.maxPower
 	) {
 		// Never more than 1/3rd of units when above minTrucks
-		if (trucks.length >= personality.minTrucks && trucks.length > unitCount / 3)
+		if (trucks.length > 0 && trucks.length > unitCount / 3)
 			return false;
 		var f;
 		f = enumFinishedStructList(structures.factories)[0];
@@ -233,12 +233,6 @@ _global.checkProduction = function() {
 		default:
 			if (checkTankProduction())
 				return;
-	}
-	// if having too much energy, don't care about what we produce
-	if (myPower() > personality.maxPower) {
-		queue("checkConstruction");
-		checkTankProduction();
-		checkVtolProduction();
 	}
 }
 
