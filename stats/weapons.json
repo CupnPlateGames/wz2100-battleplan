@@ -557,7 +557,7 @@
         "numExplosions": 2,
         "numRounds": 1,
         "radiusLife": 10,
-        "reloadTime": 40,
+        "reloadTime": 12,
         "rotate": 0,
         "shortHit": 100,
         "shortRange": 128,
