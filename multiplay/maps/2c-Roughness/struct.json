@@ -2219,37 +2219,9 @@
         ],
         "startpos": 1
     },
-    "structure_1396": {
-        "name": "A0CyborgFactory",
-        "position": [
-            4416,
-            1280,
-            180
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_1397": {
-        "name": "A0CyborgFactory",
-        "position": [
-            7744,
-            10880,
-            180
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_1399": {
         "modules": 2,
-        "name": "A0LightFactory",
+        "name": "A0VTolFactory1",
         "position": [
             3648,
             832,
@@ -2262,37 +2234,9 @@
         ],
         "startpos": 0
     },
-    "structure_1400": {
-        "name": "A0CyborgFactory",
-        "position": [
-            4032,
-            896,
-            180
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_1401": {
-        "name": "A0CyborgFactory",
-        "position": [
-            8128,
-            11264,
-            180
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_1402": {
         "modules": 2,
-        "name": "A0LightFactory",
+        "name": "A0VTolFactory1",
         "position": [
             8512,
             11328,

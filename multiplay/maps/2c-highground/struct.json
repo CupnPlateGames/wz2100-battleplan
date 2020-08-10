@@ -14,7 +14,6 @@
         "startpos": 1
     },
     "structure_0075": {
-        "modules": 1,
         "name": "A0PowerGenerator",
         "position": [
             4224,
@@ -29,7 +28,6 @@
         "startpos": 1
     },
     "structure_0076": {
-        "modules": 1,
         "name": "A0LightFactory",
         "position": [
             3904,
@@ -58,7 +56,6 @@
         "startpos": 1
     },
     "structure_0078": {
-        "modules": 1,
         "name": "A0ResearchFacility",
         "position": [
             5632,
@@ -184,20 +181,6 @@
         ],
         "startpos": 0
     },
-    "structure_0102": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1344,
-            11136,
-            32
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0104": {
         "name": "A0LightFactory",
         "position": [
@@ -213,25 +196,10 @@
         "startpos": 0
     },
     "structure_0105": {
-        "modules": 1,
-        "name": "A0LightFactory",
+        "name": "A0VTolFactory1",
         "position": [
             1728,
             11072,
-            32
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_0106": {
-        "name": "A0ComDroidControl",
-        "position": [
-            1792,
-            11648,
             32
         ],
         "rotation": [
@@ -256,7 +224,6 @@
         "startpos": 0
     },
     "structure_0108": {
-        "modules": 1,
         "name": "A0ResearchFacility",
         "position": [
             2176,
@@ -271,7 +238,6 @@
         "startpos": 0
     },
     "structure_0109": {
-        "modules": 1,
         "name": "A0ResearchFacility",
         "position": [
             2176,
@@ -286,7 +252,6 @@
         "startpos": 0
     },
     "structure_0112": {
-        "modules": 1,
         "name": "A0PowerGenerator",
         "position": [
             1024,
@@ -329,7 +294,7 @@
         "startpos": 0
     },
     "structure_0118": {
-        "name": "A0LightFactory",
+        "name": "A0VTolFactory1",
         "position": [
             4416,
             1216,
@@ -357,39 +322,10 @@
         "startpos": 1
     },
     "structure_0122": {
-        "modules": 1,
         "name": "A0ResearchFacility",
         "position": [
             5248,
             640,
-            28
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0123": {
-        "name": "A0ComDroidControl",
-        "position": [
-            4864,
-            640,
-            28
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0124": {
-        "name": "A0CyborgFactory",
-        "position": [
-            4800,
-            1024,
             28
         ],
         "rotation": [
