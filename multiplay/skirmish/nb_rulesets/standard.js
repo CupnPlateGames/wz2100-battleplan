@@ -78,7 +78,7 @@ const sensorTurrets = [
 const fundamentalResearch = [
 	"R0-L3-Repair1",
 	"R0-L2-Repair2",
-	"R0-Sys-Autorepair-General",
+	"R-Sys-Autorepair-General",
 ];
 
 const fastestResearch = [
