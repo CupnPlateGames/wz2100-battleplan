@@ -225,15 +225,16 @@ function checkVtolProduction() {
 
 _global.checkProduction = function() {
 	if (isEnergyCritical())
-		return;
+		return false;
 	switch(chooseObjectType()) {
 		case 3:
 			if (checkVtolProduction())
-				return;
+				return true;
 		default:
 			if (checkTankProduction())
-				return;
+				return true;
 	}
+	return false;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////

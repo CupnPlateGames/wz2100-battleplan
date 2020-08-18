@@ -55,11 +55,9 @@ function eventDroidBuilt(droid, structure) {
 		if (list.length > 0) 
 			orderDroidObj(droid, DORDER_HELPBUILD, list[0])
 	}
-	queue("assignEnergy", 200);
 }
 
 function eventStructureBuilt(structure) {
-	queue("assignEnergy", 200);
 }
 
 function eventAttacked(victim, attacker) {
