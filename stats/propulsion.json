@@ -36,7 +36,7 @@
         "speed": 256,
         "spinAngle": 45,
         "type": "Tracked",
-        "weight": 200
+        "weight": 250
     },
     "V-Tol": {
         "acceleration": 400,
