@@ -7,7 +7,7 @@
 (function(_global) {
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-_global.MAX_GROUPS = maxPlayers;
+_global.MAX_GROUPS = 3;
 _global.miscGroup = MAX_GROUPS;
 _global.vtolGroup = miscGroup + 1;
 var groupInfo = [];
@@ -15,20 +15,22 @@ var firstTimeHarass = true;
 
 function GroupInfo() {
 	this.lastAttacked = undefined; // gameTime at the moment of the last combat
-}
-
-function safeGetObject(label) {
-	var obj = getObject(label);
-	if (obj === null)
-		return undefined;
-	return obj;
+	this.target = undefined;
+	this.microTarget = undefined;
+	this.strength = 0;
+	this.regrouping = false;
+	this.retreating = false;
+	this.roamingTarget = undefined;
 }
 
 function groupsBySize() {
-	var ret = [];
-	for (var i = 0; i < MAX_GROUPS; ++i)
-		if (isEnemy(i))
-			ret.push(i);
+	var ret = [0, 1, 2];
+	ret.sort(function(one, two) { return groupSize(two) - groupSize(one); });
+	return ret;
+}
+
+function propulsionGroupsBySize(propulsionIndex) {
+	var ret = [propulsionIndex];
 	ret.sort(function(one, two) { return groupSize(two) - groupSize(one); });
 	return ret;
 }
@@ -61,133 +63,165 @@ function findNearestGroup(x, y) {
 	var gr = [];
 	for (var i = 0; i < ret.clusters.length; ++i) {
 		gr[i] = findLargestGroupIn(ret.clusters[i]);
-		if (groupSize(gr[i]) > attackGroupSize()) {
-			var dist = distance(ret.xav[i], ret.yav[i], x, y);
-			if (dist < minDist) {
-				minDist = dist;
-				minIdx = i;
-			}
+		var dist = distance(ret.xav[i], ret.yav[i], x, y);
+		if (dist < minDist) {
+			minDist = dist;
+			minIdx = i;
 		}
 	}
 	if (defined(minIdx))
 		return gr[minIdx];
 	gr = groupsBySize();
 	if (gr.length > 0)
-		if (groupSize(gr[0]) > attackGroupSize())
-			return gr[0];
+		return gr[0];
 }
 
-function targetSuitableForHarass(object) {
+_global.estimateTargetStrength = function(object) {
 	function uncached() {
-		var ret = enumRange(object.x, object.y, baseScale / 2, ENEMIES, false).filter(function(obj) {
-			return !(obj.type == STRUCTURE && obj.stattype != DEFENSE);
+		var enemies = enumRange(object.x, object.y, baseScale, ENEMIES, false).filter(function(obj) {
+			return (obj.type == STRUCTURE && obj.stattype == DEFENSE || (obj.type == DROID && obj.droidType == DROID_WEAPON));
 		}).length;
-		return ret <= groupSize(miscGroup);
+		return 1.0 * enemies;
 	}
-	return cached(uncached, 60000, object.id);
+	return cached(uncached, 2000, object.id);
+}
+
+_global.estimateGroupStrength = function(group) {
+	return 1.0 * groupSize(group);
 }
 
 function getGroupInfo(gr) {
-	if (defined(groupInfo[gr]))
+	if (defined(groupInfo[gr])) {
+		var gi = groupInfo[gr];
+		if (defined(gi.target)) {
+			if (gi.target.type == FEATURE) {
+				if (getObject(gi.target.x, gi.target.y) == null) {
+					groupInfo[gr].target = undefined;
+				}
+			} else {
+				if (getObject(gi.target.type, gi.target.player, gi.target.id) == null) {
+					groupInfo[gr].target = undefined;
+				}
+			}
+		}
+		if (defined(gi.microTarget)) {
+			if (getObject(gi.microTarget.type, gi.microTarget.player, gi.microTarget.id) == null) {
+				groupInfo[gr].microTarget = undefined;
+			}
+		}
+		if (defined(gi.roamingTarget)) {
+			if (getObject(gi.roamingTarget.type, gi.roamingTarget.player, gi.roamingTarget.id) == null) {
+				groupInfo[gr].roamingTarget = undefined;
+			}
+		}
 		return groupInfo[gr];
+	}
 	groupInfo[gr] = new GroupInfo();
 	return groupInfo[gr];
 }
 
-function groupTargetLabel(gr) {
-	return "NullBot_" + me + "_GroupTarget_" + gr;
-}
-
-function groupMicroTargetLabel(gr) {
-	return "NullBot_" + me + "_GroupMicroTarget_" + gr;
-}
-
-function vtolTargetLabel() {
-	return "NullBot_" + me + "_VtolTarget";
-}
-
-function findTarget(gr) {
-	var obj = safeGetObject(groupMicroTargetLabel(gr));
-	var obj2 = safeGetObject(groupTargetLabel(gr));
-	getGroupInfo(gr);
-	if (gameTime > groupInfo[gr].lastAttacked + 10000 && defined(obj2) && obj2.type === POSITION)
-		removeLabel(groupMicroTargetLabel(gr));
-	if (!defined(obj))
-		obj = obj2;
-	if (defined(obj)) {
-		if (gr === miscGroup) {
-			// harass group should switch targets when its target gets protected, otherwise targets are permanent
-			if (throttled(10000) || targetSuitableForHarass(obj))
-				return obj;
-		} else
-			return obj;
+/** Check if the current target is still valid or pick an other valid one. 
+ * @return the target or undefined.
+ */
+function getTargets() {
+	var ret = {
+		powerups: [],
+		base: [],
+		units: [],
+	};
+	function sortByDistance(one, two) {
+		return one.distance - two.distance;
 	}
-	// find harass targets for the misc group
-	if (gr === miscGroup) {
-		var list = enumStructList(miscTargets, enumLivingPlayers().filter(isEnemy).random());
-		powerUps.forEach(function(stat) { // pick up oil drums and artifacts
-			list = list.concat(enumFeature(-1, stat));
-		});
-		list = list.filter(targetSuitableForHarass).filter(function(feature) {
-			if (iHaveHover())
-				if (canReachFromBase(getPropulsionStatsComponents(PROPULSIONUSAGE.HOVER)[0], feature))
-					return true;
-			return canReachFromBase(getPropulsionStatsComponents(PROPULSIONUSAGE.GROUND)[0], feature);
-		}).sort(function(one, two) {
-			return distanceToBase(one) - distanceToBase(two);
-		});
-		obj = list[random(Math.min(3, list.length))];
-		if (obj) {
-			addLabel(obj, groupTargetLabel(gr));
-			return obj;
+	// Powerup targets
+	var powerList = [];
+	powerUps.forEach(function(stat) {
+		powerList = powerList.concat(enumFeature(-1, stat));
+	});
+	powerList = powerList.filter(function(feature) {
+		if (iHaveHover())
+			if (canReachFromBase(getPropulsionStatsComponents(PROPULSIONUSAGE.HOVER)[0], feature))
+				return true;
+		return canReachFromBase(getPropulsionStatsComponents(PROPULSIONUSAGE.GROUND)[0], feature);
+	});
+	for (var i = 0; i < powerList.length; i++) {
+		powerList[i] = {target: powerList[i], distance: distanceToBase(powerList[i]), strength: 0};
+	}
+	powerList.sort(sortByDistance);
+	if (powerList.length > 2) { // Keep only the two nearest targets to prevent crossing the entire map
+		powerList = [powerList[0], powerList[1]];
+	}
+	if (powerList.length > 0) {
+		for (var i = 0; i < powerList.length; i++) {
+			powerList[i].strength = estimateTargetStrength(powerList[i].target);
+			ret.powerups.push(powerList[i]);
 		}
 	}
-	// fund structure targets
-	var list = enumStructList(targets, gr);
-	if (list.length > 0)
-		obj = list.random();
-	else {
-		// find remaining droids
-		list = enumDroid(gr);
-		if (list.length > 0)
-			obj = list.random();
+	// Structure targets
+	var structList = [];
+	for (var p = 0; p < maxPlayers; p++) {
+		if (isEnemy(p)) {
+			targets.forEach(function(structType) {
+				var structs = enumStruct(p, structType);
+				var targetStructs = [];
+				for (var i = 0; i < structs.length; i++) {
+					targetStructs.push({target: structs[i], distance: distanceToBase(structs[i]), strength: 0});
+				}
+				targetStructs.sort(sortByDistance);
+				for (var i = 0; i < Math.min(3, targetStructs.length); i++) {
+					targetStructs[i].strength = estimateTargetStrength(targetStructs[i].target);
+					ret.base.push(targetStructs[i]);
+				}
+			});
+		}
 	}
-	if (defined(obj)) {
-		addLabel(obj, groupTargetLabel(gr));
-		return obj;
+	// Unit targets
+	var unitList = [];
+	for (var p = 0; p < maxPlayers; p++) {
+		if (isEnemy(p)) {
+			unitList = unitList.concat(enumDroid(p, DROID_CONSTRUCT));
+		}
 	}
+	for (var i = 0; i < unitList.length; i++) {
+		unitList[i] = {target: unitList[i], distance: distanceToBase(unitList[i]), strength: 0};
+	}
+	unitList.sort(sortByDistance);
+	for (var i = 0; i < Math.min(3, unitList.length); i++) {
+		unitList[i].strength = estimateTargetStrength(unitList[i].target);
+		ret.units.push(unitList[i]);
+	}
+	return ret;
 }
 
-function groupInDanger(gr) {
-	getGroupInfo(gr); // make sure everything is defined
-	if (!defined(groupInfo[gr].lastAttacked))
+_global.regroup = function(gr) {
+	var gi = getGroupInfo(gr);
+	var ret = naiveFindClusters(enumGroup(gr).filter(checkRepaired), (baseScale / 2));
+	if (ret.maxCount === 0) {
+		groupInfo[gr].regrouping = false;
 		return false;
-	return gameTime - groupInfo[gr].lastAttacked < 10000;
+	}
+	var size = groupSize(gr);
+	var waitForRegrouping = (ret.maxCount < (size * 0.67));
+	for (var i = 0; i < ret.clusters.length; ++i) {
+		for (var j = 0; j < ret.clusters[i].length; ++j) {
+			if (i !== ret.maxIdx) {
+				orderDroidLoc(ret.clusters[i][j], DORDER_MOVE, ret.xav[ret.maxIdx], ret.yav[ret.maxIdx]);
+			} else if (waitForRegrouping) {
+				orderDroid(ret.clusters[ret.maxIdx][j], DORDER_STOP);
+			}
+		}
+	}
+	groupInfo[gr].regrouping = waitForRegrouping;
+	return waitForRegrouping;
 }
 
-function regroup(gr) {
-	if (inPanic())
-		return enumGroup(gr).filter(checkRepaired);
-	var size = attackGroupSize();
-	if (size < groupSize(gr) / 2)
-		size = groupSize(gr) / 2;
-	var ret = naiveFindClusters(enumGroup(gr).filter(checkRepaired), (baseScale / 3));
-	if (ret.maxCount === 0)
-		return [];
-	for (var i = 0; i < ret.clusters.length; ++i)
-		if (i !== ret.maxIdx)
-			for (var j = 0; j < ret.clusters[i].length; ++j)
-				orderDroidLoc(ret.clusters[i][j], DORDER_MOVE, ret.xav[ret.maxIdx], ret.yav[ret.maxIdx]);
-	if (ret.maxCount < size) {
-		for (var j = 0; j < ret.clusters[ret.maxIdx].length; ++j) {
-			if (groupInDanger(gr))
-				orderDroid(ret.clusters[ret.maxIdx][j], DORDER_RTB);
-			else
-				orderDroid(ret.clusters[ret.maxIdx][j], DORDER_STOP);
-		}
-		return [];
-	}
-	return ret.clusters[ret.maxIdx];
+_global.retreat = function(gr) {
+	gi = getGroupInfo(gr);
+	gi.target = undefined;
+	gi.microTarget = undefined;
+	gi.retreating = true;
+	enumGroup(gr).filter(checkRepaired).forEach(function(droid) {
+		orderDroid(droid, DORDER_RTB);
+	});
 }
 
 function weHaveRepair() {
@@ -209,38 +243,72 @@ function checkRepaired(droid) {
 	return true;
 }
 
+_global.getCurrentTarget = function(gr) {
+	var groupInfo = getGroupInfo(gr);
+	var obj = groupInfo.microTarget;
+	var obj2 = groupInfo.target;
+	if (obj == null) {
+		groupInfo.microTarget = undefined;
+		obj = undefined;
+	}
+	if (obj2 == null) {
+		groupInfo.target = undefined;
+		obj2 = undefined;
+	}
+	if (gameTime > groupInfo.lastAttacked + 10000) {
+		groupInfo.microTarget = undefined;
+		groupInfo.retreating = false;
+	}
+	if (groupInfo.retreating)
+		return undefined;
+	if (!defined(obj))
+		obj = obj2;
+	return obj;
+}
+
 function attackTarget(droid) {
-	var target = findTarget(droid.group);
-	if (droid.group !== miscGroup)
-		if (!defined(target) || !droidCanReach(droid, target.x, target.y)) {
-			groupDroid(droid);
-			return;
+	var gi = getGroupInfo(droid.group);
+	var target = getCurrentTarget(droid.group);
+	if (!defined(target)) {
+		if (defined(gi.roamingTarget) && gi.roamingTarget.type == DROID) {
+			// Get the droid to update it's position and follow it
+			var targetDroid = getObject(gi.roamingTarget.type, gi.roamingTarget.player, gi.roamingTarget.id)
+			if (targetDroid != null) {
+				orderDroidLoc(droid, DORDER_SCOUT, targetDroid.x, targetDroid.y);
+			} else {
+				getGroupInfo(droid.group);
+				groupInfo[droid.group].roamingTarget = undefined;
+				orderDroid(droid, DORDER_RTB);
+			}
+		} else {
+			orderDroid(droid, DORDER_RTB);
 		}
-	if (defined(target))
-		switch (target.type) {
-			case DROID:
-				if (droid.droidType === DROID_SENSOR)
-					orderDroidObj(droid, DORDER_OBSERVE, target);
-				else if (droid.canHitGround === true && !isVTOL(target))
-					orderDroidObj(droid, DORDER_ATTACK, target);
-				else if(droid.canHitAir === true && isVTOL(target))
-					orderDroidObj(droid, DORDER_ATTACK, target);
-				else
-					orderDroidLoc(droid, DORDER_SCOUT, target.x, target.y);
-				break;
-			case FEATURE:
-				orderDroidObj(droid, DORDER_RECOVER, target);
-				break;
-			case STRUCTURE:
-				if (droid.droidType !== DROID_SENSOR)
-					orderDroidLoc(droid, DORDER_SCOUT, target.x, target.y);
-				else
-					orderDroidObj(droid, DORDER_OBSERVE, target);
-				break;
-			default:
+		return;
+	}
+	switch (target.type) {
+		case DROID:
+			if (droid.droidType === DROID_SENSOR)
+				orderDroidObj(droid, DORDER_OBSERVE, target);
+			else if (droid.canHitGround === true && !isVTOL(target))
+				orderDroidObj(droid, DORDER_ATTACK, target);
+			else if(droid.canHitAir === true && isVTOL(target))
+				orderDroidObj(droid, DORDER_ATTACK, target);
+			else
 				orderDroidLoc(droid, DORDER_SCOUT, target.x, target.y);
-				break;
-		}
+			break;
+		case FEATURE:
+			orderDroidObj(droid, DORDER_RECOVER, target);
+			break;
+		case STRUCTURE:
+			if (droid.droidType !== DROID_SENSOR)
+				orderDroidLoc(droid, DORDER_SCOUT, target.x, target.y);
+			else
+				orderDroidObj(droid, DORDER_OBSERVE, target);
+			break;
+		default:
+			orderDroidLoc(droid, DORDER_SCOUT, target.x, target.y);
+			break;
+	}
 }
 
 function pickVtolTarget(droid) {
@@ -296,28 +364,19 @@ _global.vtolArmed = function(obj, percent) {
 	return false;
 }
 
-_global.attackGroupSize = function() {
-	var ret = personality.minTanks + (gameTime / 150000) * personality.becomeHarder;
-	if (ret > personality.maxTanks)
-		ret = personality.maxTanks;
-	return ret;
-}
-
 _global.setTarget = function(object, group) {
 	if (!defined(group)) {
 		group = findNearestGroup(object.x, object.y);
-		if (object.type === STRUCTURE || object.type === DROID)
-			addLabel(object, vtolTargetLabel());
 	}
 	if (!defined(group))
 		return false;
-	if (defined(safeGetObject(groupTargetLabel(group))))
-		if (throttled(10000, group)) // don't switch targets too often
-			return false;
+	if (throttled(10000, group)) // don't switch targets too often
+		return false;
+	var groupInfo = getGroupInfo(group);
 	if (object.type === DROID || (object.type === STRUCTURE && object.stattype === DEFENSE))
-		addLabel(object, groupMicroTargetLabel(group));
+		groupInfo.microTarget = object;
 	else
-		addLabel(object, groupTargetLabel(group));
+		groupInfo.target = object;
 	return true;
 }
 
@@ -333,33 +392,30 @@ _global.groupDroid = function(droid) {
 	if (droid.droidType === DROID_WEAPON || droid.droidType === DROID_CYBORG) {
 		if (isVTOL(droid)) {
 			groupAdd(vtolGroup, droid);
-			return;
+			return vtolGroup;
 		}
-		if (withChance(100 - groupSize(miscGroup) * 50 / personality.maxMiscTanks) || firstTimeHarass) {
-			firstTimeHarass = false;
-			groupAdd(miscGroup, droid);
-			return;
+		var propulsionIndex = 0;
+		switch (droid.propulsion) {
+		case "wheeled01":
+			propulsionIndex = 0;
+			break;
+		case "tracked01":
+			propulsionIndex = 1;
+			break;
+		case "hover01":
+			propulsionIndex = 2;
+			break;
 		}
-		var grp = groupsBySize().filter(function(i) {
-			if (isAlly(i))
-				return false;
-			if (!defined(findTarget(i)))
-				return false;
-			if (!droidCanReach(droid, findTarget(i).x, findTarget(i).y))
-				return false;
-			return true;
-		});
-		var ret = grp.filter(function(i) {
-			return groupSize(i) < attackGroupSize() * 2 && defined(findTarget(i));
-		});
-		if (ret.length === 0)
-			ret = grp;
-		if (ret.length === 0)
-			ret = [ miscGroup ];
-		groupAdd(ret[0], droid);
+		var grp = propulsionGroupsBySize(propulsionIndex);
+		if (grp.length == 0)
+			grp = [ miscGroup ];
+		groupAdd(grp[0], droid);
+		return grp[0];
 	}
-	if (droid.droidType === DROID_SENSOR)
+	if (droid.droidType === DROID_SENSOR) {
 		groupAdd(miscGroup, droid);
+		return miscGroup;
+	}
 }
 
 _global.rebalanceGroups = function() {
@@ -370,20 +426,6 @@ _global.rebalanceGroups = function() {
 		for (var i = personality.maxMiscTanks; i < personality.maxMiscTanks + 5 && i < list.length; ++i)
 			groupDroid(list[i]);
 	}
-	var ret = groupsBySize();
-	if (ret.length > 0)
-		if (ret[0] > 0 && ret[0] < attackGroupSize())
-			for (var i = 1; i < ret.length; ++i) {
-				var list = enumGroup(ret[i]);
-				for (var j = 0; j < list.length; ++j) {
-					var target = findTarget(ret[0]);
-					if (defined(target))
-						if (droidCanReach(list[j], target.x, target.y)) {
-							groupAdd(ret[0], list[j]);
-							return;
-						}
-				}
-			}
 }
 
 _global.touchGroup = function(gr) {
@@ -396,23 +438,126 @@ _global.dangerLevel = function(loc) {
 }
 
 _global.checkAttack = function() {
-	for (var i = 0; i < MAX_GROUPS; ++i)
-		if (!throttled(3000, i)) {
-			regroup(i).forEach(attackTarget);
-			break;
+	for (var i = 0; i < MAX_GROUPS; ++i) {
+		if (!throttled(reactionTime(), i)) {
+			if (!regroup(i)) {
+				enumGroup(i).filter(checkRepaired).forEach(attackTarget);
+			}
 		}
-	if (throttled(1000, "misc"))
-		return;
-	enumGroup(miscGroup).filter(checkRepaired).forEach(attackTarget);
-	if (throttled(5000, "vtols"))
-		return;
-	var droids = enumGroup(vtolGroup).filter(vtolReady);
-	if (droids.length > attackGroupSize() / 3.)
+	}
+	if (!throttled(reactionTime() * 2, "vtols")) {
+		var droids = enumGroup(vtolGroup).filter(vtolReady);
 		droids.forEach(function(droid) {
 			var target = pickVtolTarget(droid);
 			if (defined(target))
 				orderDroidObj(droid, DORDER_ATTACK, target);
 		});
+	}
+}
+
+
+function isTargetted(obj) {
+	for (var i = 0; i < MAX_GROUPS; i++) {
+		var gi = getGroupInfo(i);
+		if (defined(gi.target) && gi.target.id == obj.id) {
+			return true;
+		}
+	}
+	return false;
+}
+
+/** Assign a target to a group.
+ * @param group the group number
+ * @param strength the strength of the group(s) to check
+ * @param targetList the list of targets from getTargets()
+ * @param minStrengthRatio minimum (strength / target strength) for assignment
+ * @return true when a target is found, false otherwise.
+ */
+function assignTarget(group, strength, targetList, minStrengthRatio) {
+	for (var i = 0; i < targetList.powerups.length; i++) {
+		var pu = targetList.powerups[i];
+		if (getObject(pu.target.x, pu.target.y) == null)
+			continue;
+		if (!isTargetted(pu.target) && strength / pu.strength >= minStrengthRatio) {
+			groupInfo[group].target = pu.target;
+			groupInfo[group].roamingTarget = undefined;
+			return true;
+		}
+	}
+	for (var i = 0; i < targetList.base.length; i++) {
+		var base = targetList.base[i];
+		if (getObject(base.target.type, base.target.player, base.target.id) == null)
+			continue;
+		if (strength / base.strength >= minStrengthRatio) {
+			groupInfo[group].target = base.target;
+			groupInfo[group].roamingTarget = undefined;
+			return true;
+		}
+	}
+	for (var i = 0; i < targetList.units.length; i++) {
+		var unit = targetList.units[i];
+		if (getObject(unit.target.type, unit.target.player, unit.target.id) == null)
+			continue;
+		if (strength / unit.strength >= minStrengthRatio) {
+			groupInfo[group].target = unit.target;
+			groupInfo[group].roamingTarget = undefined;
+			return true;
+		}
+	}
+	return false;
+}
+
+_global.updateTargets = function() {
+	var idleGroups = [];
+	// Check if the current target is still valid, look for idle groups
+	for (var i = 0; i < MAX_GROUPS; ++i) {
+		var gi = getGroupInfo(i);
+		groupInfo[i].strength = estimateGroupStrength(i);
+		if (defined(gi.target)) {
+			if (gi.strength / estimateTargetStrength(gi.target) < 1.0) {
+				groupInfo[i].target = undefined;
+			}
+		}
+		if (!defined(gi.target) && !gi.regrouping && groupSize(i) > 0) {
+			idleGroups.push(i);
+		}
+	}
+	function uncached() {
+		return getTargets();
+	}
+	var validTargets = cached(uncached, reactionTime() * 10);
+	// Assign targets to individual groups, try a more cautious full blow with still idle ones
+	var stillIdleGroups = [];
+	var roamingGroups = [];
+	for (var i = 0; i < idleGroups.length; i++) {
+		var gp = idleGroups[i];
+		if (!assignTarget(gp, groupInfo[gp].strength, validTargets, 1.0)) {
+			stillIdleGroups.push(gp);
+		}
+	}
+	if (stillIdleGroups.length > 0) {
+		var idleStrength = 0;
+		stillIdleGroups.forEach(function(gp) {
+			idleStrength += groupInfo[gp].strength;
+		});
+		stillIdleGroups.forEach(function(gp) {
+			if (!assignTarget(gp, idleStrength, validTargets, 1.75)) {
+				roamingGroups.push(gp);
+			}
+		});
+	}
+	// Roam when there is nothing more
+	if (roamingGroups.length > 0) {
+		var trucks = enumTrucks();
+		if (trucks.length > 0) {
+			roamingGroups.forEach(function(gp) {
+				if (!defined(groupInfo[gp].roamingTarget)) {
+					trucks.shuffle();
+					groupInfo[gp].roamingTarget = trucks[0];
+				}
+			});
+		}
+	}
 }
 
 _global.pushVtols = function(object) {

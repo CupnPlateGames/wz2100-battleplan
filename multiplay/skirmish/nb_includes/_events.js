@@ -49,11 +49,13 @@ function eventStartLevel() {
 }
 
 function eventDroidBuilt(droid, structure) {
-	groupDroid(droid);
+	var group = groupDroid(droid);
 	if (droid.droidType == DROID_CONSTRUCT) {
 		var list = enumStruct(me).filterProperty("status", BEING_BUILT);
 		if (list.length > 0) 
 			orderDroidObj(droid, DORDER_HELPBUILD, list[0])
+	} else {
+		regroup(group);
 	}
 }
 
@@ -69,8 +71,13 @@ function eventAttacked(victim, attacker) {
 		return; // don't respond to accidental friendly fire
 	if (victim.type === DROID) {
 		if (!isVTOL(victim) && defined(victim.group)) {
-			setTarget(attacker, victim.group);
 			touchGroup(victim.group);
+			var strength = estimateTargetStrength(attacker);
+			if (estimateGroupStrength(victim.group) / estimateTargetStrength(attacker) >= 1.0) {
+				setTarget(attacker, victim.group);
+			} else {
+				retreat(victim.group);
+			}
 		}
 		else if (isVTOL(victim) &&
 			vtolCanHit(victim, attacker) &&
@@ -80,6 +87,8 @@ function eventAttacked(victim, attacker) {
 				orderDroidObj(victim, DORDER_ATTACK, attacker);
 				pushVtols(attacker);
 		}
+		else
+			orderDroid(victim, DORDER_RTB);
 	} else if (victim.type === STRUCTURE) {
 		if (throttled(5000))
 			return;
@@ -87,8 +96,19 @@ function eventAttacked(victim, attacker) {
 			for (var i = 0; i < MAX_GROUPS; ++i)
 				if (groupSize(i) > 0)
 					setTarget(attacker, i);
-		setTarget(attacker, miscGroup);
-		setTarget(attacker);
+		// Use idle groups to defend
+		var defending = false;
+		for (var i = 0; i < MAX_GROUPS; ++i) {
+			if (!defined(getCurrentTarget(i))) {
+				if (setTarget(attacker, i)) {
+					defending = true;
+				}
+			}
+		}
+		// When no group available, change orders
+		if (!defending) {
+			setTarget(attacker);
+		}
 	}
 }
 

@@ -34,8 +34,9 @@ _global.reactionTime = function() {
 }
 
 _global.setTimers = function() {
-	setTimer("checkAttack", 100);
-	setTimer("adaptCycle", 100);
+	setTimer("checkAttack", reactionTime() + rnd());
+	setTimer("updateTargets", reactionTime() + rnd());
+	setTimer("adaptCycle", 1000 + rnd());
 	setTimer("rebalanceGroups", 10000 + 20 * rnd());
 	if (difficulty === EASY)
 		setTimer("goEasy", 30000);

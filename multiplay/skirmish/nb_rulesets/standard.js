@@ -60,14 +60,11 @@ const modules = [
 ];
 
 const targets = []
+	.concat(structures.derricks)
 	.concat(structures.factories)
 	.concat(structures.templateFactories)
 	.concat(structures.vtolFactories)
 	.concat(structures.extras)
-;
-
-const miscTargets = []
-	.concat(structures.derricks)
 ;
 
 const sensorTurrets = [
