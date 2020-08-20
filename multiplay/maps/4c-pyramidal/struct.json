@@ -770,7 +770,7 @@
         ]
     },
     "structure_0085": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             8896,
@@ -784,7 +784,7 @@
         ]
     },
     "structure_0086": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10432,
@@ -798,7 +798,7 @@
         ]
     },
     "structure_0087": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10432,
@@ -812,7 +812,7 @@
         ]
     },
     "structure_0088": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             8896,
@@ -1218,20 +1218,6 @@
         ],
         "startpos": 0
     },
-    "structure_0252": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1088,
-            1536,
-            256
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0253": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -1516,7 +1502,7 @@
         "startpos": 0
     },
     "structure_0276": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "position": [
             1856,
             1856,
@@ -2034,20 +2020,6 @@
         ],
         "startpos": 1
     },
-    "structure_0326": {
-        "name": "A0CyborgFactory",
-        "position": [
-            18240,
-            1536,
-            256
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_0327": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -2332,7 +2304,7 @@
         "startpos": 1
     },
     "structure_0349": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "position": [
             17472,
             1856,
@@ -2906,20 +2878,6 @@
         ],
         "startpos": 2
     },
-    "structure_0399": {
-        "name": "A0CyborgFactory",
-        "position": [
-            18240,
-            17920,
-            256
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_0400": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -3204,7 +3162,7 @@
         "startpos": 2
     },
     "structure_0422": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "position": [
             17472,
             17472,
@@ -3778,20 +3736,6 @@
         ],
         "startpos": 3
     },
-    "structure_0472": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1088,
-            17920,
-            256
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
     "structure_0473": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -4076,7 +4020,7 @@
         "startpos": 3
     },
     "structure_0495": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "position": [
             1856,
             17472,
@@ -4314,7 +4258,7 @@
         ]
     },
     "structure_0572": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "player": "scavenger",
         "position": [
             9664,
@@ -4328,7 +4272,7 @@
         ]
     },
     "structure_0573": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "player": "scavenger",
         "position": [
             8640,
@@ -4342,7 +4286,7 @@
         ]
     },
     "structure_0574": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "player": "scavenger",
         "position": [
             9664,
@@ -4356,7 +4300,7 @@
         ]
     },
     "structure_0575": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "player": "scavenger",
         "position": [
             10688,
@@ -4370,7 +4314,7 @@
         ]
     },
     "structure_0576": {
-        "name": "Sys-SensoTower01",
+        "name": "Sys-SensoTower02",
         "player": "scavenger",
         "position": [
             9664,
@@ -4888,7 +4832,7 @@
         ]
     },
     "structure_0634": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9536,
@@ -4902,7 +4846,7 @@
         ]
     },
     "structure_0635": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9664,
@@ -4916,7 +4860,7 @@
         ]
     },
     "structure_0636": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9792,
@@ -5000,7 +4944,7 @@
         "startpos": 3
     },
     "structure_1274": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9664,

@@ -227,34 +227,6 @@
         ],
         "startpos": 0
     },
-    "structure_1100": {
-        "name": "A0ComDroidControl",
-        "position": [
-            11008,
-            10368,
-            9
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_1101": {
-        "name": "A0CyborgFactory",
-        "position": [
-            10176,
-            10624,
-            167
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_1102": {
         "name": "S-A13b-MG1Bunker",
         "position": [
@@ -643,34 +615,6 @@
             960,
             1984,
             444
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_1142": {
-        "name": "A0ComDroidControl",
-        "position": [
-            1920,
-            640,
-            342
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_1143": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1856,
-            1024,
-            342
         ],
         "rotation": [
             0,
@@ -1173,34 +1117,6 @@
         ],
         "startpos": 2
     },
-    "structure_1188": {
-        "name": "A0ComDroidControl",
-        "position": [
-            5504,
-            11776,
-            354
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
-    "structure_1189": {
-        "name": "A0CyborgFactory",
-        "position": [
-            5184,
-            11520,
-            355
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_1192": {
         "name": "A0HardcreteMk1CWall",
         "position": [
@@ -1414,40 +1330,12 @@
         ],
         "startpos": 3
     },
-    "structure_1211": {
-        "name": "A0ComDroidControl",
-        "position": [
-            7808,
-            512,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
     "structure_1212": {
         "modules": 1,
         "name": "A0ResearchFacility",
         "position": [
             8576,
             512,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_1214": {
-        "name": "A0CyborgFactory",
-        "position": [
-            8896,
-            768,
             0
         ],
         "rotation": [
@@ -1878,7 +1766,7 @@
         ]
     },
     "structure_1351": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             4544,
@@ -1892,7 +1780,7 @@
         ]
     },
     "structure_1352": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             4672,

@@ -12,18 +12,6 @@
         "name": "Bug",
         "powerOutput": 6000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prllhtr1.pie",
-                "right": "prlrhtr1.pie"
-            },
-            "Helicopter": {
-                "left": "prlheli3.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli04.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prllvtl3.pie",
                 "right": "prlrvtl3.pie",
@@ -58,18 +46,6 @@
         "name": "Viper",
         "powerOutput": 6000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prllhtr1.pie",
-                "right": "prlrhtr1.pie"
-            },
-            "Helicopter": {
-                "left": "prlheli1.pie",
-                "still": "lightheli_rotor_stationary.pie",
-                "moving": "fxheli01.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prllvtl1.pie",
                 "right": "prlrvtl1.pie",
@@ -104,18 +80,6 @@
         "name": "Leopard",
         "powerOutput": 6000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prllhtr1.pie",
-                "right": "prlrhtr1.pie"
-            },
-            "Helicopter": {
-                "left": "prlheli2.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli2and3.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prllvtl2.pie",
                 "right": "prlrvtl2.pie",
@@ -150,18 +114,6 @@
         "name": "Retaliation",
         "powerOutput": 6000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prllhtr1.pie",
-                "right": "prlrhtr1.pie"
-            },
-            "Helicopter": {
-                "left": "prlheli2.pie",
-                "still": "lightheli_rotor_stationary.pie",
-                "moving": "fxheli2and3.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prllvtl2.pie",
                 "right": "prlrvtl2.pie",
@@ -197,18 +149,6 @@
         "name": "Scorpion",
         "powerOutput": 12000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prmlhtr2.pie",
-                "right": "prmrhtr2.pie"
-            },
-            "Helicopter": {
-                "left": "prmheli1.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli5to8.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prmlvtl1.pie",
                 "right": "prmrvtl1.pie",
@@ -243,18 +183,6 @@
         "name": "Cobra",
         "powerOutput": 12000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prmlhtr2.pie",
-                "right": "prmrhtr2.pie"
-            },
-            "Helicopter": {
-                "left": "prmheli1.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli5to8.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prmlvtl1.pie",
                 "right": "prmrvtl1.pie",
@@ -289,18 +217,6 @@
         "name": "Panther",
         "powerOutput": 12000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prmlhtr2.pie",
-                "right": "prmrhtr2.pie"
-            },
-            "Helicopter": {
-                "left": "prmheli1.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli5to8.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prmlvtl1.pie",
                 "right": "prmrvtl1.pie",
@@ -335,18 +251,6 @@
         "name": "Retribution",
         "powerOutput": 12000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prmlhtr2.pie",
-                "right": "prmrhtr2.pie"
-            },
-            "Helicopter": {
-                "left": "prmheli1.pie",
-                "still": "mediumheli_rotor_stationary.pie",
-                "moving": "fxheli5to8.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prmlvtl1.pie",
                 "right": "prmrvtl1.pie",
@@ -382,18 +286,6 @@
         "name": "Mantis",
         "powerOutput": 24000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prhlhtr3.pie",
-                "right": "prhrhtr3.pie"
-            },
-            "Helicopter": {
-                "left": "prhheli4.pie",
-                "still": "heavyheli_rotor_stationary.pie",
-                "moving": "fxheli12.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prhlvtl4.pie",
                 "right": "prhrvtl4.pie",
@@ -428,18 +320,6 @@
         "name": "Python",
         "powerOutput": 24000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prhlhtr3.pie",
-                "right": "prhrhtr3.pie"
-            },
-            "Helicopter": {
-                "left": "prhheli3.pie",
-                "still": "heavyheli_rotor_stationary.pie",
-                "moving": "fxheli11.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prhlvtl3.pie",
                 "right": "prhrvtl3.pie",
@@ -474,18 +354,6 @@
         "name": "Tiger",
         "powerOutput": 24000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prhlhtr3.pie",
-                "right": "prhrhtr3.pie"
-            },
-            "Helicopter": {
-                "left": "prhheli1.pie",
-                "still": "heavyheli_rotor_stationary.pie",
-                "moving": "fxheli09.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prhlvtl1.pie",
                 "right": "prhrvtl1.pie",
@@ -520,18 +388,6 @@
         "name": "Vengeance",
         "powerOutput": 24000,
         "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prhlhtr3.pie",
-                "right": "prhrhtr3.pie"
-            },
-            "Helicopter": {
-                "left": "prhheli2.pie",
-                "still": "heavyheli_rotor_stationary.pie",
-                "moving": "fxheli10.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
             "V-Tol": {
                 "left": "prhlvtl2.pie",
                 "right": "prhrvtl2.pie",
@@ -649,98 +505,6 @@
         "weaponSlots": 1,
         "weight": 675
     },
-    "Body13SUP": {
-        "armourHeat": 28,
-        "armourKinetic": 28,
-        "buildPoints": 900,
-        "buildPower": 156,
-        "class": "Droids",
-        "designable": 1,
-        "hitpoints": 350,
-        "id": "Body13SUP",
-        "model": "drmbod13.pie",
-        "name": "Wyvern",
-        "powerOutput": 25000,
-        "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prhlhtr3.pie",
-                "right": "prhrhtr3.pie"
-            },
-            "Helicopter": {
-                "left": "prhheli1.pie",
-                "still": "heavyheli_rotor_stationary.pie",
-                "moving": "fxheli12.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
-            "V-Tol": {
-                "left": "prhlvtl1.pie",
-                "right": "prhrvtl1.pie",
-                "moving": "fxvtl12.pie"
-            },
-            "hover01": {
-                "left": "prhhov1.pie"
-            },
-            "tracked01": {
-                "left": "prhltrk3.pie",
-                "right": "prhrtrk3.pie"
-            },
-            "wheeled01": {
-                "left": "prhlwhl1.pie",
-                "right": "prhrwhl1.pie"
-            }
-        },
-        "size": "HEAVY",
-        "weaponSlots": 1,
-        "weight": 5000
-    },
-    "Body14SUP": {
-        "armourHeat": 30,
-        "armourKinetic": 30,
-        "buildPoints": 1000,
-        "buildPower": 182,
-        "class": "Droids",
-        "designable": 1,
-        "hitpoints": 350,
-        "id": "Body14SUP",
-        "model": "drhbod14.pie",
-        "name": "Dragon",
-        "powerOutput": 30000,
-        "propulsionExtraModels": {
-            "HalfTrack": {
-                "left": "prslhtr4.pie",
-                "right": "prsrhtr4.pie"
-            },
-            "Helicopter": {
-                "left": "prsheli1.pie",
-                "still": "superheavyheli_rotor_stationary.pie",
-                "moving": "fxheli12.pie"
-            },
-            "Naval": {
-                "left": "prhnaval1.pie"
-            },
-            "V-Tol": {
-                "left": "prslvtl1.pie",
-                "right": "prsrvtl1.pie",
-                "moving": "fxvtl12.pie"
-            },
-            "hover01": {
-                "left": "prshov1.pie"
-            },
-            "tracked01": {
-                "left": "prsltrk4.pie",
-                "right": "prsrtrk4.pie"
-            },
-            "wheeled01": {
-                "left": "prslwhl1.pie",
-                "right": "prsrwhl1.pie"
-            }
-        },
-        "size": "HEAVY",
-        "weaponSlots": 2,
-        "weight": 6000
-    },
     "BusBody": {
         "armourHeat": 1,
         "armourKinetic": 4,
@@ -755,38 +519,6 @@
         "size": "LIGHT",
         "weaponSlots": 1,
         "weight": 2000
-    },
-    "CyborgHeavyBody": {
-        "armourHeat": 8,
-        "armourKinetic": 15,
-        "buildPoints": 205,
-        "buildPower": 50,
-        "class": "Cyborgs",
-        "droidType": "CYBORG_SUPER",
-        "hitpoints": 300,
-        "id": "CyborgHeavyBody",
-        "model": "scbd_std.pie",
-        "name": "Cyborg Heavy Body",
-        "powerOutput": 500,
-        "size": "LIGHT",
-        "weaponSlots": 1,
-        "weight": 250
-    },
-    "CyborgLightBody": {
-        "armourHeat": 6,
-        "armourKinetic": 12,
-        "buildPoints": 95,
-        "buildPower": 25,
-        "class": "Cyborgs",
-        "droidType": "CYBORG",
-        "hitpoints": 200,
-        "id": "CyborgLightBody",
-        "model": "cybd_std.pie",
-        "name": "Cyborg Light Body",
-        "powerOutput": 500,
-        "size": "LIGHT",
-        "weaponSlots": 1,
-        "weight": 150
     },
     "FireBody": {
         "armourHeat": 1,

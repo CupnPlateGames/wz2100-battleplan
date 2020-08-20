@@ -276,21 +276,6 @@
         ],
         "startpos": 2
     },
-    "structure_125": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            13504,
-            13312,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_126": {
         "modules": 0,
         "name": "S-A13a-MG1Tower",
@@ -702,7 +687,7 @@
     },
     "structure_153": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10560,
@@ -717,7 +702,7 @@
     },
     "structure_154": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10432,
@@ -732,7 +717,7 @@
     },
     "structure_155": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10944,
@@ -747,7 +732,7 @@
     },
     "structure_156": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10688,
@@ -762,7 +747,7 @@
     },
     "structure_157": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9920,
@@ -777,7 +762,7 @@
     },
     "structure_158": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9408,
@@ -792,7 +777,7 @@
     },
     "structure_159": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9920,
@@ -807,7 +792,7 @@
     },
     "structure_160": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9152,
@@ -822,7 +807,7 @@
     },
     "structure_161": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9408,
@@ -837,7 +822,7 @@
     },
     "structure_162": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9792,
@@ -852,7 +837,7 @@
     },
     "structure_163": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             10176,
@@ -867,7 +852,7 @@
     },
     "structure_164": {
         "modules": 0,
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             9024,
@@ -1410,21 +1395,6 @@
         ],
         "startpos": 0
     },
-    "structure_76": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            4544,
-            6144,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_77": {
         "modules": 2,
         "name": "A0LightFactory",
@@ -1551,21 +1521,6 @@
         "position": [
             14272,
             3776,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_93": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            13376,
-            3328,
             0
         ],
         "rotation": [

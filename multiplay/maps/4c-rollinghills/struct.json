@@ -615,34 +615,6 @@
         ],
         "startpos": 0
     },
-    "structure_0045": {
-        "name": "A0ComDroidControl",
-        "position": [
-            4608,
-            22272,
-            64
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_0046": {
-        "name": "A0CyborgFactory",
-        "position": [
-            4160,
-            22784,
-            62
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0047": {
         "modules": 1,
         "name": "A0LightFactory",
@@ -1591,34 +1563,6 @@
             2048,
             3840,
             64
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_0195": {
-        "name": "A0ComDroidControl",
-        "position": [
-            2432,
-            3840,
-            64
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_0196": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1728,
-            4224,
-            62
         ],
         "rotation": [
             0,
@@ -2583,34 +2527,6 @@
         ],
         "startpos": 2
     },
-    "structure_0269": {
-        "name": "A0ComDroidControl",
-        "position": [
-            22528,
-            1408,
-            64
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
-    "structure_0270": {
-        "name": "A0CyborgFactory",
-        "position": [
-            21952,
-            1920,
-            62
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_0271": {
         "modules": 1,
         "name": "A0LightFactory",
@@ -3558,34 +3474,6 @@
         "position": [
             22528,
             21760,
-            62
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0421": {
-        "name": "A0ComDroidControl",
-        "position": [
-            22912,
-            21760,
-            62
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0422": {
-        "name": "A0CyborgFactory",
-        "position": [
-            22464,
-            22272,
             62
         ],
         "rotation": [

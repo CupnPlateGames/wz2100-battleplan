@@ -89,36 +89,6 @@
         ],
         "startpos": 3
     },
-    "structure_113": {
-        "modules": 0,
-        "name": "A0ComDroidControl",
-        "position": [
-            1024,
-            10368,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_114": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            960,
-            12288,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
     "structure_117": {
         "modules": 0,
         "name": "S-A13a-MG1Tower",
@@ -929,36 +899,6 @@
         ],
         "startpos": 0
     },
-    "structure_35": {
-        "modules": 0,
-        "name": "A0ComDroidControl",
-        "position": [
-            10624,
-            1024,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_36": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            10048,
-            1024,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_43": {
         "modules": 0,
         "name": "A0ResourceExtractor",
@@ -1109,36 +1049,6 @@
         ],
         "startpos": 2
     },
-    "structure_61": {
-        "modules": 0,
-        "name": "A0ComDroidControl",
-        "position": [
-            23424,
-            13824,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
-    "structure_62": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            23488,
-            12544,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_69": {
         "modules": 0,
         "name": "A0ResourceExtractor",
@@ -1280,36 +1190,6 @@
         "position": [
             14592,
             23040,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_87": {
-        "modules": 0,
-        "name": "A0ComDroidControl",
-        "position": [
-            13184,
-            23424,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_88": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            15040,
-            23424,
             0
         ],
         "rotation": [

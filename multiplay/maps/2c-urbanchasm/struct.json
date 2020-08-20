@@ -1109,20 +1109,6 @@
         ],
         "startpos": 1
     },
-    "structure_0648": {
-        "name": "A0ComDroidControl",
-        "position": [
-            1024,
-            2048,
-            415
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_0649": {
         "name": "A0HardcreteMk1Wall",
         "position": [
@@ -1226,20 +1212,6 @@
         "position": [
             2496,
             2496,
-            415
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0657": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1344,
-            2048,
             415
         ],
         "rotation": [
@@ -1384,34 +1356,6 @@
         "position": [
             5888,
             7168,
-            414
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_0717": {
-        "name": "A0ComDroidControl",
-        "position": [
-            5504,
-            7168,
-            414
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_0718": {
-        "name": "A0CyborgFactory",
-        "position": [
-            5184,
-            6528,
             414
         ],
         "rotation": [
@@ -3354,7 +3298,7 @@
         ]
     },
     "structure_0909": {
-        "name": "A0CannonTower",
+        "name": "S-C13a-Cannon1Tower",
         "player": "scavenger",
         "position": [
             3008,

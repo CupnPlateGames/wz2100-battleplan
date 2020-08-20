@@ -926,20 +926,6 @@
         ],
         "startpos": 0
     },
-    "structure_0585": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1472,
-            1152,
-            383
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0586": {
         "name": "S-A13b-MG1Bunker",
         "position": [
@@ -1509,20 +1495,6 @@
             11456,
             10432,
             421
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0632": {
-        "name": "A0CyborgFactory",
-        "position": [
-            10560,
-            10880,
-            383
         ],
         "rotation": [
             0,

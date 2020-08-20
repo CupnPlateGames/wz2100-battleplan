@@ -1,17 +1,6 @@
 // This is the replaced function from rules.js
 // that defines which components and technologies are available from start.
 
-function removeUnusedBuildings(playnum)
-{
-	var structs = enumStruct(playnum);
-	for (var i = 0; i < structs.length; i++)
-	{
-		var s = structs[i];
-		if (s.stattype == CYBORG_FACTORY || s.stattype == COMMAND_CONTROL)
-			removeObject(s, false);
-	}
-}
-
 function removeModules(playnum)
 {
 	var keepFactory = false;
@@ -183,8 +172,6 @@ function eventGameInit()
 		setStructureLimits("A0PowerGenerator", 8, playnum);
 		setStructureLimits("A0ResearchFacility", 5, playnum);
 		setStructureLimits("A0CommandCentre", 1, playnum);
-		setStructureLimits("A0ComDroidControl", 1, playnum);
-		setStructureLimits("A0CyborgFactory", 0, playnum);
 		setStructureLimits("A0VTolFactory1", 5, playnum);
 	}
 	applyLimitSet();	// set limit options
@@ -265,7 +252,6 @@ function eventGameInit()
 		}
 		removeModules(playnum);
 		limitStartingFacilities(playnum);
-		removeUnusedBuildings(playnum);
 		setMainReticule(); // Force update after removing structures
 	}
 

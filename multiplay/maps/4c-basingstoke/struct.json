@@ -28,20 +28,6 @@
         ],
         "startpos": 0
     },
-    "structure_0004": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1728,
-            1536,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0005": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -78,20 +64,6 @@
         "position": [
             1664,
             1920,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_0010": {
-        "name": "A0ComDroidControl",
-        "position": [
-            768,
-            1408,
             94
         ],
         "rotation": [
@@ -1572,20 +1544,6 @@
         ],
         "startpos": 1
     },
-    "structure_0174": {
-        "name": "A0CyborgFactory",
-        "position": [
-            22336,
-            1536,
-            84
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_0175": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -1622,20 +1580,6 @@
         "position": [
             22400,
             1920,
-            84
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0180": {
-        "name": "A0ComDroidControl",
-        "position": [
-            23296,
-            1408,
             84
         ],
         "rotation": [
@@ -3116,20 +3060,6 @@
         ],
         "startpos": 2
     },
-    "structure_0295": {
-        "name": "A0CyborgFactory",
-        "position": [
-            22336,
-            22912,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_0296": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -3166,20 +3096,6 @@
         "position": [
             22400,
             22528,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
-    "structure_0301": {
-        "name": "A0ComDroidControl",
-        "position": [
-            23296,
-            23040,
             94
         ],
         "rotation": [
@@ -4660,20 +4576,6 @@
         ],
         "startpos": 3
     },
-    "structure_0416": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1728,
-            22912,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
     "structure_0417": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -4710,20 +4612,6 @@
         "position": [
             1664,
             22528,
-            94
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_0422": {
-        "name": "A0ComDroidControl",
-        "position": [
-            768,
-            23040,
             94
         ],
         "rotation": [

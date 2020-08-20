@@ -1,24 +1,4 @@
 {
-    "ASPOTTER": {
-        "body": "CyborgHeavyBody",
-        "id": "ASPOTTER",
-        "name": "*SPOTTER*",
-        "propulsion": "CyborgLegs",
-        "type": "CYBORG_SUPER",
-        "weapons": [
-            "Cyb-Hvywpn-HPV"
-        ]
-    },
-    "ATESTVTOL": {
-        "body": "B-A2-MN",
-        "id": "ATESTVTOL",
-        "name": "*TEST VTOL*",
-        "propulsion": "V-Tol",
-        "type": "DROID",
-        "weapons": [
-            "Rocket-VTOL-BB"
-        ]
-    },
     "BaBaCivilian": {
         "body": "B1BaBaPerson01",
         "id": "BaBaCivilian",

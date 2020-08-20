@@ -29,36 +29,6 @@
         ],
         "startpos": 0
     },
-    "structure_102": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            13504,
-            2176,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
-    "structure_103": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            13504,
-            1792,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_104": {
         "modules": 1,
         "name": "A0ResearchFacility",
@@ -357,36 +327,6 @@
         "name": "A0ResearchFacility",
         "position": [
             7168,
-            12160,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_18": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            6592,
-            12160,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
-    "structure_19": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            6848,
             12160,
             0
         ],
@@ -1391,21 +1331,6 @@
         ],
         "startpos": 1
     },
-    "structure_59": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            1984,
-            1792,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
     "structure_6": {
         "modules": 0,
         "name": "A0ResourceExtractor",
@@ -1420,21 +1345,6 @@
             0
         ],
         "startpos": 2
-    },
-    "structure_60": {
-        "modules": 0,
-        "name": "A0CyborgFactory",
-        "position": [
-            2240,
-            1792,
-            0
-        ],
-        "rotation": [
-            0,
-            0,
-            0
-        ],
-        "startpos": 1
     },
     "structure_64": {
         "modules": 0,

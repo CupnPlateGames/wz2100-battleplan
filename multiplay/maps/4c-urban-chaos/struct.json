@@ -28,20 +28,6 @@
         ],
         "startpos": 0
     },
-    "structure_0004": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1088,
-            6784,
-            255
-        ],
-        "rotation": [
-            16384,
-            0,
-            0
-        ],
-        "startpos": 0
-    },
     "structure_0005": {
         "modules": 1,
         "name": "A0LightFactory",
@@ -430,20 +416,6 @@
         ],
         "rotation": [
             0,
-            0,
-            0
-        ],
-        "startpos": 1
-    },
-    "structure_0055": {
-        "name": "A0CyborgFactory",
-        "position": [
-            7104,
-            6784,
-            255
-        ],
-        "rotation": [
-            49152,
             0,
             0
         ],
@@ -943,20 +915,6 @@
         ],
         "startpos": 2
     },
-    "structure_0101": {
-        "name": "A0CyborgFactory",
-        "position": [
-            7104,
-            1408,
-            255
-        ],
-        "rotation": [
-            49152,
-            0,
-            0
-        ],
-        "startpos": 2
-    },
     "structure_0102": {
         "name": "S-A22a-AAMG2Empl",
         "position": [
@@ -1373,20 +1331,6 @@
         ],
         "rotation": [
             0,
-            0,
-            0
-        ],
-        "startpos": 3
-    },
-    "structure_0171": {
-        "name": "A0CyborgFactory",
-        "position": [
-            1088,
-            1408,
-            255
-        ],
-        "rotation": [
-            16384,
             0,
             0
         ],

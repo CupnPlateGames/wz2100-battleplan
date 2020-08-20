@@ -213,7 +213,7 @@ include("multiplay/skirmish/battleplan_setupGameInit.js");
 // END CONDITIONS
 function checkEndConditions()
 {
-	var factories = countStruct("A0LightFactory") + countStruct("A0CyborgFactory");
+	var factories = countStruct("A0LightFactory") + countStruct("A0VTolFactory1");
 	var droids = countDroid(DROID_ANY);
 
 	// Losing Conditions
@@ -228,7 +228,7 @@ function checkEndConditions()
 			{
 				if (playnum != selectedPlayer && allianceExistsBetween(selectedPlayer, playnum))
 				{
-					factories = countStruct("A0LightFactory", playnum) + countStruct("A0CyborgFactory", playnum);
+					factories = countStruct("A0LightFactory", playnum) + countStruct("A0VTolFactory1", playnum);
 					droids = countDroid(DROID_ANY, playnum);
 					if (droids > 0 || factories > 0)
 					{
@@ -255,7 +255,7 @@ function checkEndConditions()
 	{
 		if (playnum != selectedPlayer && !allianceExistsBetween(selectedPlayer, playnum))	// checking enemy player
 		{
-			factories = countStruct("A0LightFactory", playnum) + countStruct("A0CyborgFactory", playnum); // nope
+			factories = countStruct("A0LightFactory", playnum) + countStruct("A0VTolFactory1", playnum); // nope
 			droids = countDroid(DROID_ANY, playnum);
 			if (droids > 0 || factories > 0)
 			{
