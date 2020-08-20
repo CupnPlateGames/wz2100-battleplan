@@ -10,7 +10,6 @@ function buildOrder_StandardFallback() {
 	if (buildMinimum(structures.derricks, 2)) return true;
 	if (buildMinimum(structures.derricks, 3)) return true;
 	if (buildMinimum(structures.derricks, 4)) return true;
-	if (buildMinimum(structures.factories, 2)) return true;
 	return false;
 }
 
