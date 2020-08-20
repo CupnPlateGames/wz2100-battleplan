@@ -113,7 +113,7 @@ function buildBasicStructure(statlist, importance) {
 	return BUILDRET.FAILURE;
 }
 
-function finishStructures() {
+_global.finishStructures = function() {
 	var success = false;
 	var list = enumStruct(me).filterProperty("status", BEING_BUILT);
 	for (var i = 0; i < list.length; ++i) {
@@ -317,8 +317,6 @@ function buildExtras() {
 }
 
 _global.buildDefenses = function() {
-	if (chooseObjectType() !== 2)
-		return false;
 	if (withChance(33) && areThereGW() === true) {
 		if (buildGateways())
 			return true;

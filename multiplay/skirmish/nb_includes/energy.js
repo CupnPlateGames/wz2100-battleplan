@@ -14,6 +14,7 @@
 _global.assignEnergy = function() {
 	var power = myPower();
 	if (power < 0) {
+		finishStructures();
 		queue("assignEnergy", reactionTime() * 3);
 		return; // No point in queueing things
 	}
@@ -93,6 +94,7 @@ _global.assignEnergy = function() {
 			return;
 		}
 	}
+	finishStructures();
 	queue("assignEnergy", reactionTime() * 3);
 }
 
