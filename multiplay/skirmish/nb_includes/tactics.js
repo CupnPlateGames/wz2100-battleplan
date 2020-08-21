@@ -78,16 +78,27 @@ function findNearestGroup(x, y) {
 
 _global.estimateTargetStrength = function(object) {
 	function uncached() {
+		var strength = 0;
 		var enemies = enumRange(object.x, object.y, baseScale, ENEMIES, false).filter(function(obj) {
 			return (obj.type == STRUCTURE && obj.stattype == DEFENSE || (obj.type == DROID && obj.droidType == DROID_WEAPON));
-		}).length;
-		return 1.0 * enemies;
+		});
+		enemies.forEach(function(e) {
+			if (e.type == STRUCTURE)
+				strength += e.cost * 1.2;
+			else
+				strength += e.cost;
+		});
+		return strength;
 	}
 	return cached(uncached, 2000, object.id);
 }
 
 _global.estimateGroupStrength = function(group) {
-	return 1.0 * groupSize(group);
+	var strength = 0;
+	enumGroup(group).filter(checkRepaired).forEach(function(d) {
+		strength += d.cost;
+	})
+	return strength;
 }
 
 function getGroupInfo(gr) {
