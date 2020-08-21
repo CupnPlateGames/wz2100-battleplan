@@ -105,17 +105,32 @@ function produceTank(factory) {
 	var rnd = random(ret.land + ret.sea);
 	if (!defined(rnd)) // we need only vtols?
 		return false;
-	propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.GROUND_HOVER);
+	propulsions = getPropulsionStats(PROPULSIONUSAGE.GROUND_HOVER);
 	if (iHaveHover()) {
 		if (rnd >= ret.land)
-			propulsions = getPropulsionStatsComponents(PROPULSIONUSAGE.HOVER);
+			propulsions = getPropulsionStats(PROPULSIONUSAGE.HOVER);
 	} else {
 		if (ret.land === 0)
 			return false;
 	}
 	var bwPair = chooseBodyWeaponPair(bodies, chooseWeapon(), factory.modules);
 	var selectedProp = [];
-	selectedProp.push(propulsions[Math.floor(Math.random() * propulsions.length)]);
+	var propChance = 0;
+	propulsions.forEach(function(p) {
+		if (defined(p.chance))
+			propChance += p.chance;
+	});
+	var rnd = Math.random() * propChance;
+	for (var i = 0; i < propulsions.length; i++) {
+		var chance = 0;
+		if (defined(propulsions[i].chance))
+			chance = propulsions[i].chance;
+		if (rnd <= chance) {
+			selectedProp.push(propulsions[i].stat);
+			break;
+		}
+		rnd -= chance;
+	}
 	if (!defined(bwPair))
 		return false;
 	return ourBuildDroid(factory, "Tank", bwPair.b, selectedProp, bwPair.w, bwPair.w, bwPair.w);

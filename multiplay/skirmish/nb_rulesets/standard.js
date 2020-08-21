@@ -139,9 +139,9 @@ const classResearch = {
 // Ground propulsions need to be ground only, hover propulsions shouldn't
 // be able to cross cliffs, but should be able to cross seas, etc.
 const propulsionStats = [
-	{ res: "", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND },
-	{ res: "", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND },
-	{ res: "", stat: "hover01", usage: PROPULSIONUSAGE.HOVER },
+	{ res: "", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND, chance: 35 },
+	{ res: "", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND, chance: 45 },
+	{ res: "", stat: "hover01", usage: PROPULSIONUSAGE.HOVER, chance: 20 },
 	{ res: "", stat: "V-Tol", usage: PROPULSIONUSAGE.VTOL },
 ];
 

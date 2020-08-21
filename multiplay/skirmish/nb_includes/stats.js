@@ -228,6 +228,9 @@ _global.filterBodyStatsByUsage = function(usage, armor) {
     return filterDataByFlag(data, 'usage', usage).reverse();
 }
 
+_global.getPropulsionStats = function(usage) {
+	return filterDataByFlag(propulsionStats, 'usage', usage);
+}
 _global.getPropulsionStatsComponents = function(usage) {
     var data = filterDataByFlag(propulsionStats, 'usage', usage)
 	return data.map(function(val) { return val.stat; }).reverse()
