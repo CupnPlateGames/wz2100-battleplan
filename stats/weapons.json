@@ -952,7 +952,7 @@
     "W-B12-Flamer2": {
         "buildPoints": 200,
         "buildPower": 200,
-        "damage": 40,
+        "damage": 70,
         "designable": 1,
         "effectSize": 1,
         "facePlayer": 1,
@@ -1640,7 +1640,7 @@
         "muzzleGfx": "FXCan20m.PIE",
         "name": "Plasmite Flamer",
         "numExplosions": 1,
-        "numRounds": 4,
+        "numRounds": 1,
         "penetrate": 1,
         "reloadTime": 15,
         "rotate": 45,
