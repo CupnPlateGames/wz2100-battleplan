@@ -440,8 +440,8 @@
         "keyTopic": 1,
         "msgName": "RES_V_B03",
         "name": "Light Body - Retaliation",
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 300,
+        "researchPower": 300,
         "resultComponents": [
             "B-A3-SN"
         ],
@@ -456,8 +456,8 @@
             "R-Vehicle-Body03",
             "R-Vehicle-Body05"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "B-A2-MN"
         ],
@@ -472,8 +472,8 @@
             "R-Vehicle-Body07",
             "R-Vehicle-Body11"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "B-A1-LN"
         ],

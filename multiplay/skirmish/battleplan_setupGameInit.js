@@ -203,6 +203,7 @@ function eventGameInit()
 		enableResearch("R0-G13-Howitzer1", playnum);
 		enableResearch("R0-L3-Repair1", playnum);
 		enableResearch("R-Vehicle-Body05", playnum);
+		enableResearch("R-Vehicle-Body03", playnum);
 		enableResearch("R-Sys-Sensor-Turret01", playnum);
 
 		if (baseType == CAMP_CLEAN)

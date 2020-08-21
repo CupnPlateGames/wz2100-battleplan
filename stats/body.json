@@ -104,8 +104,8 @@
     "B-A3-SN": {
         "armourHeat": 0,
         "armourKinetic": 12,
-        "buildPoints": 240,
-        "buildPower": 240,
+        "buildPoints": 200,
+        "buildPower": 200,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 80,
@@ -241,8 +241,8 @@
     "B-A2-MN": {
         "armourHeat": 0,
         "armourKinetic": 14,
-        "buildPoints": 480,
-        "buildPower": 480,
+        "buildPoints": 400,
+        "buildPower": 400,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 200,
@@ -378,8 +378,8 @@
     "B-A1-LN": {
         "armourHeat": 0,
         "armourKinetic": 16,
-        "buildPoints": 720,
-        "buildPower": 720,
+        "buildPoints": 600,
+        "buildPower": 600,
         "class": "Droids",
         "designable": 1,
         "hitpoints": 400,
