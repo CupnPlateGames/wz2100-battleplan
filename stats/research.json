@@ -999,13 +999,13 @@
         "requiredResearch": [
             "R-Defense-HardcreteWall"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Building",
                 "parameter": "HitPoints",
-                "value": 50
+                "value": 25
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG"
@@ -1018,13 +1018,13 @@
         "requiredResearch": [
             "R-Defense-WallUpgrade01"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Building",
                 "parameter": "HitPoints",
-                "value": 50
+                "value": 25
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",
@@ -1038,13 +1038,13 @@
         "requiredResearch": [
             "R-Defense-WallUpgrade02"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1500,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Building",
                 "parameter": "HitPoints",
-                "value": 50
+                "value": 25
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",
@@ -1062,15 +1062,15 @@
         "requiredResearch": [
             "R-Vehicle-Body05"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Body",
                 "filterParameter": "BodyClass",
                 "filterValue": "Droids",
                 "parameter": "HitPointPct",
-                "value": 10
+                "value": 8
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG"
@@ -1083,15 +1083,15 @@
         "requiredResearch": [
             "R-Vehicle-Metals01"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Body",
                 "filterParameter": "BodyClass",
                 "filterValue": "Droids",
                 "parameter": "HitPointPct",
-                "value": 10
+                "value": 8
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",
@@ -1106,15 +1106,15 @@
         "requiredResearch": [
             "R-Vehicle-Metals02"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Body",
                 "filterParameter": "BodyClass",
                 "filterValue": "Droids",
                 "parameter": "HitPointPct",
-                "value": 10
+                "value": 9
             }
         ],
         "subgroupIconID": "IMAGE_RES_GRPUPG",
@@ -1131,22 +1131,22 @@
         "requiredResearch": [
             "R0-A13-MG1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-A13-MG1",
@@ -1160,22 +1160,22 @@
         "requiredResearch": [
             "R0-A9-MGUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-A13-MG1",
@@ -1190,22 +1190,22 @@
         "requiredResearch": [
             "R0-A9-MGUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MACHINE GUN",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-A13-MG1",
@@ -1222,22 +1222,22 @@
         "requiredResearch": [
             "R0-B13-Flamer1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1251,22 +1251,22 @@
         "requiredResearch": [
             "R0-B9-FlamerUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1280,22 +1280,22 @@
         "requiredResearch": [
             "R0-B9-FlamerUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1313,22 +1313,22 @@
         "requiredResearch": [
             "R0-C13-Cannon1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1341,22 +1341,22 @@
         "requiredResearch": [
             "R0-C9-CannonUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1370,22 +1370,22 @@
         "requiredResearch": [
             "R0-C9-CannonUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "CANNON",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-C13-Cannon1",
@@ -1403,22 +1403,22 @@
         "requiredResearch": [
             "R0-E13-Rocket1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1431,22 +1431,22 @@
         "requiredResearch": [
             "R0-E9-RocketUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1460,22 +1460,22 @@
         "requiredResearch": [
             "R0-E9-RocketUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "ROCKET",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-E13-Rocket1",
@@ -1493,22 +1493,22 @@
         "requiredResearch": [
             "R0-D13-Missile1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1521,22 +1521,22 @@
         "requiredResearch": [
             "R0-D9-MissileUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1550,22 +1550,22 @@
         "requiredResearch": [
             "R0-D9-MissileUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MISSILE",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-D13-Missile1",
@@ -1581,22 +1581,22 @@
         "requiredResearch": [
             "R0-F13-Mortar1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1609,22 +1609,22 @@
         "requiredResearch": [
             "R0-F9-MortarUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1638,22 +1638,22 @@
         "requiredResearch": [
             "R0-F9-MortarUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "MORTARS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-F13-Mortar1",
@@ -1669,22 +1669,22 @@
         "requiredResearch": [
             "R0-G13-Howitzer1"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 450,
+        "researchPower": 450,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-G13-Howitzer1",
@@ -1697,22 +1697,22 @@
         "requiredResearch": [
             "R0-G9-HowitzerUpgrade1"
         ],
-        "researchPoints": 1350,
-        "researchPower": 1350,
+        "researchPoints": 750,
+        "researchPower": 750,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-G13-Howitzer1",
@@ -1726,22 +1726,22 @@
         "requiredResearch": [
             "R0-G9-HowitzerUpgrade2"
         ],
-        "researchPoints": 1800,
-        "researchPower": 1800,
+        "researchPoints": 1050,
+        "researchPower": 1050,
         "results": [
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "ReloadTime",
-                "value": -15
+                "value": -11
             },
             {
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "HOWITZERS",
                 "parameter": "FirePause",
-                "value": -15
+                "value": -11
             }
         ],
         "statID": "W-G13-Howitzer1",
