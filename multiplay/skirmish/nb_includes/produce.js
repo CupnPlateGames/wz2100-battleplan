@@ -93,13 +93,11 @@ function produceTank(factory) {
     var bodies = [];
     if (chooseBodyClass() === BODYCLASS.KINETIC) {
         bodies = bodies.concat(
-			filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.KINETIC),
-			filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.THERMAL)
+			filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.KINETIC)
 		);
     } else {
         bodies = bodies.concat(
-			filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.THERMAL),
-            filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.KINETIC)
+			filterBodyStatsByUsage(BODYUSAGE.GROUND, BODYCLASS.THERMAL)
 		);
     }
     var propulsions;

@@ -90,9 +90,9 @@ const bodyStats = [
 	{ res: "", stat: "B-B3-SC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
 	{ res: "R-Vehicle-Body05", stat: "B-B2-MC", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
 	{ res: "R-Vehicle-Body11", stat: "B-B1-LC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
-	{ res: "", stat: "B-D3-SNP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // bug
-	{ res: "R-Vehicle-Body05", stat: "B-D2-MNP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // scorpion
-	{ res: "R-Vehicle-Body11", stat: "B-D1-LNP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // mantis
+	{ res: "", stat: "B-D3-SNP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
+	{ res: "R-Vehicle-Body05", stat: "B-D2-MNP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.THERMAL }, // scorpion
+	{ res: "R-Vehicle-Body11", stat: "B-D1-LNP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.THERMAL }, // mantis
 	{ res: "R-Vehicle-Body03", stat: "B-A3-SN", weight: WEIGHT.LIGHT, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retaliation
 	{ res: "R-Vehicle-Body07", stat: "B-A2-MN", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retribution
 	{ res: "R-Vehicle-Body10", stat: "B-A1-LN", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // vengeance
