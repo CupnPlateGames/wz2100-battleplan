@@ -58,6 +58,32 @@ function getFreeTruckAround(x, y) {
 		return list[0];
 }
 
+/** Get at least one free truck (the nearest) and all the other at similar distance. */
+function getFreeTrucksAround(x, y) {
+	var distances = [];
+	var list = enumTrucks().filter(truckFree).filter(function(droid) {
+		return droidCanReach(droid, x, y);
+	});
+	list.forEach(function(d) {
+		distances.push({droid: d, distance: distance(d, x, y)});
+	});
+	distances.sort(function(one, two) {
+		return one.distance - two.distance;
+	});
+	var trucks = [];
+	if (distances.length > 0) {
+		var nearestTruck = distances[0];
+		trucks.push(nearestTruck.droid);
+		for (var i = 1; i < distances.length; i++) {
+			if (distances[i].distance < nearestTruck.distance + baseScale / 2)
+				trucks.push(distances[i].droid);
+			else
+				break;
+		}
+	}
+	return trucks;
+}
+
 function buildModule(struct) {
 	var trucks = getTwoFreeTrucks();
 	if (trucks.length <= 0)
@@ -155,7 +181,14 @@ function buildStructureAround(statlist, loc, unique) {
 	// if we're not into turtling, don't build too many towers
 	if (personality.defensiveness < 100 && distance(loc2, loc) > baseScale / 5)
 		return BUILDRET.FAILURE;
-	if (orderDroidBuild(truck, DORDER_BUILD, stat, loc2.x, loc2.y))
+	var trucks = getFreeTrucksAround(loc2.x, loc2.y);
+	if (trucks.length == 0)
+		trucks = [truck];
+	var success = false;
+	trucks.forEach(function(d) {
+		success = orderDroidBuild(trucks[0], DORDER_BUILD, stat, loc2.x, loc2.y) || success;
+	});
+	if (success)
 		return BUILDRET.SUCCESS;
 	return BUILDRET.FAILURE;
 }
@@ -163,16 +196,20 @@ function buildStructureAround(statlist, loc, unique) {
 function captureOil(oil) {
 	if (!defined(oil))
 		return BUILDRET.FAILURE;
-	var truck = getFreeTruckAround(oil.x, oil.y);
-	if (!defined(truck))
+	var trucks = getFreeTrucksAround(oil.x, oil.y);
+	if (trucks.length == 0)
 		return BUILDRET.FAILURE;
 	var stat = structures.derricks.filter(isAvailable).last();
 	if (!defined(stat))
 		return BUILDRET.UNAVAILABLE;
 	if (throttled(90000, oil.y * mapWidth + oil.x))
 		return BUILDRET.FAILURE;
-	if (orderDroidBuild(truck, DORDER_BUILD, stat, oil.x, oil.y))
+	if (orderDroidBuild(trucks[0], DORDER_BUILD, stat, oil.x, oil.y)) {
+		for (var i = 1; i < trucks.length; i++) {
+			orderDroidBuild(trucks[i], DORDER_BUILD, stat, oil.x, oil.y);
+		}
 		return BUILDRET.SUCCESS;
+	}
 	return BUILDRET.FAILURE;
 }
 
