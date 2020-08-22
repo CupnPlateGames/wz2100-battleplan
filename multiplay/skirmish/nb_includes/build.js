@@ -296,17 +296,30 @@ _global.buildMinimumDerricks = function(count) {
 }
 
 _global.buildExpand = function() {
-	var factoCount = countStructList(structures.factories) + countStructList(structures.vtolFactories);
+	var facto = countStructList(structures.factories);
+	var vtol = countStructList(structures.vtolFactories);
+	var factoCount = facto + vtol;
 	var pu = getPUEnergy();
 	if (pu >= factoCount + 1) {
-		switch (chooseObjectType()) {
-			case 0:
-			case 1:
+		var objType = OBJTYPE.TANK;
+		if (personality.vtolness == 50) {
+			if (facto > vtol || (facto == vtol && math.random() > 0.5))
+				objType = OBJTYPE.VTOL;
+		} else if (personality.vtolness > 50) {
+			if (vtol * 1.0 / factoCount < personality.vtolness
+					&& vtol * 1.0 / (factoCount + 1) < personality.vtolness)
+				objType = OBJTYPE.VTOL;
+		} else if (facto * 1.0 / factoCount > (1 - personality.vtolness)
+				&& facto * 1.0 / (factoCount + 1) < (1 - personality.vtolness)) {
+			objType = OBJTYPE.VTOL;
+		}
+		switch (objType) {
+			case OBJTYPE.TANK:
 				if (needFastestResearch() === PROPULSIONUSAGE.GROUND)
 					if (buildMinimum(structures.factories, Infinity, IMPORTANCE.PEACETIME))
 						return true;
 				// fall-through
-			case 3:
+			case OBJTYPE.VTOL:
 				if (buildMinimum(structures.vtolFactories, Infinity, IMPORTANCE.PEACETIME))
 					return true;
 		}

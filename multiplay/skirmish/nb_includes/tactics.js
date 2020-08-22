@@ -79,16 +79,23 @@ function findNearestGroup(x, y) {
 _global.estimateTargetStrength = function(object) {
 	function uncached() {
 		var strength = 0;
+		var aaStrength = 0;
 		var enemies = enumRange(object.x, object.y, baseScale, ENEMIES, false).filter(function(obj) {
 			return (obj.type == STRUCTURE && obj.stattype == DEFENSE || (obj.type == DROID && obj.droidType == DROID_WEAPON));
 		});
 		enemies.forEach(function(e) {
 			if (e.type == STRUCTURE)
-				strength += e.cost * 1.2;
+				if (e.canHitAir)
+					aaStrength += e.cost * 1.2;
+				if (e.canHitGround)
+					strength += e.cost * 1.2;
 			else
-				strength += e.cost;
+				if (e.canHitAir)
+					aaStrength += e.cost;
+				if (e.canHitGround)
+					strength += e.cost;
 		});
-		return strength;
+		return {strength: strength, aaStrength: aaStrength};
 	}
 	return cached(uncached, 2000, object.id);
 }
@@ -163,7 +170,8 @@ function getTargets() {
 	}
 	if (powerList.length > 0) {
 		for (var i = 0; i < powerList.length; i++) {
-			powerList[i].strength = estimateTargetStrength(powerList[i].target);
+			powerList[i].strength = estimateTargetStrength(powerList[i].target).strength;
+			powerList[i].aaStrength = Infinity; // Don't pickup powerup with VTOLs
 			ret.powerups.push(powerList[i]);
 		}
 	}
@@ -175,11 +183,13 @@ function getTargets() {
 				var structs = enumStruct(p, structType);
 				var targetStructs = [];
 				for (var i = 0; i < structs.length; i++) {
-					targetStructs.push({target: structs[i], distance: distanceToBase(structs[i]), strength: 0});
+					targetStructs.push({target: structs[i], distance: distanceToBase(structs[i]), strength: 0, aaStrength: 0});
 				}
 				targetStructs.sort(sortByDistance);
 				for (var i = 0; i < Math.min(3, targetStructs.length); i++) {
-					targetStructs[i].strength = estimateTargetStrength(targetStructs[i].target);
+					var str = estimateTargetStrength(targetStructs[i].target)
+					targetStructs[i].strength = str.strength;
+					targetStructs[i].aaStrength = str.aaStrength;
 					ret.base.push(targetStructs[i]);
 				}
 			});
@@ -197,7 +207,9 @@ function getTargets() {
 	}
 	unitList.sort(sortByDistance);
 	for (var i = 0; i < Math.min(3, unitList.length); i++) {
-		unitList[i].strength = estimateTargetStrength(unitList[i].target);
+		var str = estimateTargetStrength(unitList[i].target)
+		unitList[i].strength = str.strength;
+		unitList[i].aaStrength = str.aaStrength;
 		ret.units.push(unitList[i]);
 	}
 	return ret;
@@ -322,29 +334,6 @@ function attackTarget(droid) {
 	}
 }
 
-function pickVtolTarget(droid) {
-	function uncached() {
-		function canHit(obj) {
-			return vtolCanHit(droid, obj);
-		}
-		var enemy = enumLivingPlayers().filter(isEnemy).random();
-		var list;
-		list = enumStructList(miscTargets, enemy).filter(canHit);
-		if (list.length > 0) return list.random();
-		list = enumStruct(enemy, DEFENSE).filterProperty("canHitAir", true).filter(canHit);
-		if (list.length > 0) return list.random();
-		list = enumDroid(enemy, DROID_WEAPON).filterProperty("canHitAir", true).filter(canHit);
-		if (list.length > 0) return list.random();
-		list = enumDroid(enemy, DROID_CYBORG).filterProperty("canHitAir", true).filter(canHit);
-		if (list.length > 0) return list.random();
-		list = enumStructList(targets, enemy).filter(canHit);
-		if (list.length > 0) return list.random();
-		list = enumDroid(enemy).filter(canHit);
-		if (list.length > 0) return list.random();
-	}
-	return cached(uncached, 100, droid.canHitAir + 2 * droid.canHitGround);
-}
-
 function vtolReady(droid) {
 	if (droid.order == DORDER_ATTACK)
 		return false;
@@ -457,12 +446,7 @@ _global.checkAttack = function() {
 		}
 	}
 	if (!throttled(reactionTime() * 2, "vtols")) {
-		var droids = enumGroup(vtolGroup).filter(vtolReady);
-		droids.forEach(function(droid) {
-			var target = pickVtolTarget(droid);
-			if (defined(target))
-				orderDroidObj(droid, DORDER_ATTACK, target);
-		});
+		var droids = enumGroup(vtolGroup).filter(vtolReady).forEach(attackTarget);
 	}
 }
 
@@ -485,21 +469,25 @@ function isTargetted(obj) {
  * @return true when a target is found, false otherwise.
  */
 function assignTarget(group, strength, targetList, minStrengthRatio) {
-	for (var i = 0; i < targetList.powerups.length; i++) {
-		var pu = targetList.powerups[i];
-		if (getObject(pu.target.x, pu.target.y) == null)
-			continue;
-		if (!isTargetted(pu.target) && strength / pu.strength >= minStrengthRatio) {
-			groupInfo[group].target = pu.target;
-			groupInfo[group].roamingTarget = undefined;
-			return true;
+	var isVtol = (group == vtolGroup);
+	if (!isVtol) {
+		for (var i = 0; i < targetList.powerups.length; i++) {
+			var pu = targetList.powerups[i];
+			if (getObject(pu.target.x, pu.target.y) == null)
+				continue;
+			if (!isTargetted(pu.target) && strength / pu.strength >= minStrengthRatio) {
+				groupInfo[group].target = pu.target;
+				groupInfo[group].roamingTarget = undefined;
+				return true;
+			}
 		}
 	}
 	for (var i = 0; i < targetList.base.length; i++) {
 		var base = targetList.base[i];
 		if (getObject(base.target.type, base.target.player, base.target.id) == null)
 			continue;
-		if (strength / base.strength >= minStrengthRatio) {
+		if ((!isVtol && strength / base.strength >= minStrengthRatio)
+				|| (isVtol && strength / base.aaStrength >= minStrengthRatio)) {
 			groupInfo[group].target = base.target;
 			groupInfo[group].roamingTarget = undefined;
 			return true;
@@ -509,7 +497,8 @@ function assignTarget(group, strength, targetList, minStrengthRatio) {
 		var unit = targetList.units[i];
 		if (getObject(unit.target.type, unit.target.player, unit.target.id) == null)
 			continue;
-		if (strength / unit.strength >= minStrengthRatio) {
+		if ((!isVtol && strength / unit.strength >= minStrengthRatio)
+				|| (isVtol && strength / unit.aaStrength >= minStrengthRatio)) {
 			groupInfo[group].target = unit.target;
 			groupInfo[group].roamingTarget = undefined;
 			return true;
@@ -525,7 +514,7 @@ _global.updateTargets = function() {
 		var gi = getGroupInfo(i);
 		groupInfo[i].strength = estimateGroupStrength(i);
 		if (defined(gi.target)) {
-			if (gi.strength / estimateTargetStrength(gi.target) < 1.0) {
+			if (gi.strength / estimateTargetStrength(gi.target).strength < 1.0) {
 				groupInfo[i].target = undefined;
 			}
 		}
@@ -533,6 +522,18 @@ _global.updateTargets = function() {
 			idleGroups.push(i);
 		}
 	}
+	// Same for VTOLs
+	gi = getGroupInfo(vtolGroup);
+	groupInfo[vtolGroup].strength = estimateGroupStrength(vtolGroup);
+	if (defined(gi.target)) {
+		if (gi.strength / estimateTargetStrength(gi.target).aaStrength < 1.0) {
+			groupInfo[vtolGroup].target = undefined;
+		}
+	}
+	if (!defined(gi.target) && groupSize(vtolGroup) > 0) {
+		idleGroups.push(vtolGroup);
+	}
+
 	function uncached() {
 		return getTargets();
 	}
@@ -562,7 +563,7 @@ _global.updateTargets = function() {
 		var trucks = enumTrucks();
 		if (trucks.length > 0) {
 			roamingGroups.forEach(function(gp) {
-				if (!defined(groupInfo[gp].roamingTarget)) {
+				if (gp != vtolGroup && !defined(groupInfo[gp].roamingTarget)) {
 					trucks.shuffle();
 					groupInfo[gp].roamingTarget = trucks[0];
 				}

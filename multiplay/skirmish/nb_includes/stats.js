@@ -137,21 +137,23 @@ _global.chooseAvailableWeaponPathByRoleRatings = function(paths, rating, objectT
 	var minDist = Infinity, minPath;
 	var chanceTotal = 0.0
 	var pathChances = [];
+	// Find which rating is the weakest one
+	var weakRole = 0;
+	var weakestRate = Infinity;
+	for (var i = 0; i < rating.length; i++) {
+		if (rating[i] < weakestRate) {
+			weakRole = i;
+			weakestRate = rating[i];
+		}
+	}
+	// Pick a weapon path to increase that rating
 	paths.forEach(function(path) {
-		if (!weaponPathIsAvailable(path, objectType, defrole))
+		if (!weaponPathIsAvailable(path, objectType, defrole)) {
+			pathChances.push(0);
 			return;
-		var dist = 0;
-		for (var i = 0; i < ROLE.LENGTH; ++i) {
-			var newDist = Math.abs(rating[i] - path.roles[i])
-			if (newDist > dist)
-				dist = newDist;
 		}
-		pathChances.push(1.0 / dist);
-		chanceTotal += (1.0 / dist);
-		if (dist < minDist) {
-			minDist = dist;
-			minPath = path;
-		}
+		pathChances.push(path.roles[weakRole]);
+		chanceTotal += (path.roles[weakRole]);
 	});
 	var rnd = Math.random() * chanceTotal;
 	for (var i = 0; i < paths.length; i++) {

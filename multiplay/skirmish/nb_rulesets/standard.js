@@ -176,8 +176,7 @@ const weaponStats = {
 	},
 	machineguns: {
 		// How good weapons of this path are against tanks, borgs, defenses, vtols?
-		// The sum of the four should be equal to 1.
-		roles: [ 0.8, 0.0, 0.3, 0.3 ],
+		roles: [ 0.8, 0.0, 0.3, 0.0 ],
 		// This explains how are human players supposed to call this weapon path in the chat.
 		chatalias: "mg",
 		// This controls micromanagement of units based on the weapons of this path.
@@ -286,7 +285,7 @@ const weaponStats = {
 		],
 	},
 	cannons: {
-		roles: [ 0.4, 0.0, 0.6, 0.0 ],
+		roles: [ 0.6, 0.0, 0.6, 0.0 ],
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -311,7 +310,7 @@ const weaponStats = {
 		],
 	},
 	mortars: {
-		roles: [ 0.5, 0.0, 0.5, 0.0 ],
+		roles: [ 0.5, 0.0, 0.8, 0.0 ],
 		chatalias: "mo",
 		micro: MICRO.DUMB,
 		weapons: [
@@ -335,7 +334,7 @@ const weaponStats = {
 		],
 	},
 	howitzers: {
-		roles: [ 0.5, 0.0, 0.5, 0.0 ],
+		roles: [ 0.5, 0.0, 0.8, 0.0 ],
 		chatalias: "hw",
 		micro: MICRO.DUMB,
 		weapons: [
@@ -357,7 +356,7 @@ const weaponStats = {
 		],
 	},
 	rockets: {
-		roles: [ 0.8, 0.0, 0.3, 0.0 ],
+		roles: [ 0.7, 0.0, 0.3, 0.0 ],
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -405,7 +404,7 @@ const weaponStats = {
 		extras: [],
 	},
 	missiles: {
-		roles: [ 0.8, 0.0, 0.4, 0.0 ],
+		roles: [ 0.7, 0.0, 0.4, 0.0 ],
 		chatalias: "ms",
 		micro: MICRO.RANGED,
 		weapons: [
