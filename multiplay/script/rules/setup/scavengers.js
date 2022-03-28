@@ -1,0 +1,3 @@
+function setupScavenger()	// inside hackNetOff()
+{
+}

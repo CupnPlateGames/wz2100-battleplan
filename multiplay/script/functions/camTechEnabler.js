@@ -1,4 +1,41 @@
+/** List of techs that can be researched from start */
+const TECH_STARTERS = [
+	"R0-A13-MG1",
+	"R0-C13-Cannon1",
+	"R0-E13-Rocket1",
+	"R-Defense-HardcreteWall",
+	"R0-B13-Flamer1",
+	"R0-D13-Missile1",
+	"R0-F13-Mortar1",
+	"R0-G13-Howitzer1",
+	"R0-L3-Repair1",
+	"R-Vehicle-Body05",
+	"R-Vehicle-Body03",
+];
 
+/** List of techs already researched when playing with an established base */
+const TECH_BASE = [
+	"R0-A13-MG1",
+	"R0-C13-Cannon1",
+	"R0-E13-Rocket1",
+	"R-Defense-HardcreteWall",
+]
+
+/** List of further techs already researched when playing with an advanced (walled) base */
+const TECH_ADVANCED_BASE = [
+	"R0-B13-Flamer1",
+	"R0-D13-Missile1",
+	"R0-F13-Mortar1",
+	"R0-G13-Howitzer1",
+	"R0-A22-AAMG2",
+	"R0-E22-AARocket2",
+	"R0-D22-AAMissile2",
+	"R-Vehicle-Body05",
+	"R-Vehicle-Body03",
+	"R-Sys-Sensor-Turret01"
+];
+
+/** List of techs already researched when starting from tech level 2 */
 const TECH_TWO = [
 	"R0-A13-MG1",
 	"R0-B13-Flamer1",
@@ -47,6 +84,7 @@ const TECH_TWO = [
 	"R0-G9-HowitzerUpgrade1"
 ];
 
+/** List of techs already researched when starting from tech level 3 */
 const TECH_THREE = [
 	"R-Vehicle-Metals01",
 	"R-Defense-WallUpgrade02",
@@ -80,6 +118,7 @@ const TECH_THREE = [
 	"R0-L2-Repair2",
 ];
 
+/** List of techs already researched when starting from tech level 4 */
 const TECH_FOUR = [
 	"R-Vehicle-Metals02",
 	"R-Vehicle-Metals03",
@@ -101,28 +140,20 @@ const TECH_FOUR = [
 	"R-Sys-RadarDetector01"
 ];
 
-//Automatically research these items for the player.
-function grantTech(tech)
+/** Makes an array of techs available for research for a player */
+function enableTech(tech, playnum)
 {
-     var len = tech.length;
-     for (var c = 0; c < maxPlayers; ++c)
-     {
-          for (var i = 0; i < len; ++i)
-          {
-               completeResearch(tech[i], c);
-          }
-     }
+	for (var i = 0; i < tech.length; i++)
+	{
+		enableResearch(tech[i], playnum);
+	}
 }
 
-//Makes these items available for research.
-function enableTech(tech)
+/** Complete research of an array of techs for a player */
+function grantTech(tech, playnum)
 {
-     var len = tech.length;
-     for (var c = 0; c < maxPlayers; ++c)
-     {
-          for (var i = 0; i < len; ++i)
-          {
-               enableResearch(tech[i], c);
-          }
-     }
+	for (var i = 0; i < tech.length; i++)
+	{
+		completeResearch(tech[i], playnum);
+	}
 }

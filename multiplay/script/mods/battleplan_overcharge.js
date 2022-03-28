@@ -22,5 +22,4 @@ function battleplan_overcharge()
 		}
 	}
 }
-
 setTimer("battleplan_overcharge", 1000);
