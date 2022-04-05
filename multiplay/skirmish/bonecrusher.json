@@ -1,0 +1,7 @@
+{
+	"AI": {
+		"js": "nb_bp_tech.js",
+		"name": "Tech AI (Battleplan)",
+		"tip": "AI focusing on research, based on NullBot"
+	}
+}

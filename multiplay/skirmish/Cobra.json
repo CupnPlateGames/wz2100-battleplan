@@ -1,0 +1,7 @@
+{
+	"AI": {
+		"js": "nb_bp_vtol.js",
+		"name": "VTOL AI (Battleplan)",
+		"tip": "Aerial AI, based on NullBot"
+	}
+}

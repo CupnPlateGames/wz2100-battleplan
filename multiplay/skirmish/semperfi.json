@@ -2,6 +2,6 @@
 	"AI": {
 		"js": "nb_bp_allin.js",
 		"name": "All-in (Battleplan)",
-		"tip": "Very agressive AI, base on NullBot"
+		"tip": "Very agressive AI, based on NullBot"
 	}
 }

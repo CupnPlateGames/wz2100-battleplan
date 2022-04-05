@@ -1,7 +1,7 @@
 {
 	"AI": {
 		"js": "nexus_bp.js",
-		"name": "Nexus",
+		"name": "Nexus (Battleplan)",
 		"tip": "based off the original AI, now for beginners",
 		"easy_tip": "Gets ~ 25% less power from each oil derrick",
 		"insane_tip": "Gets ~ 100% more power from each oil derrick\nStarts with defensive structures and oil derricks"
