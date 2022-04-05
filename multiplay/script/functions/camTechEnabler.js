@@ -11,6 +11,7 @@ const TECH_STARTERS = [
 	"R0-L3-Repair1",
 	"R-Vehicle-Body05",
 	"R-Vehicle-Body03",
+	"R-Sys-Sensor-Turret01",
 ];
 
 /** List of techs already researched when playing with an established base */
