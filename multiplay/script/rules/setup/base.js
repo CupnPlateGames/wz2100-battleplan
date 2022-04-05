@@ -47,6 +47,7 @@ function limitStartingFacilities(player)
 	var max_facto = 1;
 	var max_vtol = 1;
 	var max_cyb = 0;
+	var max_derricks = 2;
 	switch (baseType)
 	{
 	case CAMP_CLEAN:
@@ -58,6 +59,7 @@ function limitStartingFacilities(player)
 		max_labs = 1;
 		max_facto = 1;
 		max_vtol = 1;
+		max_derricks = 4;
 		break;
 	default:
 		return;
@@ -90,14 +92,25 @@ function limitStartingFacilities(player)
 		if (count_facto > max_facto)
 			removeObject(s);
 	}
-
+	structs = enumStruct(player, RESOURCE_EXTRACTOR);
+	if (structs.length > max_derricks)
+	{
+		var base = startPositions[player];
+		structs.sort(function(one, two) {
+			return distBetweenTwoPoints(one.x, one.y, base.x, base.y) - distBetweenTwoPoints(two.x, two.y, base.x, base.y);
+		});
+		for (var i = max_derricks; i < structs.length; i++)
+		{
+			removeObject(structs[i]);
+		}
+	}
 }
 
 function setupBase(player)	// inside hackNetOff()
 {
+	setPower(800, player);
 	if (baseType == CAMP_CLEAN)
 	{
-		setPower(2000, player);
 		var structs = enumStruct(player);
 		for (var i = 0; i < structs.length; i++)
 		{
@@ -105,9 +118,9 @@ function setupBase(player)	// inside hackNetOff()
 			if (s.stattype != HQ
 				&& s.stattype != POWER_GEN
 				&& s.stattype != RESEARCH_LAB
+				&& s.stattype != RESOURCE_EXTRACTOR
 				&& (playerData[player].difficulty != INSANE
-					|| (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE
-				        && s.stattype != RESOURCE_EXTRACTOR)))
+					|| (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE)))
 			{
 				removeObject(s, false);
 			}
@@ -115,7 +128,6 @@ function setupBase(player)	// inside hackNetOff()
 	}
 	else if (baseType == CAMP_BASE)
 	{
-		setPower(1250, player);
 		grantTech(TECH_BASE, player);
 		// Keep only some structures
 		var structs = enumStruct(player);
@@ -131,7 +143,6 @@ function setupBase(player)	// inside hackNetOff()
 	}
 	else // CAMP_WALLS
 	{
-		setPower(1000, player);
 		grantTech(TECH_BASE, player);
 		grantTech(TECH_ADVANCED_BASE, player);
 	}

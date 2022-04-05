@@ -2,8 +2,8 @@
     "A0ResourceExtractor": {
         "armour": 0,
         "breadth": 1,
-        "buildPoints": 250,
-        "buildPower": 250,
+        "buildPoints": 200,
+        "buildPower": 200,
         "height": 1,
         "hitpoints": 300,
         "id": "A0ResourceExtractor",
