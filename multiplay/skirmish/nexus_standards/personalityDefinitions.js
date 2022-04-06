@@ -11,19 +11,19 @@ var nexusBranch = {
 		"type": "land",
 		"name": "generic1",
 		"minimums": {
-			scouts: 3,
-			defenders: 4,
-			attackers: 8,
+			scouts: 2,
+			defenders: 2,
+			attackers: 4,
 		},
 		"maximums" : {
 			scouts: 3,
-			defenders: 5,
+			defenders: 6,
 			attackers: MAX_DROID_LIMIT,
 		},
 		"numVtolGroups": 1,
 		"numVtolsPerGroup": 10,
-		"numVtolDefenders": 5,
-		"maxVTOLs": 5,
+		"numVtolDefenders": 3,
+		"maxVTOLs": 20,
 		//.stattype
 		"vtolTargets": [
 			{structure: HQ, weight: 10},
@@ -42,8 +42,6 @@ var nexusBranch = {
 		"earlyResearch": [
 			"R0-A13-MG1",
 			"R0-E13-Rocket1",
-			"R0-L3-Repair1",
-			"R-Defense-HardcreteWall",
 		],
 		"factoryPreference": [
 			FACTORY,
@@ -51,9 +49,9 @@ var nexusBranch = {
 		],
 		//The minimum amount of certain base structures this personality will build, in order.
 		"buildOrder": [
-			{stat: "F", count: 2},
+			{stat: "F", count: 1},
 			{stat: "R", count: 1},
-			{stat: "R", count: 2},
+			{stat: "F", count: 2},
 		],
 		"moduleOrder": [
 		],
@@ -62,13 +60,13 @@ var nexusBranch = {
 		"type": "air",
 		"name": "vtol1",
 		"minimums": {
-			scouts: 3,
-			defenders: 12,
+			scouts: 1,
+			defenders: 6,
 			attackers: 0,
 		},
 		"maximums" : {
 			scouts: 3,
-			defenders: 20,
+			defenders: 12,
 			attackers: 0,
 		},
 		"numVtolGroups": 10,
@@ -90,17 +88,16 @@ var nexusBranch = {
 		"earlyResearch": [
 			"R0-A13-MG1",
 			"R0-E13-Rocket1",
-			"R0-L3-Repair1",
-			"R-Defense-HardcreteWall",
 		],
 		"factoryPreference": [
 			VTOL_FACTORY,
 			FACTORY,
 		],
 		"buildOrder": [
-			{stat: "V", count: 2},
+			{stat: "V", count: 1},
 			{stat: "R", count: 1},
 			{stat: "F", count: 1},
+			{stat: "V", count: 2},
 			{stat: "R", count: 2},
 		],
 		"moduleOrder": [

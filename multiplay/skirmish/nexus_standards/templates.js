@@ -24,17 +24,11 @@ const TWO_TURRET_BODY = [
 const STANDARD_TEMPLATES = [
 	// Scout
 	{ body: "B-D3-SNP", prop: "wheeled01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-D3-SNP", prop: "hover01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-D3-SNP", prop: "tracked01", weaps: ["W-Z11-Scout"] },
 	{ body: "B-C3-SP", prop: "wheeled01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-C3-SP", prop: "hover01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-C3-SP", prop: "tracked01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-B3-SC", prop: "wheeled01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-B3-SC", prop: "hover01", weaps: ["W-Z11-Scout"] },
-	{ body: "B-B3-SC", prop: "tracked01", weaps: ["W-Z11-Scout"] },
 	// MG light
 	{ body: "B-D3-SNP", prop: "wheeled01", weaps: ["W-A13-MG1"] },
 	{ body: "B-C3-SP", prop: "wheeled01", weaps: ["W-A13-MG1"] },
+	{ body: "B-B3-SC", prop: "tracked01", weaps: ["W-A13-MG1"] },
 	// Cannon light
 	{ body: "B-C3-SP", prop: "wheeled01", weaps: ["W-C13-Cannon1"] },
 	{ body: "B-C3-SP", prop: "tracked01", weaps: ["W-C13-Cannon1"] },
@@ -103,10 +97,8 @@ const STANDARD_TRUCK_TEMPLATES = [
 
 const STANDARD_TANK_REPAIRS = [
 	{ body: "B-C3-SP", prop: "wheeled01", weaps: ["T-L3-Repair1"] },
-	{ body: "B-C3-SP", prop: "hover01", weaps: ["T-L3-Repair1"] },
 	{ body: "B-B3-SC", prop: "tracked01", weaps: ["T-L3-Repair1"] },
 	{ body: "B-C2-MP", prop: "wheeled01", weaps: ["T-L2-Repair2"] },
-	{ body: "B-C2-MP", prop: "hover01", weaps: ["T-L2-Repair2"] },
 	{ body: "B-B2-MC", prop: "tracked01", weaps: ["T-L2-Repair2"] },
 	{ body: "B-B1-LC", prop: "tracked01", weaps: ["T-L2-Repair2"] },
 ];
