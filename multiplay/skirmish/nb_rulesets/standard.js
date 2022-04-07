@@ -87,13 +87,13 @@ const fastestResearch = [
 
 // body and propulsion arrays don't affect fixed template droids
 const bodyStats = [
-	{ res: "", stat: "B-C3-SP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // viper
+	{ res: "R-Vehicle-Body01", stat: "B-C3-SP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // viper
 	{ res: "R-Vehicle-Body05", stat: "B-C2-MP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // cobra
 	{ res: "R-Vehicle-Body11", stat: "B-C1-LP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // python
-	{ res: "", stat: "B-B3-SC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
+	{ res: "R-Vehicle-Body01", stat: "B-B3-SC", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.KINETIC }, // leopard
 	{ res: "R-Vehicle-Body05", stat: "B-B2-MC", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // panther
 	{ res: "R-Vehicle-Body11", stat: "B-B1-LC", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.KINETIC }, // tiger
-	{ res: "", stat: "B-D3-SNP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
+	{ res: "R-Vehicle-Body01", stat: "B-D3-SNP", weight: WEIGHT.LIGHT, usage: BODYUSAGE.UNIVERSAL, armor: BODYCLASS.THERMAL }, // bug
 	{ res: "R-Vehicle-Body05", stat: "B-D2-MNP", weight: WEIGHT.MEDIUM, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.THERMAL }, // scorpion
 	{ res: "R-Vehicle-Body11", stat: "B-D1-LNP", weight: WEIGHT.HEAVY, usage: BODYUSAGE.GROUND, armor: BODYCLASS.THERMAL }, // mantis
 	{ res: "R-Vehicle-Body03", stat: "B-A3-SN", weight: WEIGHT.LIGHT, usage: BODYUSAGE.COMBAT, armor: BODYCLASS.KINETIC }, // retaliation
@@ -142,10 +142,10 @@ const classResearch = {
 // Ground propulsions need to be ground only, hover propulsions shouldn't
 // be able to cross cliffs, but should be able to cross seas, etc.
 const propulsionStats = [
-	{ res: "", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND, chance: 35 },
-	{ res: "", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND, chance: 45 },
-	{ res: "", stat: "hover01", usage: PROPULSIONUSAGE.HOVER, chance: 20 },
-	{ res: "", stat: "V-Tol", usage: PROPULSIONUSAGE.VTOL },
+	{ res: "R-Vehicle-Prop-Wheels", stat: "wheeled01", usage: PROPULSIONUSAGE.GROUND, chance: 35 },
+	{ res: "R-Vehicle-Prop-Wheels", stat: "tracked01", usage: PROPULSIONUSAGE.GROUND, chance: 45 },
+	{ res: "R-Vehicle-Prop-Wheels", stat: "hover01", usage: PROPULSIONUSAGE.HOVER, chance: 20 },
+	{ res: "R-Vehicle-Prop-Wheels", stat: "V-Tol", usage: PROPULSIONUSAGE.VTOL },
 ];
 
 
@@ -166,13 +166,13 @@ const weaponStats = {
 		chatalias: "scout",
 		micro: MICRO.MELEE,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
-			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [
-			{ res: "", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
 		],
 		templates: [],
 		extras: [],
@@ -192,7 +192,7 @@ const weaponStats = {
 		],
 		// VTOL weapons of the path, in the same order.
 		vtols: [
-			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.LIGHT, chance: 30 }, // vtol mg
 			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.MEDIUM, chance: 50 }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
@@ -231,7 +231,7 @@ const weaponStats = {
 			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
 		],
 		vtols: [
-			{ res: "", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT, chance: 0 },
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT, chance: 0 },
 			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT, chance: 30 }, // vtol mg
 			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT, chance: 50 }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
@@ -272,7 +272,7 @@ const weaponStats = {
 		chatalias: "flaa",
 		micro: MICRO.MELEE,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT, chance: 30 }, // flamer
@@ -392,7 +392,7 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT, chance: 0 },
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT, chance: 0 },
 			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.MEDIUM },
 		],
 		vtols: [
@@ -459,16 +459,16 @@ const weaponStats = {
 		chatalias: "lol",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-A13-TowerMG1", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-A12-TowerMG2", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-A11-TowerMG3", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-C13-TowerCannon1", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-C12-TowerCannon2", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-C11-TowerCannon3", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-D13-TowerMissile1", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-D12-TowerMissile2", weight: WEIGHT.LIGHT },
-			{ res: "", stat: "W-D11-TowerMissile3", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-A13-TowerMG1", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-A12-TowerMG2", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-A11-TowerMG3", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-C13-TowerCannon1", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-C12-TowerCannon2", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-C11-TowerCannon3", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-D13-TowerMissile1", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-D12-TowerMissile2", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-D11-TowerMissile3", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 		],

@@ -22,12 +22,15 @@ subpersonalities = {
 		chatalias: "allin",
 		weaponPaths: [
 			weaponStats.scout,
+			weaponStats.flamers,
+			weaponStats.cannons,
+			weaponStats.howitzers,
 		],
-		minTanks: 4, becomeHarder: 4, maxTanks: 8,
+		minTanks: 1, becomeHarder: 2, maxTanks: 50,
 		minTrucks: 0, minHoverTrucks: 0, maxSensors: 0,
-		minMiscTanks: 4, maxMiscTanks: 8,
+		minMiscTanks: 0, maxMiscTanks: 0,
 		vtolness: 0, defensiveness: 0, researchness: 0,
-		maxPower: 400,
+		maxPower: 1000,
 		repairAt: 0,
 	},
 	MRH: {
