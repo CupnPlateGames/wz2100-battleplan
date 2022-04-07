@@ -154,19 +154,8 @@ function eventGameInit()
 		enableStructure("A0PowMod1", playnum);
 		enableStructure("A0ResearchFacility", playnum);
 		enableStructure("A0TankTrap", playnum);
-		enableStructure("LookOutTower", playnum);
 
-		makeComponentAvailable("wheeled01", playnum);
-		makeComponentAvailable("hover01", playnum);
-		makeComponentAvailable("tracked01", playnum);
-		makeComponentAvailable("V-Tol", playnum);
-
-		makeComponentAvailable("B-D3-SNP", playnum);
-		makeComponentAvailable("B-C3-SP", playnum);
-		makeComponentAvailable("B-B3-SC", playnum);
 		makeComponentAvailable("Spade1Mk1", playnum);
-		makeComponentAvailable("W-Z11-Scout", playnum);
-		makeComponentAvailable("W-Z11-VTOLScout", playnum);
 
 		setStructureLimits("A0LightFactory", 10, playnum);	// set structure limits
 		setStructureLimits("A0PowerGenerator", 8, playnum);

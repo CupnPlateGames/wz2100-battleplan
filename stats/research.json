@@ -164,6 +164,23 @@
 
 
 
+    "R0-Pulse": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Pulse",
+        "keyTopic": 1,
+        "msgName": "RES_MG1MK1",
+        "name": "Pulse gun",
+        "researchPoints": 1,
+        "researchPower": 1,
+        "resultComponents": [
+            "W-Z11-VTOLScout",
+            "W-Z11-Scout"
+        ],
+        "resultStructures": [
+            "LookOutTower"
+        ],
+        "statID": "W-Z11-Scout"
+    },
 
     "R0-A13-MG1": {
         "iconID": "IMAGE_RES_WEAPONTECH",
@@ -401,6 +418,38 @@
         "statID": "W-D22-AAMissile2"
     },
 
+
+    "R-Vehicle-Prop-Wheels": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Prop-Wheels",
+        "msgName": "RES_V_P_W1",
+        "name": "Wheeled Propulsion",
+        "researchPoints": 1,
+        "researchPower": 1,
+        "resultComponents": [
+            "wheeled01",
+            "tracked01",
+            "hover01",
+            "V-Tol"
+        ],
+        "statID": "wheeled01"
+    },
+
+
+    "R-Vehicle-Body01": {
+        "iconID": "IMAGE_RES_DROIDTECH",
+        "id": "R-Vehicle-Body01",
+        "msgName": "RES_V_B01",
+        "name": "Light Body - Viper",
+        "researchPoints": 1,
+        "researchPower": 1,
+        "resultComponents": [
+            "B-D3-SNP",
+            "B-C3-SP",
+            "B-B3-SC"
+        ],
+        "statID": "B-C3-SP"
+    },
 
     "R-Vehicle-Body05": {
         "iconID": "IMAGE_RES_DROIDTECH",
