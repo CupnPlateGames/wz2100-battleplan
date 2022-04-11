@@ -141,6 +141,24 @@ const TECH_FOUR = [
 	"R-Sys-RadarDetector01"
 ];
 
+/** List of bunkers researches sorted by weapon research */
+const BUNKER_PAIRS = {
+	"R0-A13-MG1": "R0-A13b-MG1Bunker",
+	"R0-C13-Cannon1": "R0-C13b-Cannon1Bunker",
+	"R0-B13-Flamer1": "R0-B13b-Flamer1Bunker",
+	"R0-D13-Missile1": "R0-D13b-Missile1Bunker",
+
+	"R0-A12-MG2": "R0-A12b-MG2Bunker",
+	"R0-B12-Flamer2": "R0-B12b-Flamer2Bunker",
+	"R0-C12-Cannon2": "R0-C12b-Cannon2Bunker",
+	"R0-D12-Missile2": "R0-D12b-Missile2Bunker",
+
+	"R0-A11-MG3": "R0-A11b-MG3Bunker",
+	"R0-B11-Flamer3": "R0-B11b-Flamer3Bunker",
+	"R0-C11-Cannon3": "R0-C11b-Cannon3Bunker",
+	"R0-D11-Missile3": "R0-D11b-Missile3Bunker",
+};
+
 /** Makes an array of techs available for research for a player */
 function enableTech(tech, playnum)
 {

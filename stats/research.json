@@ -204,12 +204,8 @@
         "id": "R-Defense-Pillbox01",
         "msgName": "RES_DF_P1",
         "name": "Machinegun Bunker",
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-A13-MG1"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-A13b-MG1Bunker"
         ],
@@ -266,12 +262,8 @@
         "id": "R-Defense-Pillbox04",
         "msgName": "RES_PB_LC",
         "name": "Light Cannon Bunker",
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-C13-Cannon1"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-C13b-Cannon1Bunker"
         ],
@@ -315,12 +307,8 @@
         "id": "R-Defense-Pillbox06",
         "msgName": "RES_PB_ATR",
         "name": "Lancer Tower",
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-D13-Missile1"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-D13b-Missile1Bunker"
         ],
@@ -562,12 +550,8 @@
         "redStructures": [
             "S-A13b-MG1Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-A12-MG2"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-A12b-MG2Bunker"
         ],
@@ -598,12 +582,8 @@
         "redStructures": [
             "S-B13b-Flamer1Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-B12-Flamer2"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-B12b-Flamer2Bunker"
         ],
@@ -638,12 +618,8 @@
         "redStructures": [
             "S-C13b-Cannon1Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-C12-Cannon2"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-C12b-Cannon2Bunker"
         ],
@@ -703,12 +679,8 @@
         "redStructures": [
             "S-D13b-Missile1Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-D12-Missile2"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-D12b-Missile2Bunker"
         ],
@@ -840,12 +812,8 @@
         "redStructures": [
             "S-A12b-MG2Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-A11-MG3"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-A11b-MG3Bunker"
         ],
@@ -876,12 +844,8 @@
         "redStructures": [
             "S-B12b-Flamer2Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-B11-Flamer3"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-B11b-Flamer3Bunker"
         ],
@@ -917,12 +881,8 @@
         "redStructures": [
             "S-C12b-Cannon2Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-C11-Cannon3"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-C11b-Cannon3Bunker"
         ],
@@ -980,12 +940,8 @@
         "redStructures": [
             "S-D12b-Missile2Bunker"
         ],
-        "requiredResearch": [
-            "R-Defense-HardcreteWall",
-            "R0-D11-Missile3"
-        ],
-        "researchPoints": 70,
-        "researchPower": 70,
+        "researchPoints": 1,
+        "researchPower": 1,
         "resultStructures": [
             "S-D11b-Missile3Bunker"
         ],
