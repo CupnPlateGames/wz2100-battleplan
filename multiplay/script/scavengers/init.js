@@ -1,0 +1,2 @@
+// Scavenger control script
+// Removed
