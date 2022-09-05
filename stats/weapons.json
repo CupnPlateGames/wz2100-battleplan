@@ -1762,7 +1762,6 @@
         "effectSize": 50,
         "explosionWav": "smlexpl.ogg",
         "facePlayer": 1,
-        "fireOnMove": 0,
         "firePause": 1,
         "flags": "ShootAir",
         "flightGfx": "FXHPLME.PIE",
