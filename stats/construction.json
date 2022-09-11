@@ -1,11 +1,11 @@
 {
     "Spade1Mk1": {
-        "buildPoints": 60,
-        "buildPower": 60,
+        "buildPoints": 120,
+        "buildPower": 120,
         "constructPoints": 5,
         "designable": 1,
         "droidType": "DROID_CONSTRUCT",
-        "hitpoints": 0,
+        "hitpoints": 60,
         "id": "Spade1Mk1",
         "name": "Truck",
         "sensorModel": "TRLCON.PIE",
