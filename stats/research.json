@@ -377,7 +377,8 @@
         "researchPoints": 450,
         "researchPower": 450,
         "resultComponents": [
-            "W-E22-AARocket2"
+            "W-E22-AARocket2",
+            "W-E22-VTOLAARocket2"
         ],
         "resultStructures": [
             "S-E22a-AARocket2Empl"
@@ -753,7 +754,25 @@
         ],
         "statID": "W-A21-AAMG3"
     },
-
+    "R0-E21-AARocket3": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-Nova",
+        "name": "Nova AA Rocket Array",
+        "requiredResearch": [
+            "R0-E12-Rocket2",
+            "R0-E22-AARocket2"
+        ],
+        "researchPoints": 750,
+        "researchPower": 750,
+        "resultComponents": [
+            "W-E21-AARocket3",
+            "W-E21-VTOLAARocket3"
+        ],
+        "resultStructures": [
+            "S-E21a-AARocket3Empl"
+        ],
+        "statID": "W-E21-AARocket3"
+    },
     "R0-D21-AAMissile3": {
         "iconID": "IMAGE_RES_DEFENCE",
         "id": "R-Defense-SamSite2",
