@@ -626,7 +626,7 @@
         "shortRange": 768,
         "waterGfx": "FXMSplsh.PIE",
         "weaponClass": "KINETIC",
-        "weaponEffect": "ARTILLERY ROUND",
+        "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "smlcan.ogg",
         "weight": 282
@@ -1311,7 +1311,7 @@
         "shortRange": 768,
         "waterGfx": "FXLSplsh.PIE",
         "weaponClass": "KINETIC",
-        "weaponEffect": "ARTILLERY ROUND",
+        "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "medcan.ogg",
         "weight": 565
@@ -1322,7 +1322,7 @@
     "LasSat": {
         "buildPoints": 500,
         "buildPower": 100,
-        "damage": 180,
+        "damage": 1000,
         "effectSize": 100,
         "explosionWav": "lsrexpl.ogg",
         "facePlayer": 1,
@@ -1347,13 +1347,13 @@
         "name": "Laser Satellite Command Post",
         "numExplosions": 1,
         "radius": 512,
-        "radiusDamage": 180,
+        "radiusDamage": 1000,
         "rotate": 180,
         "shortHit": 100,
         "shortRange": 640,
         "waterGfx": "FXSFlms.PIE",
         "weaponClass": "HEAT",
-        "weaponEffect": "ALL ROUNDER",
+        "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "LAS_SAT",
         "weaponWav": "bemlsr.ogg",
         "weight": 600
@@ -1907,7 +1907,7 @@
         "shortRange": 768,
         "waterGfx": "FXLSplsh.PIE",
         "weaponClass": "KINETIC",
-        "weaponEffect": "ARTILLERY ROUND",
+        "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "lrgcan.ogg",
         "weight": 1130
