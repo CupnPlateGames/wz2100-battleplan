@@ -294,8 +294,7 @@
         "researchPoints": 300,
         "researchPower": 300,
         "resultComponents": [
-            "W-D13-Missile1",
-            "W-D13-VTOLMissile1"
+            "W-D13-Missile1"
         ],
         "resultStructures": [
             "S-D13a-Missile1Tower"
@@ -663,8 +662,7 @@
         "researchPoints": 600,
         "researchPower": 600,
         "resultComponents": [
-            "W-D12-Missile2",
-            "W-D12-VTOLMissile2"
+            "W-D12-Missile2"
         ],
         "resultStructures": [
             "S-D12a-Missile2Tower"
@@ -924,8 +922,7 @@
         "researchPoints": 900,
         "researchPower": 900,
         "resultComponents": [
-            "W-D11-Missile3",
-            "W-D11-VTOLMissile3"
+            "W-D11-Missile3"
         ],
         "resultStructures": [
             "S-D11a-Missile3Tower"
