@@ -416,9 +416,6 @@ const weaponStats = {
 			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		vtols: [
-			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT, chance: 50 }, // lancer
-			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM, chance: 50 }, // tk
-			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		defenses: [
 			{ res: "R0-D13-Missile1", stat: "S-D13a-Missile1Tower", defrole: DEFROLE.STANDALONE },
@@ -443,9 +440,6 @@ const weaponStats = {
 			{ res: "R0-D21-AAMissile3", stat: "W-D21-AAMissile3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
-			{ res: "R0-D13-Missile1", stat: "W-D13-VTOLMissile1", weight: WEIGHT.LIGHT, chance: 50 },
-			{ res: "R0-D12-Missile2", stat: "W-D12-VTOLMissile2", weight: WEIGHT.MEDIUM, chance: 50 },
-			{ res: "R0-D11-Missile3", stat: "W-D11-VTOLMissile3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [
 			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE },

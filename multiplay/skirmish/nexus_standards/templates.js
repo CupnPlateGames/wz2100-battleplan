@@ -132,8 +132,6 @@ const STANDARD_VTOL_TEMPLATES = [
 	// Flamer light
 	{ body: "B-D3-SNP", prop: "V-Tol", weaps: ["W-B13-VTOLFlamer1"] },
 	{ body: "B-C3-SP", prop: "V-Tol", weaps: ["W-B13-VTOLFlamer1"] },
-	// Missile light
-	{ body: "B-C3-SP", prop: "V-Tol", weaps: ["W-D13-VTOLMissile1"] },
 	// Rocket light
 	{ body: "B-D3-SNP", prop: "V-Tol", weaps: ["W-E13-VTOLRocket1"] },
 	{ body: "B-C3-SP", prop: "V-Tol", weaps: ["W-E13-VTOLRocket1"] },
@@ -144,8 +142,6 @@ const STANDARD_VTOL_TEMPLATES = [
 	// Flamer medium
 	{ body: "B-D2-MNP", prop: "V-Tol", weaps: ["W-B12-VTOLFlamer2"] },
 	{ body: "B-C2-MP", prop: "V-Tol", weaps: ["W-B12-VTOLFlamer2"] },
-	// Missile medium
-	{ body: "B-C2-MP", prop: "V-Tol", weaps: ["W-D12-VTOLMissile2"] },
 	// Rocket medium
 	{ body: "B-D2-MNP", prop: "V-Tol", weaps: ["W-E12-VTOLRocket2"] },
 	{ body: "B-C2-MP", prop: "V-Tol", weaps: ["W-E12-VTOLRocket2"] },
@@ -158,8 +154,6 @@ const STANDARD_VTOL_TEMPLATES = [
 	// Flamer heavy
 	{ body: "B-D1-LNP", prop: "V-Tol", weaps: ["W-B11-VTOLFlamer3"] },
 	{ body: "B-C1-LP", prop: "V-Tol", weaps: ["W-B11-VTOLFlamer3"] },
-	// Missile heavy
-	{ body: "B-C1-LP", prop: "V-Tol", weaps: ["W-D11-VTOLMissile3"] },
 	// Rocket heavy
 	{ body: "B-D1-LNP", prop: "V-Tol", weaps: ["W-E11-VTOLRocket3"] },
 	{ body: "B-C1-LP", prop: "V-Tol", weaps: ["W-E11-VTOLRocket3"] },
