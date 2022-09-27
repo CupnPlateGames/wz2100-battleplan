@@ -36,7 +36,7 @@
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
         "weaponWav": "plslsr.ogg",
-	"weight": 0
+	"weight": 60
     },
     "W-Z11-TowerScout": {
         "buildPoints": 0,
@@ -75,7 +75,7 @@
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
         "weaponWav": "plslsr.ogg",
-	"weight": 0
+	"weight": 60
     },
     "W-Z11-VTOLScout": {
         "buildPoints": 25,
@@ -117,7 +117,7 @@
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
         "weaponWav": "plslsr.ogg",
-	"weight": 0
+	"weight": 60
     },
     "W-A13-MG1": {
         "buildPoints": 60,

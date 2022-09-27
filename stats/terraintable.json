@@ -6,7 +6,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -19,7 +19,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -32,7 +32,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -45,7 +45,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -58,7 +58,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -71,7 +71,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -84,7 +84,7 @@
             "wheeled": 125,
             "tracked": 110,
             "legged": 100,
-            "hover": 200,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 100
@@ -97,7 +97,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -123,7 +123,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -136,7 +136,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 200,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90
@@ -149,7 +149,7 @@
             "wheeled": 100,
             "tracked": 100,
             "legged": 100,
-            "hover": 175,
+            "hover": 100,
             "lift": 100,
             "propellor": 100,
             "half-tracked": 90

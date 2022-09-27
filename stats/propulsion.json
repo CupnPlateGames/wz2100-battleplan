@@ -8,9 +8,9 @@
         "model": "PRLRWHL1.PIE",
         "name": "Wheels",
         "skidDeceleration": 350,
-        "speed": 256,
+        "speed": 1024,
         "type": "Wheeled",
-        "weight": 100
+        "weight": 80
     },
     "hover01": {
         "buildPoints": 0,
@@ -21,9 +21,9 @@
         "model": "PRLHOV1.PIE",
         "name": "Hover",
         "skidDeceleration": 200,
-        "speed": 512,
+        "speed": 1024,
         "type": "Hover",
-        "weight": 150
+        "weight": 30
     },
     "tracked01": {
         "buildPoints": 0,
@@ -33,10 +33,10 @@
         "id": "tracked01",
         "model": "PRLRTRK1.PIE",
         "name": "Tracks",
-        "speed": 256,
+        "speed": 1024,
         "spinAngle": 45,
         "type": "Tracked",
-        "weight": 250
+        "weight": 150
     },
     "V-Tol": {
         "acceleration": 400,

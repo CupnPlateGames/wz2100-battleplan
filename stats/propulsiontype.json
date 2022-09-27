@@ -5,7 +5,7 @@
     },
     "Hover": {
         "flightName": "GROUND",
-        "multiplier": 18
+        "multiplier": 20
     },
     "Legged": {
         "flightName": "GROUND",
@@ -17,14 +17,14 @@
     },
     "Propellor": {
         "flightName": "GROUND",
-        "multiplier": 15
+        "multiplier": 20
     },
     "Tracked": {
         "flightName": "GROUND",
-        "multiplier": 15
+        "multiplier": 20
     },
     "Wheeled": {
         "flightName": "GROUND",
-        "multiplier": 15
+        "multiplier": 20
     }
 }
