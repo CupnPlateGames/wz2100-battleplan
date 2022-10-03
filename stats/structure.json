@@ -157,10 +157,10 @@
     "A0FacMod1": {
         "armour": 0,
         "breadth": 3,
-        "buildPoints": 250,
-        "buildPower": 300,
+        "buildPoints": 500,
+        "buildPower": 500,
         "height": 2,
-        "hitpoints": 200,
+        "hitpoints": 0,
         "id": "A0FacMod1",
         "name": "Factory Module",
         "resistance": 150,

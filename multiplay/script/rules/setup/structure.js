@@ -3,6 +3,7 @@ function setupStructure(playnum)	// inside hackNetOff()
 	enableStructure("A0CommandCentre", playnum);
 	enableStructure("A0LightFactory", playnum);
 	enableStructure("A0VTolFactory1", playnum);
+	enableStructure("A0FacMod1", playnum);
 	enableStructure("A0VtolPad", playnum);
 	enableStructure("A0ResourceExtractor", playnum);
 	enableStructure("A0PowerGenerator", playnum);

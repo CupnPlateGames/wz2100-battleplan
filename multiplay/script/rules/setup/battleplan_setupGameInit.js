@@ -148,6 +148,7 @@ function eventGameInit()
 		enableStructure("A0CommandCentre", playnum);		// make structures available to build
 		enableStructure("A0LightFactory", playnum);
 		enableStructure("A0VTolFactory1", playnum);
+		enableStructure("A0FacMod1", playnum);
 		enableStructure("A0VtolPad", playnum);
 		enableStructure("A0ResourceExtractor", playnum);
 		enableStructure("A0PowerGenerator", playnum);
