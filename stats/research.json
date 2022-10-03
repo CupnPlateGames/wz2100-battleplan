@@ -40,8 +40,8 @@
         "requiredResearch": [
             "R0-L3-Repair1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "T-L2-Repair2"
         ],
@@ -63,8 +63,8 @@
         "requiredResearch": [
             "R0-L2-Repair2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "AutoRepair"
         ],
@@ -98,8 +98,8 @@
         "requiredResearch": [
             "R-Sys-Sensor-Turret01"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "Sys-CBTurret01",
             "Sys-VTOLCBTurret01"
@@ -118,8 +118,8 @@
         "requiredResearch": [
             "R-Sys-CBSensor-Turret01"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "RadarDetector"
         ],
@@ -149,8 +149,8 @@
         "requiredResearch": [
             "R-Sys-CBSensor-Turret01"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "Sensor-WideSpec"
         ],
@@ -444,8 +444,8 @@
         "id": "R-Vehicle-Body05",
         "msgName": "RES_V_B05",
         "name": "Medium Body - Cobra",
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 500,
+        "researchPower": 500,
         "resultComponents": [
             "B-D2-MNP",
             "B-C2-MP",
@@ -461,8 +461,8 @@
         "requiredResearch": [
             "R-Vehicle-Body05"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 650,
+        "researchPower": 650,
         "resultComponents": [
             "B-D1-LNP",
             "B-C1-LP",
@@ -531,8 +531,8 @@
         "requiredResearch": [
             "R0-A13-MG1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-A12-VTOLMG2",
             "W-A12-MG2"
@@ -566,8 +566,8 @@
         "requiredResearch": [
             "R0-B13-Flamer1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-B12-Flamer2",
             "W-B12-VTOLFlamer2"
@@ -600,8 +600,8 @@
         "requiredResearch": [
             "R0-C13-Cannon1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-C12-Cannon2"
         ],
@@ -637,8 +637,8 @@
         "requiredResearch": [
             "R0-E13-Rocket1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-E12-Rocket2",
             "W-E12-VTOLRocket2"
@@ -660,8 +660,8 @@
         "requiredResearch": [
             "R0-D13-Missile1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-D12-Missile2"
         ],
@@ -697,8 +697,8 @@
         "requiredResearch": [
             "R0-F13-Mortar1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-F12-Mortar2",
             "W-F12-VTOLMortar2"
@@ -719,8 +719,8 @@
         "requiredResearch": [
             "R0-G13-Howitzer1"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 450,
+        "researchPower": 450,
         "resultComponents": [
             "W-G12-Howitzer2"
         ],
@@ -744,8 +744,8 @@
             "R0-A12-MG2",
             "R0-A22-AAMG2"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-A21-AAMG3"
         ],
@@ -762,8 +762,8 @@
             "R0-E12-Rocket2",
             "R0-E22-AARocket2"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-E21-AARocket3",
             "W-E21-VTOLAARocket3"
@@ -785,8 +785,8 @@
             "R0-D12-Missile2",
             "R0-D22-AAMissile2"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-D21-AAMissile3"
         ],
@@ -810,8 +810,8 @@
         "requiredResearch": [
             "R0-A12-MG2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-A11-VTOLMG3",
             "W-A11-MG3"
@@ -845,8 +845,8 @@
         "requiredResearch": [
             "R0-B12-Flamer2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-B11-Flamer3",
             "W-B11-VTOLFlamer3"
@@ -880,8 +880,8 @@
         "requiredResearch": [
             "R0-C12-Cannon2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-C11-Cannon3"
         ],
@@ -917,8 +917,8 @@
         "requiredResearch": [
             "R0-E12-Rocket2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-E11-Rocket3",
             "W-E11-VTOLRocket3"
@@ -938,8 +938,8 @@
         "requiredResearch": [
             "R0-D12-Missile2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-D11-Missile3"
         ],
@@ -975,8 +975,8 @@
         "requiredResearch": [
             "R0-F12-Mortar2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-F11-Mortar3",
             "W-F11-VTOLMortar3"
@@ -998,8 +998,8 @@
         "requiredResearch": [
             "R0-G12-Howitzer2"
         ],
-        "researchPoints": 900,
-        "researchPower": 900,
+        "researchPoints": 600,
+        "researchPower": 600,
         "resultComponents": [
             "W-G11-Howitzer3"
         ],
@@ -1020,8 +1020,8 @@
         "requiredResearch": [
             "R-Defense-HardcreteWall"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Building",
@@ -1039,8 +1039,8 @@
         "requiredResearch": [
             "R-Defense-WallUpgrade01"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Building",
@@ -1059,8 +1059,8 @@
         "requiredResearch": [
             "R-Defense-WallUpgrade02"
         ],
-        "researchPoints": 1500,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Building",
@@ -1083,8 +1083,8 @@
         "requiredResearch": [
             "R-Vehicle-Body05"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Body",
@@ -1104,8 +1104,8 @@
         "requiredResearch": [
             "R-Vehicle-Metals01"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Body",
@@ -1127,8 +1127,8 @@
         "requiredResearch": [
             "R-Vehicle-Metals02"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Body",
@@ -1152,8 +1152,8 @@
         "requiredResearch": [
             "R0-A13-MG1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1181,8 +1181,8 @@
         "requiredResearch": [
             "R0-A9-MGUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1211,8 +1211,8 @@
         "requiredResearch": [
             "R0-A9-MGUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1243,8 +1243,8 @@
         "requiredResearch": [
             "R0-B13-Flamer1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1272,8 +1272,8 @@
         "requiredResearch": [
             "R0-B9-FlamerUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1301,8 +1301,8 @@
         "requiredResearch": [
             "R0-B9-FlamerUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1334,8 +1334,8 @@
         "requiredResearch": [
             "R0-C13-Cannon1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1362,8 +1362,8 @@
         "requiredResearch": [
             "R0-C9-CannonUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1391,8 +1391,8 @@
         "requiredResearch": [
             "R0-C9-CannonUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1424,8 +1424,8 @@
         "requiredResearch": [
             "R0-E13-Rocket1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1452,8 +1452,8 @@
         "requiredResearch": [
             "R0-E9-RocketUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1481,8 +1481,8 @@
         "requiredResearch": [
             "R0-E9-RocketUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1514,8 +1514,8 @@
         "requiredResearch": [
             "R0-D13-Missile1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1542,8 +1542,8 @@
         "requiredResearch": [
             "R0-D9-MissileUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1571,8 +1571,8 @@
         "requiredResearch": [
             "R0-D9-MissileUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1602,8 +1602,8 @@
         "requiredResearch": [
             "R0-F13-Mortar1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1630,8 +1630,8 @@
         "requiredResearch": [
             "R0-F9-MortarUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1659,8 +1659,8 @@
         "requiredResearch": [
             "R0-F9-MortarUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",
@@ -1690,8 +1690,8 @@
         "requiredResearch": [
             "R0-G13-Howitzer1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 200,
+        "researchPower": 200,
         "results": [
             {
                 "class": "Weapon",
@@ -1718,8 +1718,8 @@
         "requiredResearch": [
             "R0-G9-HowitzerUpgrade1"
         ],
-        "researchPoints": 750,
-        "researchPower": 750,
+        "researchPoints": 300,
+        "researchPower": 300,
         "results": [
             {
                 "class": "Weapon",
@@ -1747,8 +1747,8 @@
         "requiredResearch": [
             "R0-G9-HowitzerUpgrade2"
         ],
-        "researchPoints": 1050,
-        "researchPower": 1050,
+        "researchPoints": 400,
+        "researchPower": 400,
         "results": [
             {
                 "class": "Weapon",

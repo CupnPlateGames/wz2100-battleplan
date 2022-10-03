@@ -153,6 +153,7 @@ function eventGameInit()
 		enableStructure("A0PowerGenerator", playnum);
 		enableStructure("A0PowMod1", playnum);
 		enableStructure("A0ResearchFacility", playnum);
+		enableStructure("A0ResearchModule1", playnum);
 		enableStructure("A0TankTrap", playnum);
 
 		makeComponentAvailable("Spade1Mk1", playnum);
