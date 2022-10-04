@@ -223,6 +223,9 @@
             "W-B13-Flamer1",
             "W-B13-VTOLFlamer1"
         ],
+        "resultStructures": [
+            "S-B13a-Flamer1Tower"
+        ],
         "statID": "W-B13-Flamer1"
     },
     "R0-B13b-Flamer1Bunker": {
@@ -572,6 +575,9 @@
             "W-B12-Flamer2",
             "W-B12-VTOLFlamer2"
         ],
+        "resultStructures": [
+            "S-B12a-Flamer2Tower"
+        ],
         "statID": "W-B12-Flamer2"
     },
     "R0-B12b-Flamer2Bunker": {
@@ -851,6 +857,9 @@
             "W-B11-Flamer3",
             "W-B11-VTOLFlamer3"
         ],
+        "resultStructures": [
+            "S-B11a-Flamer3Tower"
+        ],
         "statID": "W-B11-Flamer3"
     },
     "R0-B11b-Flamer3Bunker": {
@@ -1071,7 +1080,26 @@
         "subgroupIconID": "IMAGE_RES_GRPUPG",
         "techCode": 1
     },
-
+    "R-Defense-WallUpgrade04": {
+        "iconID": "IMAGE_RES_DEFENCE",
+        "id": "R-Defense-WallUpgrade04",
+        "imdName": "BLWALLH.PIE",
+        "name": "Improved Hardcrete Mk4",
+        "requiredResearch": [
+            "R-Defense-WallUpgrade03"
+        ],
+        "researchPoints": 500,
+        "researchPower": 500,
+        "results": [
+            {
+                "class": "Building",
+                "parameter": "HitPoints",
+                "value": 25
+            }
+        ],
+        "subgroupIconID": "IMAGE_RES_GRPUPG",
+        "techCode": 1
+    },
 
     "R-Vehicle-Metals01": {
         "iconID": "IMAGE_RES_DROIDTECH",

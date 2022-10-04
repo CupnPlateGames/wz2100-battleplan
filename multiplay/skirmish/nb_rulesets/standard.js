@@ -114,6 +114,7 @@ const classResearch = {
 			"R-Defense-WallUpgrade01",
 			"R-Defense-WallUpgrade02",
 			"R-Defense-WallUpgrade03",
+			"R-Defense-WallUpgrade04",
 		],
 		[ // OBJTYPE.VTOL
 		],
@@ -130,6 +131,7 @@ const classResearch = {
 			"R-Defense-WallUpgrade01",
 			"R-Defense-WallUpgrade02",
 			"R-Defense-WallUpgrade03",
+			"R-Defense-WallUpgrade04",
 		],
 		[
 		],
@@ -257,9 +259,12 @@ const weaponStats = {
 		vtols: [
 		],
 		defenses: [
-			{ res: "R0-B13b-Flamer1Bunker", stat: "S-B13b-Flamer1Bunker", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-B12b-Flamer2Bunker", stat: "S-B12b-Flamer2Bunker", defrole: DEFROLE.STANDALONE },
-			{ res: "R0-B11b-Flamer3Bunker", stat: "S-B11b-Flamer3Bunker", defrole: DEFROLE.STANDALONE },
+			{ res: "R0-B13-Flamer1", stat: "S-B13a-Flamer1Tower", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-B13b-Flamer1Bunker", stat: "S-B13b-Flamer1Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-B12-Flamer2", stat: "S-B12a-Flamer2Tower", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-B12b-Flamer2Bunker", stat: "S-B12b-Flamer2Bunker", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-B11-Flamer3", stat: "S-B11a-Flamer3Tower", defrole: DEFROLE.GATEWAY },
+			{ res: "R0-B11b-Flamer3Bunker", stat: "S-B11b-Flamer3Bunker", defrole: DEFROLE.GATEWAY },
 		],
 		templates: [
 		],
@@ -300,7 +305,7 @@ const weaponStats = {
 		],
 		defenses: [
 			{ res: "R0-C13-Cannon1", stat: "S-C13a-Cannon1Tower", defrole: DEFROLE.STANDALONE }, // lc tower
-			{ res: "R0-C13b-Cannon1Bunker", stat: "S-C13b-Cannon1Bunker", defrole: DEFROLE.STANDALONE }, // lc tower
+			{ res: "R0-C13b-Cannon1Bunker", stat: "S-C13b-Cannon1Bunker", defrole: DEFROLE.GATEWAY }, // lc tower
 			{ res: "R0-C12-Cannon2", stat: "S-C12a-Cannon2Tower", defrole: DEFROLE.STANDALONE }, // mc tower
 			{ res: "R0-C12b-Cannon2Bunker", stat: "S-C12b-Cannon2Bunker", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-C11-Cannon3", stat: "S-C11a-Cannon3Tower", defrole: DEFROLE.STANDALONE }, // mc tower
@@ -402,6 +407,7 @@ const weaponStats = {
 		],
 		defenses: [
 			{ res: "R0-E22-AARocket2", stat: "S-E22a-AARocket2Empl", defrole: DEFROLE.STANDALONE }, // sunburst
+			{ res: "R0-E21-AARocket3", stat: "S-E21a-AARocket3Empl", defrole: DEFROLE.STANDALONE }, // nova
 		],
 		templates: [],
 		extras: [],
