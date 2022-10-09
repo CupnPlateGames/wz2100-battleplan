@@ -1,10 +1,11 @@
 // Overrided consts
-const LOW_POWER = 500;
+const LOW_POWER = 200;
 const TRUCK_INFO = {
 	min: 1,
 	max: 3,
 };
 const TEMPLATE_BEST_OFFSET = 100; //Choose the best and the previous four to choose from.
+const BASE_THREAT_RANGE = 30;
 // Original file below
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -30,7 +31,6 @@ const OIL_THREAT_RADIUS = 7;
 const SCAN_RANGE_FOR_AA = 12; //Check if an enemy structure is surrounded by AA. If too many then ignore it.
 const BASE_DEFENSE_RANGE = 40; //How far away from the farthest base structure we can go.
 const BASE_VTOL_DEFENSE_RANGE = 25; //see above.
-const BASE_THREAT_RANGE = Math.ceil(17 + (mapWidth + mapHeight) / 2 / 35);
 
 const TICK = 100;
 

@@ -11,19 +11,19 @@ var nexusBranch = {
 		"type": "land",
 		"name": "generic1",
 		"minimums": {
-			scouts: 2,
-			defenders: 2,
+			scouts: 1,
+			defenders: 0,
 			attackers: 4,
 		},
 		"maximums" : {
 			scouts: 3,
-			defenders: 6,
+			defenders: 0,
 			attackers: MAX_DROID_LIMIT,
 		},
 		"numVtolGroups": 1,
 		"numVtolsPerGroup": 10,
 		"numVtolDefenders": 3,
-		"maxVTOLs": 20,
+		"maxVTOLs": 13,
 		//.stattype
 		"vtolTargets": [
 			{structure: HQ, weight: 10},
@@ -33,11 +33,11 @@ var nexusBranch = {
 			{structure: SAT_UPLINK, weight: 10},
 			{structure: RESEARCH_LAB, weight: 10},
 			{structure: POWER_GEN, weight: 15},
-			{structure: RESOURCE_EXTRACTOR, weight: 20},
+			{structure: RESOURCE_EXTRACTOR, weight: 200},
 			{structure: REPAIR_FACILITY, weight: 10},
 		],
 		// How many tiles away from scout base to expand ~every minute, if safe
-		"tileExpandRate": 12,
+		"tileExpandRate": 32,
 		// Research to prioritize first
 		"earlyResearch": [
 			"R0-A13-MG1",
@@ -67,12 +67,12 @@ var nexusBranch = {
 		"maximums" : {
 			scouts: 3,
 			defenders: 12,
-			attackers: 0,
+			attackers: MAX_DROID_LIMIT,
 		},
-		"numVtolGroups": 10,
+		"numVtolGroups": 3,
 		"numVtolsPerGroup": 10,
 		"numVtolDefenders": 5,
-		"maxVTOLs": 70,
+		"maxVTOLs": 35,
 		"vtolTargets": [
 			{structure: HQ, weight: 10},
 			{structure: FACTORY, weight: 80},
@@ -81,10 +81,10 @@ var nexusBranch = {
 			{structure: SAT_UPLINK, weight: 10},
 			{structure: RESEARCH_LAB, weight: 10},
 			{structure: POWER_GEN, weight: 15},
-			{structure: RESOURCE_EXTRACTOR, weight: 20},
+			{structure: RESOURCE_EXTRACTOR, weight: 200},
 			{structure: REPAIR_FACILITY, weight: 10},
 		],
-		"tileExpandRate": 12,
+		"tileExpandRate": 32,
 		"earlyResearch": [
 			"R0-A13-MG1",
 			"R0-E13-Rocket1",
