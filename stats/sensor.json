@@ -63,35 +63,6 @@
         "type": "STANDARD",
         "weight": 100
     },
-    "Sys-VstrikeTurret01": {
-        "buildPoints": 225,
-        "buildPower": 225,
-        "designable": 1,
-        "droidType": "DROID_SENSOR",
-        "id": "Sys-VstrikeTurret01",
-        "location": "TURRET",
-        "mountModel": "TRLSNSR1.PIE",
-        "name": "VTOL Strike Turret",
-        "power": 1000,
-        "range": 1792,
-        "sensorModel": "GNMSNSR2.PIE",
-        "type": "VTOL INTERCEPT",
-        "weight": 750
-    },
-    "Sys-VTOLRadarTower01": {
-        "buildPoints": 100,
-        "buildPower": 20,
-        "hitpoints": 200,
-        "id": "Sys-VTOLRadarTower01",
-        "location": "TURRET",
-        "mountModel": "TRMECM2.PIE",
-        "name": "VTOL Radar Tower",
-        "power": 1000,
-        "range": 2048,
-        "sensorModel": "GNMSNSR2.PIE",
-        "type": "VTOL INTERCEPT",
-        "weight": 100
-    },
 
 
 
@@ -125,54 +96,6 @@
         "type": "INDIRECT CB",
         "weight": 100
     },
-    "Sys-VTOLCBTurret01": {
-        "buildPoints": 225,
-        "buildPower": 225,
-        "designable": 1,
-        "droidType": "DROID_SENSOR",
-        "hitpoints": 200,
-        "id": "Sys-VTOLCBTurret01",
-        "location": "TURRET",
-        "mountModel": "TRHSNSR3.PIE",
-        "name": "VTOL CB Radar Turret",
-        "power": 1000,
-        "range": 1024,
-        "sensorModel": "GNHSNSR3.PIE",
-        "type": "VTOL CB",
-        "weight": 750
-    },
-    "Sys-VTOLCBTower01": {
-        "buildPoints": 100,
-        "buildPower": 20,
-        "hitpoints": 200,
-        "id": "Sys-VTOLCBTower01",
-        "location": "TURRET",
-        "mountModel": "TRHSNSR3.PIE",
-        "name": "VTOL CB Radar Tower",
-        "power": 1000,
-        "range": 1280,
-        "sensorModel": "GNHSNSR3.PIE",
-        "type": "VTOL CB",
-        "weight": 100
-    },
-
-
-
-    "RadarDetector": {
-        "buildPoints": 510,
-        "buildPower": 510,
-        "designable": 1,
-        "hitpoints": 0,
-        "id": "RadarDetector",
-        "location": "TURRET",
-        "mountModel": "TRMECM2.PIE",
-        "name": "Radar Detector",
-        "power": 500,
-        "range": 2816,
-        "sensorModel": "RADARSENSOR.PIE",
-        "type": "RADAR DETECTOR",
-        "weight": 1872
-    },
 
 
 
@@ -187,7 +110,7 @@
         "mountModel": "TRHSNSR3.PIE",
         "name": "Wide Spectrum Sensor",
         "power": 100,
-        "range": 1280,
+        "range": 3328,
         "sensorModel": "GNHSNSR4.PIE",
         "type": "SUPER",
         "weight": 1872
@@ -201,7 +124,7 @@
         "mountModel": "TRLSNSR1.PIE",
         "name": "Uplink Sensor",
         "power": 1000,
-        "range": 1792,
+        "range": 3840,
         "sensorModel": "miupdish.PIE",
         "type": "SUPER",
         "weight": 1

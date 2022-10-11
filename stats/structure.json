@@ -310,25 +310,6 @@
         "type": "DEFENSE",
         "width": 1
     },
-    "Sys-VTOL-RadarTower01": {
-        "armour": 0,
-        "breadth": 1,
-        "buildPoints": 200,
-        "buildPower": 200,
-        "height": 3,
-        "hitpoints": 290,
-        "id": "Sys-VTOL-RadarTower01",
-        "name": "VTOL Strike Tower",
-        "resistance": 150,
-        "sensorID": "Sys-VTOLRadarTower01",
-        "strength": "HARD",
-        "structureModel": [
-            "BLGUARDR.pie"
-        ],
-        "thermal": 0,
-        "type": "DEFENSE",
-        "width": 1
-    },
     "Sys-CB-Tower01": {
         "armour": 0,
         "breadth": 1,
@@ -340,25 +321,6 @@
         "name": "CB Tower",
         "resistance": 150,
         "sensorID": "Sys-CBTower01",
-        "strength": "HARD",
-        "structureModel": [
-            "BLGUARDR.pie"
-        ],
-        "thermal": 0,
-        "type": "DEFENSE",
-        "width": 1
-    },
-    "Sys-VTOL-CB-Tower01": {
-        "armour": 0,
-        "breadth": 1,
-        "buildPoints": 200,
-        "buildPower": 200,
-        "height": 3,
-        "hitpoints": 290,
-        "id": "Sys-VTOL-CB-Tower01",
-        "name": "VTOL CB Tower",
-        "resistance": 150,
-        "sensorID": "Sys-VTOLCBTower01",
         "strength": "HARD",
         "structureModel": [
             "BLGUARDR.pie"
@@ -386,30 +348,11 @@
         "type": "DEFENSE",
         "width": 1
     },
-    "Sys-RadarDetector01": {
-        "armour": 0,
-        "breadth": 1,
-        "buildPoints": 480,
-        "buildPower": 480,
-        "height": 2,
-        "hitpoints": 400,
-        "id": "Sys-RadarDetector01",
-        "name": "Radar Detector Tower",
-        "resistance": 150,
-        "sensorID": "RadarDetector",
-        "strength": "HARD",
-        "structureModel": [
-            "BLGUARDR.pie"
-        ],
-        "thermal": 0,
-        "type": "DEFENSE",
-        "width": 1
-    },
     "A0LasSatCommand": {
         "armour": 0,
         "breadth": 2,
-        "buildPoints": 1000,
-        "buildPower": 1000,
+        "buildPoints": 1600,
+        "buildPower": 1600,
         "height": 2,
         "hitpoints": 600,
         "id": "A0LasSatCommand",
@@ -429,8 +372,8 @@
     "A0Sat-linkCentre": {
         "armour": 0,
         "breadth": 2,
-        "buildPoints": 1000,
-        "buildPower": 1000,
+        "buildPoints": 1600,
+        "buildPower": 1600,
         "height": 3,
         "hitpoints": 600,
         "id": "A0Sat-linkCentre",

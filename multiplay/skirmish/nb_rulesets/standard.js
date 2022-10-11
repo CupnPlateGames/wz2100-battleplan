@@ -43,7 +43,7 @@ const structures = {
 	vtolPads: [ "A0VtolPad", ],
 	derricks: [ "A0ResourceExtractor", ],
 	extras: [ "A0RepairCentre1", "A0RepairCentre3", "A0Sat-linkCentre", "A0LasSatCommand", ],
-	sensors: [ "Sys-SensoTower02", "Sys-CB-Tower01", "Sys-RadarDetector01", "Sys-SensoTowerWS", ],
+	sensors: [ "Sys-SensoTower02", "Sys-CB-Tower01", "Sys-SensoTowerWS", ],
 };
 
 const oilResources = [ "OilResource", ];

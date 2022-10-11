@@ -81,12 +81,10 @@
         "researchPoints": 300,
         "researchPower": 300,
         "resultComponents": [
-            "SensorTurret1Mk1",
-            "Sys-VstrikeTurret01"
+            "SensorTurret1Mk1"
         ],
         "resultStructures": [
-            "Sys-SensoTower02",
-            "Sys-VTOL-RadarTower01"
+            "Sys-SensoTower02"
         ],
         "statID": "SensorTurret1Mk1"
     },
@@ -101,32 +99,12 @@
         "researchPoints": 450,
         "researchPower": 450,
         "resultComponents": [
-            "Sys-CBTurret01",
-            "Sys-VTOLCBTurret01"
+            "Sys-CBTurret01"
         ],
         "resultStructures": [
-            "Sys-CB-Tower01",
-            "Sys-VTOL-CB-Tower01"
+            "Sys-CB-Tower01"
         ],
         "statID": "Sys-CBTurret01"
-    },
-    "R-Sys-RadarDetector01": {
-        "iconID": "IMAGE_RES_SYSTEMTECH",
-        "id": "R-Sys-RadarDetector01",
-        "msgName": "RES_SY_RDST1",
-        "name": "Radar Detector",
-        "requiredResearch": [
-            "R-Sys-CBSensor-Turret01"
-        ],
-        "researchPoints": 600,
-        "researchPower": 600,
-        "resultComponents": [
-            "RadarDetector"
-        ],
-        "resultStructures": [
-            "Sys-RadarDetector01"
-        ],
-        "statID": "RadarDetector"
     },
     "R-Sys-Sensor-WS": {
         "iconID": "IMAGE_RES_SYSTEMTECH",
@@ -136,15 +114,11 @@
         "name": "Wide Spectrum Sensor",
         "redComponents": [
             "SensorTurret1Mk1",
-            "Sys-VstrikeTurret01",
-            "Sys-CBTurret01",
-            "Sys-VTOLCBTurret01"
+            "Sys-CBTurret01"
         ],
         "redStructures": [
             "Sys-SensoTower02",
-            "Sys-VTOL-RadarTower01",
-            "Sys-CB-Tower01",
-            "Sys-VTOL-CB-Tower01"
+            "Sys-CB-Tower01"
         ],
         "requiredResearch": [
             "R-Sys-CBSensor-Turret01"
@@ -156,10 +130,25 @@
         ],
         "resultStructures": [
             "Sys-SensoTowerWS",
-            "A0Sat-linkCentre",
-            "A0LasSatCommand"
+            "A0Sat-linkCentre"
         ],
         "statID": "Sensor-WideSpec"
+    },
+    "R-Wpn-LasSat": {
+        "iconID": "IMAGE_RES_WEAPONTECH",
+        "id": "R-Wpn-LasSat",
+        "keyTopic": 1,
+        "msgName": "RES_W_LASSAT",
+        "name": "Laser Satellite Command Post",
+        "requiredResearch": [
+            "R-Sys-CBSensor-Turret01"
+        ],
+        "researchPoints": 600,
+        "researchPower": 600,
+        "resultStructures": [
+            "A0LasSatCommand"
+        ],
+        "statID": "A0LasSatCommand"
     },
 
 
