@@ -14,7 +14,7 @@
  * vtolness: the chance % of not making droids when adaptation mechanism chooses vtols
  * defensiveness: same thing for defenses; set this to 100 to enable turtle AI specific code
  * researchness: the chance % of assigning a PU to the lab instead of factories
- * maxPower: build expensive things if we have more than that
+ * maxPower: used to build more factories. Always set superhigh because the build order already checks for it.
  * repairAt: how much % healthy should droid be to join the attack group instead of repairing
  */
 subpersonalities = {
@@ -29,7 +29,7 @@ subpersonalities = {
 		minTrucks: 0, minHoverTrucks: 0, maxSensors: 0,
 		minMiscTanks: 0, maxMiscTanks: 0,
 		vtolness: 5, defensiveness: 0, researchness: 5,
-		maxPower: 1000,
+		maxPower: 2000,
 		repairAt: 0,
 	},
 	MRH: {
@@ -49,7 +49,7 @@ subpersonalities = {
 		minTrucks: 2, minHoverTrucks: 1, maxSensors: 1,
 		minMiscTanks: 2, maxMiscTanks: 8,
 		vtolness: 25, defensiveness: 15, researchness: 30,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 30,
 	},
 	CR: {
@@ -67,7 +67,7 @@ subpersonalities = {
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 10,
 		vtolness: 20, defensiveness: 30, researchness: 15,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 40,
 	},
 	CMs: {
@@ -85,7 +85,7 @@ subpersonalities = {
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 10,
 		vtolness: 20, defensiveness: 60, researchness: 20,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 25,
 	},
 	FHw: {
@@ -103,7 +103,7 @@ subpersonalities = {
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 6,
 		vtolness: 10, defensiveness: 15, researchness: 20,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 20,
 	},
 	MGHw: {
@@ -121,7 +121,7 @@ subpersonalities = {
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 4, maxMiscTanks: 8,
 		vtolness: 20, defensiveness: 30, researchness: 20,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 40,
 	},
 	MsMt: {
@@ -139,7 +139,7 @@ subpersonalities = {
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 2, maxMiscTanks: 6,
 		vtolness: 25, defensiveness: 30, researchness: 30,
-		maxPower: 800,
+		maxPower: 2000,
 		repairAt: 20,
 	},
 };

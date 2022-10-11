@@ -181,7 +181,7 @@ const weaponStats = {
 	},
 	machineguns: {
 		// How good weapons of this path are against tanks, borgs, defenses, vtols?
-		roles: [ 0.8, 0.0, 0.3, 0.0 ],
+		roles: [ 0.7, 0.0, 0.3, 0.6 ],
 		// This explains how are human players supposed to call this weapon path in the chat.
 		chatalias: "mg",
 		// This controls micromanagement of units based on the weapons of this path.
@@ -273,11 +273,10 @@ const weaponStats = {
 		],
 	},
 	flamers_AA: {
-		roles: [ 0.0, 0.0, 0.0, 1.0],
+		roles: [ 0.0, 0.0, 0.0, 0.8],
 		chatalias: "flaa",
 		micro: MICRO.MELEE,
 		weapons: [
-			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT, chance: 30 }, // flamer
@@ -293,7 +292,7 @@ const weaponStats = {
 		],
 	},
 	cannons: {
-		roles: [ 0.6, 0.0, 0.6, 0.0 ],
+		roles: [ 0.6, 0.0, 1.0, 0.0 ],
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -342,7 +341,7 @@ const weaponStats = {
 		],
 	},
 	howitzers: {
-		roles: [ 0.5, 0.0, 0.8, 0.0 ],
+		roles: [ 0.6, 0.0, 0.7, 0.0 ],
 		chatalias: "hw",
 		micro: MICRO.DUMB,
 		weapons: [
@@ -364,7 +363,7 @@ const weaponStats = {
 		],
 	},
 	rockets: {
-		roles: [ 0.7, 0.0, 0.3, 0.0 ],
+		roles: [ 0.4, 0.0, 0.4, 0.0 ],
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
@@ -413,7 +412,7 @@ const weaponStats = {
 		extras: [],
 	},
 	missiles: {
-		roles: [ 0.7, 0.0, 0.4, 0.0 ],
+		roles: [ 0.7, 0.0, 0.5, 0.0 ],
 		chatalias: "ms",
 		micro: MICRO.RANGED,
 		weapons: [
