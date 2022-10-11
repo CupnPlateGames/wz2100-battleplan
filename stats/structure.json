@@ -40,7 +40,7 @@
         ],
         "thermal": 0,
         "type": "POWER GENERATOR",
-        "userLimits": [ 0, 10, 10 ],
+        "userLimits": [ 0, 10, 30 ],
         "width": 2
     },
     "A0PowMod1": {
@@ -104,7 +104,7 @@
         ],
         "thermal": 0,
         "type": "RESEARCH",
-        "userLimits": [ 0, 5, 5 ],
+        "userLimits": [ 0, 10, 20 ],
         "width": 2
     },
     "A0ResearchModule1": {
@@ -151,7 +151,7 @@
         ],
         "thermal": 0,
         "type": "FACTORY",
-        "userLimits": [ 0, 5, 5 ],
+        "userLimits": [ 0, 15, 30 ],
         "width": 3
     },
     "A0FacMod1": {
@@ -197,7 +197,7 @@
         ],
         "thermal": 0,
         "type": "VTOL FACTORY",
-        "userLimits": [ 0, 5, 5 ],
+        "userLimits": [ 0, 15, 30 ],
         "width": 3
     },
     "A0VtolPad": {
