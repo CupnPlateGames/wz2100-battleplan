@@ -79,6 +79,7 @@ const fundamentalResearch = [
 	"R0-L3-Repair1",
 	"R0-L2-Repair2",
 	"R-Sys-Autorepair-General",
+	"R-Wpn-LasSat",
 ];
 
 const fastestResearch = [
@@ -158,36 +159,22 @@ const truckTurrets = [
 const truckTemplates = [
 ];
 
-const fallbackWeapon = 'machineguns';
+const fallbackWeapon = undefined; // scout is listed everywhere
 
 // Unlike bodies and propulsions, weapon lines don't have any specific meaning.
 // You can make as many weapon lines as you want for your ruleset.
 const weaponStats = {
-	scout: {
-		roles: [ 0.2, 0.0, 0.2, 0.2 ],
-		chatalias: "scout",
-		micro: MICRO.MELEE,
-		weapons: [
-			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
-		],
-		vtols: [
-			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
-		],
-		defenses: [
-			{ res: "R0-Pulse", stat: "W-Z11-TowerScout", weight: WEIGHT.LIGHT },
-		],
-		templates: [],
-		extras: [],
-	},
 	machineguns: {
 		// How good weapons of this path are against tanks, borgs, defenses, vtols?
-		roles: [ 0.7, 0.0, 0.3, 0.6 ],
+		// The sum of the four should be equal to 1.
+		roles: [ 0.7, 0.0, 0.3, 0.0 ],
 		// This explains how are human players supposed to call this weapon path in the chat.
 		chatalias: "mg",
 		// This controls micromanagement of units based on the weapons of this path.
 		micro: MICRO.RANGED,
 		// Weapons of the path, better weapons below.
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-MG1", weight: WEIGHT.LIGHT, chance: 70 }, // mg
 			{ res: "R0-A12-MG2", stat: "W-A12-MG2", weight: WEIGHT.MEDIUM, chance: 50 }, // hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-MG3", weight: WEIGHT.HEAVY },
@@ -203,6 +190,7 @@ const weaponStats = {
 		// NOTE: a defensive structure is recycled whenever there are at least two structures
 		// with the same role available down the list
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", weight: WEIGHT.LIGHT },
 			// turtle AI needs early versatile towers, hence duplicate stat
 			{ res: "R0-A13-MG1", stat: "S-A13a-MG1Tower", defrole: DEFROLE.GATEWAY }, // mg tower
 			{ res: "R0-A13-MG1", stat: "S-A13a-MG1Tower", defrole: DEFROLE.STANDALONE }, // mg tower
@@ -230,15 +218,18 @@ const weaponStats = {
 		chatalias: "mg",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A22-AAMG2", stat: "W-A22-AAMG2", weight: WEIGHT.MEDIUM }, // mg
+			{ res: "R0-A21-AAMG3", stat: "W-A21-AAMG3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
-			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT, chance: 0 },
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-A13-MG1", stat: "W-A13-VTOLMG1", weight: WEIGHT.ULTRALIGHT, chance: 30 }, // vtol mg
 			{ res: "R0-A12-MG2", stat: "W-A12-VTOLMG2", weight: WEIGHT.LIGHT, chance: 50 }, // vtol hmg
 			{ res: "R0-A11-MG3", stat: "W-A11-VTOLMG3", weight: WEIGHT.MEDIUM }, // vtol hmg
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-A22-AAMG2", stat: "S-A22a-AAMG2Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-A21-AAMG3", stat: "S-A21a-AAMG3Empl", defrole: DEFROLE.STANDALONE },
 		],
@@ -252,13 +243,16 @@ const weaponStats = {
 		chatalias: "fl",
 		micro: MICRO.MELEE,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-B13-Flamer1", stat: "W-B13-Flamer1", weight: WEIGHT.LIGHT, chance: 50 }, // flamer
 			{ res: "R0-B12-Flamer2", stat: "W-B12-Flamer2", weight: WEIGHT.HEAVY, chance: 60 }, // inferno
 			{ res: "R0-B11-Flamer3", stat: "W-B11-Flamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-B13-Flamer1", stat: "S-B13a-Flamer1Tower", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-B13b-Flamer1Bunker", stat: "S-B13b-Flamer1Bunker", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-B12-Flamer2", stat: "S-B12a-Flamer2Tower", defrole: DEFROLE.GATEWAY },
@@ -273,10 +267,11 @@ const weaponStats = {
 		],
 	},
 	flamers_AA: {
-		roles: [ 0.0, 0.0, 0.0, 0.8],
+		roles: [ 0.0, 0.0, 0.0, 0.1],
 		chatalias: "flaa",
 		micro: MICRO.MELEE,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 		],
 		vtols: [
 			{ res: "R0-B13-Flamer1", stat: "W-B13-VTOLFlamer1", weight: WEIGHT.LIGHT, chance: 30 }, // flamer
@@ -284,6 +279,7 @@ const weaponStats = {
 			{ res: "R0-B11-Flamer3", stat: "W-B11-VTOLFlamer3", weight: WEIGHT.HEAVY }, // plasmite
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.STANDALONE },
 		],
 		templates: [
 		],
@@ -292,17 +288,20 @@ const weaponStats = {
 		],
 	},
 	cannons: {
-		roles: [ 0.6, 0.0, 1.0, 0.0 ],
+		roles: [ 0.4, 0.0, 0.6, 0.0 ],
 		chatalias: "cn",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-C13-Cannon1", stat: "W-C13-Cannon1", weight: WEIGHT.LIGHT, chance: 70 }, // lc
 			{ res: "R0-C12-Cannon2", stat: "W-C12-Cannon2", weight: WEIGHT.MEDIUM, chance: 50 }, // mc
 			{ res: "R0-C11-Cannon3", stat: "W-C11-Cannon3", weight: WEIGHT.HEAVY }, // hc
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-C13-Cannon1", stat: "S-C13a-Cannon1Tower", defrole: DEFROLE.STANDALONE }, // lc tower
 			{ res: "R0-C13b-Cannon1Bunker", stat: "S-C13b-Cannon1Bunker", defrole: DEFROLE.GATEWAY }, // lc tower
 			{ res: "R0-C12-Cannon2", stat: "S-C12a-Cannon2Tower", defrole: DEFROLE.STANDALONE }, // mc tower
@@ -317,7 +316,7 @@ const weaponStats = {
 		],
 	},
 	mortars: {
-		roles: [ 0.5, 0.0, 0.8, 0.0 ],
+		roles: [ 0.5, 0.0, 0.5, 0.0 ],
 		chatalias: "mo",
 		micro: MICRO.DUMB,
 		weapons: [
@@ -337,11 +336,12 @@ const weaponStats = {
 		templates: [
 		],
 		extras: [
+			"R-Sys-Sensor-Turret01",
 			"R0-F9-MortarUpgrade3",
 		],
 	},
 	howitzers: {
-		roles: [ 0.6, 0.0, 0.7, 0.0 ],
+		roles: [ 0.6, 0.0, 0.4, 0.0 ],
 		chatalias: "hw",
 		micro: MICRO.DUMB,
 		weapons: [
@@ -359,24 +359,28 @@ const weaponStats = {
 		templates: [
 		],
 		extras: [
+			"R-Sys-Sensor-Turret01",
 			"R0-F9-HowitzerUpgrade3",
 		],
 	},
 	rockets: {
-		roles: [ 0.4, 0.0, 0.4, 0.0 ],
+		roles: [ 0.7, 0.0, 0.3, 0.0 ],
 		chatalias: "rx",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E13-Rocket1", stat: "W-E13-Rocket1", weight: WEIGHT.LIGHT, chance: 50 }, // pod
 			{ res: "R0-E12-Rocket2", stat: "W-E12-Rocket2", weight: WEIGHT.MEDIUM, chance: 50 }, // mra
 			{ res: "R0-E11-Rocket3", stat: "W-E11-Rocket3", weight: WEIGHT.HEAVY }, // mra
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT }, // pod
 			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM }, // mra
 			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.GATEWAY },
 			// rocket turtle AI needs early AT gateway towers, hence duplicate stat
 			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.GATEWAY }, // pod
 			{ res: "R0-E13-Rocket1", stat: "S-E13a-Rocket1Empl", defrole: DEFROLE.STANDALONE }, // pod
@@ -396,15 +400,20 @@ const weaponStats = {
 		chatalias: "rxaa",
 		micro: MICRO.RANGED,
 		weapons: [
-			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT, chance: 0 },
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E22-AARocket2", stat: "W-E22-AARocket2", weight: WEIGHT.MEDIUM },
+			{ res: "R0-E21-AARocket3", stat: "W-E21-AARocket3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 			{ res: "R0-E13-Rocket1", stat: "W-E13-VTOLRocket1", weight: WEIGHT.LIGHT, chance: 40 }, // pod
 			{ res: "R0-E12-Rocket2", stat: "W-E12-VTOLRocket2", weight: WEIGHT.MEDIUM, chance: 50 }, // mra
+			{ res: "R0-E22-AARocket2", stat: "W-E22-VTOLAARocket2", weight: WEIGHT.MEDIUM },
 			{ res: "R0-E11-Rocket3", stat: "W-E11-VTOLRocket3", weight: WEIGHT.HEAVY }, // ripple
+			{ res: "R0-E21-AARocket3", stat: "W-E21-VTOLAARocket3", weight: WEIGHT.HEAVY },
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-E22-AARocket2", stat: "S-E22a-AARocket2Empl", defrole: DEFROLE.STANDALONE }, // sunburst
 			{ res: "R0-E21-AARocket3", stat: "S-E21a-AARocket3Empl", defrole: DEFROLE.STANDALONE }, // nova
 		],
@@ -412,17 +421,20 @@ const weaponStats = {
 		extras: [],
 	},
 	missiles: {
-		roles: [ 0.7, 0.0, 0.5, 0.0 ],
+		roles: [ 0.7, 0.0, 0.3, 0.0 ],
 		chatalias: "ms",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-D13-Missile1", stat: "W-D13-Missile1", weight: WEIGHT.LIGHT, chance: 40 }, // lancer
 			{ res: "R0-D12-Missile2", stat: "W-D12-Missile2", weight: WEIGHT.MEDIUM, chance: 50 }, // tk
 			{ res: "R0-D11-Missile3", stat: "W-D11-Missile3", weight: WEIGHT.HEAVY }, // tk
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.GATEWAY },
 			{ res: "R0-D13-Missile1", stat: "S-D13a-Missile1Tower", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-D12-Missile2", stat: "S-D12a-Missile2Tower", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-D11-Missile3", stat: "S-D11a-Missile3Tower", defrole: DEFROLE.STANDALONE },
@@ -441,12 +453,15 @@ const weaponStats = {
 		chatalias: "msaa",
 		micro: MICRO.RANGED,
 		weapons: [
+			{ res: "R0-Pulse", stat: "W-Z11-Scout", weight: WEIGHT.LIGHT },
 			{ res: "R0-D22-AAMissile2", stat: "W-D22-AAMissile2", weight: WEIGHT.MEDIUM, chance: 50 },
 			{ res: "R0-D21-AAMissile3", stat: "W-D21-AAMissile3", weight: WEIGHT.HEAVY },
 		],
 		vtols: [
+			{ res: "R0-Pulse", stat: "W-Z11-VTOLScout", weight: WEIGHT.LIGHT },
 		],
 		defenses: [
+			{ res: "R0-Pulse", stat: "LookOutTower", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-D22-AAMissile2", stat: "S-D22a-AAMissile2Empl", defrole: DEFROLE.STANDALONE },
 			{ res: "R0-D21-AAMissile3", stat: "S-D21a-AAMissile3Empl", defrole: DEFROLE.STANDALONE },
 		],
@@ -462,6 +477,9 @@ const weaponStats = {
 			{ res: "R0-Pulse", stat: "W-A13-TowerMG1", weight: WEIGHT.LIGHT },
 			{ res: "R0-Pulse", stat: "W-A12-TowerMG2", weight: WEIGHT.LIGHT },
 			{ res: "R0-Pulse", stat: "W-A11-TowerMG3", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-B13-TowerFlamer1", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-B12-TowerFlamer2", weight: WEIGHT.LIGHT },
+			{ res: "R0-Pulse", stat: "W-B11-TowerFlamer3", weight: WEIGHT.LIGHT },
 			{ res: "R0-Pulse", stat: "W-C13-TowerCannon1", weight: WEIGHT.LIGHT },
 			{ res: "R0-Pulse", stat: "W-C12-TowerCannon2", weight: WEIGHT.LIGHT },
 			{ res: "R0-Pulse", stat: "W-C11-TowerCannon3", weight: WEIGHT.LIGHT },

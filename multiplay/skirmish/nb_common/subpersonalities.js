@@ -21,7 +21,6 @@ subpersonalities = {
 	allin: {
 		chatalias: "allin",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.flamers,
 			weaponStats.cannons,
 		],
@@ -35,7 +34,6 @@ subpersonalities = {
 	MRH: {
 		chatalias: "mrh",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.machineguns,
 			weaponStats.machineguns_AA,
 			weaponStats.rockets,
@@ -55,7 +53,6 @@ subpersonalities = {
 	CR: {
 		chatalias: "mc",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.cannons, 
 			weaponStats.rockets, 
 			weaponStats.rockets_AA,
@@ -73,7 +70,6 @@ subpersonalities = {
 	CMs: {
 		chatalias: "cms",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.cannons,
 			weaponStats.missiles,
 			weaponStats.missiles_AA,
@@ -84,14 +80,13 @@ subpersonalities = {
 		minTanks: 4, becomeHarder: 4, maxTanks: 20,
 		minTrucks: 2, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 3, maxMiscTanks: 10,
-		vtolness: 20, defensiveness: 60, researchness: 20,
+		vtolness: 0, defensiveness: 20, researchness: 20,
 		maxPower: 2000,
 		repairAt: 25,
 	},
 	FHw: {
 		chatalias: "fhw",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.flamers,
 			weaponStats.howitzers,
 			weaponStats.flamers_AA,
@@ -109,7 +104,6 @@ subpersonalities = {
 	MGHw: {
 		chatalias: "mhw",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.machineguns,
 			weaponStats.howitzers,
 			weaponStats.machineguns_AA,
@@ -127,7 +121,6 @@ subpersonalities = {
 	MsMt: {
 		chatalias: "msmt",
 		weaponPaths: [
-			weaponStats.scout,
 			weaponStats.missiles,
 			weaponStats.mortars,
 			weaponStats.missiles_AA,
@@ -138,7 +131,7 @@ subpersonalities = {
 		minTanks: 3, becomeHarder: 3, maxTanks: 12,
 		minTrucks: 1, minHoverTrucks: 0, maxSensors: 1,
 		minMiscTanks: 2, maxMiscTanks: 6,
-		vtolness: 25, defensiveness: 30, researchness: 30,
+		vtolness: 10, defensiveness: 30, researchness: 30,
 		maxPower: 2000,
 		repairAt: 20,
 	},
