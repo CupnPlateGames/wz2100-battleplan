@@ -10,7 +10,7 @@
         "skidDeceleration": 350,
         "speed": 1024,
         "type": "Wheeled",
-        "weight": 80
+        "weight": 120
     },
     "hover01": {
         "buildPoints": 0,
@@ -23,7 +23,7 @@
         "skidDeceleration": 200,
         "speed": 1024,
         "type": "Hover",
-        "weight": 30
+        "weight": 20
     },
     "tracked01": {
         "buildPoints": 0,
@@ -36,7 +36,7 @@
         "speed": 1024,
         "spinAngle": 45,
         "type": "Tracked",
-        "weight": 150
+        "weight": 200
     },
     "V-Tol": {
         "acceleration": 400,

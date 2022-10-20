@@ -47,7 +47,7 @@
         "range": 1792,
         "sensorModel": "GNLSNSR1.PIE",
         "type": "STANDARD",
-        "weight": 750
+        "weight": 675
     },
     "SensorTower2Mk1": {
         "buildPoints": 25,
@@ -60,8 +60,7 @@
         "power": 100,
         "range": 2048,
         "sensorModel": "GNLSNSR1.PIE",
-        "type": "STANDARD",
-        "weight": 100
+        "type": "STANDARD"
     },
 
 
@@ -80,7 +79,7 @@
         "range": 1024,
         "sensorModel": "GNMECM2.PIE",
         "type": "INDIRECT CB",
-        "weight": 750
+        "weight": 675
     },
     "Sys-CBTower01": {
         "buildPoints": 100,
@@ -93,8 +92,7 @@
         "power": 1000,
         "range": 1280,
         "sensorModel": "GNMECM2.PIE",
-        "type": "INDIRECT CB",
-        "weight": 100
+        "type": "INDIRECT CB"
     },
 
 
@@ -113,7 +111,7 @@
         "range": 3328,
         "sensorModel": "GNHSNSR4.PIE",
         "type": "SUPER",
-        "weight": 1872
+        "weight": 1015
     },
     "UplinkSensor": {
         "buildPoints": 1,
@@ -126,8 +124,7 @@
         "power": 1000,
         "range": 3840,
         "sensorModel": "miupdish.PIE",
-        "type": "SUPER",
-        "weight": 1
+        "type": "SUPER"
     },
 
 

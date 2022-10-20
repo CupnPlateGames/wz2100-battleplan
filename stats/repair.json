@@ -12,7 +12,7 @@
         "name": "Repair Turret",
         "repairPoints": 5,
         "time": 5,
-        "weight": 400
+        "weight": 675
     },
     "T-L2-Repair2": {
         "buildPoints": 430,
@@ -27,7 +27,7 @@
         "name": "Heavy Repair Turret",
         "repairPoints": 10,
         "time": 5,
-        "weight": 1600
+        "weight": 1015
     },
     "AutoRepair": {
         "id": "AutoRepair",

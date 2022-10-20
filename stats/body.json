@@ -147,7 +147,7 @@
         "id": "Body8MBT",
         "model": "drmbod08.pie",
         "name": "Scorpion",
-        "powerOutput": 12000,
+        "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prmlvtl1.pie",
@@ -168,7 +168,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 450
     },
     "B-C2-MP": {
         "armourHeat": 0,
@@ -181,7 +181,7 @@
         "id": "Body5REC",
         "model": "drmbod05.pie",
         "name": "Cobra",
-        "powerOutput": 12000,
+        "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prmlvtl1.pie",
@@ -202,7 +202,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 450
     },
     "B-B2-MC": {
         "armourHeat": 0,
@@ -215,7 +215,7 @@
         "id": "Body6SUPP",
         "model": "drmbod06.pie",
         "name": "Panther",
-        "powerOutput": 12000,
+        "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prmlvtl1.pie",
@@ -236,7 +236,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 450
     },
     "B-A2-MN": {
         "armourHeat": 0,
@@ -249,7 +249,7 @@
         "id": "Body7ABT",
         "model": "drmbod07.pie",
         "name": "Retribution",
-        "powerOutput": 12000,
+        "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prmlvtl1.pie",
@@ -270,7 +270,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 600
+        "weight": 450
     },
 
     "B-D1-LNP": {
@@ -284,7 +284,7 @@
         "id": "Body12SUP",
         "model": "drhbod12.pie",
         "name": "Mantis",
-        "powerOutput": 24000,
+        "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prhlvtl4.pie",
@@ -305,7 +305,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 1200
+        "weight": 600
     },
     "B-C1-LP": {
         "armourHeat": 0,
@@ -318,7 +318,7 @@
         "id": "Body11ABT",
         "model": "drhbod11.pie",
         "name": "Python",
-        "powerOutput": 24000,
+        "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prhlvtl3.pie",
@@ -339,7 +339,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 1200
+        "weight": 600
     },
     "B-B1-LC": {
         "armourHeat": 0,
@@ -352,7 +352,7 @@
         "id": "Body9REC",
         "model": "drhbod09.pie",
         "name": "Tiger",
-        "powerOutput": 24000,
+        "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prhlvtl1.pie",
@@ -373,7 +373,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 1200
+        "weight": 600
     },
     "B-A1-LN": {
         "armourHeat": 0,
@@ -386,7 +386,7 @@
         "id": "Body10MBT",
         "model": "drhbod10.pie",
         "name": "Vengeance",
-        "powerOutput": 24000,
+        "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
                 "left": "prhlvtl2.pie",
@@ -407,7 +407,7 @@
         },
         "size": "LIGHT",
         "weaponSlots": 1,
-        "weight": 1200
+        "weight": 600
     },
 
 

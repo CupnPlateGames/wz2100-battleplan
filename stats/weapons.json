@@ -36,7 +36,7 @@
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
         "weaponWav": "plslsr.ogg",
-	"weight": 60
+	"weight": 180
     },
     "W-Z11-TowerScout": {
         "buildPoints": 0,
@@ -74,8 +74,7 @@
         "weaponClass": "HEAT",
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
-        "weaponWav": "plslsr.ogg",
-	"weight": 60
+        "weaponWav": "plslsr.ogg"
     },
     "W-Z11-VTOLScout": {
         "buildPoints": 25,
@@ -117,7 +116,7 @@
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "COMMAND",
         "weaponWav": "plslsr.ogg",
-	"weight": 60
+	"weight": 180
     },
     "W-A13-MG1": {
         "buildPoints": 60,
@@ -153,7 +152,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgbar3.ogg",
-        "weight": 150
+        "weight": 335
     },
     "W-A13-TowerMG1": {
         "buildPoints": 60,
@@ -188,8 +187,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgbar3.ogg",
-        "weight": 150
+        "weaponWav": "mgbar3.ogg"
     },
     "W-A13-VTOLMG1": {
         "buildPoints": 75,
@@ -229,7 +227,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgbar3.ogg",
-        "weight": 150
+        "weight": 335
     },
     "W-B13-Flamer1": {
         "buildPoints": 80,
@@ -270,7 +268,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "flmthrow.ogg",
-        "weight": 211
+        "weight": 475
     },
     "W-B13-TowerFlamer1": {
         "buildPoints": 80,
@@ -310,8 +308,7 @@
         "weaponClass": "HEAT",
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
-        "weaponWav": "flmthrow.ogg",
-        "weight": 211
+        "weaponWav": "flmthrow.ogg"
     },
     "W-B13-VTOLFlamer1": {
         "buildPoints": 100,
@@ -356,7 +353,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "flmthrow.ogg",
-        "weight": 211
+        "weight": 475
     },
     "W-C13-Cannon1": {
         "buildPoints": 100,
@@ -394,7 +391,7 @@
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
         "weaponWav": "smlcan.ogg",
-        "weight": 282
+        "weight": 675
     },
     "W-C13-TowerCannon1": {
         "buildPoints": 100,
@@ -431,8 +428,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
-        "weaponWav": "smlcan.ogg",
-        "weight": 282
+        "weaponWav": "smlcan.ogg"
     },
     "W-E13-Rocket1": {
         "buildPoints": 140,
@@ -472,7 +468,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 211
+        "weight": 475
     },
     "W-E13-VTOLRocket1": {
         "buildPoints": 175,
@@ -517,7 +513,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 211
+        "weight": 475
     },
     "W-D13-Missile1": {
         "buildPoints": 120,
@@ -557,7 +553,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 150
+        "weight": 335
     },
     "W-D13-TowerMissile1": {
         "buildPoints": 140,
@@ -595,8 +591,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
-        "weaponWav": "rocket.ogg",
-        "weight": 150
+        "weaponWav": "rocket.ogg"
     },
     "W-F13-Mortar1": {
         "buildPoints": 140,
@@ -637,7 +632,7 @@
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "MORTARS",
         "weaponWav": "mortar.ogg",
-        "weight": 282
+        "weight": 675
     },
     "W-G13-Howitzer1": {
         "buildPoints": 140,
@@ -676,7 +671,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "smlcan.ogg",
-        "weight": 282
+        "weight": 675
     },
 
 
@@ -718,7 +713,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgbar2.ogg",
-        "weight": 300
+        "weight": 500
     },
     "W-E22-AARocket2": {
         "buildPoints": 175,
@@ -761,7 +756,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-E22-VTOLAARocket2": {
         "buildPoints": 175,
@@ -807,7 +802,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-D22-AAMissile2": {
         "buildPoints": 150,
@@ -849,7 +844,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 300
+        "weight": 500
     },
 
 
@@ -888,7 +883,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgbar2.ogg",
-        "weight": 300
+        "weight": 500
     },
     "W-A12-TowerMG2": {
         "buildPoints": 120,
@@ -923,8 +918,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgbar2.ogg",
-        "weight": 300
+        "weaponWav": "mgbar2.ogg"
     },
     "W-A12-VTOLMG2": {
         "buildPoints": 150,
@@ -964,7 +958,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgbar2.ogg",
-        "weight": 300
+        "weight": 500
     },
     "W-B12-Flamer2": {
         "buildPoints": 160,
@@ -1005,7 +999,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "flmthrow.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-B12-TowerFlamer2": {
         "buildPoints": 160,
@@ -1045,8 +1039,7 @@
         "weaponClass": "HEAT",
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
-        "weaponWav": "flmthrow.ogg",
-        "weight": 422
+        "weaponWav": "flmthrow.ogg"
     },
     "W-B12-VTOLFlamer2": {
         "buildPoints": 250,
@@ -1091,7 +1084,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "flmthrow.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-C12-Cannon2": {
         "buildPoints": 200,
@@ -1129,7 +1122,7 @@
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
         "weaponWav": "medcan.ogg",
-        "weight": 565
+        "weight": 1015
     },
     "W-C12-TowerCannon2": {
         "buildPoints": 200,
@@ -1166,8 +1159,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
-        "weaponWav": "medcan.ogg",
-        "weight": 565
+        "weaponWav": "medcan.ogg"
     },
     "W-E12-Rocket2": {
         "buildPoints": 280,
@@ -1208,7 +1200,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-E12-VTOLRocket2": {
         "buildPoints": 350,
@@ -1253,7 +1245,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 422
+        "weight": 725
     },
     "W-D12-Missile2": {
         "buildPoints": 240,
@@ -1293,7 +1285,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 300
+        "weight": 500
     },
     "W-D12-TowerMissile2": {
         "buildPoints": 240,
@@ -1331,8 +1323,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
-        "weaponWav": "rocket.ogg",
-        "weight": 300
+        "weaponWav": "rocket.ogg"
     },
     "W-F12-Mortar2": {
         "buildPoints": 240,
@@ -1373,7 +1364,7 @@
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "MORTARS",
         "weaponWav": "mortar.ogg",
-        "weight": 565
+        "weight": 1015
     },
     "W-F12-VTOLMortar2": {
         "buildPoints": 300,
@@ -1415,7 +1406,7 @@
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "BOMB",
         "weaponWav": "hwtzflgt.ogg",
-        "weight": 565
+        "weight": 1015
     },
     "W-G12-Howitzer2": {
         "buildPoints": 280,
@@ -1454,7 +1445,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "medcan.ogg",
-        "weight": 565
+        "weight": 1015
     },
 
 
@@ -1495,8 +1486,7 @@
         "weaponClass": "HEAT",
         "weaponEffect": "BUNKER BUSTER",
         "weaponSubClass": "LAS_SAT",
-        "weaponWav": "bemlsr.ogg",
-        "weight": 600
+        "weaponWav": "bemlsr.ogg"
     },
 
 
@@ -1535,7 +1525,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgtower.ogg",
-        "weight": 600
+        "weight": 670
     },
     "W-A11-TowerMG3": {
         "buildPoints": 240,
@@ -1570,8 +1560,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
-        "weaponWav": "mgtower.ogg",
-        "weight": 600
+        "weaponWav": "mgtower.ogg"
     },
     "W-A11-VTOLMG3": {
         "buildPoints": 300,
@@ -1611,7 +1600,7 @@
         "weaponEffect": "ANTI PERSONNEL",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "mgtower.ogg",
-        "weight": 600
+        "weight": 670
     },
     "W-B11-Flamer3": {
         "buildPoints": 320,
@@ -1652,7 +1641,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "plasflm.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-B11-TowerFlamer3": {
         "buildPoints": 320,
@@ -1692,8 +1681,7 @@
         "weaponClass": "HEAT",
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
-        "weaponWav": "plasflm.ogg",
-        "weight": 843
+        "weaponWav": "plasflm.ogg"
     },
     "W-B11-VTOLFlamer3": {
         "buildPoints": 500,
@@ -1738,7 +1726,7 @@
         "weaponEffect": "FLAMER",
         "weaponSubClass": "FLAME",
         "weaponWav": "plasflm.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-C11-Cannon3": {
         "buildPoints": 400,
@@ -1777,7 +1765,7 @@
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
         "weaponWav": "lrgcan.ogg",
-        "weight": 1130
+        "weight": 1355
     },
     "W-C11-TowerCannon3": {
         "buildPoints": 400,
@@ -1815,8 +1803,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ALL ROUNDER",
         "weaponSubClass": "CANNON",
-        "weaponWav": "lrgcan.ogg",
-        "weight": 1130
+        "weaponWav": "lrgcan.ogg"
     },
     "W-E11-Rocket3": {
         "buildPoints": 560,
@@ -1855,7 +1842,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-E11-VTOLRocket3": {
         "buildPoints": 700,
@@ -1897,7 +1884,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-D11-Missile3": {
         "buildPoints": 480,
@@ -1937,7 +1924,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 600
+        "weight": 670
     },
     "W-D11-TowerMissile3": {
         "buildPoints": 480,
@@ -1975,8 +1962,7 @@
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
-        "weaponWav": "rocket.ogg",
-        "weight": 600
+        "weaponWav": "rocket.ogg"
     },
     "W-F11-Mortar3": {
         "buildPoints": 480,
@@ -2017,7 +2003,7 @@
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "MORTARS",
         "weaponWav": "mortar.ogg",
-        "weight": 1130
+        "weight": 1355
     },
     "W-F11-VTOLMortar3": {
         "buildPoints": 600,
@@ -2059,7 +2045,7 @@
         "weaponEffect": "ARTILLERY ROUND",
         "weaponSubClass": "BOMB",
         "weaponWav": "hwtzflgt.ogg",
-        "weight": 1130
+        "weight": 1355
     },
     "W-G11-Howitzer3": {
         "buildPoints": 560,
@@ -2098,7 +2084,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "HOWITZERS",
         "weaponWav": "lrgcan.ogg",
-        "weight": 1130
+        "weight": 1355
     },
 
 
@@ -2141,7 +2127,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MACHINE GUN",
         "weaponWav": "asltmg.ogg",
-        "weight": 600
+        "weight": 670
     },
     "W-E21-AARocket3": {
         "buildPoints": 350,
@@ -2184,7 +2170,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-E21-VTOLAARocket3": {
         "buildPoints": 350,
@@ -2230,7 +2216,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "ROCKET",
         "weaponWav": "rocket.ogg",
-        "weight": 843
+        "weight": 955
     },
     "W-D21-AAMissile3": {
         "buildPoints": 300,
@@ -2271,7 +2257,7 @@
         "weaponEffect": "ANTI TANK",
         "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
-        "weight": 1130
+        "weight": 670
     },
 
 
