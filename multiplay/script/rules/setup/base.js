@@ -43,27 +43,24 @@ function removeModules(player)
 
 function limitStartingFacilities(player)
 {
-	var max_labs = 1;
-	var max_facto = 1;
-	var max_vtol = 1;
-	var max_cyb = 0;
-	var max_derricks = 2;
 	switch (baseType)
 	{
 	case CAMP_CLEAN:
-		max_labs = 0;
-		max_facto = 0;
-		max_vtol = 0;
-		break;
-	case CAMP_BASE:
-		max_labs = 1;
-		max_facto = 1;
-		max_vtol = 1;
-		max_derricks = 4;
-		break;
-	default:
+		// Remove all
+		var structs = enumStruct(player);
+		for (var i = 0; i < structs.length; i++)
+			removeObject(structs[i], false);
+		return;
+	case CAMP_WALLS:
+		// Keep everything
 		return;
 	}
+	// CAMP_BASE: keep power gen, command centre and 2 derricks
+	var max_labs = 0;
+	var max_facto = 0;
+	var max_vtol = 0;
+	var max_cyb = 0;
+	var max_derricks = 2;
 	var count_labs = 0;
 	var count_facto = 0;
 	var count_vtol = 0;
@@ -104,47 +101,28 @@ function limitStartingFacilities(player)
 			removeObject(structs[i]);
 		}
 	}
+	structs = enumStruct(player);
+	for (var i = 0; i < structs.length; i++)
+	{
+		// Remove all defenses in all cases for maps that have those
+		if (s.stattype == WALL || s.stattype == DEFENSE || s.stattype == GATE)
+			removeObject(s, false);
+	}
 }
 
 function setupBase(player)	// inside hackNetOff()
 {
-	setPower(800, player);
-	if (baseType == CAMP_CLEAN)
+	switch (baseType)
 	{
-		var structs = enumStruct(player);
-		for (var i = 0; i < structs.length; i++)
-		{
-			var s = structs[i];
-			if (s.stattype != HQ
-				&& s.stattype != POWER_GEN
-				&& s.stattype != RESEARCH_LAB
-				&& s.stattype != RESOURCE_EXTRACTOR
-				&& (playerData[player].difficulty != INSANE
-					|| (s.stattype != WALL && s.stattype != DEFENSE && s.stattype != GATE)))
-			{
-				removeObject(s, false);
-			}
-		}
-	}
-	else if (baseType == CAMP_BASE)
-	{
-		grantTech(TECH_BASE, player);
-		// Keep only some structures
-		var structs = enumStruct(player);
-		for (var i = 0; i < structs.length; i++)
-		{
-			var s = structs[i];
-			if ((playerData[player].difficulty != INSANE && (s.stattype == WALL || s.stattype == DEFENSE))
-			    || s.stattype == GATE)
-			{
-				removeObject(s, false);
-			}
-		}
-	}
-	else // CAMP_WALLS
-	{
-		grantTech(TECH_BASE, player);
-		grantTech(TECH_ADVANCED_BASE, player);
+	case CAMP_BASE:
+		setPower(800, player); // Starting point
+		break;
+	case CAMP_CLEAN:
+		setPower(800 + 500 + 400 + 2 * 150, player); // Starting point with removed structures cost
+		break;
+	case CAMP_WALLS:
+		setPower(300 + 200 + 500); // Enough to start a research, build a tank and produce a facility
+		break;
 	}
 	removeModules(player);
 	limitStartingFacilities(player);
