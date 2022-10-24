@@ -1256,7 +1256,7 @@
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flamer-ROF01",
         "msgName": "RES_W_FL_ROF1",
-        "name": "Flamer Autoloader",
+        "name": "High Temperature Flamer Gel",
         "requiredResearch": [
             "R0-B13-Flamer1"
         ],
@@ -1267,15 +1267,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "ReloadTime",
-                "value": -11
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
-                "parameter": "FirePause",
-                "value": -11
+                "parameter": "Damage",
+                "value": 11
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1285,7 +1278,7 @@
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flamer-ROF02",
         "keyTopic": 1,
-        "name": "Flamer Autoloader Mk2",
+        "name": "Superhot Flamer Gel",
         "requiredResearch": [
             "R0-B9-FlamerUpgrade1"
         ],
@@ -1296,15 +1289,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "ReloadTime",
-                "value": -11
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
-                "parameter": "FirePause",
-                "value": -11
+                "parameter": "Damage",
+                "value": 11
             }
         ],
         "statID": "W-B13-Flamer1",
@@ -1314,7 +1300,7 @@
     "R0-B9-FlamerUpgrade3": {
         "iconID": "IMAGE_RES_WEAPONTECH",
         "id": "R-Wpn-Flamer-ROF03",
-        "name": "Flamer Autoloader Mk3",
+        "name": "Superhot Plasmite Gel",
         "requiredResearch": [
             "R0-B9-FlamerUpgrade2"
         ],
@@ -1325,15 +1311,8 @@
                 "class": "Weapon",
                 "filterParameter": "ImpactClass",
                 "filterValue": "FLAME",
-                "parameter": "ReloadTime",
-                "value": -11
-            },
-            {
-                "class": "Weapon",
-                "filterParameter": "ImpactClass",
-                "filterValue": "FLAME",
-                "parameter": "FirePause",
-                "value": -11
+                "parameter": "Damage",
+                "value": 11
             }
         ],
         "statID": "W-B13-Flamer1",
