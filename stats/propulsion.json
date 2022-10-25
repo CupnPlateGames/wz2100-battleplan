@@ -5,7 +5,7 @@
         "designable": 1,
         "hitpointPctOfBody": 100,
         "id": "wheeled01",
-        "model": "PRLRWHL1.PIE",
+        "model": "PRLWHL1.PIE",
         "name": "Wheels",
         "skidDeceleration": 350,
         "speed": 1024,
@@ -31,7 +31,7 @@
         "designable": 1,
         "hitpointPctOfBody": 300,
         "id": "tracked01",
-        "model": "PRLRTRK1.PIE",
+        "model": "PRLTRK1.PIE",
         "name": "Tracks",
         "speed": 1024,
         "spinAngle": 45,
@@ -76,7 +76,7 @@
     },
     "ZNULLPROP": {
         "id": "ZNULLPROP",
-        "model": "MIBNKDRL.PIE",
+        "model": "MIBNKDR.PIE",
         "name": "ZNULLPROP",
         "type": "Wheeled"
     }

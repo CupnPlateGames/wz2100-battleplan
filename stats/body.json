@@ -13,20 +13,17 @@
         "powerOutput": 6000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prllvtl3.pie",
-                "right": "prlrvtl3.pie",
+                "left": "prlvtl3.pie",
                 "moving": "fxvtl04.pie"
             },
             "hover01": {
                 "left": "prlhov1.pie"
             },
             "tracked01": {
-                "left": "prlltrk1.pie",
-                "right": "prlrtrk1.pie"
+                "left": "prltrk1.pie"
             },
             "wheeled01": {
-                "left": "prllwhl1.pie",
-                "right": "prlrwhl1.pie"
+                "left": "prlwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -47,20 +44,17 @@
         "powerOutput": 6000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prllvtl1.pie",
-                "right": "prlrvtl1.pie",
+                "left": "prlvtl1.pie",
                 "moving": "fxvtl01.pie"
             },
             "hover01": {
                 "left": "prlhov1.pie"
             },
             "tracked01": {
-                "left": "prlltrk1.pie",
-                "right": "prlrtrk1.pie"
+                "left": "prltrk1.pie"
             },
             "wheeled01": {
-                "left": "prllwhl1.pie",
-                "right": "prlrwhl1.pie"
+                "left": "prlwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -81,20 +75,17 @@
         "powerOutput": 6000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prllvtl2.pie",
-                "right": "prlrvtl2.pie",
+                "left": "prlvtl2.pie",
                 "moving": "fxvtl2and3.pie"
             },
             "hover01": {
                 "left": "prlhov1.pie"
             },
             "tracked01": {
-                "left": "prlltrk1.pie",
-                "right": "prlrtrk1.pie"
+                "left": "prltrk1.pie"
             },
             "wheeled01": {
-                "left": "prllwhl1.pie",
-                "right": "prlrwhl1.pie"
+                "left": "prlwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -115,20 +106,17 @@
         "powerOutput": 6000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prllvtl2.pie",
-                "right": "prlrvtl2.pie",
+                "left": "prlvtl2.pie",
                 "moving": "fxvtl2and3.pie"
             },
             "hover01": {
                 "left": "prlhov1.pie"
             },
             "tracked01": {
-                "left": "prlltrk1.pie",
-                "right": "prlrtrk1.pie"
+                "left": "prltrk1.pie"
             },
             "wheeled01": {
-                "left": "prllwhl1.pie",
-                "right": "prlrwhl1.pie"
+                "left": "prlwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -150,20 +138,17 @@
         "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prmlvtl1.pie",
-                "right": "prmrvtl1.pie",
+                "left": "prmvtl1.pie",
                 "moving": "fxvtl5to8.pie"
             },
             "hover01": {
                 "left": "prmhov1.pie"
             },
             "tracked01": {
-                "left": "prmltrk2.pie",
-                "right": "prmrtrk2.pie"
+                "left": "prmtrk2.pie"
             },
             "wheeled01": {
-                "left": "prmlwhl1.pie",
-                "right": "prmrwhl1.pie"
+                "left": "prmwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -184,20 +169,17 @@
         "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prmlvtl1.pie",
-                "right": "prmrvtl1.pie",
+                "left": "prmvtl1.pie",
                 "moving": "fxvtl5to8.pie"
             },
             "hover01": {
                 "left": "prmhov1.pie"
             },
             "tracked01": {
-                "left": "prmltrk2.pie",
-                "right": "prmrtrk2.pie"
+                "left": "prmtrk2.pie"
             },
             "wheeled01": {
-                "left": "prmlwhl1.pie",
-                "right": "prmrwhl1.pie"
+                "left": "prmwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -218,20 +200,17 @@
         "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prmlvtl1.pie",
-                "right": "prmrvtl1.pie",
+                "left": "prmvtl1.pie",
                 "moving": "fxvtl5to8.pie"
             },
             "hover01": {
                 "left": "prmhov1.pie"
             },
             "tracked01": {
-                "left": "prmltrk2.pie",
-                "right": "prmrtrk2.pie"
+                "left": "prmtrk2.pie"
             },
             "wheeled01": {
-                "left": "prmlwhl1.pie",
-                "right": "prmrwhl1.pie"
+                "left": "prmwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -252,20 +231,17 @@
         "powerOutput": 9000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prmlvtl1.pie",
-                "right": "prmrvtl1.pie",
+                "left": "prmvtl1.pie",
                 "moving": "fxvtl5to8.pie"
             },
             "hover01": {
                 "left": "prmhov1.pie"
             },
             "tracked01": {
-                "left": "prmltrk2.pie",
-                "right": "prmrtrk2.pie"
+                "left": "prmtrk2.pie"
             },
             "wheeled01": {
-                "left": "prmlwhl1.pie",
-                "right": "prmrwhl1.pie"
+                "left": "prmwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -287,20 +263,17 @@
         "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prhlvtl4.pie",
-                "right": "prhrvtl4.pie",
+                "left": "prhvtl4.pie",
                 "moving": "fxvtl12.pie"
             },
             "hover01": {
                 "left": "prhhov1.pie"
             },
             "tracked01": {
-                "left": "prhltrk3.pie",
-                "right": "prhrtrk3.pie"
+                "left": "prhtrk3.pie"
             },
             "wheeled01": {
-                "left": "prhlwhl1.pie",
-                "right": "prhrwhl1.pie"
+                "left": "prhwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -321,20 +294,17 @@
         "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prhlvtl3.pie",
-                "right": "prhrvtl3.pie",
+                "left": "prhvtl3.pie",
                 "moving": "fxvtl11.pie"
             },
             "hover01": {
                 "left": "prhhov1.pie"
             },
             "tracked01": {
-                "left": "prhltrk3.pie",
-                "right": "prhrtrk3.pie"
+                "left": "prhtrk3.pie"
             },
             "wheeled01": {
-                "left": "prhlwhl1.pie",
-                "right": "prhrwhl1.pie"
+                "left": "prhwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -355,20 +325,17 @@
         "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prhlvtl1.pie",
-                "right": "prhrvtl1.pie",
+                "left": "prhvtl1.pie",
                 "moving": "fxvtl09.pie"
             },
             "hover01": {
                 "left": "prhhov1.pie"
             },
             "tracked01": {
-                "left": "prhltrk3.pie",
-                "right": "prhrtrk3.pie"
+                "left": "prhtrk3.pie"
             },
             "wheeled01": {
-                "left": "prhlwhl1.pie",
-                "right": "prhrwhl1.pie"
+                "left": "prhwhl1.pie"
             }
         },
         "size": "LIGHT",
@@ -389,20 +356,17 @@
         "powerOutput": 12000,
         "propulsionExtraModels": {
             "V-Tol": {
-                "left": "prhlvtl2.pie",
-                "right": "prhrvtl2.pie",
+                "left": "prhvtl2.pie",
                 "moving": "fxvtl10.pie"
             },
             "hover01": {
                 "left": "prhhov1.pie"
             },
             "tracked01": {
-                "left": "prhltrk3.pie",
-                "right": "prhrtrk3.pie"
+                "left": "prhtrk3.pie"
             },
             "wheeled01": {
-                "left": "prhlwhl1.pie",
-                "right": "prhrwhl1.pie"
+                "left": "prhwhl1.pie"
             }
         },
         "size": "LIGHT",
