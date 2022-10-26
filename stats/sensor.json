@@ -34,11 +34,11 @@
 
 
     "SensorTurret1Mk1": {
-        "buildPoints": 225,
-        "buildPower": 225,
+        "buildPoints": 60,
+        "buildPower": 60,
         "designable": 1,
         "droidType": "DROID_SENSOR",
-        "hitpoints": 0,
+        "hitpoints": 20,
         "id": "SensorTurret1Mk1",
         "location": "TURRET",
         "mountModel": "TRLSNSR1.PIE",
@@ -47,7 +47,7 @@
         "range": 1792,
         "sensorModel": "GNLSNSR1.PIE",
         "type": "STANDARD",
-        "weight": 675
+        "weight": 335
     },
     "SensorTower2Mk1": {
         "buildPoints": 25,
@@ -66,11 +66,11 @@
 
 
     "Sys-CBTurret01": {
-        "buildPoints": 225,
-        "buildPower": 225,
+        "buildPoints": 120,
+        "buildPower": 120,
         "designable": 1,
         "droidType": "DROID_SENSOR",
-        "hitpoints": 0,
+        "hitpoints": 80,
         "id": "Sys-CBTurret01",
         "location": "TURRET",
         "mountModel": "TRMSNSR2.PIE",
@@ -98,8 +98,8 @@
 
 
     "Sensor-WideSpec": {
-        "buildPoints": 510,
-        "buildPower": 510,
+        "buildPoints": 240,
+        "buildPower": 240,
         "designable": 1,
         "droidType": "DROID_SENSOR",
         "hitpoints": 200,

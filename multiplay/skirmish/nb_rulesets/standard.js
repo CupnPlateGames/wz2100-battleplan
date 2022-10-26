@@ -360,7 +360,7 @@ const weaponStats = {
 		],
 		extras: [
 			"R-Sys-Sensor-Turret01",
-			"R0-F9-HowitzerUpgrade3",
+			"R0-G9-HowitzerUpgrade3",
 		],
 	},
 	rockets: {
