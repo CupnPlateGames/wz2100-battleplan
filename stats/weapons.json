@@ -1259,7 +1259,7 @@
         "waterGfx": "FXSSplsh.PIE",
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI TANK",
-        "weaponSubClass": "ROCKET",
+        "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg",
         "weight": 500
     },
@@ -1298,7 +1298,7 @@
         "waterGfx": "FXSSplsh.PIE",
         "weaponClass": "KINETIC",
         "weaponEffect": "ANTI TANK",
-        "weaponSubClass": "ROCKET",
+        "weaponSubClass": "MISSILE",
         "weaponWav": "rocket.ogg"
     },
     "W-F12-Mortar2": {
@@ -1393,7 +1393,7 @@
         "explosionWav": "lrgexpl.ogg",
         "facePlayer": 1,
         "fireOnMove": 0,
-        "firePause": 25,
+        "firePause": 28,
         "flightGfx": "FXHPLME.PIE",
         "flightSpeed": 2009,
         "hitGfx": "FXVLExp.PIE",
