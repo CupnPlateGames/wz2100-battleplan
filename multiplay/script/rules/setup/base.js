@@ -56,57 +56,32 @@ function limitStartingFacilities(player)
 		return;
 	}
 	// CAMP_BASE: keep power gen, command centre and 2 derricks
-	var max_labs = 0;
-	var max_facto = 0;
-	var max_vtol = 0;
-	var max_cyb = 0;
-	var max_derricks = 2;
-	var count_labs = 0;
-	var count_facto = 0;
-	var count_vtol = 0;
-	var count_cyb = 0;
-	var structs = enumStruct(player, RESEARCH_LAB);
-	for (var i = 0; i < structs.length; i++)
-	{
-		var s = structs[i];
-		count_labs++;
-		if (count_labs > max_labs)
-			removeObject(s);
-	}
-	var structs = enumStruct(player, VTOL_FACTORY);
-	for (var i = 0; i < structs.length; i++)
-	{
-		var s = structs[i];
-		count_vtol++;
-		if (count_vtol > max_cyb)
-			removeObject(s);
-	}
-	structs = enumStruct(player, FACTORY);
-	for (var i = 0; i < structs.length; i++)
-	{
-		var s = structs[i];
-		count_facto++;
-		if (count_facto > max_facto)
-			removeObject(s);
-	}
-	structs = enumStruct(player, RESOURCE_EXTRACTOR);
-	if (structs.length > max_derricks)
-	{
-		var base = startPositions[player];
+	var keep = new Map();
+	keep.set(HQ, 1);
+	keep.set(POWER_GEN, 1);
+	keep.set(RESOURCE_EXTRACTOR, 2);
+	var kept_structs = {};
+	var base = startPositions[player];
+	for (const [stattype, keep_max] of keep.entries()) {
+		var structs = enumStruct(player, stattype);
 		structs.sort(function(one, two) {
 			return distBetweenTwoPoints(one.x, one.y, base.x, base.y) - distBetweenTwoPoints(two.x, two.y, base.x, base.y);
 		});
-		for (var i = max_derricks; i < structs.length; i++)
-		{
-			removeObject(structs[i]);
+		for (var i = 0; i < structs.length; i++) {
+			if (i < keep_max) {
+				kept_structs[structs[i].id] = true;
+			} else {
+				break;
+			}
 		}
 	}
-	structs = enumStruct(player);
+	var structs = enumStruct(player);
 	for (var i = 0; i < structs.length; i++)
 	{
-		// Remove all defenses in all cases for maps that have those
-		if (s.stattype == WALL || s.stattype == DEFENSE || s.stattype == GATE)
-			removeObject(s, false);
+		var s = structs[i];
+		if (!kept_structs[s.id]) {
+			removeObject(s);
+		}
 	}
 }
 
