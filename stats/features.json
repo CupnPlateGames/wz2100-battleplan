@@ -33,7 +33,6 @@
 		"lineOfSight": 0,
 		"model": "miairtrf.pie",
 		"name": "*AirTrafficControl*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -137,7 +136,6 @@
 		"lineOfSight": 0,
 		"model": "miblucar.PIE",
 		"name": "*Blue Car*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -189,7 +187,6 @@
 		"lineOfSight": 0,
 		"model": "michevy.PIE",
 		"name": "*Chevy*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -202,7 +199,6 @@
 		"lineOfSight": 0,
 		"model": "micrane.PIE",
 		"name": "*Crane*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -216,7 +212,6 @@
 		"lineOfSight": 0,
 		"model": "MICAPSUL.PIE",
 		"name": "Artifact",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "GENERIC ARTEFACT",
 		"width": 1
@@ -267,7 +262,6 @@
 		"lineOfSight": 0,
 		"model": "MICABIN1.PIE",
 		"name": "*LogCabin1*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -279,7 +273,6 @@
 		"lineOfSight": 0,
 		"model": "MICABIN2.PIE",
 		"name": "*LogCabin2*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -291,7 +284,6 @@
 		"lineOfSight": 0,
 		"model": "MICABIN3.PIE",
 		"name": "*LogCabin3*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -303,7 +295,6 @@
 		"lineOfSight": 0,
 		"model": "MICABIN4.PIE",
 		"name": "*LogCabin4*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -315,7 +306,6 @@
 		"lineOfSight": 0,
 		"model": "MICABIN5.PIE",
 		"name": "*LogCabin5*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -328,7 +318,6 @@
 		"lineOfSight": 0,
 		"model": "nanolab.pie",
 		"name": "Nanolab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -341,7 +330,6 @@
 		"id": "OilDrum",
 		"model": "mioil.pie",
 		"name": "Oil Drum",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "OIL DRUM",
 		"width": 1
@@ -354,7 +342,6 @@
 		"id": "OilResource",
 		"model": "mislick.pie",
 		"name": "Oil Resource",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "OIL RESOURCE",
 		"width": 1
@@ -367,7 +354,6 @@
 		"lineOfSight": 0,
 		"model": "mioiltow.pie",
 		"name": "*Oil Tower*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -379,7 +365,6 @@
 		"id": "OldFactory",
 		"model": "mifactry.pie",
 		"name": "*OldFactory*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -392,7 +377,6 @@
 		"lineOfSight": 0,
 		"model": "mipickup.PIE",
 		"name": "*Pickup*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -405,7 +389,6 @@
 		"lineOfSight": 0,
 		"model": "mipipe.PIE",
 		"name": "*Pipe*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -418,7 +401,6 @@
 		"lineOfSight": 0,
 		"model": "mipipe1.PIE",
 		"name": "*Pipe1*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -431,7 +413,6 @@
 		"lineOfSight": 0,
 		"model": "Mipipe1A.pie",
 		"name": "*PipeFull*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -444,7 +425,6 @@
 		"lineOfSight": 0,
 		"model": "Mipipe2A.pie",
 		"name": "*PipeEnd*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -457,7 +437,6 @@
 		"lineOfSight": 0,
 		"model": "Mipipe3A.pie",
 		"name": "*PipeCollapsed*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -483,7 +462,6 @@
 		"lineOfSight": 0,
 		"model": "mipylon.pie",
 		"name": "*Pylon*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -509,7 +487,6 @@
 		"lineOfSight": 0,
 		"model": "miruin1.pie",
 		"name": "*Ruin1*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -521,7 +498,6 @@
 		"lineOfSight": 0,
 		"model": "Miruin10.pie",
 		"name": "*Ruin10*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -534,7 +510,6 @@
 		"lineOfSight": 0,
 		"model": "miruin3.pie",
 		"name": "*Ruin3*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -547,7 +522,6 @@
 		"lineOfSight": 0,
 		"model": "miruin4.pie",
 		"name": "*Ruin4*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -559,7 +533,6 @@
 		"lineOfSight": 0,
 		"model": "miruin5.pie",
 		"name": "*Ruin5*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -571,7 +544,6 @@
 		"lineOfSight": 0,
 		"model": "miruin6.pie",
 		"name": "*Ruin6*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -583,7 +555,6 @@
 		"lineOfSight": 0,
 		"model": "miruin7.pie",
 		"name": "*Ruin7*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -595,7 +566,6 @@
 		"lineOfSight": 0,
 		"model": "miruin8.pie",
 		"name": "*Ruin8*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -607,7 +577,6 @@
 		"lineOfSight": 0,
 		"model": "miruin9.pie",
 		"name": "*Ruin9*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -780,7 +749,6 @@
 		"lineOfSight": 0,
 		"model": "miwatow.pie",
 		"name": "*Water Tower*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -918,7 +886,6 @@
 		"id": "WreckedDroidHub",
 		"model": "drwreck.pie",
 		"name": "Wreck",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -931,7 +898,6 @@
 		"lineOfSight": 0,
 		"model": "mijeep.pie",
 		"name": "Wrecked Vehicle",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -944,7 +910,6 @@
 		"lineOfSight": 0,
 		"model": "mitanker.pie",
 		"name": "Wrecked Tanker",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -957,7 +922,6 @@
 		"lineOfSight": 0,
 		"model": "micamper.pie",
 		"name": "Wrecked Van",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -1088,7 +1052,6 @@
 		"id": "barrier",
 		"model": "MIBAR.pie",
 		"name": "*Barrier*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -1101,7 +1064,6 @@
 		"lineOfSight": 0,
 		"model": "micoolbig.pie",
 		"name": "*LargeCoolingTower*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -1244,7 +1206,6 @@
 		"id": "hoverwreck",
 		"model": "miarthov.pie",
 		"name": "*WreckedHoverProp*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "VEHICLE",
 		"width": 1
@@ -1257,7 +1218,6 @@
 		"lineOfSight": 0,
 		"model": "miruin2.pie",
 		"name": "*miruin*2*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
