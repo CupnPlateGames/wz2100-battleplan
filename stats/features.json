@@ -1,6 +1,6 @@
 {
 	"Advmaterialslab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Advmaterialslab",
@@ -13,7 +13,7 @@
 		"width": 2
 	},
 	"Aerodynamicslab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Aerodynamicslab",
@@ -26,7 +26,7 @@
 		"width": 2
 	},
 	"AirTrafficControl": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 200,
 		"id": "AirTrafficControl",
@@ -39,7 +39,7 @@
 		"width": 1
 	},
 	"BaBaHorizontalWall": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 75,
 		"id": "BaBaHorizontalWall",
@@ -52,7 +52,7 @@
 		"width": 1
 	},
 	"BabaCornerWall": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 75,
 		"id": "BabaCornerWall",
@@ -65,7 +65,7 @@
 		"width": 1
 	},
 	"BarbHUT": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "BarbHUT",
@@ -78,7 +78,7 @@
 		"width": 1
 	},
 	"BarbTechRuin": {
-		"armour": 3,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 100,
 		"id": "BarbTechRuin",
@@ -91,7 +91,7 @@
 		"width": 2
 	},
 	"BarbWarehouse1": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 200,
 		"id": "BarbWarehouse1",
@@ -104,7 +104,7 @@
 		"width": 2
 	},
 	"BarbWarehouse2": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 75,
 		"id": "BarbWarehouse2",
@@ -117,7 +117,7 @@
 		"width": 2
 	},
 	"BarbWarehouse3": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 75,
 		"id": "BarbWarehouse3",
@@ -130,7 +130,7 @@
 		"width": 1
 	},
 	"BlueCar": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "BlueCar",
@@ -169,7 +169,7 @@
 		"width": 1
 	},
 	"Boulder3": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"damageable": 0,
 		"hitpoints": 25,
@@ -182,7 +182,7 @@
 		"width": 1
 	},
 	"Chevy": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Chevy",
@@ -195,7 +195,7 @@
 		"width": 1
 	},
 	"Crane": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Crane",
@@ -208,7 +208,7 @@
 		"width": 1
 	},
 	"Crate": {
-		"armour": 20,
+		"armour": 0,
 		"breadth": 1,
 		"damageable": 0,
 		"hitpoints": 50,
@@ -222,7 +222,7 @@
 		"width": 1
 	},
 	"Heavywepslab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Heavywepslab",
@@ -235,7 +235,7 @@
 		"width": 2
 	},
 	"Indirectlab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Indirectlab",
@@ -248,7 +248,7 @@
 		"width": 2
 	},
 	"Laseropticslab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Laseropticslab",
@@ -321,7 +321,7 @@
 		"width": 1
 	},
 	"Nanolab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Nanolab",
@@ -334,7 +334,7 @@
 		"width": 2
 	},
 	"OilDrum": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"damageable": 0,
 		"hitpoints": 25,
@@ -360,7 +360,7 @@
 		"width": 1
 	},
 	"OilTower": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "OilTower",
@@ -373,7 +373,7 @@
 		"width": 1
 	},
 	"OldFactory": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 75,
 		"id": "OldFactory",
@@ -385,7 +385,7 @@
 		"width": 2
 	},
 	"Pickup": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pickup",
@@ -398,7 +398,7 @@
 		"width": 1
 	},
 	"Pipe": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pipe",
@@ -411,7 +411,7 @@
 		"width": 1
 	},
 	"Pipe1": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pipe1",
@@ -424,7 +424,7 @@
 		"width": 1
 	},
 	"Pipe1A": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pipe1A",
@@ -437,7 +437,7 @@
 		"width": 1
 	},
 	"Pipe2A": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pipe2A",
@@ -450,7 +450,7 @@
 		"width": 1
 	},
 	"Pipe3A": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Pipe3A",
@@ -463,7 +463,7 @@
 		"width": 1
 	},
 	"Powlab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Powlab",
@@ -476,7 +476,7 @@
 		"width": 2
 	},
 	"Pylon": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 75,
 		"id": "Pylon",
@@ -489,7 +489,7 @@
 		"width": 1
 	},
 	"Rotarywepslab": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 175,
 		"id": "Rotarywepslab",
@@ -502,7 +502,7 @@
 		"width": 2
 	},
 	"Ruin1": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 100,
 		"id": "Ruin1",
@@ -527,7 +527,7 @@
 		"width": 1
 	},
 	"Ruin3": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 100,
 		"id": "Ruin3",
@@ -540,7 +540,7 @@
 		"width": 1
 	},
 	"Ruin4": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 100,
 		"id": "Ruin4",
@@ -613,7 +613,7 @@
 		"width": 1
 	},
 	"Tree1": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "Tree1",
@@ -625,7 +625,7 @@
 		"width": 2
 	},
 	"Tree2": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "Tree2",
@@ -637,7 +637,7 @@
 		"width": 2
 	},
 	"Tree3": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "Tree3",
@@ -649,7 +649,7 @@
 		"width": 1
 	},
 	"TreeSnow1": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "TreeSnow1",
@@ -661,7 +661,7 @@
 		"width": 2
 	},
 	"TreeSnow2": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "TreeSnow2",
@@ -673,7 +673,7 @@
 		"width": 2
 	},
 	"TreeSnow3": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "TreeSnow3",
@@ -685,7 +685,7 @@
 		"width": 1
 	},
 	"Wall": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 150,
 		"id": "Wall",
@@ -698,7 +698,7 @@
 		"width": 1
 	},
 	"WallCorner": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 150,
 		"id": "WallCorner",
@@ -711,7 +711,7 @@
 		"width": 1
 	},
 	"WallCornerSmashed": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 120,
 		"id": "WallCornerSmashed",
@@ -724,7 +724,7 @@
 		"width": 1
 	},
 	"WallSmashed": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 120,
 		"id": "WallSmashed",
@@ -737,7 +737,7 @@
 		"width": 1
 	},
 	"WaterBuilding": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "WaterBuilding",
@@ -749,7 +749,7 @@
 		"width": 2
 	},
 	"WaterBuilding2": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 200,
 		"id": "WaterBuilding2",
@@ -761,7 +761,7 @@
 		"width": 2
 	},
 	"WaterBuilding3": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 200,
 		"id": "WaterBuilding3",
@@ -773,7 +773,7 @@
 		"width": 2
 	},
 	"WaterTower": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "WaterTower",
@@ -864,7 +864,7 @@
 		"width": 1
 	},
 	"WreckedBridge": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "WreckedBridge",
@@ -876,7 +876,7 @@
 		"width": 1
 	},
 	"WreckedBuilding16": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 50,
 		"id": "WreckedBuilding16",
@@ -888,7 +888,7 @@
 		"width": 3
 	},
 	"WreckedBuilding17": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "WreckedBuilding17",
@@ -900,7 +900,7 @@
 		"width": 2
 	},
 	"WreckedBuilding9": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "WreckedBuilding9",
@@ -912,7 +912,7 @@
 		"width": 2
 	},
 	"WreckedDroidHub": {
-		"armour": 7,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 60,
 		"id": "WreckedDroidHub",
@@ -924,7 +924,7 @@
 		"width": 1
 	},
 	"WreckedSuzukiJeep": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 40,
 		"id": "WreckedSuzukiJeep",
@@ -937,7 +937,7 @@
 		"width": 1
 	},
 	"WreckedTankerV": {
-		"armour": 2,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 75,
 		"id": "WreckedTankerV",
@@ -950,7 +950,7 @@
 		"width": 1
 	},
 	"WreckedVertCampVan": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "WreckedVertCampVan",
@@ -963,7 +963,7 @@
 		"width": 1
 	},
 	"arizonabush1": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonabush1",
@@ -975,7 +975,7 @@
 		"width": 1
 	},
 	"arizonabush2": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonabush2",
@@ -987,7 +987,7 @@
 		"width": 1
 	},
 	"arizonabush3": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonabush3",
@@ -999,7 +999,7 @@
 		"width": 1
 	},
 	"arizonabush4": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonabush4",
@@ -1011,7 +1011,7 @@
 		"width": 1
 	},
 	"arizonatree1": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree1",
@@ -1023,7 +1023,7 @@
 		"width": 1
 	},
 	"arizonatree2": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree2",
@@ -1035,7 +1035,7 @@
 		"width": 1
 	},
 	"arizonatree3": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree3",
@@ -1047,7 +1047,7 @@
 		"width": 1
 	},
 	"arizonatree4": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree4",
@@ -1059,7 +1059,7 @@
 		"width": 1
 	},
 	"arizonatree5": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree5",
@@ -1071,7 +1071,7 @@
 		"width": 1
 	},
 	"arizonatree6": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "arizonatree6",
@@ -1094,7 +1094,7 @@
 		"width": 1
 	},
 	"bigcooltowr": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 75,
 		"id": "bigcooltowr",
@@ -1107,7 +1107,7 @@
 		"width": 2
 	},
 	"bridgeend": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "bridgeend",
@@ -1119,7 +1119,7 @@
 		"width": 1
 	},
 	"bridgefull": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 5,
 		"hitpoints": 50,
 		"id": "bridgefull",
@@ -1131,7 +1131,7 @@
 		"width": 1
 	},
 	"bridgemiddle": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "bridgemiddle",
@@ -1154,7 +1154,7 @@
 		"width": 3
 	},
 	"building10": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 200,
 		"id": "building10",
@@ -1166,7 +1166,7 @@
 		"width": 2
 	},
 	"building11": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 200,
 		"id": "building11",
@@ -1178,7 +1178,7 @@
 		"width": 3
 	},
 	"building12": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 200,
 		"id": "building12",
@@ -1190,7 +1190,7 @@
 		"width": 2
 	},
 	"building2": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 200,
 		"id": "building2",
@@ -1202,7 +1202,7 @@
 		"width": 3
 	},
 	"building3": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 200,
 		"id": "building3",
@@ -1214,7 +1214,7 @@
 		"width": 3
 	},
 	"building7": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 200,
 		"id": "building7",
@@ -1226,7 +1226,7 @@
 		"width": 3
 	},
 	"building8": {
-		"armour": 5,
+		"armour": 0,
 		"breadth": 3,
 		"hitpoints": 200,
 		"id": "building8",
@@ -1238,7 +1238,7 @@
 		"width": 3
 	},
 	"hoverwreck": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 50,
 		"id": "hoverwreck",
@@ -1250,7 +1250,7 @@
 		"width": 1
 	},
 	"miruin2": {
-		"armour": 3,
+		"armour": 0,
 		"breadth": 1,
 		"hitpoints": 100,
 		"id": "miruin2",
@@ -1263,7 +1263,7 @@
 		"width": 1
 	},
 	"nukepowstat": {
-		"armour": 10,
+		"armour": 0,
 		"breadth": 2,
 		"hitpoints": 50,
 		"id": "nukepowstat",
