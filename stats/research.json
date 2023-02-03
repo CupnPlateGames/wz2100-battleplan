@@ -5,8 +5,8 @@
         "keyTopic": 1,
         "msgName": "RES_DF_HCW1",
         "name": "Hardcrete",
-        "researchPoints": 300,
-        "researchPower": 300,
+        "researchPoints": 200,
+        "researchPower": 200,
         "resultStructures": [
             "A0HardcreteMk1CWall",
             "A0HardcreteMk1Wall",
@@ -22,8 +22,8 @@
         "id": "R-Sys-MobileRepairTurret01",
         "msgName": "RES_REPTU1",
         "name": "Mobile Repair Turret",
-        "researchPoints": 300,
-        "researchPower": 300,
+        "researchPoints": 200,
+        "researchPower": 200,
         "resultComponents": [
             "T-L3-Repair1"
         ],
@@ -40,8 +40,8 @@
         "requiredResearch": [
             "R0-L3-Repair1"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 300,
+        "researchPower": 300,
         "resultComponents": [
             "T-L2-Repair2"
         ],
@@ -63,8 +63,8 @@
         "requiredResearch": [
             "R0-L2-Repair2"
         ],
-        "researchPoints": 600,
-        "researchPower": 600,
+        "researchPoints": 400,
+        "researchPower": 400,
         "resultComponents": [
             "AutoRepair"
         ],
@@ -78,8 +78,8 @@
         "id": "R-Sys-Sensor-Turret01",
         "msgName": "RES_SENSO1",
         "name": "Sensor Turret",
-        "researchPoints": 300,
-        "researchPower": 300,
+        "researchPoints": 200,
+        "researchPower": 200,
         "resultComponents": [
             "SensorTurret1Mk1"
         ],
@@ -96,8 +96,8 @@
         "requiredResearch": [
             "R-Sys-Sensor-Turret01"
         ],
-        "researchPoints": 450,
-        "researchPower": 450,
+        "researchPoints": 300,
+        "researchPower": 300,
         "resultComponents": [
             "Sys-CBTurret01"
         ],
