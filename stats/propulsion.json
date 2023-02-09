@@ -76,8 +76,8 @@
     },
     "ZNULLPROP": {
         "id": "ZNULLPROP",
-        "model": "MIBNKDR.PIE",
-        "name": "ZNULLPROP",
+        "model": "znulltracks.pie",
+        "name": "Z NULL PROP",
         "type": "Wheeled"
     }
 }
