@@ -7,7 +7,6 @@
 		"lineOfSight": 0,
 		"model": "advmatlab.pie",
 		"name": "Advancedmaterialslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -20,7 +19,6 @@
 		"lineOfSight": 0,
 		"model": "aerolab.pie",
 		"name": "Aerodynamicslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -45,7 +43,6 @@
 		"lineOfSight": 0,
 		"model": "BLBRBWLH.PIE",
 		"name": "*Babahrzwall*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -58,7 +55,6 @@
 		"lineOfSight": 0,
 		"model": "BLBRBCR1.PIE",
 		"name": "*Babacrnwall*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -71,7 +67,6 @@
 		"lineOfSight": 0,
 		"model": "BLBRHUT1.PIE",
 		"name": "Hut",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -84,7 +79,6 @@
 		"lineOfSight": 0,
 		"model": "BLFACTRD.PIE",
 		"name": "Ruined Factory",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -97,7 +91,6 @@
 		"lineOfSight": 0,
 		"model": "BLWARE1.PIE",
 		"name": "Warehouse",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -110,7 +103,6 @@
 		"lineOfSight": 0,
 		"model": "BLWARE2.PIE",
 		"name": "*Warehouse2*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -123,7 +115,6 @@
 		"lineOfSight": 0,
 		"model": "BLWARE3.PIE",
 		"name": "*Warehouse3*",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -224,7 +215,6 @@
 		"lineOfSight": 0,
 		"model": "hvyweplab.pie",
 		"name": "Heavyweaponslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -237,7 +227,6 @@
 		"lineOfSight": 0,
 		"model": "indlab.pie",
 		"name": "Indirectweaponslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -250,7 +239,6 @@
 		"lineOfSight": 0,
 		"model": "lasoptlab.pie",
 		"name": "Laseropticslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -449,7 +437,6 @@
 		"lineOfSight": 0,
 		"model": "powlab.pie",
 		"name": "Powerlab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -474,7 +461,6 @@
 		"lineOfSight": 0,
 		"model": "rotweplab.pie",
 		"name": "Rotaryweaponslab",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 2
@@ -661,7 +647,6 @@
 		"lineOfSight": 0,
 		"model": "blwall4.pie",
 		"name": "Wall",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -674,7 +659,6 @@
 		"lineOfSight": 0,
 		"model": "blwallc4.pie",
 		"name": "Wallcorner",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -687,7 +671,6 @@
 		"lineOfSight": 0,
 		"model": "blwallc4smash.pie",
 		"name": "Smashedcornerwall",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
@@ -700,7 +683,6 @@
 		"lineOfSight": 0,
 		"model": "blwall4smash.pie",
 		"name": "Smashedwall",
-		"startVisible": 0,
 		"tileDraw": 1,
 		"type": "BUILDING",
 		"width": 1
