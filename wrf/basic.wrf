@@ -53,8 +53,12 @@ file        IMD "hvyblades.pie"
 file        IMD "hvyblades-still.pie"
 /* Added for Battleplan */
 file		IMD	"rocket1flight.pie" /* Reduced version of fxmflare.pie */
-file		IMD	"rocket2flight.pie" /* Copie of fxmflare.pie for conveniency */
+file		IMD	"rocket2flight.pie" /* Copy of fxmflare.pie for conveniency */
 file		IMD	"rocket3flight.pie" /* Enlarged version of fxmflare.pie */
+file		IMD	"missile1flight.pie" /* Reduced version of fxmplme.pie */
+file		IMD	"missile2flight.pie" /* Copy of fxmplme.pie for conveniency */
+file		IMD	"missile3flight.pie" /* Enlarged version of fxmplme.pie */
+/* End of new files */
 directory	"misc"
 file		IMD	"arrow.pie"
 file		IMD	"iccamera.pie"
