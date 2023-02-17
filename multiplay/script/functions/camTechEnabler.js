@@ -92,6 +92,7 @@ const TECH_THREE = [
 	"R-Vehicle-Body11",
 
 	"R0-A21-AAMG3",
+	"R0-E21-AARocket3",
 	"R0-D21-AAMissile3",
 
 	"R0-A11-MG3",
@@ -124,6 +125,7 @@ const TECH_FOUR = [
 	"R-Vehicle-Metals02",
 	"R-Vehicle-Metals03",
 	"R-Defense-WallUpgrade03",
+	"R-Defense-WallUpgrade04",
 	"R-Vehicle-Body03",
 	"R-Vehicle-Body07",
 	"R-Vehicle-Body10",
@@ -138,7 +140,7 @@ const TECH_FOUR = [
 
 	"R-Sys-Autorepair-General",
 	"R-Sys-Sensor-WS",
-	"R-Sys-RadarDetector01"
+	"R-Wpn-LasSat"
 ];
 
 /** List of bunkers researches sorted by weapon research */
